@@ -62,6 +62,24 @@
         }
     },
     "rules": {
+        "max-len": "warn",
+        "import/no-extraneous-dependencies": "off",
+        "global-require": "warn",
+        "import/no-dynamic-require": "warn",
+        "@typescript-eslint/no-var-requires": "off",
+        "import/prefer-default-export": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "import/no-unresolved": "off",
+        "arrow-body-style": "off",
         "react/jsx-props-no-spreading": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [

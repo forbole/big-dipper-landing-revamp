@@ -18,8 +18,12 @@ jest.mock('next-translate/useTranslation', () => () => mockI18n);
 describe('Dummy Test', () => {
   it('matches snapshot', async () => {
     const { asFragment } = render(<Home />);
-    expect(screen.getByText(/Testing Next.js With Jest and React Testing Library/i)).toBeInTheDocument();
-    expect(screen.getByText(/hwohoh/i)).toBeInTheDocument();
+    expect(screen.getByText(
+      /Testing Next.js With Jest and React Testing Library/i,
+    )).toBeInTheDocument();
+    expect(screen.getByText(
+      /hwohoh/i,
+    )).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 

@@ -50,8 +50,18 @@ export const common: ThemeOptions = {
       textTransform: 'none',
     },
   },
+  mixins: {
+    gradientBackground: {
+      background: 'conic-gradient(from 90deg at 60.16% 0%, #120704 0deg, #21080B 29.71deg, #20080B 32.94deg, #110605 112.44deg, #120704 360deg)',
+    },
+  },
   palette: {
     type: 'dark',
+    custom: {
+      general: {
+        white: '#ffffff',
+      },
+    },
   },
 };
 

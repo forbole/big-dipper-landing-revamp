@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = () => {
   const styles = makeStyles(
-    (_theme) => {
+    (theme) => {
       return ({
         root: {
           display: 'flex',
@@ -10,6 +10,7 @@ export const useStyles = () => {
           minHeight: '100vh',
         },
         content: {
+          ...theme.mixins.gradientBackground,
           flex: 1,
         },
       });

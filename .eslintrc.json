@@ -22,7 +22,8 @@
     "overrides": [
         {
           "files": [
-            "src/**/types.ts"
+            "src/**/types.ts",
+            "*.d.ts"
           ],
           "rules": {
             "no-unused-vars": "off"

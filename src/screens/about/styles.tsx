@@ -5,11 +5,11 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
-          overflow: 'auto',
-          padding: theme.spacing(12, 3),
-          [theme.breakpoints.up('lg')]: {
-            '&.main': {
-              padding: theme.spacing(8),
+          '& .title': {
+            ...theme.mixins.headerGlow,
+            marginBottom: theme.spacing(2),
+            [theme.breakpoints.up('lg')]: {
+              marginBottom: theme.spacing(7),
             },
           },
         },

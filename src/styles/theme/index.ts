@@ -54,9 +54,18 @@ export const common: ThemeOptions = {
     gradientBackground: {
       background: 'conic-gradient(from 90deg at 60.16% 0%, #120704 0deg, #21080B 29.71deg, #20080B 32.94deg, #110605 112.44deg, #120704 360deg)',
     },
+    headerGlow: {
+      textShadow: '0px 0px 24px rgba(146, 85, 32, 0.8)',
+      backdropFilter: 'blur(60px)',
+      color: '#FEF3F2',
+    },
   },
   palette: {
     type: 'dark',
+    text: {
+      primary: '#EFEFEF',
+      secondary: '#FEF3F2',
+    },
     custom: {
       general: {
         white: '#ffffff',

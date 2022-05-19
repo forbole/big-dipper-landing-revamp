@@ -19,10 +19,7 @@ describe('Dummy Test', () => {
   it('matches snapshot', async () => {
     const { asFragment } = render(<Home />);
     expect(screen.getByText(
-      /Testing Next.js With Jest and React Testing Library/i,
-    )).toBeInTheDocument();
-    expect(screen.getByText(
-      /hwohoh/i,
+      /hello world/i,
     )).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });

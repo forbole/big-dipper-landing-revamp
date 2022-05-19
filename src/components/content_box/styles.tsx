@@ -6,6 +6,7 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
+          border: `solid ${Color(theme.palette.custom.general.white).alpha(0.1).string()} 2px`,
           overflow: 'auto',
           padding: theme.spacing(3),
           borderRadius: '0.75rem',

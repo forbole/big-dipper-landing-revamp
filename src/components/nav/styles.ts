@@ -5,7 +5,7 @@ export const useStyles = () => {
     (_theme) => {
       return ({
         root: {
-          background: 'pink',
+          background: 'violet',
           height: '30px',
         },
       });

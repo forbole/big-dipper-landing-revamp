@@ -55,4 +55,4 @@ export const common: ThemeOptions = {
   },
 };
 
-export const darkTemplate = createTheme(common);
+export const darkTheme = createTheme(common);

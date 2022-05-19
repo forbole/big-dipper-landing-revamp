@@ -5,7 +5,7 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
-          maginLeft: 'auto',
+          marginLeft: 'auto',
           marginRight: 'auto',
           maxWidth: theme.breakpoints.values.lg,
         },

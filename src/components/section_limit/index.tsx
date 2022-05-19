@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStyles } from './styles';
 
 /**
  * Helper component to restraint content
@@ -6,8 +7,9 @@ import React from 'react';
  * @returns
  */
 const SectionLimit: React.FC<{children: React.ReactNode} & ComponentDefault> = (props) => {
+  const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       {props.children}
     </div>
   );

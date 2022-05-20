@@ -6,6 +6,9 @@ declare module '@material-ui/core/styles/createPalette' {
         general: {
             white: string;
         },
+        fonts: {
+            [key: string]: string;
+        },
     }
 
     interface PaletteOptions {

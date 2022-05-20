@@ -1,98 +1,106 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
-    "overrides": [
-        {
-          "files": [
-            "src/**/types.ts"
-          ],
-          "rules": {
-            "no-unused-vars": "off"
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint"
+  ],
+  "settings": {
+      "import/resolver": {
+          "typescript": {}, // this loads <rootdir>/tsconfig.json to eslint
+          "node": {
+          "extensions": [
+                  ".js",
+                  ".jsx",
+                  ".ts",
+                  ".tsx"
+              ]
           }
-        },
-        {
-          "files": [
-            "tests/**/*"
-          ],
-          "rules": {
-            "no-undef": "off"
-          }
-        },
-        {
-          "files": [
-            "src/**/*.test.tsx",
-            "src/**/*.test.ts",
-            "**/*.spec.ts"
-          ],
-          "rules": {
-            "no-undef": "off",
-            "import/no-extraneous-dependencies": "off"
-          }
-        }
-    ],
-    "settings": {
-        "import/resolver": {
-            "typescript": {}, // this loads <rootdir>/tsconfig.json to eslint
-            "node": {
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx"
-                ]
-            }
-        }
-    },
-    "rules": {
-        "max-len": "warn",
-        "import/no-extraneous-dependencies": "off",
-        "global-require": "warn",
-        "import/no-dynamic-require": "warn",
-        "@typescript-eslint/no-var-requires": "off",
-        "import/prefer-default-export": "off",
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-                "js": "never",
-                "jsx": "never",
-                "ts": "never",
-                "tsx": "never"
-            }
+      }
+  },
+  "overrides": [
+      {
+        "files": [
+          "src/**/types.ts"
         ],
-        "import/no-unresolved": "off",
-        "arrow-body-style": "off",
-        "react/jsx-props-no-spreading": "off",
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [
-            2,
-            {
-                "extensions": [
-                    ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx"
-                ]
-            }
+        "rules": {
+          "no-unused-vars": "off"
+        }
+      },
+      {
+        "files": [
+          "tests/**/*"
         ],
-        "react/function-component-definition": "off"
-    }
+        "rules": {
+          "no-undef": "off"
+        }
+      },
+      {
+        "files": [
+          "src/**/*.test.tsx",
+          "src/**/*.test.ts",
+          "**/*.spec.ts"
+        ],
+        "rules": {
+          "no-undef": "off",
+          "import/no-extraneous-dependencies": "off"
+        }
+      }
+  ],
+  "rules": {
+      "react/require-default-props": "warn",
+      "max-len": "warn",
+      "import/no-extraneous-dependencies": "off",
+      "global-require": "warn",
+      "import/no-dynamic-require": "warn",
+      "@typescript-eslint/no-var-requires": "off",
+      "import/prefer-default-export": "off",
+      "@typescript-eslint/no-unused-vars": ["error", {
+        "ignoreRestSiblings": true,
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_"
+      }],
+      "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+          }
+      ],
+      "import/no-unresolved": "off",
+      "arrow-body-style": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-filename-extension": [
+          2,
+          {
+              "extensions": [
+                  ".js",
+                  ".jsx",
+                  ".ts",
+                  ".tsx"
+              ]
+          }
+      ],
+      "react/function-component-definition": "off",
+      "react/destructuring-assignment": "off"
+  }
 }

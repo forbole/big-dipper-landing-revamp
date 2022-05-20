@@ -10,10 +10,10 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
+    '\\.(svg)$': '<rootDir>/tests/mocks/svg.js',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: '<rootDir>/',
-      '\\.svg': '<rootDir>/tests/mocks/svg.js',
     }),
   },
   testEnvironment: 'jest-environment-jsdom',

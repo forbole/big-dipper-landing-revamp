@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="Layout"
+  >
+    <div
+      data-testid="SectionBox"
+    >
+      <div
+        class="makeStyles-root"
+        data-testid="SectionLimit"
+      >
+        <h2
+          class="MuiTypography-root title MuiTypography-h2"
+        >
+          about
+        </h2>
+        <div
+          data-testid="ContentBox"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            description
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

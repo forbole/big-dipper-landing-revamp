@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Donation matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="Layout"
+  >
+    <div
+      data-testid="SectionBox"
+    >
+      <div
+        class="makeStyles-root"
+        data-testid="SectionLimit"
+      >
+        <h2
+          class="MuiTypography-root title MuiTypography-h2"
+        >
+          donation
+        </h2>
+        <p
+          class="MuiTypography-root description MuiTypography-body1"
+        >
+          description
+        </p>
+        <div
+          class="address__container"
+        >
+          <div
+            data-testid="ContentBox"
+          >
+            <img
+              alt="btc"
+              class="address__logo"
+              src="/images/donation/btc.svg"
+            />
+            <h4
+              class="MuiTypography-root address__key MuiTypography-h4"
+            >
+              btc
+            </h4>
+            <p
+              class="MuiTypography-root address__address MuiTypography-body1"
+            >
+              bc1qye4k27zsn5nehzded6jwsvzg8qd6kgvxyhckts
+            </p>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained address__button MuiButton-disableElevation"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="address__button--copy"
+                />
+                copy
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            data-testid="ContentBox"
+          >
+            <img
+              alt="eth"
+              class="address__logo"
+              src="/images/donation/eth.svg"
+            />
+            <h4
+              class="MuiTypography-root address__key MuiTypography-h4"
+            >
+              eth
+            </h4>
+            <p
+              class="MuiTypography-root address__address MuiTypography-body1"
+            >
+              0x8CAb9F3fC6bBBD819050365627FC6B79d0ea73e6
+            </p>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained address__button MuiButton-disableElevation"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="address__button--copy"
+                />
+                copy
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            data-testid="ContentBox"
+          >
+            <img
+              alt="atom"
+              class="address__logo"
+              src="/images/donation/atom.svg"
+            />
+            <h4
+              class="MuiTypography-root address__key MuiTypography-h4"
+            >
+              atom
+            </h4>
+            <p
+              class="MuiTypography-root address__address MuiTypography-body1"
+            >
+              cosmos1n67vdlaejpj3uzswr9qapeg76zlkusj5k875ma
+            </p>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained address__button MuiButton-disableElevation"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <span
+                  class="address__button--copy"
+                />
+                copy
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

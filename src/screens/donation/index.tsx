@@ -4,7 +4,7 @@ import {
   Typography,
   Button,
 } from '@material-ui/core';
-import { ContentCopy } from '@material-ui/icons';
+import CopyIcon from '@assets/copy.svg';
 import {
   Layout,
   SectionBox,
@@ -38,10 +38,10 @@ const Donation = () => {
                 </Typography>
                 <Button
                   variant="contained"
-                  color="secondary"
+                  className="address__button"
                 >
-                  <img src="icons/copy.svg" />
-                  copy
+                  <CopyIcon className="address__button--copy" />
+                  {t('copy')}
                 </Button>
               </ContentBox>
             ))}

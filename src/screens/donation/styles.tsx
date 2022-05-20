@@ -37,6 +37,13 @@ export const useStyles = () => {
           '& .address__address': {
             wordBreak: 'break-all',
           },
+          '& .address__button--copy': {
+            marginRight: theme.spacing(1),
+          },
+          '& .address__button': {
+            ...theme.mixins.button,
+            width: '100%',
+          },
         },
       });
     },

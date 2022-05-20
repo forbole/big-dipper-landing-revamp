@@ -70,6 +70,16 @@ export const common: ThemeOptions = {
       backdropFilter: 'blur(60px)',
       color: '#FEF3F2',
     },
+    button: {
+      padding: '0.75rem',
+      borderRadius: '200px',
+      background: 'linear-gradient(180deg, #FF6E7F 0%, #F76A65 100%)',
+      color: '#FEE6E5',
+      transition: '0.3s',
+      '&:hover': {
+        filter: 'brightness(0.8)',
+      },
+    },
   },
   palette: {
     type: 'dark',
@@ -89,6 +99,7 @@ export const common: ThemeOptions = {
         one: '#EFEFEF',
         two: '#FEF3F2',
         three: '#FFEAED',
+        four: '#FEE6E5',
       },
     },
   },

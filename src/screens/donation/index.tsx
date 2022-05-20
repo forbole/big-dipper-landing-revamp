@@ -39,6 +39,7 @@ const Donation = () => {
                 <Button
                   variant="contained"
                   className="address__button"
+                  onClick={() => handleCopyToClipboard(x.address)}
                 >
                   <CopyIcon className="address__button--copy" />
                   {t('copy')}

@@ -36,6 +36,7 @@ export const useStyles = () => {
           },
           '& .address__address': {
             wordBreak: 'break-all',
+            marginBottom: theme.spacing(3),
           },
           '& .address__button--copy': {
             marginRight: theme.spacing(1),

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dummy Test matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    hello world
+  </div>
+  <div>
+    hola
+  </div>
+</DocumentFragment>
+`;

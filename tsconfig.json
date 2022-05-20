@@ -24,7 +24,7 @@
       ],
       "@components": [
         "src/components"
-      ],
+      ]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionLimit matches snapshot 1`] = `
+<div>
+  <div
+    class="makeStyles-root"
+  >
+    <div>
+      HELLO WORLD
+    </div>
+  </div>
+</div>
+`;

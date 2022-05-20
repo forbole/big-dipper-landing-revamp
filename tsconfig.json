@@ -24,6 +24,9 @@
       ],
       "@components": [
         "src/components"
+      ],
+      "@mocks": [
+        "tests/mocks"
       ]
     }
   },

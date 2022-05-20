@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout matches snapshot 1`] = `
+<div>
+  <main
+    class="makeStyles-root-1"
+  >
+    <div
+      data-testid="Nav"
+    />
+    <div
+      class="makeStyles-content-2"
+    >
+      <div>
+        hello world
+      </div>
+    </div>
+    <div
+      data-testid="Footer"
+    />
+  </main>
+</div>
+`;

@@ -1,6 +1,10 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@material-ui/core';
+import {
+  Typography,
+  Button,
+} from '@material-ui/core';
+import { ContentCopy } from '@material-ui/icons';
 import {
   Layout,
   SectionBox,
@@ -9,10 +13,13 @@ import {
 } from '@components';
 import { useStyles } from './styles';
 import { addresses } from './utils';
+import { useDonation } from './hooks';
 
 const Donation = () => {
   const classes = useStyles();
   const { t } = useTranslation('donation');
+  const { handleCopyToClipboard } = useDonation();
+
   return (
     <Layout>
       <SectionBox main>
@@ -29,6 +36,13 @@ const Donation = () => {
                 <Typography className="address__address">
                   {x.address}
                 </Typography>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                >
+                  <img src="icons/copy.svg" />
+                  copy
+                </Button>
               </ContentBox>
             ))}
           </div>

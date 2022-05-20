@@ -73,6 +73,10 @@ export const common: ThemeOptions = {
   },
   palette: {
     type: 'dark',
+    secondary: {
+      main: '#FF6E7F',
+      contrastText: '#FFFFFF',
+    },
     text: {
       primary: '#EFEFEF',
       secondary: '#FEF3F2',

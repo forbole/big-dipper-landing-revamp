@@ -11,6 +11,7 @@ export const common: ThemeOptions = {
       lg: 1280,
       xl: 1920,
     },
+    limit: 1024,
   },
   props: {
     MuiButton: {
@@ -46,6 +47,7 @@ export const common: ThemeOptions = {
     },
     body1: {
       fontSize: '1rem',
+      whiteSpace: 'pre-wrap',
     },
     body2: {
       fontSize: '0.875rem',
@@ -78,6 +80,11 @@ export const common: ThemeOptions = {
     custom: {
       general: {
         white: '#ffffff',
+      },
+      fonts: {
+        one: '#EFEFEF',
+        two: '#FEF3F2',
+        three: '#FFEAED',
       },
     },
   },

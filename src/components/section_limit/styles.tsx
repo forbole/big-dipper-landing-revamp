@@ -7,7 +7,7 @@ export const useStyles = () => {
         root: {
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: theme.breakpoints.values.lg,
+          maxWidth: theme.breakpoints.limit,
         },
       });
     },

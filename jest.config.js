@@ -13,6 +13,7 @@ const customJestConfig = {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: '<rootDir>/',
+      '\\.svg': '<rootDir>/tests/mocks/svg.js',
     }),
   },
   testEnvironment: 'jest-environment-jsdom',

@@ -1,0 +1,19 @@
+{
+  "faq": "FAQs",
+  "blockchain": {
+    "one": {
+      "question": "What is Proof-of-Stake blockchain?",
+      "answer": "Blockchain is a distributed digital ledger where all transaction data is recorded in multiple nodes to collectively ensure the transparency and accuracy. <0>Proof-of-Stake</0> is a blockchain consensus mechanism to prevent Sybil attacks and incentivise validators to behave correctly. Each validator commits tokens, aka “stakes”, to validate transactions and adds blocks into existence."
+    },
+    "two": {
+      "question": "What is inflation?",
+      "answer": "Amount of tokens of a Proof-of-Stake blockchain will grow annually, which is called inflation. The growth rate is the inflation rate of the chain."
+    }
+  },
+  "stakers": {
+    "one": {
+      "question": "What is staking?",
+      "answer": "The action that token holders stake their tokens to validators to secure the network is called staking. Staked tokens are eligible to receive staking rewards. Newly minted tokens and transactions fees are given out as rewards to bonded staking token holders.\nStakers stake their staking power to validators, but that does not mean the validators possess or have custody of the tokens delegated to them. In other words, validators cannot steal or take away stakers’ tokens. Your staked amount of tokens will not be decreased in most situations, however, if your validator is punished by slashing, your staked token is at risk of being slashed too (see below for “slashing”)."
+    }
+  }
+}

@@ -5,6 +5,7 @@ module.exports = {
     '*': ['common'],
     'rgx:^/donation': ['donation'],
     'rgx:^/about': ['about'],
+    'rgx:^/faq': ['faq'],
   },
   loadLocaleFrom: (lang, ns) => require(`./public/locales/${lang}/${ns}.json`),
 };

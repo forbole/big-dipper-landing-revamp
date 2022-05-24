@@ -13,13 +13,14 @@ import {
 } from './components';
 import { useStyles } from './styles';
 import { useFAQ } from './hooks';
-import { getMenuItems } from './utils';
+import { getMenuItems, getContent } from './utils';
 
 const FAQ = () => {
   const { t } = useTranslation('faq');
   const classes = useStyles();
   const { state, handleSelected } = useFAQ();
   const menuItems = getMenuItems(t);
+  const content = getContent(state.selected, t);
 
   return (
     <Layout>
@@ -41,7 +42,7 @@ const FAQ = () => {
               selected={state.selected}
               handleChange={handleSelected}
             />
-            <Content className={classes.content} />
+            <Content className={classes.content} content={content} />
           </div>
         </SectionLimit>
       </SectionBox>

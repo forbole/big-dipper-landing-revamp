@@ -7,3 +7,10 @@ export type MenuType = {
   selected: number;
   handleChange: (selected: number) => void;
 };
+
+export type ContentType = {
+  content: {
+    question: string;
+    answer: React.ReactNode | string;
+  }[];
+};

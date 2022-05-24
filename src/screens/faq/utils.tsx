@@ -28,9 +28,48 @@ export const getBlockChainFAQ = (t: Translate) => {
   ]);
 };
 
+export const getStakersFAQ = (t: Translate) => {
+  return ([
+    {
+      question: t('stakers.one.question'),
+      answer: t('stakers.one.answer'),
+    },
+  ]);
+};
+
+export const getValidatorsFAQ = (t: Translate) => {
+  return ([
+    {
+      question: t('validators.one.question'),
+      answer: t('validators.one.answer'),
+    },
+  ]);
+};
+
+export const getGovernanceFAQ = (t: Translate) => {
+  return ([
+    {
+      question: t('governance.one.question'),
+      answer: t('governance.one.answer'),
+    },
+  ]);
+};
+
 export const getContent = (selected: number, t: Translate) => {
   if (selected === 0) {
     return getBlockChainFAQ(t);
+  }
+
+  if (selected === 1) {
+    return getStakersFAQ(t);
+  }
+
+  if (selected === 2) {
+    return getValidatorsFAQ(t);
+  }
+
+  if (selected === 3) {
+    return getGovernanceFAQ(t);
   }
 
   return [];

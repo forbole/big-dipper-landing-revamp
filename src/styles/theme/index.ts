@@ -71,11 +71,21 @@ export const common: ThemeOptions = {
       color: '#FEF3F2',
     },
     button: {
-      padding: '0.75rem',
+      padding: '0.75rem 1rem',
       borderRadius: '200px',
       background: 'linear-gradient(180deg, #FF6E7F 0%, #F76A65 100%)',
       color: '#FEE6E5',
       transition: '0.3s',
+      '&:hover': {
+        filter: 'brightness(0.8)',
+      },
+    },
+    buttonSecondary: {
+      background: 'transparent',
+      padding: '0.75rem 1rem',
+      transition: '0.3s',
+      color: '#B79692',
+      borderRadius: '200px',
       '&:hover': {
         filter: 'brightness(0.8)',
       },

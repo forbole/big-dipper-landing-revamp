@@ -1,6 +1,7 @@
 {
   "faq": "FAQs",
   "blockchain": {
+    "title": "Blockchain",
     "one": {
       "question": "What is Proof-of-Stake blockchain?",
       "answer": "Blockchain is a distributed digital ledger where all transaction data is recorded in multiple nodes to collectively ensure the transparency and accuracy. <0>Proof-of-Stake</0> is a blockchain consensus mechanism to prevent Sybil attacks and incentivise validators to behave correctly. Each validator commits tokens, aka “stakes”, to validate transactions and adds blocks into existence."
@@ -11,9 +12,24 @@
     }
   },
   "stakers": {
+    "title": "Stakers",
     "one": {
       "question": "What is staking?",
       "answer": "The action that token holders stake their tokens to validators to secure the network is called staking. Staked tokens are eligible to receive staking rewards. Newly minted tokens and transactions fees are given out as rewards to bonded staking token holders.\nStakers stake their staking power to validators, but that does not mean the validators possess or have custody of the tokens delegated to them. In other words, validators cannot steal or take away stakers’ tokens. Your staked amount of tokens will not be decreased in most situations, however, if your validator is punished by slashing, your staked token is at risk of being slashed too (see below for “slashing”)."
+    }
+  },
+  "validators": {
+    "title": "Validators",
+    "one": {
+      "question": "How to stake, unstake, restake your tokens?",
+      "answer": "Some wallets provide token management services, such as Ledger and Kepler. If you are using Ledger, you could also connect your Ledger with Big Dipper and perform needed transactions.\nFor experienced users, you could also execute transactions via Command Line Interface (CLI).\nAll transaction history and data can be viewed on each Big Dipper explorer respectively."
+    }
+  },
+  "governance": {
+    "title": "Governance",
+    "one": {
+      "question": "What are governance proposals and on-chain governance?",
+      "answer": "In most networks, anyone can submit a text proposal to the network, and with some certain amount of deposit, the said proposal can enter the voting period. In the voting period, stakers and validators can cast their vote. Votes are calculated as voting powers. If the quorum is not reached when the voting period concludes, the deposited tokens will not be refunded and the proposal is denied automatically. If all the process is conducted on and recorded on the blockchain, it is called on-chain governance, as opposed to off-chain governance."
     }
   }
 }

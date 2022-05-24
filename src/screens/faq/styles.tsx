@@ -35,7 +35,7 @@ export const useStyles = () => {
           display: 'none',
           [theme.breakpoints.up('lg')]: {
             display: 'block',
-            width: '150px',
+            marginRight: theme.spacing(2),
           },
         },
       });

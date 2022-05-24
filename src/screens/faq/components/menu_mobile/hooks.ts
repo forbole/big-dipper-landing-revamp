@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const useMenuMobile = (handleSel) => {
+export const useMenuMobile = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event: any) => {

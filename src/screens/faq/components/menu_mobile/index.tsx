@@ -40,6 +40,7 @@ const MenuMobile: React.FC<MenuType & ComponentDefault> = (props) => {
         open={!!anchorEl}
         onClose={handleClose}
         getContentAnchorEl={null}
+        className={classes.menu}
       >
         {props.items.map((x, i) => {
           return (
@@ -51,7 +52,9 @@ const MenuMobile: React.FC<MenuType & ComponentDefault> = (props) => {
               disableRipple
               key={x}
             >
-              {x}
+              <Typography variant="h5">
+                {x}
+              </Typography>
             </MenuItem>
           );
         })}

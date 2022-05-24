@@ -110,6 +110,7 @@ export const common: ThemeOptions = {
         two: '#FEF3F2',
         three: '#FFEAED',
         four: '#FEE6E5',
+        five: '#FCCDCC',
       },
     },
   },

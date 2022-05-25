@@ -5,7 +5,38 @@ exports[`Footer matches snapshot 1`] = `
   <footer
     class="makeStyles-root-1"
   >
-    Footer
+    <div>
+      <div
+        class="top-left__wrapper"
+      >
+        <span
+          class="logo"
+        />
+        <div>
+          links
+        </div>
+        <hr
+          class="MuiDivider-root divider"
+        />
+      </div>
+      <div>
+        <div>
+          forbole
+        </div>
+        <div>
+          links
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <div>
+        left bottom
+      </div>
+      <div>
+        right bottom
+      </div>
+    </div>
   </footer>
 </div>
 `;

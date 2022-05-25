@@ -118,7 +118,6 @@ export const getGovernanceFAQ = (t: Translate) => {
           components={[
             <a
               href="https://www.youtube.com/watch?v=0JCbnug2tU4"
-              alt="governance tutorial"
               target="_blank"
               rel="noreferrer"
             />,

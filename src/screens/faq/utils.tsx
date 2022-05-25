@@ -34,6 +34,22 @@ export const getStakersFAQ = (t: Translate) => {
       question: t('stakers.one.question'),
       answer: t('stakers.one.answer'),
     },
+    {
+      question: t('stakers.two.question'),
+      answer: t('stakers.two.answer'),
+    },
+    {
+      question: t('stakers.three.question'),
+      answer: t('stakers.three.answer'),
+    },
+    {
+      question: t('stakers.four.question'),
+      answer: t('stakers.four.answer'),
+    },
+    {
+      question: t('stakers.five.question'),
+      answer: t('stakers.five.answer'),
+    },
   ]);
 };
 
@@ -43,6 +59,44 @@ export const getValidatorsFAQ = (t: Translate) => {
       question: t('validators.one.question'),
       answer: t('validators.one.answer'),
     },
+    {
+      question: t('validators.two.question'),
+      answer: t('validators.two.answer'),
+    },
+    {
+      question: t('validators.three.question'),
+      answer: t('validators.three.answer'),
+    },
+    {
+      question: t('validators.four.question'),
+      answer: t('validators.four.answer'),
+      list: [
+        {
+          title: t('validators.four.children.one.title'),
+          description: t('validators.four.children.one.description'),
+        },
+        {
+          title: t('validators.four.children.two.title'),
+          description: t('validators.four.children.two.description'),
+        },
+        {
+          title: t('validators.four.children.three.title'),
+          description: t('validators.four.children.three.description'),
+        },
+        {
+          title: t('validators.four.children.four.title'),
+          description: t('validators.four.children.four.description'),
+        },
+        {
+          title: t('validators.four.children.five.title'),
+          description: t('validators.four.children.five.description'),
+        },
+        {
+          title: t('validators.four.children.six.title'),
+          description: t('validators.four.children.six.description'),
+        },
+      ],
+    },
   ]);
 };
 
@@ -51,6 +105,26 @@ export const getGovernanceFAQ = (t: Translate) => {
     {
       question: t('governance.one.question'),
       answer: t('governance.one.answer'),
+    },
+    {
+      question: t('governance.two.question'),
+      answer: t('governance.two.answer'),
+    },
+    {
+      question: t('governance.three.question'),
+      answer: (
+        <Trans
+          i18nKey="faq:governance.three.answer"
+          components={[
+            <a
+              href="https://www.youtube.com/watch?v=0JCbnug2tU4"
+              alt="governance tutorial"
+              target="_blank"
+              rel="noreferrer"
+            />,
+          ]}
+        />
+      ),
     },
   ]);
 };

@@ -111,6 +111,7 @@ export const common: ThemeOptions = {
         three: '#FFEAED',
         four: '#FEE6E5',
         five: '#FCCDCC',
+        six: '#FF6E7F',
       },
     },
   },

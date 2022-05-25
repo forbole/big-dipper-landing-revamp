@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuMobile matches snapshot 1`] = `
+<div>
+  <div
+    class="makeStyles-root"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text selected MuiButton-disableElevation"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        gov
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

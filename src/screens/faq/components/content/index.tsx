@@ -15,12 +15,27 @@ const Content: React.FC<ContentType & ComponentDefault> = (props) => {
             <Typography variant="h5" className="question">
               {x.question}
             </Typography>
-            {React.isValidElement(x.answer) ? (
-              x.answer
-            ) : (
-              <Typography>
-                {x.answer}
-              </Typography>
+            <Typography>
+              {x.answer}
+            </Typography>
+            {!!x.list && (
+              <div className="list">
+                {x.list.map((item) => {
+                  return (
+                    <div key={item.title} className="list__item">
+                      <Typography variant="h5" className="list__title">
+                        <span className="list__title--bullet">&#x2022;</span>
+                        {' '}
+                        {item.title}
+                        :
+                      </Typography>
+                      <Typography>
+                        {item.description}
+                      </Typography>
+                    </div>
+                  );
+                })}
+              </div>
             )}
           </div>
         );

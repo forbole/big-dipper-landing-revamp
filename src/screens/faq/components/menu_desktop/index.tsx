@@ -1,7 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 import {
-  Typography,
   Button,
 } from '@material-ui/core';
 import { MenuType } from '../../types';

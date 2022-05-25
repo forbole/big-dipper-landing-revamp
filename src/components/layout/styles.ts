@@ -8,9 +8,9 @@ export const useStyles = () => {
           display: 'flex',
           flexDirection: 'column',
           minHeight: '100vh',
+          ...theme.mixins.gradientBackground,
         },
         content: {
-          ...theme.mixins.gradientBackground,
           flex: 1,
         },
       });

@@ -2,11 +2,27 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = () => {
   const styles = makeStyles(
-    (_theme) => {
+    (theme) => {
       return ({
         root: {
-          background: 'violet',
-          height: '100px',
+          padding: theme.spacing(4, 3),
+          '& .logo': {
+            width: '150px',
+          },
+          '& .top-left__wrapper': {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+          },
+          '& .divider': {
+            width: '100%',
+          },
+          [theme.breakpoints.up('lg')]: {
+            '& .logo': {
+              width: '230px',
+            },
+          },
         },
       });
     },

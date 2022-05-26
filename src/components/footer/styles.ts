@@ -7,6 +7,10 @@ export const useStyles = () => {
         root: {
           padding: theme.spacing(4, 3),
           color: theme.palette.custom.fonts.five,
+          '& .social svg': {
+            width: theme.spacing(2),
+            height: theme.spacing(2),
+          },
           '& .logo': {
             width: '150px',
             marginBottom: theme.spacing(5),

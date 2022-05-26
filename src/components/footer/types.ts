@@ -3,3 +3,9 @@ export type LinkType = {
   url: string;
   external?: boolean;
 }
+
+export type IconType = {
+  component: React.ReactNode;
+  className: string;
+  url: string;
+}

@@ -1,4 +1,12 @@
 {
   "hola": "HI",
-  "test": "Test"
+  "test": "Test",
+  "about": "About",
+  "faq": "FAQ",
+  "donation": "Donation",
+  "docs": "Docs",
+  "stakeNow": "Stake Now",
+  "networks": "Networks",
+  "blog": "Blog",
+  "copyright": "Copyright © Forbole {{year}}"
 }

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content matches snapshot 1`] = `
+<div>
+  <div
+    class="makeStyles-root"
+    data-testid="ContentBox"
+  >
+    <div
+      class="faq__wrapper"
+    >
+      <h5
+        class="MuiTypography-root question MuiTypography-h5"
+      >
+        How are you?
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Fine.
+      </p>
+    </div>
+  </div>
+</div>
+`;

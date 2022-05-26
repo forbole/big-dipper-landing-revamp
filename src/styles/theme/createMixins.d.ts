@@ -6,11 +6,13 @@ declare module '@material-ui/core/styles/createMixins' {
         gradientBackground?: CSSProperties;
         headerGlow?: CSSProperties;
         button?: CSSProperties;
+        buttonSecondary?: CSSProperties;
     }
 
     interface Mixins {
         gradientBackground: CSSProperties;
         headerGlow: CSSProperties;
         button: CSSProperties;
+        buttonSecondary: CSSProperties;
     }
 }

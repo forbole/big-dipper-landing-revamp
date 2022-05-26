@@ -8,5 +8,7 @@
   "stakeNow": "Stake Now",
   "networks": "Networks",
   "blog": "Blog",
-  "copyright": "Copyright © Forbole {{year}}"
+  "copyright": "Copyright © Forbole {{year}}",
+  "termsAndConditions": "Terms and Conditions",
+  "privacyPolicy": "Privacy Policy"
 }

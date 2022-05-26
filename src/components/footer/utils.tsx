@@ -67,3 +67,14 @@ export const socialLinks: IconType[] = [
     url: LINKS.GITHUB,
   },
 ];
+
+export const termsLinks: LinkType[] = [
+  {
+    key: 'termsAndConditions',
+    url: LINKS.TERMS_AND_CONDITIONS,
+  },
+  {
+    key: 'privacyPolicy',
+    url: LINKS.PRIVACY_POLICY,
+  },
+];

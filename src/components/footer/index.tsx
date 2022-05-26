@@ -5,7 +5,9 @@ import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import BDLogo from '@assets/big-dipper-red.svg';
 import { useStyles } from './styles';
-import { bdLinks, forboleLinks, socialLinks } from './utils';
+import {
+  bdLinks, forboleLinks, socialLinks, termsLinks,
+} from './utils';
 
 const Footer = () => {
   const classes = useStyles();
@@ -27,7 +29,7 @@ const Footer = () => {
                   <Typography
                     variant="body2"
                     component="a"
-                    className="bdlink__item"
+                    className="link__item"
                     target={x.external ? '_blank' : '_self'}
                   >
                     {t(x.key)}
@@ -51,7 +53,7 @@ const Footer = () => {
                   <Typography
                     variant="body2"
                     component="a"
-                    className="bdlink__item"
+                    className="link__item"
                     target={x.external ? '_blank' : '_self'}
                   >
                     {t(x.key)}
@@ -79,8 +81,33 @@ const Footer = () => {
             );
           })}
         </div>
-        <div>
-          <div>t n c</div>
+        <div className="terms__wrapper">
+          <div className="terms__links">
+            {termsLinks.map((x) => {
+              return (
+                <React.Fragment key={x.key}>
+                  <Link
+                    href={x.url}
+                    passHref
+                  >
+                    <Typography
+                      variant="caption"
+                      component="a"
+                      className="link__item link__item--caption"
+                      target={x.external ? '_blank' : '_self'}
+                    >
+                      {t(x.key)}
+                    </Typography>
+                  </Link>
+                  <Typography variant="caption" className="terms--dash">
+                    {' '}
+                    |
+                    {' '}
+                  </Typography>
+                </React.Fragment>
+              );
+            })}
+          </div>
           <Typography variant="caption">{t('copyright', { year })}</Typography>
         </div>
       </div>

@@ -29,7 +29,7 @@ const Footer = () => {
                   <Typography
                     variant="body2"
                     component="a"
-                    className="link__item"
+                    className="link__item bd__item"
                     target={x.external ? '_blank' : '_self'}
                   >
                     {t(x.key)}
@@ -53,7 +53,7 @@ const Footer = () => {
                   <Typography
                     variant="body2"
                     component="a"
-                    className="link__item"
+                    className="link__item forbole__item"
                     target={x.external ? '_blank' : '_self'}
                   >
                     {t(x.key)}
@@ -65,6 +65,7 @@ const Footer = () => {
           <Divider className={classNames('divider', 'mobile')} />
         </div>
       </div>
+      <Divider className={classNames('divider', 'desktop')} />
       <div className="bottom">
         <div className="icons__wrapper">
           {socialLinks.map((x) => {
@@ -100,9 +101,7 @@ const Footer = () => {
                     </Typography>
                   </Link>
                   <Typography variant="caption" className="terms--dash">
-                    {' '}
                     |
-                    {' '}
                   </Typography>
                 </React.Fragment>
               );

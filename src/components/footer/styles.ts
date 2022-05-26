@@ -60,15 +60,57 @@ export const useStyles = () => {
           '& .terms__links': {
             marginBottom: theme.spacing(1),
           },
+          '& .terms--dash': {
+            margin: theme.spacing(0, 1),
+          },
           '& .terms--dash:last-child': {
             display: 'none',
           },
+          '& .desktop': {
+            display: 'none',
+          },
           [theme.breakpoints.up('lg')]: {
+            '& .desktop': {
+              display: 'block',
+            },
             '& .logo': {
               width: '230px',
             },
             '& .mobile': {
               display: 'none',
+            },
+            '& .top': {
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'space-between',
+            },
+            '& .bd__item:first-child, & .forbole__item:first-child': {
+              paddingLeft: 0,
+            },
+            '& .forbole__wrapper': {
+              alignItems: 'flex-start',
+            },
+            '& .bottom': {
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            },
+            '& .icons__wrapper': {
+              paddingLeft: 0,
+              marginBottom: 0,
+            },
+            '& .terms__links': {
+              marginBottom: 0,
+            },
+            '& .terms--dash:last-child': {
+              display: 'inline',
+            },
+            '& .terms__wrapper': {
+              flexDirection: 'row',
+              alignItems: 'center',
+            },
+            '& .social:first-child': {
+              marginLeft: 0,
             },
           },
         },

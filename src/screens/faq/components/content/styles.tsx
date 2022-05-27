@@ -18,10 +18,11 @@ export const useStyles = () => {
           },
           '& .list__title': {
             marginBottom: theme.spacing(1),
-            color: theme.palette.custom.fonts.five,
+            color: theme.palette.secondary.main,
           },
           '& .list__title--bullet': {
             color: theme.palette.custom.fonts.one,
+            marginRight: theme.spacing(1),
           },
           '& .list__item:not(:last-child)': {
             marginBottom: theme.spacing(3),

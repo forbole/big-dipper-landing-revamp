@@ -68,7 +68,6 @@ export const common: ThemeOptions = {
   },
   mixins: {
     gradientBackground: {
-      // background: 'radial-gradient(96.87% 50% at 50% 3.27%, #0F0B3D 0%, #310627 17.19%, #2C0632 30.21%, #0F072F 54.69%, #040211 88.03%)',
       background: 'radial-gradient(96.87% 50% at 50% -2.73%, #0F0B3D 0%, #310627 17.19%, #2C0632 28.21%, #0F072F 59.69%, #040211 88.03%)',
       '@media (min-width: 768px)': {
         background: 'radial-gradient(96.87% 96.73% at 50% 3.27%, #0F0B3D 0%, #310627 17.19%, #2C0632 30.21%, #0F072F 54.69%, #040211 88.03%)',
@@ -83,7 +82,7 @@ export const common: ThemeOptions = {
       padding: '0.75rem 1rem',
       borderRadius: '200px',
       background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
-      color: '#FEE6E5',
+      color: '#FFFFFF',
       transition: '0.3s',
       '&:hover': {
         filter: 'brightness(0.8)',
@@ -93,7 +92,7 @@ export const common: ThemeOptions = {
       background: 'transparent',
       padding: '0.75rem 1rem',
       transition: '0.3s',
-      color: '#B79692',
+      color: '#FFFFFF',
       borderRadius: '200px',
       '&:hover': {
         filter: 'brightness(0.8)',
@@ -113,6 +112,8 @@ export const common: ThemeOptions = {
     custom: {
       general: {
         white: '#ffffff',
+        box: '#101828',
+        dropBackground: '#3E234F',
       },
       fonts: {
         one: '#EFEFEF',

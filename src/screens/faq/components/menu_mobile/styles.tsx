@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import Color from 'color';
 
 export const useStyles = () => {
   const styles = makeStyles((theme) => {
@@ -14,13 +15,17 @@ export const useStyles = () => {
         '& .MuiMenuItem-root': {
           padding: theme.spacing(2, 4),
           justifyContent: 'center',
-          color: theme.palette.custom.fonts.five,
+          color: theme.palette.custom.general.white,
+        },
+        '& .MuiMenuItem-root.active': {
+          ...theme.mixins.button,
+          borderRadius: 0,
         },
         '& .MuiList-padding': {
           padding: 0,
         },
         '& .MuiMenu-paper': {
-          background: 'rgba(91, 37, 37, 0.2)',
+          background: Color(theme.palette.custom.general.dropBackground).alpha(0.7).string(),
           backdropFilter: 'blur(24px)',
         },
       },

@@ -6,12 +6,11 @@ export const useStyles = () => {
       return ({
         root: {
           '& .title': {
-            ...theme.mixins.headerGlow,
-            marginBottom: theme.spacing(2),
+            marginBottom: theme.spacing(4),
             textAlign: 'center',
             [theme.breakpoints.up('lg')]: {
               textAlign: 'left',
-              marginBottom: theme.spacing(7),
+              marginBottom: theme.spacing(5),
             },
           },
         },

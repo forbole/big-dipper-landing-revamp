@@ -36,7 +36,18 @@ export const getStakersFAQ = (t: Translate) => {
     },
     {
       question: t('stakers.two.question'),
-      answer: t('stakers.two.answer'),
+      answer: (
+        <Trans
+          i18nKey="faq:stakers.two.answer"
+          components={[
+            <a
+              href="https://www.forbole.com/stake-now"
+              target="_blank"
+              rel="noreferrer"
+            />,
+          ]}
+        />
+      ),
     },
     {
       question: t('stakers.three.question'),

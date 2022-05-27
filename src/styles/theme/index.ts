@@ -60,6 +60,11 @@ export const common: ThemeOptions = {
       textTransform: 'none',
       fontWeight: 600,
     },
+    subtitle2: {
+      fontSize: '0.875rem',
+      textTransform: 'uppercase',
+      fontWeight: 600,
+    },
   },
   mixins: {
     gradientBackground: {

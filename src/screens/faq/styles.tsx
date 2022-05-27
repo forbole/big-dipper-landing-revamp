@@ -5,7 +5,7 @@ export const useStyles = () => {
     return ({
       root: {
         '& .title': {
-          ...theme.mixins.headerGlow,
+          color: theme.palette.custom.general.white,
         },
         '& .header__wrapper': {
           display: 'flex',
@@ -30,7 +30,7 @@ export const useStyles = () => {
         display: 'none',
         [theme.breakpoints.up('lg')]: {
           display: 'flex',
-          marginRight: theme.spacing(2),
+          marginRight: theme.spacing(4),
         },
       },
     });

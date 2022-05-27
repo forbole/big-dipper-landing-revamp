@@ -6,6 +6,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import classnames from 'classnames';
+import classNames from 'classnames';
 import { MenuType } from '../../types';
 import { useMenuMobile } from './hooks';
 import { useStyles } from './styles';
@@ -51,6 +52,9 @@ const MenuMobile: React.FC<MenuType & ComponentDefault> = (props) => {
               }}
               disableRipple
               key={x}
+              className={classNames({
+                active: i === props.selected,
+              })}
             >
               <Typography variant="h5">
                 {x}

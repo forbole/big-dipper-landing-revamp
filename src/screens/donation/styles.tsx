@@ -6,8 +6,7 @@ export const useStyles = () => {
       return ({
         root: {
           '& .title': {
-            ...theme.mixins.headerGlow,
-            marginBottom: theme.spacing(2),
+            marginBottom: theme.spacing(3),
             textAlign: 'center',
             [theme.breakpoints.up('lg')]: {
               marginBottom: theme.spacing(2),
@@ -16,13 +15,11 @@ export const useStyles = () => {
           },
           '& .description': {
             marginBottom: theme.spacing(4),
-            color: theme.palette.custom.fonts.two,
           },
           '& .address__container': {
             display: 'grid',
             gridGap: theme.spacing(3),
             textAlign: 'center',
-            color: theme.palette.custom.fonts.three,
             [theme.breakpoints.up('lg')]: {
               gridTemplateColumns: 'repeat(3, 1fr)',
               gridGap: theme.spacing(4),

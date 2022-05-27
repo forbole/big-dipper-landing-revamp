@@ -68,7 +68,11 @@ export const common: ThemeOptions = {
   },
   mixins: {
     gradientBackground: {
-      background: 'conic-gradient(from 90deg at 60.16% 0%, #120704 0deg, #21080B 29.71deg, #20080B 32.94deg, #110605 112.44deg, #120704 360deg)',
+      // background: 'radial-gradient(96.87% 50% at 50% 3.27%, #0F0B3D 0%, #310627 17.19%, #2C0632 30.21%, #0F072F 54.69%, #040211 88.03%)',
+      background: 'radial-gradient(96.87% 50% at 50% -2.73%, #0F0B3D 0%, #310627 17.19%, #2C0632 28.21%, #0F072F 59.69%, #040211 88.03%)',
+      '@media (min-width: 768px)': {
+        background: 'radial-gradient(96.87% 96.73% at 50% 3.27%, #0F0B3D 0%, #310627 17.19%, #2C0632 30.21%, #0F072F 54.69%, #040211 88.03%)',
+      },
     },
     headerGlow: {
       textShadow: '0px 0px 24px rgba(146, 85, 32, 0.8)',
@@ -78,7 +82,7 @@ export const common: ThemeOptions = {
     button: {
       padding: '0.75rem 1rem',
       borderRadius: '200px',
-      background: 'linear-gradient(180deg, #FF6E7F 0%, #F76A65 100%)',
+      background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
       color: '#FEE6E5',
       transition: '0.3s',
       '&:hover': {
@@ -99,7 +103,7 @@ export const common: ThemeOptions = {
   palette: {
     type: 'dark',
     secondary: {
-      main: '#FF6E7F',
+      main: '#F6504B',
       contrastText: '#FFFFFF',
     },
     text: {
@@ -116,7 +120,7 @@ export const common: ThemeOptions = {
         three: '#FFEAED',
         four: '#FEE6E5',
         five: '#FCCDCC',
-        six: '#FF6E7F',
+        six: '#F6504B',
       },
     },
   },

@@ -63,6 +63,8 @@
       }
   ],
   "rules": {
+      "jsx-a11y/control-has-associated-label": "warn",
+      "jsx-a11y/anchor-has-content": "warn",
       "react/require-default-props": "warn",
       "max-len": "warn",
       "import/no-extraneous-dependencies": "off",

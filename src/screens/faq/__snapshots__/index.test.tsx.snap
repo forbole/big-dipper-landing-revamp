@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FAQ matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="Layout"
+  >
+    <div
+      data-testid="SectionBox"
+    >
+      <div
+        class="makeStyles-root"
+        data-testid="SectionLimit"
+      >
+        <div
+          class="header__wrapper"
+        >
+          <h2
+            class="MuiTypography-root title MuiTypography-h2"
+          >
+            faq
+          </h2>
+          <div
+            class="makeStyles-menuMobile"
+            data-testid="MenuMobile"
+            items="blockchain.title,stakers.title,validators.title,governance.title"
+          />
+        </div>
+        <div
+          class="content__wrapper"
+        >
+          <div
+            class="makeStyles-menuDesktop"
+            data-testid="MenuDesktop"
+            items="blockchain.title,stakers.title,validators.title,governance.title"
+          />
+          <div
+            class="makeStyles-content"
+            content="[object Object],[object Object]"
+            data-testid="Content"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

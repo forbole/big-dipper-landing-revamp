@@ -13,3 +13,13 @@ html {
   *:after {
     box-sizing: border-box;
   }
+
+a {
+  color: #F6504B;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgba(255,110,127, 0.7);
+}

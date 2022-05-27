@@ -6,7 +6,7 @@ export const useStyles = () => {
       return ({
         root: {
           overflow: 'auto',
-          padding: theme.spacing(12, 3),
+          padding: theme.spacing(6, 3),
           [theme.breakpoints.up('lg')]: {
             '&.main': {
               padding: theme.spacing(8),

@@ -25,8 +25,14 @@
       "@components": [
         "src/components"
       ],
+      "@icons": [
+        "src/components/icons"
+      ],
       "@mocks": [
         "tests/mocks"
+      ],
+      "@utils/*": [
+        "src/utils/*"
       ]
     }
   },

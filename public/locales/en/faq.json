@@ -1,0 +1,97 @@
+{
+  "faq": "FAQs",
+  "blockchain": {
+    "title": "Blockchain",
+    "one": {
+      "question": "What is Proof-of-Stake blockchain?",
+      "answer": "Blockchain is a distributed digital ledger where all transaction data is recorded in multiple nodes to collectively ensure the transparency and accuracy. <0>Proof-of-Stake</0> is a blockchain consensus mechanism to prevent Sybil attacks and incentivise validators to behave correctly. Each validator commits tokens, aka “stakes”, to validate transactions and adds blocks into existence."
+    },
+    "two": {
+      "question": "What is inflation?",
+      "answer": "Amount of tokens of a Proof-of-Stake blockchain will grow annually, which is called inflation. The growth rate is the inflation rate of the chain."
+    }
+  },
+  "stakers": {
+    "title": "Stakers",
+    "one": {
+      "question": "What is staking?",
+      "answer": "The action that token holders stake their tokens to validators to secure the network is called staking. Staked tokens are eligible to receive staking rewards. Newly minted tokens and transactions fees are given out as rewards to bonded staking token holders.\n\nStakers stake their staking power to validators, but that does not mean the validators possess or have custody of the tokens delegated to them. In other words, validators cannot steal or take away stakers’ tokens. Your staked amount of tokens will not be decreased in most situations, however, if your validator is punished by slashing, your staked token is at risk of being slashed too (see below for “slashing”)."
+    },
+    "two": {
+      "question": "What is staking reward and how often are the rewards distributed?",
+      "answer": "Newly minted tokens and transaction fees are given out as rewards to bonded staking token holders. The rewards rate varies depending on the total amount of staked tokens, and each network has their specific settings.\n\nYou can calculate your staking rewards <0>here</0>. You can also view your real-time rewards on each Big Dipper explorer. Or if you are interested in the detailed calculation, please refer to the whitepapers or tokenomics papers of each network, which can be found on their websites.\n\nStaking rewards should be “claimed” or “withdrawn” before becoming available in your account. This is a type of transaction so you would need to pay for the transaction when claiming rewards. While staking new tokens, your rewards will automatically be claimed into your available balance. The rewards are also automatically withdrawn to your account if there is a network upgrade."
+    },
+    "three": {
+      "question": "What are delegating, undelegating, and redelegating",
+      "answer": "The action of staking tokens is called delegating. The reverse action is called undelegating. If you transfer your delegations from one validator to another, it is called redelegating your tokens. Your rewards will keep calculating if you choose to redelegate. Your rewards will stop calculating once you choose undelegating.\n\nThere is no minimum time required before delegating or re-delegating after degated your tokens. But do make sure you have sufficient funds in your available balance to pay for the transaction fee."
+    },
+    "four": {
+      "question": "What are staking, unstaking, and restaking?",
+      "answer": "The action of staking tokens is called staking. The reverse action is called unstaking. If you transfer your staked tokens from one validator to another, it is called restaking your tokens. Your rewards will keep calculating if you choose to restake. Your rewards will stop calculating once you choose unstaking.\n\nThere is no minimum time required before staking or re-staking after staked your tokens. But do make sure you have sufficient funds in your available balance to pay for the transaction fee."
+    },
+    "five": {
+      "question": "What are bonding and unbonding?",
+      "answer": "When tokens are staked (also known as delegated), these tokens are bonded. Bonded tokens are not liquidated, meaning they can neither be spent, nor transferred.\n\nThe reverse action of bonding is unbonding. However, to protect the overall security of the blockchain, unbonded tokens are not liquidated right away, instead, there is an unbonding period, during which the tokens are not available to use yet, nor are they eligible for rewards. The unbonding period varies in each blockchain network, please refer to their tokenomics before staking. Most Cosmos-SDK based blockchains adopt a 21-day unbonding schedule. The purpose of a long unbonding period is to prevent long range attack."
+    }
+  },
+  "validators": {
+    "title": "Validators",
+    "one": {
+      "question": "How to stake, unstake, restake your tokens?",
+      "answer": "Some wallets provide token management services, such as Ledger and Kepler. If you are using Ledger, you could also connect your Ledger with Big Dipper and perform needed transactions.\n\nFor experienced users, you could also execute transactions via Command Line Interface (CLI).\n\nAll transaction history and data can be viewed on each Big Dipper explorer respectively."
+    },
+    "two": {
+      "question": "What are Validators?",
+      "answer": "Proof-of-Stake blockchains usually rely on a set of full nodes to secure the network.\n\nThese nodes are often called validators. Their functions are validating transactions and proposing new blocks.\n\nValidators receive block rewards, commission fee, and transaction fee in exchange for their services for the blockchains. Validators are usually required to vote on governance proposals (some exchange validators are exempted from this requirement)."
+    },
+    "three": {
+      "question": "Who can be validators?",
+      "answer": "In theory, anyone can. In practice, anyone with qualified infrastructure and can meet certain requirements, they can run validators nodes. Each network has a different threshold of being validators."
+    },
+    "four": {
+      "question": "How to choose a validator?",
+      "answer": "Stakers can choose any validator(s) to stake their tokens. Some of the indexes can help when making the decision are:",
+      "children": {
+        "one": {
+          "title": "Commission rate",
+          "description": "The amount the validator charges for their service. The commission max change rate indicates the maximum daily increase of the validator's commission, the maximum commission rate indicates the highest rate this validator can charge. The commission max change rate indicates and the maximum commission rate cannot be changed by the validating operator."
+        },
+        "two": {
+          "title": "Amount of Self-bonded tokens",
+          "description": "Indicating the validator's skin in the game. Some networks have a minimum self-bond amount requirement for each validator. If the validator's self-bonded stake falls below this limit, their entire staking pool (i.e. all its delegators) will unbond. This parameter exists as a safeguard for stakers."
+        },
+        "three": {
+          "title": "Amount of staked tokens",
+          "description": "Usually, a higher amount of staked tokens implying that more token holders trust this validator."
+        },
+        "four": {
+          "title": "Up-time",
+          "description": "The availability of a validator node. A certain extent of unavailability will result in slashing."
+        },
+        "five": {
+          "title": "Slashing",
+          "description": "If a validator misbehaves and commits frauds, its bonded stake along with its delegators' stake and will be slashed. Stakers have to pay attention to a potential validator's slashing history as the staked token would be in danger if a slashing event happens."
+        },
+        "six": {
+          "title": "Governance participation",
+          "description": "Validator's past votes on governance proposals indicate their preference and visions. Stakers usually choose validators that share similar ideas about the governance of a said blockchain with themselves.\n\nOverall, when choosing a validator, stakers should study this validator's track record to make a better decision. Keep in mind that voting power ranking is not the only index to consider when finding validators and decentralization (voting powers spreading among validators) in the community are one of the merits we would like to achieve together."
+        }
+      }
+    }
+  },
+  "governance": {
+    "title": "Governance",
+    "one": {
+      "question": "What are governance proposals and on-chain governance?",
+      "answer": "In most networks, anyone can submit a text proposal to the network, and with some certain amount of deposit, the said proposal can enter the voting period. In the voting period, stakers and validators can cast their vote. Votes are calculated as voting powers. If the quorum is not reached when the voting period concludes, the deposited tokens will not be refunded and the proposal is denied automatically. If all the process is conducted on and recorded on the blockchain, it is called on-chain governance, as opposed to off-chain governance."
+    },
+    "two": {
+      "question": "What is voting power and how to obtain them?",
+      "answer": "When staking tokens are bonded, a proportional amount of voting power is obtained. This voting power is transferred to the validators you stake your tokens to. A validator's voting power is proportional to the staked tokens to them, including self-bonded and those from stakers.\n\nUsually, validators will vote on behalf of the stakers, however, if a staker varies in opinions with his validator, he then can overwrite the votes corresponding to his own voting power."
+    },
+    "three": {
+      "question": "How to vote on a governance proposal?",
+      "answer": "Any staker can vote on governance proposals of the blockchains that issued their bonded tokens. For example, ATOM stakers can vote on Cosmos Hub proposals, KAVA stakers can vote on Kava proposals, etc. The easiest way to vote is go to the proposal page on Big Dipper, sign in with your wallet, and vote accordingly. Here is a <0>video guide</0> on proposal voting via Big Dipper."
+    }
+  }
+}

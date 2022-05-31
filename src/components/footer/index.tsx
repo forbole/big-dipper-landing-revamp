@@ -1,13 +1,11 @@
 import React from 'react';
+import Trans from 'next-translate/Trans';
 import classNames from 'classnames';
 import { Typography, Divider } from '@material-ui/core';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
-import BDLogo from '@assets/big-dipper-red.svg';
 import { useStyles } from './styles';
-import {
-  bdLinks, forboleLinks, socialLinks, termsLinks,
-} from './utils';
+import { socialLinks, termsLinks } from './utils';
 
 const Footer = () => {
   const classes = useStyles();
@@ -15,100 +13,59 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className={classes.root}>
-      <div className="top">
-        <div className="internal__wrapper">
-          <BDLogo className="logo" />
-          <div>
-            {bdLinks.map((x) => {
-              return (
-                <Link
-                  key={x.key}
-                  href={x.url}
-                  passHref
-                >
-                  <Typography
-                    variant="body2"
-                    component="a"
-                    className="link__item bd__item"
-                    target={x.external ? '_blank' : '_self'}
-                  >
-                    {t(x.key)}
-                  </Typography>
-                </Link>
-              );
-            })}
-          </div>
-          <Divider className={classNames('divider', 'mobile')} />
-        </div>
-        <div className="forbole__wrapper">
-          <Typography variant="subtitle2" className="forbole__title">forbole</Typography>
-          <div>
-            {forboleLinks.map((x) => {
-              return (
-                <Link
-                  key={x.key}
-                  href={x.url}
-                  passHref
-                >
-                  <Typography
-                    variant="body2"
-                    component="a"
-                    className="link__item forbole__item"
-                    target={x.external ? '_blank' : '_self'}
-                  >
-                    {t(x.key)}
-                  </Typography>
-                </Link>
-              );
-            })}
-          </div>
-          <Divider className={classNames('divider', 'mobile')} />
-        </div>
+      <div className="icons__wrapper">
+        {socialLinks.map((x) => {
+          return (
+            <a
+              key={x.className}
+              href={x.url}
+              target="_blank"
+              rel="noreferrer"
+              className={`social ${x.className}`}
+            >
+              {x.component}
+            </a>
+          );
+        })}
       </div>
-      <Divider className={classNames('divider', 'desktop')} />
-      <div className="bottom">
-        <div className="icons__wrapper">
-          {socialLinks.map((x) => {
+      <div className="terms__wrapper">
+        <Typography variant="caption">{t('copyright', { year })}</Typography>
+        <div className="terms__links">
+          {termsLinks.map((x) => {
             return (
-              <a
-                key={x.className}
-                href={x.url}
-                target="_blank"
-                rel="noreferrer"
-                className={`social ${x.className}`}
-              >
-                {x.component}
-              </a>
+              <React.Fragment key={x.key}>
+                <Link
+                  href={x.url}
+                  passHref
+                >
+                  <Typography
+                    variant="caption"
+                    component="a"
+                    className="link__item link__item--caption"
+                    target={x.external ? '_blank' : '_self'}
+                  >
+                    {t(x.key)}
+                  </Typography>
+                </Link>
+                <Typography variant="caption" className="terms--dash">
+                  |
+                </Typography>
+              </React.Fragment>
             );
           })}
         </div>
-        <div className="terms__wrapper">
-          <div className="terms__links">
-            {termsLinks.map((x) => {
-              return (
-                <React.Fragment key={x.key}>
-                  <Link
-                    href={x.url}
-                    passHref
-                  >
-                    <Typography
-                      variant="caption"
-                      component="a"
-                      className="link__item link__item--caption"
-                      target={x.external ? '_blank' : '_self'}
-                    >
-                      {t(x.key)}
-                    </Typography>
-                  </Link>
-                  <Typography variant="caption" className="terms--dash">
-                    |
-                  </Typography>
-                </React.Fragment>
-              );
-            })}
-          </div>
-          <Typography variant="caption">{t('copyright', { year })}</Typography>
-        </div>
+        <Typography variant="caption">
+          <Trans
+            i18nKey="common:productOf"
+            components={[
+              <a
+                href="https://www.forbole.com"
+                target="_blank"
+                rel="noreferrer"
+              />,
+            ]}
+          />
+        </Typography>
       </div>
     </footer>
   );

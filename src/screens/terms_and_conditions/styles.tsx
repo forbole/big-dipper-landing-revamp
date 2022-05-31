@@ -17,6 +17,26 @@ export const useStyles = () => {
           '& .intro': {
             marginBottom: theme.spacing(2),
           },
+
+          '& .MuiTypography-h3': {
+            marginBottom: theme.spacing(2),
+          },
+
+          '& .MuiTypography-h4': {
+            marginBottom: theme.spacing(1),
+          },
+          '& .key': {
+            fontWeight: 500,
+          },
+          '& ul': {
+            marginLeft: theme.spacing(2),
+          },
+          '& li': {
+            marginBottom: theme.spacing(2),
+          },
+          '& .description': {
+            marginBottom: theme.spacing(2),
+          },
         },
       });
     },

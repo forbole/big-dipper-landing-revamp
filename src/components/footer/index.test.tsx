@@ -14,10 +14,10 @@ describe('Footer', () => {
       </MockTheme>,
     );
     expect(screen.getByText(
-      /about/i,
+      /productOf/i,
     )).toBeInTheDocument();
     expect(screen.getByText(
-      /docs/i,
+      /privacyPolicy/i,
     )).toBeInTheDocument();
     expect(container.querySelector('footer')).not.toBeNull();
     expect(container).toMatchSnapshot();

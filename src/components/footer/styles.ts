@@ -32,8 +32,35 @@ export const useStyles = () => {
           '& .terms--dash': {
             margin: theme.spacing(0, 1),
           },
-          '& .terms--dash:last-child': {
+          '& .terms--dash.desktop': {
             display: 'none',
+          },
+          [theme.breakpoints.up('md')]: {
+            '& .icons__wrapper': {
+              justifyContent: 'center',
+            },
+            '& .social': {
+              margin: theme.spacing(0, 1.5),
+            },
+          },
+          [theme.breakpoints.up('lg')]: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            '& .icons__wrapper': {
+              paddingLeft: 0,
+              marginBottom: 0,
+            },
+            '& .social:first-child': {
+              marginLeft: 0,
+            },
+            '& .terms__wrapper': {
+              flexDirection: 'row',
+              alignItems: 'center',
+            },
+            '& .terms--dash.desktop': {
+              display: 'inline',
+            },
           },
         },
       });

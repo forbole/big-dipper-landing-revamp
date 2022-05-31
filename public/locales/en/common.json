@@ -10,5 +10,6 @@
   "blog": "Blog",
   "copyright": "Copyright © Forbole {{year}}",
   "termsAndConditions": "Terms and Conditions",
-  "privacyPolicy": "Privacy Policy"
+  "privacyPolicy": "Privacy Policy",
+  "productOf": "A Product of <0>Forbole</0>"
 }

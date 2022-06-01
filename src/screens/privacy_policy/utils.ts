@@ -90,3 +90,84 @@ export const cookies = [
     purpose: 'These Cookies are used to track information about traffic to the Website and how users use the Website. The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the Website. We may also use these Cookies to test new pages, features or new functionality of the Website to see how our users react to them',
   },
 ];
+
+export const dataUse = [
+  {
+    key: 'To provide and maintain our Service - ',
+    details: 'including to monitor the usage of our Service',
+  },
+  {
+    key: 'To manage Your Account - ',
+    details: 'to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user',
+  },
+  {
+    key: 'For the performance of a contract - ',
+    details: 'the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service',
+  },
+  {
+    key: 'To contact You - ',
+    details: "To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation",
+  },
+  {
+    key: 'To provide You - ',
+    details: 'with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information',
+  },
+  {
+    key: 'To manage Your requests - ',
+    details: 'To attend and manage Your requests to Us',
+  },
+  {
+    key: 'For business transfers - ',
+    details: 'We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred',
+  },
+  {
+    key: 'For other purposes - ',
+    details: 'We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience',
+  },
+];
+
+export const dataUseTwo = [
+  {
+    key: 'With Service Providers - ',
+    details: 'We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You',
+  },
+  {
+    key: 'For business transfers - ',
+    details: 'We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company',
+  },
+  {
+    key: 'With Affiliates - ',
+    details: 'We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us',
+  },
+  {
+    key: 'With business partners - ',
+    details: 'We may share Your information with Our business partners to offer You certain products, services or promotions',
+  },
+  {
+    key: 'With other users - ',
+    details: 'when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. If You interact with other users or register through a Third-Party Social Media Service, Your contacts on the Third-Party Social Media Service may see Your name, profile, pictures and description of Your activity. Similarly, other users will be able to view descriptions of Your activity, communicate with You and view Your profile',
+  },
+  {
+    key: 'With Your consent - ',
+    details: 'We may disclose Your personal information for any other purpose with Your consent',
+  },
+];
+
+export const legalRequirements = [
+  'Comply with a legal obligation',
+  'Protect and defend the rights or property of the Company',
+  'Prevent or investigate possible wrongdoing in connection with the Service',
+  'Protect the personal safety of Users of the Service or the public',
+  'Protect against legal liability',
+];
+
+export const analytics = [
+  {
+    key: 'Google Analytics',
+    details: 'Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.\n\nYou can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js and dc.js) from sharing information with Google Analytics about visits activity.\n\nFor more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: https://policies.google.com/privacy',
+  },
+  {
+    key: 'Matomo',
+    details: 'Matomo is a web analytics service. You can visit their Privacy Policy page here: https://matomo.org/privacy-policy',
+  },
+];

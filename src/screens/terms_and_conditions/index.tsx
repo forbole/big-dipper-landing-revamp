@@ -45,6 +45,9 @@ const TermsAndConditions = () => {
                       <span className="key">{x.key}</span>
                       {' '}
                       {x.details}
+                      {x.key === 'Website' && (
+                        <a href="https://bigdipper.live" target="_blank" rel="noreferrer">https://bigdipper.live</a>
+                      )}
                     </Typography>
                   );
                 })}

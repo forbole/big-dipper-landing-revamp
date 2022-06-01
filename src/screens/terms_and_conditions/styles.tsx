@@ -20,10 +20,14 @@ export const useStyles = () => {
 
           '& .MuiTypography-h3': {
             marginBottom: theme.spacing(2),
+            color: theme.palette.secondary.main,
+            '&:not(:first-child)': {
+              marginTop: theme.spacing(6),
+            },
           },
 
           '& .MuiTypography-h4': {
-            marginBottom: theme.spacing(1),
+            marginBottom: theme.spacing(2),
           },
           '& .key': {
             fontWeight: 500,
@@ -35,7 +39,7 @@ export const useStyles = () => {
             marginBottom: theme.spacing(2),
           },
           '& .description': {
-            marginBottom: theme.spacing(2),
+            marginBottom: theme.spacing(3),
           },
           '& .indent': {
             marginLeft: theme.spacing(2),

@@ -47,24 +47,24 @@ export const forboleLinks: LinkType[] = [
 
 export const socialLinks: IconType[] = [
   {
-    component: <TelegramIcon />,
-    className: 'telegram',
-    url: LINKS.TELEGRAM,
-  },
-  {
-    component: <LinkedinIcon />,
-    className: 'linkedin',
-    url: LINKS.LINKEDIN,
-  },
-  {
     component: <TwitterIcon />,
     className: 'twitter',
     url: LINKS.TWITTER,
   },
   {
+    component: <TelegramIcon />,
+    className: 'telegram',
+    url: LINKS.TELEGRAM,
+  },
+  {
     component: <GithubIcon />,
     className: 'github',
     url: LINKS.GITHUB,
+  },
+  {
+    component: <LinkedinIcon />,
+    className: 'linkedin',
+    url: LINKS.LINKEDIN,
   },
 ];
 

@@ -5,6 +5,7 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
+          wordBreak: 'break-word',
           '& .title': {
             marginBottom: theme.spacing(2),
             textAlign: 'center',
@@ -54,6 +55,9 @@ export const useStyles = () => {
           },
           '& .indent-2': {
             marginLeft: theme.spacing(4),
+          },
+          '& .cookie': {
+            marginBottom: theme.spacing(2),
           },
         },
       });

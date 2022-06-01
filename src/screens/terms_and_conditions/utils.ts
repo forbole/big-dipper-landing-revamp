@@ -33,7 +33,7 @@ export const definitions = [
   },
   {
     key: 'Website',
-    details: 'refers to Big Dipper, accessible from https://bigdipper.live',
+    details: 'refers to Big Dipper, accessible from ',
   },
   {
     key: 'You',

@@ -1,7 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
-import Trans from 'next-translate/Trans';
 import { Typography } from '@material-ui/core';
 import {
   Layout,
@@ -27,29 +25,31 @@ const TermsAndConditions = () => {
             <Typography variant="h3">
               Interpretation and Definitions
             </Typography>
-            <Typography variant="h4">
-              Interpretation
-            </Typography>
-            <Typography className="description">
-              The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-            </Typography>
-            <Typography variant="h4">
-              Definitions
-            </Typography>
-            <Typography className="description">
-              For the purposes of these Terms and Conditions:
-            </Typography>
-            <ul>
-              {definitions.map((x) => {
-                return (
-                  <Typography component="li" key={x.key}>
-                    <span className="key">{x.key}</span>
-                    {' '}
-                    {x.details}
-                  </Typography>
-                );
-              })}
-            </ul>
+            <div className="indent">
+              <Typography variant="h4">
+                Interpretation
+              </Typography>
+              <Typography className="description">
+                The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+              </Typography>
+              <Typography variant="h4">
+                Definitions
+              </Typography>
+              <Typography className="description">
+                For the purposes of these Terms and Conditions:
+              </Typography>
+              <ul>
+                {definitions.map((x) => {
+                  return (
+                    <Typography component="li" key={x.key}>
+                      <span className="key">{x.key}</span>
+                      {' '}
+                      {x.details}
+                    </Typography>
+                  );
+                })}
+              </ul>
+            </div>
             <Typography variant="h3">
               Acknowledgment
             </Typography>
@@ -158,25 +158,27 @@ const TermsAndConditions = () => {
             <Typography variant="h3">
               Severability and Waiver
             </Typography>
-            <Typography variant="h4">
-              Severability
-            </Typography>
-            <Typography className="description">
-              If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
-            </Typography>
-            <Typography variant="h4">
-              Waiver
-            </Typography>
-            <Typography className="description">
-              Except as provided herein, the failure to exercise a right or to require performance of an obligation under this Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall be the waiver of a breach constitute a waiver of any subsequent breach.
-            </Typography>
-            <Typography variant="h4">
+            <div className="indent">
+              <Typography variant="h4">
+                Severability
+              </Typography>
+              <Typography className="description">
+                If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+              </Typography>
+              <Typography variant="h4">
+                Waiver
+              </Typography>
+              <Typography className="description">
+                Except as provided herein, the failure to exercise a right or to require performance of an obligation under this Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall be the waiver of a breach constitute a waiver of any subsequent breach.
+              </Typography>
+            </div>
+            <Typography variant="h3">
               Translation Interpretation
             </Typography>
             <Typography className="description">
               These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
             </Typography>
-            <Typography variant="h4">
+            <Typography variant="h3">
               Changes to These Terms and Conditions
             </Typography>
             <Typography className="description">
@@ -185,7 +187,7 @@ const TermsAndConditions = () => {
             <Typography className="description">
               By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
             </Typography>
-            <Typography variant="h4">
+            <Typography variant="h3">
               Contact Us
             </Typography>
             <Typography className="description">

@@ -37,6 +37,9 @@ export const useStyles = () => {
           '& .description': {
             marginBottom: theme.spacing(2),
           },
+          '& .indent': {
+            marginLeft: theme.spacing(2),
+          },
         },
       });
     },

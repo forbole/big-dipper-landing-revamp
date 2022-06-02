@@ -7,8 +7,10 @@ const Nav = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <BDLogo className="logo" />
-      <HamburgerMenu className="hamburgerMenu" />
+      <div className="wrapper">
+        <BDLogo className="logo" />
+        <HamburgerMenu className="hamburgerMenu" />
+      </div>
     </div>
   );
 };

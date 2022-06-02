@@ -1,10 +1,11 @@
 import React from 'react';
+import classNames from 'classnames';
 import { useStyles } from './styles';
 
-const Nav = () => {
+const Nav: React.FC<ComponentDefault> = (props) => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={classNames(classes.root, props.className)}>
       Nav
     </div>
   );

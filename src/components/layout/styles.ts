@@ -29,6 +29,12 @@ export const useStyles = () => {
         content: {
           flex: 1,
         },
+        footer: {
+          zIndex: 1,
+        },
+        nav: {
+          zIndex: 1,
+        },
       });
     },
   )();

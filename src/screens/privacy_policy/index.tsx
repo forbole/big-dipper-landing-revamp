@@ -106,6 +106,9 @@ const PrivacyPolicy = () => {
                         <span className="key">{x.key}</span>
                         {' '}
                         {x.details}
+                        {x.key === 'Flash Cookies - ' && (
+                        <a href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_" target="_blank" rel="noreferrer">https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_</a>
+                        )}
                       </Typography>
                     );
                   })}
@@ -265,6 +268,12 @@ const PrivacyPolicy = () => {
                       </Typography>
                       <Typography className="description">
                         {x.details}
+                        {x.key === 'Google Analytics' && (
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">https://policies.google.com/privacy</a>
+                        )}
+                        {x.key === 'Matomo' && (
+                        <a href="https://matomo.org/privacy-policy" target="_blank" rel="noreferrer">https://matomo.org/privacy-policy</a>
+                        )}
                       </Typography>
                     </React.Fragment>
                   );

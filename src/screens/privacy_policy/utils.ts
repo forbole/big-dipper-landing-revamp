@@ -56,7 +56,7 @@ export const trackingDefinitions = [
   },
   {
     key: 'Flash Cookies - ',
-    details: 'Certain features of our Service may use local stored objects (or Flash Cookies) to collect and store information about Your preferences or Your activity on our Service. Flash Cookies are not managed by the same browser settings as those used for Browser Cookies. For more information on how You can delete Flash Cookies, please read "Where can I change the settings for disabling, or deleting local shared objects?" available at https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_',
+    details: 'Certain features of our Service may use local stored objects (or Flash Cookies) to collect and store information about Your preferences or Your activity on our Service. Flash Cookies are not managed by the same browser settings as those used for Browser Cookies. For more information on how You can delete Flash Cookies, please read "Where can I change the settings for disabling, or deleting local shared objects?" available at ',
   },
   {
     key: 'Web Beacons - ',
@@ -164,10 +164,10 @@ export const legalRequirements = [
 export const analytics = [
   {
     key: 'Google Analytics',
-    details: 'Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.\n\nYou can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js and dc.js) from sharing information with Google Analytics about visits activity.\n\nFor more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: https://policies.google.com/privacy',
+    details: 'Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.\n\nYou can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js and dc.js) from sharing information with Google Analytics about visits activity.\n\nFor more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: ',
   },
   {
     key: 'Matomo',
-    details: 'Matomo is a web analytics service. You can visit their Privacy Policy page here: https://matomo.org/privacy-policy',
+    details: 'Matomo is a web analytics service. You can visit their Privacy Policy page here: ',
   },
 ];

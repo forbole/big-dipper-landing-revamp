@@ -21,6 +21,9 @@ const TermsAndConditions = () => {
             {t('termsAndConditions')}
           </Typography>
           <Typography className="intro">{t('intro')}</Typography>
+          <Typography className="intro">
+            Last updated: April 02, 2021
+          </Typography>
           <ContentBox>
             <Typography variant="h3">
               Interpretation and Definitions

@@ -5,18 +5,23 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
-          height: '30px',
+          padding: theme.spacing(5, 4),
           display: 'flex',
           '& .wrapper': {
             margin: 'auto',
             maxWidth: '1024px',
             display: 'flex',
+            alignItems: 'center',
             // flexBox: 'space-between',
             justifyContent: 'space-between',
+            // justifyContent: 'center',
           },
           '& .logo': {
-            width: '150px',
+            height: '36px',
             marginBottom: theme.spacing(5),
+          },
+          '& .hamburgerMenu': {
+            height: '60px',
           },
         },
       });

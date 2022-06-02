@@ -68,7 +68,10 @@ export const common: ThemeOptions = {
   },
   mixins: {
     gradientBackground: {
-      background: 'radial-gradient(circle at 50% -5vw, #0F0B3D, #310627, #2C0632, #0F072F, #040211 60vw)',
+      background: 'url(/images/background/back-1.svg), url(/images/background/back-2.svg), url(/images/background/back-3.svg),radial-gradient(circle at 50% -5vw, #0F0B3D, #310627, #2C0632, #0F072F, #040211 60vw)',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100%',
+      backgroundPosition: 'center 0%, center 800px, center bottom',
     },
     headerGlow: {
       textShadow: '0px 0px 24px rgba(146, 85, 32, 0.8)',

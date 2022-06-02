@@ -7,12 +7,12 @@ import { SectionLimit } from '@components';
 import { useStyles } from './styles';
 import { socialLinks, termsLinks } from './utils';
 
-const Footer = () => {
+const Footer: React.FC<ComponentDefault> = (props) => {
   const classes = useStyles();
   const { t } = useTranslation('common');
   const year = new Date().getFullYear();
   return (
-    <footer>
+    <footer className={props.className}>
       <SectionLimit className={classes.root}>
         <div className="icons__wrapper">
           {socialLinks.map((x) => {

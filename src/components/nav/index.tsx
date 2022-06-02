@@ -1,11 +1,12 @@
 import React from 'react';
+import BDLogo from '@assets/big-dipper-red.svg';
 import { useStyles } from './styles';
 
 const Nav = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      Nav
+      <BDLogo className="logo" />
     </div>
   );
 };

@@ -9,15 +9,33 @@ export const useStyles = () => {
           '& .wrapper': {
             margin: 'auto',
             maxWidth: '1024px',
-            display: 'flex',
+            textAlign: 'center',
+            height: '60px',
             alignItems: 'center',
-            justifyContent: 'space-between',
           },
           '& .logo': {
             height: '36px',
+            margin: '0 auto',
+            display: 'inline-block',
           },
           '& .hamburgerMenu': {
             height: '60px',
+            float: 'right',
+          },
+          [theme.breakpoints.up('md')]: {
+            '& .wrapper': {
+              margin: 'auto',
+              maxWidth: '1024px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            },
+            '& .logo': {
+              height: '36px',
+            },
+            '& .hamburgerMenu': {
+              height: '60px',
+            },
           },
         },
       });

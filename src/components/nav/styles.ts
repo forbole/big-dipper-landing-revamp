@@ -9,9 +9,11 @@ export const useStyles = () => {
           '& .wrapper': {
             margin: 'auto',
             maxWidth: '1024px',
-            textAlign: 'center',
+            // textAlign: 'center',
             height: '60px',
+            display: 'flex',
             alignItems: 'center',
+            position: 'relative',
           },
           '& .logo': {
             height: '36px',
@@ -20,7 +22,10 @@ export const useStyles = () => {
           },
           '& .hamburgerMenu': {
             height: '60px',
-            float: 'right',
+            // float: 'right',
+            position: 'fixed',
+            right: theme.spacing(1),
+            top: theme.spacing(2),
           },
           [theme.breakpoints.up('md')]: {
             '& .wrapper': {
@@ -32,9 +37,6 @@ export const useStyles = () => {
             },
             '& .logo': {
               height: '36px',
-            },
-            '& .hamburgerMenu': {
-              height: '60px',
             },
           },
         },

@@ -5,11 +5,13 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: theme.breakpoints.limit,
           padding: theme.spacing(2, 1),
           '& .wrapper': {
             margin: 'auto',
             maxWidth: '1024px',
-            // textAlign: 'center',
             height: '60px',
             display: 'flex',
             alignItems: 'center',
@@ -22,10 +24,8 @@ export const useStyles = () => {
           },
           '& .hamburgerMenu': {
             height: '60px',
-            // float: 'right',
-            position: 'fixed',
-            right: theme.spacing(1),
-            top: theme.spacing(2),
+            position: 'absolute',
+            right: theme.spacing(0),
           },
           [theme.breakpoints.up('md')]: {
             '& .wrapper': {
@@ -37,6 +37,7 @@ export const useStyles = () => {
             },
             '& .logo': {
               height: '36px',
+              marginLeft: theme.spacing(0),
             },
           },
         },

@@ -37,7 +37,7 @@ export const useStyles = () => {
             },
             '& .logo': {
               height: '36px',
-              marginLeft: theme.spacing(0),
+              marginLeft: theme.spacing(1),
             },
           },
         },

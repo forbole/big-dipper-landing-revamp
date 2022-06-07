@@ -3,6 +3,7 @@ import BDLogo from '@assets/big-dipper-red.svg';
 import HamburgerMenu from '@assets/hamburger-menu.svg';
 import { SectionLimit } from '@components';
 import { useStyles } from './styles';
+import HamburgerIcon from './components/hamburgerIcon';
 
 const Nav = () => {
   const classes = useStyles();
@@ -11,7 +12,8 @@ const Nav = () => {
       <SectionLimit className={classes.root}>
         <div className="wrapper">
           <BDLogo className="logo" />
-          <HamburgerMenu className="hamburgerMenu" />
+          {/* <HamburgerMenu className="hamburgerMenu" /> */}
+          <HamburgerIcon open />
         </div>
       </SectionLimit>
     </div>

@@ -12,8 +12,6 @@ export const useStyles = () => {
           borderRadius: '12px',
           backdropFilter: 'blur(24px)',
           position: 'absolute',
-          //   top: '97px',
-          //   margin: '0 auto',
           zIndex: '999',
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -23,7 +21,8 @@ export const useStyles = () => {
           [theme.breakpoints.up('md')]: {
             width: '216px',
             top: '88px',
-
+            // left: '935px',
+            right: 'calc(calc(100vw - 1024px) / 2)',
           },
         },
       });

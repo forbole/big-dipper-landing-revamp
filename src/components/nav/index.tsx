@@ -15,8 +15,8 @@ const Nav = () => {
           <BDLogo className="logo" />
           <HamburgerMenu className="hamburgerMenu" />
           <HamburgerIcon open />
-          <DropdownMenu />
         </div>
+        <DropdownMenu />
       </SectionLimit>
     </div>
   );

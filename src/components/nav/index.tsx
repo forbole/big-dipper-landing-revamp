@@ -12,7 +12,7 @@ const Nav = () => {
       <SectionLimit className={classes.root}>
         <div className="wrapper">
           <BDLogo className="logo" />
-          {/* <HamburgerMenu className="hamburgerMenu" /> */}
+          <HamburgerMenu className="hamburgerMenu" />
           <HamburgerIcon open />
         </div>
       </SectionLimit>

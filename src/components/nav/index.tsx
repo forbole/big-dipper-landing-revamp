@@ -23,12 +23,11 @@ const Nav = () => {
           {/* <HamburgerMenu className="hamburgerMenu" /> */}
           <HamburgerIcon
             toggleHamburgerMenu={toggleHamburgerMenu}
-            toggle={isIcon}
+            isIcon={isIcon}
           />
         </div>
         <DropdownMenu
-          toggleHamburgerMenu={toggleHamburgerMenu}
-          toggle={isMenu}
+          isMenu={isMenu}
         />
       </SectionLimit>
     </div>

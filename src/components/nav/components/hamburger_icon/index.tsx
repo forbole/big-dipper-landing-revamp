@@ -4,7 +4,7 @@ import { useStyles } from './styles';
 const HamburgerIcon = (props: any) => {
   const classes = useStyles();
   const {
-    toggle,
+    isIcon,
     toggleHamburgerMenu,
   } = props;
 
@@ -14,7 +14,7 @@ const HamburgerIcon = (props: any) => {
       role="button"
       onClick={toggleHamburgerMenu}
     >
-      <div className={!props ? 'burger-menu open' : 'burger-menu'}>
+      <div className={isIcon ? 'burger-menu open' : 'burger-menu'}>
         <div className="bar1" key="b1" />
         <div className="bar2" key="b2" />
         <div className="bar3" key="b3" />

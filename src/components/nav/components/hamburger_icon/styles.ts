@@ -20,17 +20,17 @@ export const useStyles = () => {
             margin: '4px 0',
             transition: '0.4s',
           },
-        // '& .burger-menu.open, .bar1': {
-        //   // -webkitTransform: 'rotate(-45deg) translate(-4px, 4px)',
-        //   transform: 'rotate(-45deg) translate(-4px, 4px)',
-        // },
-        // '& .burger-menu.open, .bar2': {
-        //   opacity: '0',
-        // },
-        // '& .burger-menu.open, .bar3': {
-        //   // -webkit-transform: rotate(45deg) translate(-6px, -6px);
-        //   transform: 'rotate(45deg) translate(-6px, -6px)',
-        // },
+          '& .burger-menu.open, .bar1': {
+          // -webkitTransform: 'rotate(-45deg) translate(-4px, 4px)',
+            transform: 'rotate(-45deg) translate(-4px, 4px)',
+          },
+          // '& .burger-menu.open, .bar2': {
+          //   opacity: '0',
+          // },
+          // '& .burger-menu.open, .bar3': {
+          // // -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          //   transform: 'rotate(45deg) translate(-6px, -6px)',
+          // },
         },
       });
     },

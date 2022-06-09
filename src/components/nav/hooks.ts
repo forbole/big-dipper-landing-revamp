@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import * as R from 'ramda';
 
-export const useDropdownMenu = () => {
+export const useNav = () => {
   const [state, setState] = useState<{
     isIcon?: boolean;
     isMenu?: boolean
   }>({
-    isIcon: false,
+    isIcon: true,
     isMenu: false,
   });
 
@@ -15,17 +15,17 @@ export const useDropdownMenu = () => {
   };
 
   const toggleHamburgerMenu = () => {
-    // click hamburger icon to open modal and change hamburger menu
+    // click hamburger icon to open modal and change hamburger menu to show "X"
     if ((state.isIcon) || (state.isMenu)) {
       handleSetState({
         isIcon: false,
-        isMenu: false,
+        isMenu: true,
       });
     } else {
-      // click hamburger icon to close modal and change hamburger munu
+      // click hamburger icon to close modal and recover hamburger munu to default
       handleSetState({
         isIcon: true,
-        isMenu: true,
+        isMenu: false,
       });
     }
   };

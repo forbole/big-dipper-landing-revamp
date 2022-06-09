@@ -1,6 +1,6 @@
 import React from 'react';
 import BDLogo from '@assets/big-dipper-red.svg';
-import HamburgerMenu from '@assets/hamburger-menu.svg';
+// import HamburgerMenu from '@assets/hamburger-menu.svg';
 import { SectionLimit } from '@components';
 import { useStyles } from './styles';
 import HamburgerIcon from './components/hamburger_icon';
@@ -20,10 +20,16 @@ const Nav = () => {
       <SectionLimit className={classes.root}>
         <div className="wrapper">
           <BDLogo className="logo" />
-          <HamburgerMenu className="hamburgerMenu" />
-          <HamburgerIcon open />
+          {/* <HamburgerMenu className="hamburgerMenu" /> */}
+          <HamburgerIcon
+            toggleHamburgerMenu={toggleHamburgerMenu}
+            toggle={isIcon}
+          />
         </div>
-        <DropdownMenu />
+        <DropdownMenu
+          toggleHamburgerMenu={toggleHamburgerMenu}
+          toggle={isMenu}
+        />
       </SectionLimit>
     </div>
   );

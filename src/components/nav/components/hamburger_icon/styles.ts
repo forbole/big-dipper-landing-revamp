@@ -21,17 +21,17 @@ export const useStyles = () => {
             transition: '0.4s',
           },
 
-          '& .hamburger-change, .bar1': {
-          // -webkitTransform: 'rotate(-45deg) translate(-4px, 4px)',
-            transform: 'rotate(-45deg) translate(-4px, 4px)',
-          },
+          // '& .hamburger-change, .bar1': {
+          // // -webkitTransform: 'rotate(-45deg) translate(-4px, 4px)',
+          //   transform: 'rotate(-45deg) translate(-4px, 4px)',
+          // },
           '& .hamburger-change, .bar2': {
             opacity: '0',
           },
-          '& .hamburger-change, .bar3': {
-          // -webkit-transform: rotate(45deg) translate(-6px, -6px);
-            transform: 'rotate(45deg) translate(-6px, -6px)',
-          },
+          // '& .hamburger-change, .bar3': {
+          // // -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          //   transform: 'rotate(45deg) translate(-6px, -6px)',
+          // },
           '&.hamburger, .bar2': {
             opacity: '1',
           },

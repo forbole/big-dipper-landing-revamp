@@ -5,9 +5,16 @@ import { SectionLimit } from '@components';
 import { useStyles } from './styles';
 import HamburgerIcon from './components/hamburger_icon';
 import DropdownMenu from './components/dropdown_menu';
+import { useNav } from './hooks';
 
 const Nav = () => {
   const classes = useStyles();
+  const {
+    isIcon,
+    isMenu,
+    toggleHamburgerMenu,
+  } = useNav();
+
   return (
     <div>
       <SectionLimit className={classes.root}>

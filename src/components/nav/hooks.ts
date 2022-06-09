@@ -15,17 +15,16 @@ export const useNav = () => {
   };
 
   const toggleHamburgerMenu = () => {
-    console.log('enter toggleHamburgerMenu fucntion');
     // click hamburger icon to open modal and change hamburger menu to show "X"
     if ((state.isIcon) || (!state.isMenu)) {
-      console.log('situation 1');
+      console.log('open modal and change hamburger to X');
       handleSetState({
         isIcon: false,
         isMenu: true,
       });
     } else {
       // click hamburger icon to close modal and recover hamburger munu to default
-      console.log('situation 2');
+      console.log('close modal');
       handleSetState({
         isIcon: true,
         isMenu: false,

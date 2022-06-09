@@ -3,9 +3,17 @@ import { useStyles } from './styles';
 
 const HamburgerIcon = (props: any) => {
   const classes = useStyles();
+  const {
+    toggle,
+    toggleHamburgerMenu,
+  } = props;
 
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      role="button"
+      onClick={toggleHamburgerMenu}
+    >
       <div className={!props ? 'burger-menu open' : 'burger-menu'}>
         <div className="bar1" key="b1" />
         <div className="bar2" key="b2" />

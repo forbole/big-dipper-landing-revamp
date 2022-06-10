@@ -22,7 +22,7 @@ export const useStyles = () => {
           },
           '& .hamburger-X': {
             '& .bar2': {
-              visibility: 'hidden',
+              opacity: '0',
             },
             '& .bar1': {
               transform: 'rotate(-45deg) translate(-4px, 4px)',

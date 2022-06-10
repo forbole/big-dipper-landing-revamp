@@ -6,6 +6,7 @@ export const useStyles = () => {
       return ({
         root: {
           padding: theme.spacing(2, 0),
+          width: '272px',
           background: 'rgba(62, 35, 79, 0.7)',
           borderRadius: '12px',
           backdropFilter: 'blur(24px)',

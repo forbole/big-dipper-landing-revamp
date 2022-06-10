@@ -5,9 +5,7 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
-          padding: theme.spacing(2, 1),
-          height: '480px',
-          width: '272px',
+          padding: theme.spacing(2, 0),
           background: 'rgba(62, 35, 79, 0.7)',
           borderRadius: '12px',
           backdropFilter: 'blur(24px)',
@@ -27,8 +25,6 @@ export const useStyles = () => {
           [theme.breakpoints.up('lg')]: {
             right: 'calc(calc(100vw - 1024px) / 2)',
           },
-          '&.modal-open': {
-          },
           '&.modal-close': {
             display: 'none',
           },
@@ -39,5 +35,3 @@ export const useStyles = () => {
 
   return styles;
 };
-
-// hover to change item background color

@@ -1,7 +1,9 @@
 // internal
 export const HOME = '/';
+export const ALL_NETWORKS = '/all-networks';
 export const ABOUT = '/about';
 export const FAQ = '/faq';
+export const FEEDBACK = '/feedback';
 export const DONATION = '/donation';
 export const TERMS_AND_CONDITIONS = '/terms-and-conditions';
 export const PRIVACY_POLICY = '/privacy-policy';

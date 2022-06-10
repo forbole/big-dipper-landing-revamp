@@ -27,9 +27,9 @@ export const useStyles = () => {
           [theme.breakpoints.up('lg')]: {
             right: 'calc(calc(100vw - 1024px) / 2)',
           },
-          '&.open': {
+          '&.modal-open': {
           },
-          '&.close': {
+          '&.modal-close': {
             display: 'none',
           },
         },

@@ -14,7 +14,7 @@ const HamburgerIcon = (props: any) => {
       role="button"
       onClick={toggleHamburgerMenu}
     >
-      <div className={isIcon ? 'hamburger' : 'hamburger-change'}>
+      <div className={isIcon ? 'hamburger' : 'hamburger-X'}>
         <div className="bar1" key="b1" />
         <div className="bar2" key="b2" />
         <div className="bar3" key="b3" />

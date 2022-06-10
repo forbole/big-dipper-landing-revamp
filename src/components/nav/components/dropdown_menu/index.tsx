@@ -11,7 +11,7 @@ const DropdownMenu = (props:any) => {
   return (
     <div
       // className={classes.root}
-      className={classnames(classes.root, isMenu ? 'open' : 'close')}
+      className={classnames(classes.root, isMenu ? 'modal-open' : 'modal-close')}
     />
   );
 };

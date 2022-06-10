@@ -19,16 +19,17 @@ export const useStyles = () => {
             border: '2px solid #FFFFFF',
             margin: '4px 0',
             transition: '0.4s',
+            borderRadius: '25px',
           },
           '& .hamburger-X': {
             '& .bar2': {
               opacity: '0',
             },
             '& .bar1': {
-              transform: 'rotate(-45deg) translate(-4px, 4px)',
+              transform: 'rotate(-45deg) translate(-4.5px, 4.5px)',
             },
             '& .bar3': {
-              transform: 'rotate(45deg) translate(-6px, -6px)',
+              transform: 'rotate(45deg) translate(-6.5px, -6.5px)',
             },
           },
         },

@@ -1,17 +1,22 @@
 import {
   HOME,
+  ALL_NETWORKS,
   ABOUT,
   FAQ,
+  FEEDBACK,
   DONATION,
-  TERMS_AND_CONDITIONS,
-  PRIVACY_POLICY,
+  DOCS,
 } from '@utils/links';
 
 export const getMenuItems = () => {
   return [
     {
-      key: 'overview',
+      key: 'home',
       url: HOME,
+    },
+    {
+      key: 'allNetworks',
+      url: ALL_NETWORKS,
     },
     {
       key: 'about',
@@ -22,16 +27,16 @@ export const getMenuItems = () => {
       url: FAQ,
     },
     {
+      key: 'feedback',
+      url: FEEDBACK,
+    },
+    {
       key: 'donation',
       url: DONATION,
     },
     {
-      key: 'termsAndConditions',
-      url: TERMS_AND_CONDITIONS,
-    },
-    {
-      key: 'privacyPolicy',
-      url: PRIVACY_POLICY,
+      key: 'docs',
+      url: DOCS,
     },
   ];
 };

@@ -5,9 +5,6 @@ export const useStyles = () => {
   const styles = makeStyles((theme) => {
     return ({
       root: {
-        '& .MuiListItemIcon-root': {
-          minWidth: '48px',
-        },
         '&.MuiListItem-gutters': {
           padding: theme.spacing(2, 2.5),
         },
@@ -15,15 +12,7 @@ export const useStyles = () => {
           color: theme.palette.custom.general.icon,
         },
         '&.active': {
-          background: Color(theme.palette.background.paper).lighten(0.5).string(),
-          '& .MuiListItemIcon-root': {
-            '& svg': {
-              fill: theme?.palette?.primary?.main,
-            },
-          },
-          '& .MuiListItemText-root': {
-            color: theme.palette.primary.main,
-          },
+          background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
         },
       },
     });

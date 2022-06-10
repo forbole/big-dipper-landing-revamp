@@ -1,10 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
-import Color from 'color';
 
 export const useStyles = () => {
   const styles = makeStyles((theme) => {
     return ({
       root: {
+        textAlign: 'center',
         '&.MuiListItem-gutters': {
           padding: theme.spacing(2, 2.5),
         },

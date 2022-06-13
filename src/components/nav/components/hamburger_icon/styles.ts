@@ -5,6 +5,8 @@ export const useStyles = () => {
     (theme) => {
       return ({
         root: {
+          background: 'unset',
+          border: 'unset',
           height: '60px',
           width: '60px',
           position: 'absolute',
@@ -16,9 +18,8 @@ export const useStyles = () => {
           justifyContent: 'center',
           '& .bar1, .bar2, .bar3': {
             width: '24px',
-            // boxSizing: 'border-box',
-            border: '2px solid #FFFFFF',
-            margin: '4px 0',
+            border: '1px solid #FFFFFF',
+            margin: '6px 0',
             transition: '0.4s',
             borderRadius: '25px',
           },

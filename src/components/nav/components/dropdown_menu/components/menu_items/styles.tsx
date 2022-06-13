@@ -9,7 +9,7 @@ export const useStyles = () => {
           padding: theme.spacing(2, 2.5),
         },
         '& .MuiListItemText-root': {
-          color: theme.palette.custom.general.icon,
+          color: theme.palette.common.white,
         },
         '&.active': {
           background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',

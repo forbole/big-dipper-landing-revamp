@@ -12,9 +12,9 @@ exports[`Nav matches snapshot 1`] = `
         <span
           class="logo"
         />
-        <div
+        <button
           class="makeStyles-root"
-          role="button"
+          type="button"
         >
           <div
             class="hamburger"
@@ -29,7 +29,7 @@ exports[`Nav matches snapshot 1`] = `
               class="bar3"
             />
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="makeStyles-root modal-close"

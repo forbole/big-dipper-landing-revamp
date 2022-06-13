@@ -15,9 +15,9 @@ exports[`Dummy Test matches snapshot 1`] = `
           <span
             class="logo"
           />
-          <div
+          <button
             class="makeStyles-root-6"
-            role="button"
+            type="button"
           >
             <div
               class="hamburger"
@@ -32,7 +32,7 @@ exports[`Dummy Test matches snapshot 1`] = `
                 class="bar3"
               />
             </div>
-          </div>
+          </button>
         </div>
         <div
           class="makeStyles-root-7 modal-close"

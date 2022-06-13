@@ -12,9 +12,9 @@ const HamburgerIcon = (props: HamburgerProps) => {
   return (
     <div
       className={classes.root}
-      aria-label="close"
       role="button"
       onClick={toggleHamburgerMenu}
+      tabIndex={0}
     >
       <div className={isIcon ? 'hamburger' : 'hamburger-X'}>
         <div className="bar1" key="b1" />

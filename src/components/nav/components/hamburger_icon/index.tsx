@@ -1,7 +1,8 @@
 import React from 'react';
 import { useStyles } from './styles';
+import { HamburgerProps } from './types';
 
-const HamburgerIcon = (props: any) => {
+const HamburgerIcon = (props: HamburgerProps) => {
   const classes = useStyles();
   const {
     isIcon,
@@ -11,6 +12,7 @@ const HamburgerIcon = (props: any) => {
   return (
     <div
       className={classes.root}
+      aria-label="close"
       role="button"
       onClick={toggleHamburgerMenu}
     >

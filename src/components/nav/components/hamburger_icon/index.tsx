@@ -10,18 +10,20 @@ const HamburgerIcon = (props: HamburgerProps) => {
   } = props;
 
   return (
-    <div
+    <button
       className={classes.root}
-      role="button"
+      // role="button"
       onClick={toggleHamburgerMenu}
-      tabIndex={0}
+      // tabIndex={0}
+      // aria-hidden="true"
+      type="button"
     >
       <div className={isIcon ? 'hamburger' : 'hamburger-X'}>
         <div className="bar1" key="b1" />
         <div className="bar2" key="b2" />
         <div className="bar3" key="b3" />
       </div>
-    </div>
+    </button>
   );
 };
 

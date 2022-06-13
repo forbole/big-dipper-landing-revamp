@@ -1,4 +1,4 @@
-import useTranslation from 'next-translate/useTranslation';
+// import useTranslation from 'next-translate/useTranslation';
 import {
   Layout,
   SectionBox,
@@ -7,14 +7,14 @@ import {
 import { useStyles } from './styles';
 
 const Home = () => {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
   const classes = useStyles();
 
   return (
     <Layout>
       <SectionBox>
         <SectionLimit className={classes.root}>
-          <div>home page</div>
+          <h1>home page</h1>
         </SectionLimit>
       </SectionBox>
     </Layout>

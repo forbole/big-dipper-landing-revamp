@@ -2,10 +2,177 @@
 
 exports[`Nav matches snapshot 1`] = `
 <div>
-  <div
-    class="makeStyles-root-1"
-  >
-    Nav
+  <div>
+    <div
+      class="makeStyles-root makeStyles-root"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="logo"
+        />
+        <div
+          class="makeStyles-root"
+          role="button"
+        >
+          <div
+            class="hamburger"
+          >
+            <div
+              class="bar1"
+            />
+            <div
+              class="bar2"
+            />
+            <div
+              class="bar3"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-root modal-close"
+      >
+        <ul
+          class="MuiList-root MuiList-padding"
+        >
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="/"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                home
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="/all-networks"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                allNetworks
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="/about"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                about
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="/faq"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                faq
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="/feedback"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                feedback
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="/donation"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                donation
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+          <a
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root makeStyles-root MuiListItem-gutters MuiListItem-button"
+            href="https://docs.bigdipper.live/"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+              >
+                docs
+              </span>
+            </div>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </a>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 `;

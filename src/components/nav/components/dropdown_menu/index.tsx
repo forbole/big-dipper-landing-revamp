@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import { useStyles } from './styles';
 import MenuItems from './components/menu_items';
 
-const DropdownMenu = (props:any) => {
+const DropdownMenu = (props:{isMenu:boolean}) => {
   const classes = useStyles();
   const {
     isMenu,

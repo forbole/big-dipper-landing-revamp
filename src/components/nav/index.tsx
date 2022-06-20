@@ -6,7 +6,7 @@ import HamburgerIcon from './components/hamburger_icon';
 import DropdownMenu from './components/dropdown_menu';
 import { useNav } from './hooks';
 
-const Nav = () => {
+const Nav: React.FC<ComponentDefault> = () => {
   const classes = useStyles();
   const {
     isIcon,

@@ -2,12 +2,11 @@ import React from 'react';
 import { useStyles } from './styles';
 import { HamburgerProps } from './types';
 
-const HamburgerIcon = (props: HamburgerProps) => {
+const HamburgerIcon:React.FC<HamburgerProps> = ({
+  isIcon,
+  toggleHamburgerMenu,
+}) => {
   const classes = useStyles();
-  const {
-    isIcon,
-    toggleHamburgerMenu,
-  } = props;
 
   return (
     <button

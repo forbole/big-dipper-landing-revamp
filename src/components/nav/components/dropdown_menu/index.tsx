@@ -3,12 +3,17 @@ import classnames from 'classnames';
 import { useStyles } from './styles';
 import MenuItems from './components/menu_items';
 
-const DropdownMenu = (props:{isMenu:boolean}) => {
+const DropdownMenu: React.FC<{
+  isMenu:boolean
+}> = ({
+  isMenu,
+}) => {
   const classes = useStyles();
-  const {
-    isMenu,
-  } = props;
-  console.log(classes.root);
+  // const DropdownMenu = (props:{isMenu:boolean}) => {
+  //   const classes = useStyles();
+  //   const {
+  //     isMenu,
+  //   } = props;
 
   return (
     <div className={classnames(classes.root, isMenu ? 'modal-open' : 'modal-close')}>

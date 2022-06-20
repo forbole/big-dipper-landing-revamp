@@ -9,7 +9,6 @@ const mockI18n = {
   t: (key: string) => key,
   lang: 'en',
 };
-
 jest.mock('next-translate/useTranslation', () => () => mockI18n);
 
 // ==================================
@@ -19,7 +18,7 @@ describe('Dummy Test', () => {
   it('matches snapshot', async () => {
     const { asFragment } = render(<Home />);
     expect(screen.getByText(
-      /hello world/i,
+      /home page/i,
     )).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });

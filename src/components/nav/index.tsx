@@ -1,11 +1,33 @@
 import React from 'react';
+import BDLogo from '@assets/big-dipper-red.svg';
+import { SectionLimit } from '@components';
 import { useStyles } from './styles';
+import HamburgerIcon from './components/hamburger_icon';
+import DropdownMenu from './components/dropdown_menu';
+import { useNav } from './hooks';
 
-const Nav = () => {
+const Nav: React.FC<ComponentDefault> = () => {
   const classes = useStyles();
+  const {
+    isIcon,
+    isMenu,
+    toggleHamburgerMenu,
+  } = useNav();
+
   return (
-    <div className={classes.root}>
-      Nav
+    <div>
+      <SectionLimit className={classes.root}>
+        <div className="wrapper">
+          <BDLogo className="logo" />
+          <HamburgerIcon
+            toggleHamburgerMenu={toggleHamburgerMenu}
+            isIcon={isIcon}
+          />
+        </div>
+        <DropdownMenu
+          isMenu={isMenu}
+        />
+      </SectionLimit>
     </div>
   );
 };

@@ -8,6 +8,7 @@ const DropdownMenu = (props:{isMenu:boolean}) => {
   const {
     isMenu,
   } = props;
+  console.log(classes.root);
 
   return (
     <div className={classnames(classes.root, isMenu ? 'modal-open' : 'modal-close')}>

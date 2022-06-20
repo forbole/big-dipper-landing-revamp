@@ -3,8 +3,8 @@ import * as R from 'ramda';
 
 export const useNav = () => {
   const [state, setState] = useState<{
-    isIcon?: boolean;
-    isMenu?: boolean
+    isIcon: boolean;
+    isMenu: boolean
   }>({
     isIcon: true,
     isMenu: false,

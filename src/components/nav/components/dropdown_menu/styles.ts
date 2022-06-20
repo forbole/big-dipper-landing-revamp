@@ -11,7 +11,6 @@ export const useStyles = () => {
           borderRadius: '12px',
           backdropFilter: 'blur(24px)',
           position: 'absolute',
-          zIndex: '999',
           marginLeft: 'auto',
           marginRight: 'auto',
           left: '0',

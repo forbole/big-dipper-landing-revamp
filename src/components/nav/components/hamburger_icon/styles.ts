@@ -12,7 +12,6 @@ export const useStyles = () => {
           position: 'absolute',
           right: theme.spacing(0),
           cursor: 'pointer',
-          zIndex: '9999',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

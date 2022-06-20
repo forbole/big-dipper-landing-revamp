@@ -9,11 +9,6 @@ const DropdownMenu: React.FC<{
   isMenu,
 }) => {
   const classes = useStyles();
-  // const DropdownMenu = (props:{isMenu:boolean}) => {
-  //   const classes = useStyles();
-  //   const {
-  //     isMenu,
-  //   } = props;
 
   return (
     <div className={classnames(classes.root, isMenu ? 'modal-open' : 'modal-close')}>

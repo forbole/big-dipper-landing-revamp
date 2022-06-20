@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { MockTheme } from '@mocks';
 import Component from '.';
 
 // ==================================
@@ -8,10 +9,15 @@ import Component from '.';
 describe('Nav', () => {
   it('matches snapshot', async () => {
     const { container } = render(
-      <Component />,
+      <MockTheme>
+        <Component />
+      </MockTheme>,
     );
     expect(screen.getByText(
-      /Nav/i,
+      /Home/i,
+    )).toBeInTheDocument();
+    expect(screen.getByText(
+      /About/i,
     )).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

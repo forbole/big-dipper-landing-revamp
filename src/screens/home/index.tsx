@@ -1,13 +1,23 @@
-import useTranslation from 'next-translate/useTranslation';
+// import useTranslation from 'next-translate/useTranslation';
+import {
+  Layout,
+  SectionBox,
+  SectionLimit,
+} from '@components';
+import { useStyles } from './styles';
 
 const Home = () => {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
+  const classes = useStyles();
 
   return (
-    <>
-      <div>hello world</div>
-      <div>{t('hola')}</div>
-    </>
+    <Layout>
+      <SectionBox>
+        <SectionLimit className={classes.root}>
+          <h1>home page</h1>
+        </SectionLimit>
+      </SectionBox>
+    </Layout>
   );
 };
 

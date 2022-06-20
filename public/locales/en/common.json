@@ -1,8 +1,9 @@
 {
-  "hola": "HI",
-  "test": "Test",
+  "home": "Home",
+  "allNetworks": "All Networks",
   "about": "About",
-  "faq": "FAQ",
+  "faq": "FAQs",
+  "feedback": "Feedback",
   "donation": "Donation",
   "docs": "Docs",
   "stakeNow": "Stake Now",

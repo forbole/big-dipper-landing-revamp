@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
+        <title>Big Dipper</title>
         <body>
           <Main />
           <NextScript />

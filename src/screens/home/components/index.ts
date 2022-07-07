@@ -1,7 +1,7 @@
-import Carousel from './carousel';
+import CarouselComponent from './carousel';
 import SupportedNetworks from './supported_networks';
 
 export {
-  Carousel,
+  CarouselComponent,
   SupportedNetworks,
 };

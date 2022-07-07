@@ -1,9 +1,12 @@
 import {
   SectionLimit,
 } from '@components';
+import React from 'react';
+import Carousel from 'react-material-ui-carousel';
+import { Paper, Button } from '@mui/material';
 import { useStyles } from './styles';
 
-const Carousel = () => {
+const CarouselComponent = () => {
   const classes = useStyles();
 
   return (
@@ -13,4 +16,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselComponent;

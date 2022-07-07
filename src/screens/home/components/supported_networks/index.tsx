@@ -3,14 +3,14 @@ import {
 } from '@components';
 import { useStyles } from './styles';
 
-const Carousel = () => {
+const SupportedNetworks = () => {
   const classes = useStyles();
 
   return (
     <SectionLimit className={classes.root}>
-      <h1>Carousel</h1>
+      <h1>SupportedNetworks</h1>
     </SectionLimit>
   );
 };
 
-export default Carousel;
+export default SupportedNetworks;

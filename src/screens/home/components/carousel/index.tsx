@@ -1,7 +1,6 @@
 import {
   SectionLimit,
 } from '@components';
-import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Button, Card } from '@mui/material';
 import { useStyles } from './styles';
@@ -18,7 +17,6 @@ const CarouselComponent = () => {
             <Card key={item.image}>
               <h2>{item.key}</h2>
               <p>{item.details}</p>
-
               <Button className="CheckButton">
                 Check it out!
               </Button>

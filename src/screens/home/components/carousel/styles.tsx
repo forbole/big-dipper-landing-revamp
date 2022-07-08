@@ -6,6 +6,9 @@ export const useStyles = () => {
       return ({
         root: {
           height: '200px',
+          '& .card-1': {
+            // background: 'purple',
+          },
         },
       });
     },

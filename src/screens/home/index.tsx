@@ -5,6 +5,7 @@ import {
   SectionLimit,
 } from '@components';
 import { useStyles } from './styles';
+import { CarouselComponent, SupportedNetworks } from './components';
 
 const Home = () => {
   // const { t } = useTranslation('common');
@@ -14,7 +15,8 @@ const Home = () => {
     <Layout>
       <SectionBox>
         <SectionLimit className={classes.root}>
-          <h1>home page</h1>
+          <CarouselComponent />
+          <SupportedNetworks />
         </SectionLimit>
       </SectionBox>
     </Layout>

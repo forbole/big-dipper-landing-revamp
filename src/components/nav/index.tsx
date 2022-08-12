@@ -2,8 +2,8 @@ import React from 'react';
 import BDLogo from '@assets/big-dipper-red.svg';
 import { SectionLimit } from '@components';
 import { useStyles } from './styles';
-import HamburgerIcon from './components/hamburger_icon';
-import DropdownMenu from './components/dropdown_menu';
+import HamburgerIcon from './components/hamburger-icon';
+import DropdownMenu from './components/dropdown-menu';
 import { useNav } from './hooks';
 
 const Nav: React.FC<ComponentDefault> = () => {

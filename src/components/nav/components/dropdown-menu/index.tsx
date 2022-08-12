@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import { useStyles } from './styles';
-import MenuItems from './components/menu_items';
+import MenuItems from './components/menu-items';
 
 const DropdownMenu: React.FC<{
   isMenu:boolean

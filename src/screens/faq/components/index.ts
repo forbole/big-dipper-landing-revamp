@@ -1,5 +1,5 @@
-import MenuDesktop from './menu_desktop';
-import MenuMobile from './menu_mobile';
+import MenuDesktop from './menu-desktop';
+import MenuMobile from './menu-mobile';
 import Content from './content';
 
 export {

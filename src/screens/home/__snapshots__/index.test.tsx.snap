@@ -2,12 +2,482 @@
 
 exports[`Dummy Test matches snapshot 1`] = `
 <DocumentFragment>
-  <main
-    class="makeStyles-root-2"
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.emotion-1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 8px;
+}
+
+.emotion-1 .wrapper {
+  margin: auto;
+  max-width: 1024px;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-1 .logo {
+  height: 36px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.emotion-1 .hamburgerMenu {
+  height: 60px;
+  position: absolute;
+  right: 0px;
+}
+
+@media (min-width:900px) {
+  .emotion-1 .wrapper {
+    margin: auto;
+    max-width: 1024px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .emotion-1 .logo {
+    height: 36px;
+    margin-left: 8px;
+  }
+}
+
+.emotion-2 {
+  background: unset;
+  border: unset;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-2 .bar1,
+.emotion-2 .bar2,
+.emotion-2 .bar3 {
+  width: 24px;
+  border: 1px solid #FFFFFF;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.emotion-2 .hamburger-X .bar2 {
+  opacity: 0;
+}
+
+.emotion-2 .hamburger-X .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  -moz-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  -ms-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  transform: rotate(-45deg) translate(-4.5px, 4.5px);
+}
+
+.emotion-2 .hamburger-X .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6.5px, -6.5px);
+  -moz-transform: rotate(45deg) translate(-6.5px, -6.5px);
+  -ms-transform: rotate(45deg) translate(-6.5px, -6.5px);
+  transform: rotate(45deg) translate(-6.5px, -6.5px);
+}
+
+.emotion-3 {
+  padding: 16px 0px;
+  width: 272px;
+  background: rgba(62, 35, 79, 0.7);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width:900px) {
+  .emotion-3 {
+    width: 216px;
+    top: 88px;
+    margin: 0;
+    left: unset;
+    right: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-3 {
+    right: calc(calc(100vw - 1024px) / 2);
+  }
+}
+
+.emotion-3.modal-close {
+  display: none;
+}
+
+.emotion-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.emotion-5::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-5.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-5 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+  .emotion-5:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-5.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.emotion-5.Mui-selected.Mui-focusVisible {
+  background-color: rgba(25, 118, 210, 0.2);
+}
+
+.emotion-5.Mui-selected:hover {
+  background-color: rgba(25, 118, 210, 0.12);
+}
+
+@media (hover: none) {
+  .emotion-5.Mui-selected:hover {
+    background-color: rgba(25, 118, 210, 0.08);
+  }
+}
+
+.emotion-5.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-5.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-5.MuiListItem-gutters {
+  padding: 16px 20px;
+}
+
+.emotion-5 .MuiListItemText-root {
+  color: #fff;
+}
+
+.emotion-5.active {
+  background: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
+}
+
+.emotion-6 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.emotion-7 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  display: block;
+}
+
+.emotion-8 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.emotion-33 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-34 {
+  overflow: auto;
+  padding: 48px 24px;
+}
+
+@media (min-width:1200px) {
+  .emotion-34.main {
+    padding: 64px;
+  }
+}
+
+.emotion-35 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  eight: 500px;
+}
+
+.emotion-36 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 32px;
+}
+
+.emotion-36 .icons__wrapper path {
+  fill: #fff;
+}
+
+.emotion-36 .icons__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0px 16px;
+  margin-bottom: 40px;
+}
+
+.emotion-36 .terms__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-36 .MuiTypography-caption {
+  font-weight: 500;
+  color: #fff;
+}
+
+.emotion-36 .terms__links {
+  margin: 8px 0px;
+}
+
+.emotion-36 .terms--dash {
+  margin: 0px 8px;
+}
+
+.emotion-36 .terms--dash.desktop {
+  display: none;
+}
+
+@media (min-width:900px) {
+  .emotion-36 .icons__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .emotion-36 .social {
+    margin: 0px 12px;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-36 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .emotion-36 .icons__wrapper {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .emotion-36 .social:first-of-type {
+    margin-left: 0;
+  }
+
+  .emotion-36 .terms__wrapper {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .emotion-36 .terms--dash.desktop {
+    display: inline;
+  }
+}
+
+.emotion-37 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+<main
+    class="emotion-0"
   >
     <div>
       <div
-        class="makeStyles-root-5 makeStyles-root-4"
+        class="emotion-1"
       >
         <div
           class="wrapper"
@@ -16,7 +486,7 @@ exports[`Dummy Test matches snapshot 1`] = `
             class="logo"
           />
           <button
-            class="makeStyles-root-6"
+            class="emotion-2"
             type="button"
           >
             <div
@@ -35,142 +505,135 @@ exports[`Dummy Test matches snapshot 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-root-7 modal-close"
+          class="modal-close emotion-3"
         >
           <ul
-            class="MuiList-root MuiList-padding"
+            class="MuiList-root MuiList-padding emotion-4"
           >
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="/"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   home
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="/all-networks"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   allNetworks
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="/about"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   about
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="/faq"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   faq
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="/feedback"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   feedback
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="/donation"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   donation
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
             <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiListItem-root makeStyles-root-8 MuiListItem-gutters MuiListItem-button"
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-5"
               href="https://docs.bigdipper.live/"
               tabindex="0"
             >
               <div
-                class="MuiListItemText-root"
+                class="MuiListItemText-root emotion-6"
               >
                 <span
-                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-7"
                 >
                   docs
                 </span>
               </div>
               <span
-                class="MuiTouchRipple-root"
+                class="MuiTouchRipple-root emotion-8"
               />
             </a>
           </ul>
@@ -178,13 +641,13 @@ exports[`Dummy Test matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="makeStyles-content-3"
+      class="emotion-33"
     >
       <section
-        class="makeStyles-root-9"
+        class=" emotion-34"
       >
         <div
-          class="makeStyles-root-10 makeStyles-root-1"
+          class="emotion-35"
         >
           <h1>
             home page
@@ -194,7 +657,7 @@ exports[`Dummy Test matches snapshot 1`] = `
     </div>
     <footer>
       <div
-        class="makeStyles-root-12 makeStyles-root-11"
+        class="emotion-36"
       >
         <div
           class="icons__wrapper"
@@ -285,12 +748,12 @@ exports[`Dummy Test matches snapshot 1`] = `
           class="terms__wrapper"
         >
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption emotion-37"
           >
             copyright
           </span>
           <span
-            class="MuiTypography-root terms--dash desktop MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-37"
           >
             |
           </span>
@@ -298,19 +761,19 @@ exports[`Dummy Test matches snapshot 1`] = `
             class="terms__links"
           >
             <a
-              class="MuiTypography-root link__item link__item--caption MuiTypography-caption"
+              class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-37"
               href="/terms-and-conditions"
               target="_self"
             >
               termsAndConditions
             </a>
             <span
-              class="MuiTypography-root terms--dash MuiTypography-caption"
+              class="MuiTypography-root MuiTypography-caption terms--dash emotion-37"
             >
               |
             </span>
             <a
-              class="MuiTypography-root link__item link__item--caption MuiTypography-caption"
+              class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-37"
               href="/privacy-policy"
               target="_self"
             >
@@ -318,12 +781,12 @@ exports[`Dummy Test matches snapshot 1`] = `
             </a>
           </div>
           <span
-            class="MuiTypography-root terms--dash desktop MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-37"
           >
             |
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption emotion-37"
           >
             common:productOf
           </span>

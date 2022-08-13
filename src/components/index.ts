@@ -1,15 +1,6 @@
-import Layout from './layout';
-import Footer from './footer';
-import Nav from './nav';
-import SectionBox from './section-box';
-import SectionLimit from './section-limit';
-import ContentBox from './content-box';
-
-export {
-  Layout,
-  Footer,
-  Nav,
-  SectionBox,
-  SectionLimit,
-  ContentBox,
-};
+export { default as Layout } from './layout';
+export { default as Footer } from './footer';
+export { default as Nav } from './nav';
+export { default as SectionBox } from './section-box';
+export { default as SectionLimit } from './section-limit';
+export { default as ContentBox } from './content-box';

@@ -1,9 +1,3 @@
-import MenuDesktop from './menu-desktop';
-import MenuMobile from './menu-mobile';
-import Content from './content';
-
-export {
-  MenuDesktop,
-  MenuMobile,
-  Content,
-};
+export { default as MenuDesktop } from './menu-desktop';
+export { default as MenuMobile } from './menu-mobile';
+export { default as Content } from './content';

@@ -1,7 +1,2 @@
-import MockTheme from './theme';
-import { wait } from './wait';
-
-export {
-  MockTheme,
-  wait,
-};
+export { default as MockTheme } from './theme';
+export { wait } from './wait';

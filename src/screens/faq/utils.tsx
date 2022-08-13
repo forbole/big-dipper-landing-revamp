@@ -1,35 +1,28 @@
 import { Translate } from 'next-translate';
 import Trans from 'next-translate/Trans';
 
-export const getMenuItems = (t: Translate) => ([
+export const getMenuItems = (t: Translate) => [
   t('blockchain.title'),
   t('stakers.title'),
   t('validators.title'),
   t('governance.title'),
-]);
+];
 
 export const getBlockChainFAQ = (t: Translate) => {
-  return ([
+  return [
     {
       question: t('blockchain.one.question'),
-      answer: (
-        <Trans
-          i18nKey="faq:blockchain.one.answer"
-          components={[
-            <b />,
-          ]}
-        />
-      ),
+      answer: <Trans i18nKey="faq:blockchain.one.answer" components={[<b />]} />,
     },
     {
       question: t('blockchain.two.question'),
       answer: t('blockchain.two.answer'),
     },
-  ]);
+  ];
 };
 
 export const getStakersFAQ = (t: Translate) => {
-  return ([
+  return [
     {
       question: t('stakers.one.question'),
       answer: t('stakers.one.answer'),
@@ -40,11 +33,7 @@ export const getStakersFAQ = (t: Translate) => {
         <Trans
           i18nKey="faq:stakers.two.answer"
           components={[
-            <a
-              href="https://www.forbole.com/stake-now"
-              target="_blank"
-              rel="noreferrer"
-            />,
+            <a href="https://www.forbole.com/stake-now" target="_blank" rel="noreferrer" />,
           ]}
         />
       ),
@@ -61,11 +50,11 @@ export const getStakersFAQ = (t: Translate) => {
       question: t('stakers.five.question'),
       answer: t('stakers.five.answer'),
     },
-  ]);
+  ];
 };
 
 export const getValidatorsFAQ = (t: Translate) => {
-  return ([
+  return [
     {
       question: t('validators.one.question'),
       answer: t('validators.one.answer'),
@@ -108,11 +97,11 @@ export const getValidatorsFAQ = (t: Translate) => {
         },
       ],
     },
-  ]);
+  ];
 };
 
 export const getGovernanceFAQ = (t: Translate) => {
-  return ([
+  return [
     {
       question: t('governance.one.question'),
       answer: t('governance.one.answer'),
@@ -136,7 +125,7 @@ export const getGovernanceFAQ = (t: Translate) => {
         />
       ),
     },
-  ]);
+  ];
 };
 
 export const getContent = (selected: number, t: Translate) => {

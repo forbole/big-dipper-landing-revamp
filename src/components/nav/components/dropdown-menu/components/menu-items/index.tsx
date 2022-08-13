@@ -2,17 +2,12 @@ import React from 'react';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import {
-  List,
-  ListItem,
-  ListItemText,
-} from '@material-ui/core';
+import { List, ListItemText } from '@mui/material';
 import useTranslation from 'next-translate/useTranslation';
-import { useStyles } from './styles';
+import { StyledListItemButton } from './styles';
 import { getMenuItems } from './utils';
 
 const MenuItems = () => {
-  const classes = useStyles();
   const router = useRouter();
   const { t } = useTranslation('common');
   const items = getMenuItems();
@@ -30,15 +25,14 @@ const MenuItems = () => {
 
         return (
           <Link href={x.url} key={x.key} passHref>
-            <ListItem
-              button
-              className={classnames(classes.root, {
+            <StyledListItemButton
+              className={classnames({
                 active: isActive,
               })}
-              component="a"
+              // component="a"
             >
               <ListItemText primary={t(x.key)} />
-            </ListItem>
+            </StyledListItemButton>
           </Link>
         );
       })}

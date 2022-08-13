@@ -1,19 +1,17 @@
-import React from 'react';
+import { FC, Fragment, HTMLAttributes } from 'react';
 import Trans from 'next-translate/Trans';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
-import { SectionLimit } from '@components';
-import { useStyles } from './styles';
+import { StyledSectionLimit } from './styles';
 import { socialLinks, termsLinks } from './utils';
 
-const Footer: React.FC<ComponentDefault> = (props) => {
-  const classes = useStyles();
+const Footer: FC<HTMLAttributes<HTMLElement>> = ({ className }) => {
   const { t } = useTranslation('common');
   const year = new Date().getFullYear();
   return (
-    <footer className={props.className}>
-      <SectionLimit className={classes.root}>
+    <footer className={className}>
+      <StyledSectionLimit>
         <div className="icons__wrapper">
           {socialLinks.map((x) => {
             return (
@@ -37,11 +35,8 @@ const Footer: React.FC<ComponentDefault> = (props) => {
           <div className="terms__links">
             {termsLinks.map((x, i) => {
               return (
-                <React.Fragment key={x.key}>
-                  <Link
-                    href={x.url}
-                    passHref
-                  >
+                <Fragment key={x.key}>
+                  <Link href={x.url} passHref>
                     <Typography
                       variant="caption"
                       component="a"
@@ -56,7 +51,7 @@ const Footer: React.FC<ComponentDefault> = (props) => {
                       |
                     </Typography>
                   )}
-                </React.Fragment>
+                </Fragment>
               );
             })}
           </div>
@@ -66,17 +61,11 @@ const Footer: React.FC<ComponentDefault> = (props) => {
           <Typography variant="caption">
             <Trans
               i18nKey="common:productOf"
-              components={[
-                <a
-                  href="https://www.forbole.com"
-                  target="_blank"
-                  rel="noreferrer"
-                />,
-              ]}
+              components={[<a href="https://www.forbole.com" target="_blank" rel="noreferrer" />]}
             />
           </Typography>
         </div>
-      </SectionLimit>
+      </StyledSectionLimit>
     </footer>
   );
 };

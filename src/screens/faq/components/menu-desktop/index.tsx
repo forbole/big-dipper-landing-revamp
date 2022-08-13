@@ -1,30 +1,32 @@
-import React from 'react';
+import { FC, HTMLAttributes } from 'react';
 import classnames from 'classnames';
-import {
-  Button,
-} from '@material-ui/core';
+import { Button } from '@mui/material';
 import { MenuType } from '../../types';
-import { useStyles } from './styles';
+import { StyledDiv } from './styles';
 
-const MenuDesktop: React.FC<MenuType & ComponentDefault> = (props) => {
-  const classes = useStyles();
+const MenuDesktop: FC<MenuType & HTMLAttributes<HTMLElement>> = ({
+  className,
+  handleChange,
+  items,
+  selected,
+}) => {
   return (
-    <div className={classnames(props.className, classes.root)}>
-      {props.items.map((x, i) => {
+    <StyledDiv className={className}>
+      {items.map((x, i) => {
         return (
           <Button
             key={x}
             variant="contained"
             className={classnames('button', {
-              'button--active': i === props.selected,
+              'button--active': i === selected,
             })}
-            onClick={() => props.handleChange(i)}
+            onClick={() => handleChange?.(i)}
           >
             {x}
           </Button>
         );
       })}
-    </div>
+    </StyledDiv>
   );
 };
 

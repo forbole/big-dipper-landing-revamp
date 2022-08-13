@@ -1,20 +1,15 @@
-import React from 'react';
+import { FC } from 'react';
 import classnames from 'classnames';
-import { useStyles } from './styles';
+import { StyledDiv } from './styles';
 import MenuItems from './components/menu-items';
 
-const DropdownMenu: React.FC<{
-  isMenu:boolean
-}> = ({
-  isMenu,
-}) => {
-  const classes = useStyles();
-
+const DropdownMenu: FC<{
+  isMenu: boolean;
+}> = ({ isMenu }) => {
   return (
-    <div className={classnames(classes.root, isMenu ? 'modal-open' : 'modal-close')}>
+    <StyledDiv className={classnames(isMenu ? 'modal-open' : 'modal-close')}>
       <MenuItems />
-    </div>
-
+    </StyledDiv>
   );
 };
 

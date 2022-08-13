@@ -1,22 +1,13 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
+import { SectionLimit } from '@components';
 
-export const useStyles = () => {
-  const styles = makeStyles(
-    (theme) => {
-      return ({
-        root: {
-          '& .title': {
-            marginBottom: theme.spacing(4),
-            textAlign: 'center',
-            [theme.breakpoints.up('lg')]: {
-              textAlign: 'left',
-              marginBottom: theme.spacing(5),
-            },
-          },
-        },
-      });
+export const StyledSectionLimit = styled(SectionLimit)(({ theme }) => ({
+  '& .title': {
+    marginBottom: theme.spacing(4),
+    textAlign: 'center',
+    [theme.breakpoints.up('lg')]: {
+      textAlign: 'left',
+      marginBottom: theme.spacing(5),
     },
-  )();
-
-  return styles;
-};
+  },
+}));

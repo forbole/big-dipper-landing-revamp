@@ -1,23 +1,15 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
+import { Layout, SectionBox } from '@components';
 import {
-  Layout,
-  SectionBox,
-  SectionLimit,
-} from '@components';
-import {
-  MenuDesktop,
-  MenuMobile,
-  Content,
-} from './components';
-import { useStyles } from './styles';
+  StyledContent, StyledMenuDesktop, StyledMenuMobile, StyledSectionLimit,
+} from './styles';
 import { useFAQ } from './hooks';
 import { getMenuItems, getContent } from './utils';
 
 const FAQ = () => {
   const { t } = useTranslation('faq');
-  const classes = useStyles();
   const { state, handleSelected } = useFAQ();
   const menuItems = getMenuItems(t);
   const content = getContent(state.selected, t);
@@ -25,26 +17,26 @@ const FAQ = () => {
   return (
     <Layout>
       <SectionBox main>
-        <SectionLimit className={classes.root}>
+        <StyledSectionLimit>
           <div className="header__wrapper">
-            <Typography className="title" variant="h2">{t('faq')}</Typography>
-            <MenuMobile
-              className={classes.menuMobile}
+            <Typography className="title" variant="h2">
+              {t('faq')}
+            </Typography>
+            <StyledMenuMobile
               items={menuItems}
               selected={state.selected}
               handleChange={handleSelected}
             />
           </div>
           <div className="content__wrapper">
-            <MenuDesktop
-              className={classes.menuDesktop}
+            <StyledMenuDesktop
               items={menuItems}
               selected={state.selected}
               handleChange={handleSelected}
             />
-            <Content className={classes.content} content={content} />
+            <StyledContent content={content} />
           </div>
-        </SectionLimit>
+        </StyledSectionLimit>
       </SectionBox>
     </Layout>
   );

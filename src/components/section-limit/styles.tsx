@@ -1,17 +1,7 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
 
-export const useStyles = () => {
-  const styles = makeStyles(
-    (theme) => {
-      return ({
-        root: {
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: theme.breakpoints.limit,
-        },
-      });
-    },
-  )();
-
-  return styles;
-};
+export const StyledDiv = styled('div')(({ theme }) => ({
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  maxWidth: theme.breakpoints.limit,
+}));

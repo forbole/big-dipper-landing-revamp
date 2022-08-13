@@ -1,10 +1,132 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer matches snapshot 1`] = `
+.emotion-0 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  padding: 40px 32px;
+}
+
+.emotion-0 .icons__wrapper path {
+  fill: #fff;
+}
+
+.emotion-0 .icons__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0px 16px;
+  margin-bottom: 40px;
+}
+
+.emotion-0 .terms__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .MuiTypography-caption {
+  font-weight: 500;
+  color: #fff;
+}
+
+.emotion-0 .terms__links {
+  margin: 8px 0px;
+}
+
+.emotion-0 .terms--dash {
+  margin: 0px 8px;
+}
+
+.emotion-0 .terms--dash.desktop {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .emotion-0 .icons__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .emotion-0 .social {
+    margin: 0px 12px;
+  }
+}
+
+@media (min-width:1280px) {
+  .emotion-0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .emotion-0 .icons__wrapper {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .emotion-0 .social:first-of-type {
+    margin-left: 0;
+  }
+
+  .emotion-0 .terms__wrapper {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .emotion-0 .terms--dash.desktop {
+    display: inline;
+  }
+}
+
+.emotion-1 {
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: SFPro,Arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
 <div>
   <footer>
     <div
-      class="makeStyles-root makeStyles-root"
+      class="emotion-0"
     >
       <div
         class="icons__wrapper"
@@ -95,12 +217,12 @@ exports[`Footer matches snapshot 1`] = `
         class="terms__wrapper"
       >
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-caption emotion-1"
         >
           copyright
         </span>
         <span
-          class="MuiTypography-root terms--dash desktop MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-1"
         >
           |
         </span>
@@ -108,19 +230,19 @@ exports[`Footer matches snapshot 1`] = `
           class="terms__links"
         >
           <a
-            class="MuiTypography-root link__item link__item--caption MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-1"
             href="/terms-and-conditions"
             target="_self"
           >
             termsAndConditions
           </a>
           <span
-            class="MuiTypography-root terms--dash MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption terms--dash emotion-1"
           >
             |
           </span>
           <a
-            class="MuiTypography-root link__item link__item--caption MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-1"
             href="/privacy-policy"
             target="_self"
           >
@@ -128,12 +250,12 @@ exports[`Footer matches snapshot 1`] = `
           </a>
         </div>
         <span
-          class="MuiTypography-root terms--dash desktop MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-1"
         >
           |
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-caption emotion-1"
         >
           common:productOf
         </span>

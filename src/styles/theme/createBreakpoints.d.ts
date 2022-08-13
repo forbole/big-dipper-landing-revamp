@@ -1,11 +1,11 @@
 /* eslint-disable*/
-import * as createBreakpoints from '@material-ui/core/styles/createBreakpoints';
+import { Breakpoint, BreakpointsOptions } from "@mui/system/createTheme/createBreakpoints";
 
-declare module '@material-ui/core/styles/createBreakpoints' {
-    interface BreakpointsOptions {
-        limit?: number;
-    }
-    interface Breakpoints {
-        limit: number;
-    }
+declare module "@mui/system/createTheme/createBreakpoints" {
+  interface Breakpoints {
+    limit: number;
+  }
+  interface BreakpointsOptions {
+    limit?: number;
+  }
 }

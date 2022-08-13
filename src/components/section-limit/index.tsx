@@ -1,20 +1,13 @@
-import React from 'react';
-import classnames from 'classnames';
-import { useStyles } from './styles';
-import { SectionLimitProps } from './types';
+import { FC, HTMLAttributes } from 'react';
+import { StyledDiv } from './styles';
 
 /**
  * Helper component to restraint content
  * from going past a certain width
  * @returns
  */
-const SectionLimit: React.FC<SectionLimitProps & ComponentDefault> = (props) => {
-  const classes = useStyles();
-  return (
-    <div className={classnames(classes.root, props.className)}>
-      {props.children}
-    </div>
-  );
+const SectionLimit: FC<HTMLAttributes<HTMLElement>> = ({ children, className }) => {
+  return <StyledDiv className={className}>{children}</StyledDiv>;
 };
 
 export default SectionLimit;

@@ -10,7 +10,6 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
     "classnames": "^2.3.1",
     "color": "^4.2.3",
     "copy-to-clipboard": "^3.3.1",

@@ -13,18 +13,17 @@ describe('Content', () => {
   it('matches snapshot', async () => {
     const { container } = render(
       <MockTheme>
-        <Component content={[
-          {
-            question: 'How are you?',
-            answer: 'Fine.',
-          },
-        ]}
+        <Component
+          content={[
+            {
+              question: 'How are you?',
+              answer: 'Fine.',
+            },
+          ]}
         />
       </MockTheme>,
     );
-    expect(screen.getByText(
-      /Fine./i,
-    )).toBeInTheDocument();
+    expect(screen.getByText(/Fine./i)).toBeInTheDocument();
     expect(screen.getByTestId('ContentBox')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

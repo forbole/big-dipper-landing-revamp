@@ -14,7 +14,6 @@ describe('MenuMobile', () => {
           items={[
             'gov',
           ]}
-          handleChange={jest.fn()}
           selected={0}
         />
       </MockTheme>,

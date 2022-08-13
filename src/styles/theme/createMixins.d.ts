@@ -1,18 +1,18 @@
 /* eslint-disable*/
-import * as createMixins from '@material-ui/core/styles/createMixins';
+import { Mixins, MixinsOptions } from "@mui/material/styles/createMixins";
 
-declare module '@material-ui/core/styles/createMixins' {
-    interface MixinsOptions {
-        gradientBackground?: CSSProperties;
-        headerGlow?: CSSProperties;
-        button?: CSSProperties;
-        buttonSecondary?: CSSProperties;
-    }
+declare module "@mui/material/styles/createMixins" {
+  interface Mixins {
+    gradientBackground: CSSProperties;
+    headerGlow: CSSProperties;
+    button: CSSProperties;
+    buttonSecondary: CSSProperties;
+  }
 
-    interface Mixins {
-        gradientBackground: CSSProperties;
-        headerGlow: CSSProperties;
-        button: CSSProperties;
-        buttonSecondary: CSSProperties;
-    }
+  interface MixinsOptions {
+    gradientBackground?: CSSProperties;
+    headerGlow?: CSSProperties;
+    button?: CSSProperties;
+    buttonSecondary?: CSSProperties;
+  }
 }

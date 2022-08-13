@@ -1,15 +1,7 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
+import { SectionLimit } from '@components';
 
-export const useStyles = () => {
-  const styles = makeStyles(
-    (theme) => {
-      return ({
-        root: {
-          height: '500px',
-        },
-      });
-    },
-  )();
-
-  return styles;
-};
+export const StyledSectionLimit = styled(SectionLimit)({
+  height: '500px',
+  eight: '500px',
+});

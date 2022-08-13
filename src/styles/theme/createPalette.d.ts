@@ -1,20 +1,21 @@
 /* eslint-disable*/
-import * as createPalette from '@material-ui/core/styles/createPalette';
+import { Palette, PaletteOptions } from "@mui/material/styles/createPalette";
 
-declare module '@material-ui/core/styles/createPalette' {
-    interface Custom {
-        general: {
-            [key: string]: string;
-        },
-        fonts: {
-            [key: string]: string;
-        },
-    }
+declare module "@mui/material/styles/createPalette" {
+  interface Custom {
+    general: {
+      [key: string]: string;
+    };
+    fonts: {
+      [key: string]: string;
+    };
+  }
 
-    interface PaletteOptions {
-        custom?: Custom;
-    }
-    interface Palette {
-        custom: Custom;
-    }
+  interface Palette {
+    custom: Custom;
+  }
+
+  interface PaletteOptions {
+    custom?: Custom;
+  }
 }

@@ -17,6 +17,7 @@ const customJestConfig = {
     }),
   },
   testEnvironment: 'jest-environment-jsdom',
+  snapshotSerializers: ['@emotion/jest/serializer'],
 };
 
 module.exports = createJestConfig(customJestConfig);

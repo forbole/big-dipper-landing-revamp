@@ -9,13 +9,13 @@ html {
 }
 
 *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 a {
-  color: #F6504B;
+  color: #f6504b;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -23,4 +23,12 @@ a {
 a:hover {
   /* color: rgba(255,110,127, 0.7); */
   opacity: 0.8;
+}
+
+@font-face {
+  font-family: "SFPro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/SF-Pro-Text-Regular.woff2") format("woff2");
 }

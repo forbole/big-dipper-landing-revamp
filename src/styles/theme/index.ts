@@ -1,9 +1,8 @@
-import { ThemeOptions, createTheme } from '@material-ui/core/styles';
+import { ThemeOptions, createTheme } from '@mui/material/styles';
 
 /** Common themes that don't change across light and dark theme */
 export const common: ThemeOptions = {
   breakpoints: {
-    keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {
       xs: 0,
       sm: 375,
@@ -13,14 +12,26 @@ export const common: ThemeOptions = {
     },
     limit: 1024,
   },
-  props: {
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: 'SFPro';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url("/fonts/SF-Pro-Text-Regular.woff2") format('woff2');
+        }
+      `,
+    },
     MuiButton: {
-      disableElevation: true,
+      defaultProps: {
+        disableElevation: true,
+      },
     },
   },
   typography: {
-    fontFamily: `-apple-system, BlinkMacSystemFont,"Segoe UI","Roboto",
-    "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif`,
+    fontFamily: 'SFPro, Arial, sans-serif',
     h1: {
       fontSize: '2.5rem',
       fontWeight: 600,
@@ -68,7 +79,8 @@ export const common: ThemeOptions = {
   },
   mixins: {
     gradientBackground: {
-      background: 'url(/images/background/back-1.svg), url(/images/background/back-2.svg), url(/images/background/back-3.svg),radial-gradient(circle at 50% -5vw, #0F0B3D, #310627, #2C0632, #0F072F, #040211 60vw)',
+      background:
+        'url(/images/background/back-1.svg), url(/images/background/back-2.svg), url(/images/background/back-3.svg),radial-gradient(circle at 50% -5vw, #0F0B3D, #310627, #2C0632, #0F072F, #040211 60vw)',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
       backgroundPosition: 'center 0%, center 800px, center bottom',
@@ -100,7 +112,7 @@ export const common: ThemeOptions = {
     },
   },
   palette: {
-    type: 'dark',
+    mode: 'dark',
     secondary: {
       main: '#F6504B',
       contrastText: '#FFFFFF',

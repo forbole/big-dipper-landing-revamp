@@ -1,6 +1,6 @@
-import React from 'react';
+import { FC } from 'react';
 import classnames from 'classnames';
-import { useStyles } from './styles';
+import { StyledSection } from './styles';
 import { SectionBoxProps } from './types';
 /**
  * Component for seo sectioning and breakpoints. Not to be confused with Box.
@@ -8,13 +8,8 @@ import { SectionBoxProps } from './types';
  * @param props
  * @returns
  */
-const SectionBox: React.FC<SectionBoxProps & ComponentDefault> = (props) => {
-  const classes = useStyles();
-  return (
-    <section className={classnames(classes.root, props.className, { main: props.main })}>
-      {props.children}
-    </section>
-  );
+const SectionBox: FC<SectionBoxProps & ComponentDefault> = ({ children, className, main }) => {
+  return <StyledSection className={classnames(className, { main })}>{children}</StyledSection>;
 };
 
 export default SectionBox;

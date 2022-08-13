@@ -1,33 +1,27 @@
-import React from 'react';
-import {
-  Button,
-  MenuItem,
-  Menu,
-  Typography,
-} from '@material-ui/core';
+import { FC, HTMLAttributes } from 'react';
+import { Button, MenuItem, Typography } from '@mui/material';
 import classnames from 'classnames';
-import classNames from 'classnames';
 import { MenuType } from '../../types';
 import { useMenuMobile } from './hooks';
-import { useStyles } from './styles';
+import { StyledDiv, StyledMenu } from './styles';
 
-const MenuMobile: React.FC<MenuType & ComponentDefault> = (props) => {
-  const {
-    anchorEl,
-    handleClick,
-    handleClose,
-  } = useMenuMobile();
-  const classes = useStyles();
+const MenuMobile: FC<MenuType & HTMLAttributes<HTMLElement>> = ({
+  className,
+  handleChange,
+  items,
+  selected,
+}) => {
+  const { anchorEl, handleClick, handleClose } = useMenuMobile();
   return (
-    <div className={classnames(props.className, classes.root)}>
+    <StyledDiv className={className}>
       <Button
         className="selected"
         onClick={handleClick}
         // endIcon={<KeyboardArrowDownIcon />}
       >
-        {props.items[props.selected]}
+        {items[selected]}
       </Button>
-      <Menu
+      <StyledMenu
         elevation={0}
         anchorOrigin={{
           vertical: 'bottom',
@@ -40,30 +34,27 @@ const MenuMobile: React.FC<MenuType & ComponentDefault> = (props) => {
         anchorEl={anchorEl}
         open={!!anchorEl}
         onClose={handleClose}
-        getContentAnchorEl={null}
-        className={classes.menu}
+        // getContentAnchorEl={null}
       >
-        {props.items.map((x, i) => {
+        {items.map((x, i) => {
           return (
             <MenuItem
               onClick={() => {
-                props.handleChange(i);
+                handleChange?.(i);
                 handleClose();
               }}
               disableRipple
               key={x}
-              className={classNames({
-                active: i === props.selected,
+              className={classnames({
+                active: i === selected,
               })}
             >
-              <Typography variant="h5">
-                {x}
-              </Typography>
+              <Typography variant="h5">{x}</Typography>
             </MenuItem>
           );
         })}
-      </Menu>
-    </div>
+      </StyledMenu>
+    </StyledDiv>
   );
 };
 

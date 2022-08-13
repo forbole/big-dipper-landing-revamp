@@ -10,6 +10,12 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
+    "@emotion/cache": "^11.10.1",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.0",
+    "@mui/system": "^5.10.0",
     "classnames": "^2.3.1",
     "color": "^4.2.3",
     "copy-to-clipboard": "^3.3.1",

@@ -1,7 +1,7 @@
 import '@src/styles/globals.css';
 import { AppProps } from 'next/app';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import createEmotionCache from '@src/utils/create-emotion-cache';
+import createEmotionCache from '@utils/create-emotion-cache';
 import App from '@src/screens/app';
 
 const clientSideEmotionCache = createEmotionCache();

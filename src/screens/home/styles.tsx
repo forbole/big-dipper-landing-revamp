@@ -3,5 +3,4 @@ import { SectionLimit } from '@components';
 
 export const StyledSectionLimit = styled(SectionLimit)({
   height: '500px',
-  eight: '500px',
 });

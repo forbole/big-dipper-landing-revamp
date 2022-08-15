@@ -2,39 +2,31 @@ import { styled } from '@mui/material/styles';
 import SectionLimit from '../section-limit';
 
 export const StyledSectionLimit = styled(SectionLimit)(({ theme }) => ({
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  maxWidth: theme.breakpoints.limit,
-  padding: theme.spacing(2, 1),
+  position: 'relative',
+  width: '100%',
   '& .wrapper': {
-    margin: 'auto',
-    maxWidth: '1024px',
-    height: '60px',
     display: 'flex',
+    flexFlow: 'row nowrap',
+    justifyContent: 'center',
     alignItems: 'center',
-    position: 'relative',
+    height: '79px',
+    padding: theme.spacing(2),
   },
   '& .logo': {
     height: '36px',
-    margin: '0 auto',
-    display: 'inline-block',
+    display: 'block',
   },
-  '& .hamburgerMenu': {
+  '& .wrapper > button': {
     height: '60px',
     position: 'absolute',
-    right: theme.spacing(0),
+    padding: theme.spacing(5),
   },
   [theme.breakpoints.up('md')]: {
     '& .wrapper': {
-      margin: 'auto',
-      maxWidth: '1024px',
-      display: 'flex',
-      alignItems: 'center',
       justifyContent: 'space-between',
     },
     '& .logo': {
-      height: '36px',
-      marginLeft: theme.spacing(1),
+      margin: theme.spacing(1),
     },
   },
 }));

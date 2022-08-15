@@ -29,7 +29,6 @@ const MenuItems = () => {
               className={classnames({
                 active: isActive,
               })}
-              // component="a"
             >
               <ListItemText primary={t(x.key)} />
             </StyledListItemButton>

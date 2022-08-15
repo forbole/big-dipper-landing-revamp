@@ -11,17 +11,32 @@ export const StyledDiv = styled('div')(({ theme }) => ({
   marginRight: 'auto',
   left: '0',
   right: '0',
-  [theme.breakpoints.up('md')]: {
-    width: '216px',
-    top: '88px',
-    margin: '0',
-    left: 'unset',
-    right: theme.spacing(2),
-  },
-  [theme.breakpoints.up('lg')]: {
-    right: 'calc(calc(100vw - 1024px) / 2)',
-  },
+  zIndex: 1,
   '&.modal-close': {
     display: 'none',
+  },
+  [theme.breakpoints.up('md')]: {
+    padding: theme.spacing(2),
+    width: 'auto',
+    background: 'transparent none',
+    top: 0,
+    bottom: 0,
+    left: '50%',
+    right: 0,
+    '&.modal-close': {
+      display: 'unset',
+    },
+    '& .MuiList-root': {
+      display: 'flex',
+      margin: 0,
+      padding: 0,
+      background: 'transparent none',
+    },
+    '& .MuiList-root > .MuiListItemButton-root': {
+      background: 'transparent none',
+    },
+    '& .MuiList-root > .MuiListItemButton-root:first-of-type': {
+      display: 'none',
+    },
   },
 }));

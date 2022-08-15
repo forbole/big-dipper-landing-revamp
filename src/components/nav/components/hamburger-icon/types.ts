@@ -1,4 +1,6 @@
-export interface HamburgerProps {
-    isIcon: boolean;
-    toggleHamburgerMenu: () => void;
-  }
+import { StyledButton } from './styles';
+
+export type HamburgerIconProps = {
+  isIcon: boolean;
+  toggleHamburgerMenu: () => void;
+} & React.ComponentProps<typeof StyledButton>;

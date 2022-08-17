@@ -7,3 +7,4 @@
 - Add Footer
 - Add Terms and Conditions page
 - Add Privacy Policy page
+- Implement Header

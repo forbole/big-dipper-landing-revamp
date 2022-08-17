@@ -19,7 +19,6 @@ export const StyledMenuBar = styled(Box)(({ theme }) => ({
   },
   '& .MuiButtonBase-root': {
     padding: `${theme.spacing(1)} ${theme.spacing(3)}`,
-    borderRadius: theme.spacing(3),
   },
   '& .submenu, & .active': {
     background: 'transparent none !important',
@@ -73,6 +72,20 @@ export const Wrapper = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
   [theme.breakpoints.up('md')]: {
     justifyContent: 'space-between',
+  },
+  '& .menubar .MuiButtonBase-root': {
+    borderRadius: theme.spacing(3),
+  },
+  '& .menubar .submenu-container .MuiButtonBase-root': {
+    borderRadius: 0,
+  },
+  '& .menubar .submenu-container .MuiButtonBase-root:first-of-type': {
+    borderTopLeftRadius: theme.spacing(2),
+    borderTopRightRadius: theme.spacing(2),
+  },
+  '& .menubar .submenu-container .MuiButtonBase-root:last-of-type': {
+    borderBottomLeftRadius: theme.spacing(2),
+    borderBottomRightRadius: theme.spacing(2),
   },
 }));
 

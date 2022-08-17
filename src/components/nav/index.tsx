@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { FC, HTMLAttributes } from 'react';
 import Link from 'next/link';
 import { HOME } from '@utils/links';

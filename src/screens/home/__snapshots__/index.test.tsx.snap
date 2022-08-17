@@ -65,6 +65,24 @@ exports[`Dummy Test matches snapshot 1`] = `
   }
 }
 
+.emotion-2 .menubar .MuiButtonBase-root {
+  border-radius: 24px;
+}
+
+.emotion-2 .menubar .submenu-container .MuiButtonBase-root {
+  border-radius: 0;
+}
+
+.emotion-2 .menubar .submenu-container .MuiButtonBase-root:first-of-type {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.emotion-2 .menubar .submenu-container .MuiButtonBase-root:last-of-type {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
 .emotion-3 {
   height: 36px;
   display: block;
@@ -165,7 +183,6 @@ exports[`Dummy Test matches snapshot 1`] = `
 
 .emotion-5 .MuiButtonBase-root {
   padding: 8px 24px;
-  border-radius: 24px;
 }
 
 .emotion-5 .submenu,
@@ -572,7 +589,7 @@ exports[`Dummy Test matches snapshot 1`] = `
           </button>
         </div>
         <div
-          class="MuiBox-root emotion-5"
+          class="menubar MuiBox-root emotion-5"
         >
           <ul
             class="MuiList-root MuiList-padding emotion-6"

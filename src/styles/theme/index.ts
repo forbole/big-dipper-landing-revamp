@@ -24,7 +24,7 @@ export const common: ThemeOptions = {
           font-display: swap;
           font-weight: 400;
           src: url("/fonts/SF-Pro-Text-Regular.woff2") format('woff2');
-        }\
+        }
       `,
     },
     MuiButton: {
@@ -108,12 +108,11 @@ export const common: ThemeOptions = {
   },
   mixins: {
     gradientBackground: {
-      backgroundImage: 'radial-gradient(300vw 100vh at 50% 50vh, rgba(212,112,151,0), #2e2182), url(/images/background/back.png)',
+      backgroundImage: 'radial-gradient(300vw 100vh at 50% 50vh, rgba(212,112,151,0), #30177d), url(/images/background/back.png)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 0',
       [theme.breakpoints.up('md')]: {
-        backgroundSize: '160%',
-        backgroundPosition: '50% -20px',
+        backgroundImage: 'radial-gradient(300vw 1000px at 50% 500px, rgba(212,112,151,0), #30177d), url(/images/background/back.png)',
       },
     },
     headerGlow: {

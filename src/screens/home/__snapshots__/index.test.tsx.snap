@@ -4,10 +4,10 @@ exports[`Dummy Test matches snapshot 1`] = `
 <DocumentFragment>
   @keyframes animation-0 {
   50% {
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98);
   }
 }
 
@@ -419,6 +419,7 @@ exports[`Dummy Test matches snapshot 1`] = `
   overflow: auto;
   padding: 48px 24px;
   padding: 0;
+  overflow: visible;
 }
 
 @media (min-width:1200px) {
@@ -433,17 +434,17 @@ exports[`Dummy Test matches snapshot 1`] = `
   height: 500px;
 }
 
-.emotion-34 {
+.emotion-38 {
   margin-left: auto;
   margin-right: auto;
   padding: 40px 32px;
 }
 
-.emotion-34 .icons__wrapper path {
+.emotion-38 .icons__wrapper path {
   fill: #fff;
 }
 
-.emotion-34 .icons__wrapper {
+.emotion-38 .icons__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -459,7 +460,7 @@ exports[`Dummy Test matches snapshot 1`] = `
   margin-bottom: 40px;
 }
 
-.emotion-34 .terms__wrapper {
+.emotion-38 .terms__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -477,38 +478,38 @@ exports[`Dummy Test matches snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-34 .MuiTypography-caption {
+.emotion-38 .MuiTypography-caption {
   font-weight: 500;
   color: #fff;
 }
 
-.emotion-34 .terms__links {
+.emotion-38 .terms__links {
   margin: 8px 0px;
 }
 
-.emotion-34 .terms--dash {
+.emotion-38 .terms--dash {
   margin: 0px 8px;
 }
 
-.emotion-34 .terms--dash.desktop {
+.emotion-38 .terms--dash.desktop {
   display: none;
 }
 
 @media (min-width:900px) {
-  .emotion-34 .icons__wrapper {
+  .emotion-38 .icons__wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
   }
 
-  .emotion-34 .social {
+  .emotion-38 .social {
     margin: 0px 12px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-34 {
+  .emotion-38 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -522,16 +523,16 @@ exports[`Dummy Test matches snapshot 1`] = `
     justify-content: space-between;
   }
 
-  .emotion-34 .icons__wrapper {
+  .emotion-38 .icons__wrapper {
     padding-left: 0;
     margin-bottom: 0;
   }
 
-  .emotion-34 .social:first-of-type {
+  .emotion-38 .social:first-of-type {
     margin-left: 0;
   }
 
-  .emotion-34 .terms__wrapper {
+  .emotion-38 .terms__wrapper {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -541,12 +542,12 @@ exports[`Dummy Test matches snapshot 1`] = `
     align-items: center;
   }
 
-  .emotion-34 .terms--dash.desktop {
+  .emotion-38 .terms--dash.desktop {
     display: inline;
   }
 }
 
-.emotion-35 {
+.emotion-39 {
   margin: 0;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
@@ -720,36 +721,80 @@ exports[`Dummy Test matches snapshot 1`] = `
           <div
             class="logo"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            <div
+              class="slider MuiBox-root emotion-15"
+            >
+              <div
+                class="slick-slider slick-initialized"
+              >
+                <div
+                  class="slick-list"
+                >
+                  <div
+                    class="slick-track"
+                    style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+                  >
+                    <div
+                      aria-hidden="false"
+                      class="slick-slide slick-active slick-current"
+                      data-index="0"
+                      style="outline: none; width: 0px;"
+                      tabindex="-1"
+                    >
+                      <div>
+                        <div
+                          class="MuiBox-root emotion-34"
+                        >
+                          <h2
+                            class="MuiTypography-root MuiTypography-h2 emotion-35"
+                          >
+                            Read-time Interchain Explorer
+                          </h2>
+                          <h4
+                            class="MuiTypography-root MuiTypography-h4 emotion-36"
+                          >
+                            View real-time status of different networks
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root emotion-37"
             >
               <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27482%27%20height=%27452%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
                 <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27603%27%20height=%27565%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  alt="Big Dipper"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                 />
+                <noscript />
               </span>
-              <img
-                alt="Big Dipper"
-                class="emotion-33"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            </div>
           </div>
         </div>
       </section>
     </div>
     <footer>
       <div
-        class="emotion-34"
+        class="emotion-38"
       >
         <div
           class="icons__wrapper"
@@ -840,12 +885,12 @@ exports[`Dummy Test matches snapshot 1`] = `
           class="terms__wrapper"
         >
           <span
-            class="MuiTypography-root MuiTypography-caption emotion-35"
+            class="MuiTypography-root MuiTypography-caption emotion-39"
           >
             copyright
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-35"
+            class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-39"
           >
             |
           </span>
@@ -853,19 +898,19 @@ exports[`Dummy Test matches snapshot 1`] = `
             class="terms__links"
           >
             <a
-              class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-35"
+              class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-39"
               href="/terms-and-conditions"
               target="_self"
             >
               termsAndConditions
             </a>
             <span
-              class="MuiTypography-root MuiTypography-caption terms--dash emotion-35"
+              class="MuiTypography-root MuiTypography-caption terms--dash emotion-39"
             >
               |
             </span>
             <a
-              class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-35"
+              class="MuiTypography-root MuiTypography-caption link__item link__item--caption emotion-39"
               href="/privacy-policy"
               target="_self"
             >
@@ -873,12 +918,12 @@ exports[`Dummy Test matches snapshot 1`] = `
             </a>
           </div>
           <span
-            class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-35"
+            class="MuiTypography-root MuiTypography-caption terms--dash desktop emotion-39"
           >
             |
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption emotion-35"
+            class="MuiTypography-root MuiTypography-caption emotion-39"
           >
             common:productOf
           </span>

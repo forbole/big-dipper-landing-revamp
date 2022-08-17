@@ -10,7 +10,7 @@ import {
 } from './styles';
 import DropdownMenu from './components/dropdown-menu';
 import { useNav } from './hooks';
-import MenuItems from './components/dropdown-menu/components/menu-items';
+import MenuItems from './components/menu-items';
 
 const Nav: FC<HTMLAttributes<HTMLElement>> = () => {
   const { isIcon, isMenu, toggleHamburgerMenu } = useNav();

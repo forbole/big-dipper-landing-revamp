@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Wrapper, StyledHamburgerIcon } from '../../styles';
 import { StyledPaper, StyledModal } from './styles';
 import { DropdownMenuProps } from './types';
-import MenuItems from './components/menu-items';
+import MenuItems from '../menu-items';
 
 const DropdownMenu: FC<DropdownMenuProps> = ({ isMenu, toggleHamburgerMenu }) => {
   return (

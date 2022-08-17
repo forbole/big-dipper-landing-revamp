@@ -16,10 +16,8 @@ jest.mock('next-translate/useTranslation', () => () => mockI18n);
 // ==================================
 describe('Dummy Test', () => {
   it('matches snapshot', async () => {
-    const { asFragment } = render(<Home />);
-    expect(screen.getByText(
-      /home page/i,
-    )).toBeInTheDocument();
+    const { asFragment, getByAltText } = render(<Home />);
+    expect(getByAltText(/^Big Dipper$/)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
 

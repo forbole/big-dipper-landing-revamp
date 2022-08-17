@@ -1,9 +1,16 @@
 import { FC, HTMLAttributes } from 'react';
-import BDLogo from '@assets/big-dipper-red.svg';
-import { StyledSectionLimit } from './styles';
-import HamburgerIcon from './components/hamburger-icon';
+import Link from 'next/link';
+import { HOME } from '@utils/links';
+import {
+  StyledSectionLimit,
+  Wrapper,
+  StyledDBLogo,
+  StyledHamburgerIcon,
+  StyledMenuBar,
+} from './styles';
 import DropdownMenu from './components/dropdown-menu';
 import { useNav } from './hooks';
+import MenuItems from './components/dropdown-menu/components/menu-items';
 
 const Nav: FC<HTMLAttributes<HTMLElement>> = () => {
   const { isIcon, isMenu, toggleHamburgerMenu } = useNav();

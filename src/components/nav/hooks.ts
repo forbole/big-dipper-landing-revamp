@@ -22,7 +22,7 @@ export const useNav = () => {
         isMenu: true,
       });
     } else {
-      // click hamburger icon to close modal and recover hamburger munu to default
+      // click hamburger icon to close modal and recover hamburger menu to default
       handleSetState({
         isIcon: true,
         isMenu: false,

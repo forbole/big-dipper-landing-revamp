@@ -1,6 +1,7 @@
-import React from 'react';
+import { MUIStyledCommonProps } from '@mui/system';
+import { StyledSection } from './styles';
 
 export type SectionBoxProps = {
-  children: React.ReactNode;
   main?: boolean;
-}
+} & MUIStyledCommonProps &
+  React.ComponentProps<typeof StyledSection>;

@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, ThemeOptions } from '@mui/material/styles';
 
 const theme = createTheme({
   breakpoints: {
@@ -13,7 +13,8 @@ const theme = createTheme({
   },
 });
 
-export const common = createTheme(theme, {
+export const common: ThemeOptions = {
+  breakpoints: theme.breakpoints,
   components: {
     MuiCssBaseline: {
       styleOverrides: `
@@ -111,7 +112,8 @@ export const common = createTheme(theme, {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 0',
       [theme.breakpoints.up('md')]: {
-        backgroundImage: 'url(/images/background/back.png)',
+        backgroundSize: '160%',
+        backgroundPosition: '50% -20px',
       },
     },
     headerGlow: {
@@ -140,6 +142,6 @@ export const common = createTheme(theme, {
       },
     },
   },
-});
+};
 
-export const darkTheme = common;
+export const darkTheme = createTheme(common);

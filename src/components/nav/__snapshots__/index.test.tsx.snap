@@ -5,63 +5,58 @@ exports[`Nav matches snapshot 1`] = `
   margin-left: auto;
   margin-right: auto;
   max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1024px;
-  padding: 16px 8px;
+  position: relative;
+  width: 100%;
 }
 
-.emotion-0 .wrapper {
-  margin: auto;
-  max-width: 1024px;
+.emotion-0>button {
   height: 60px;
+  position: absolute;
+  padding: 40px;
+  z-index: 1;
+}
+
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
-}
-
-.emotion-0 .logo {
-  height: 36px;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-.emotion-0 .hamburgerMenu {
-  height: 60px;
-  position: absolute;
-  right: 0px;
+  height: 79px;
+  padding: 16px;
 }
 
 @media (min-width:768px) {
-  .emotion-0 .wrapper {
-    margin: auto;
-    max-width: 1024px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .emotion-1 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
+}
 
-  .emotion-0 .logo {
-    height: 36px;
-    margin-left: 8px;
+.emotion-2 {
+  height: 36px;
+  display: block;
+}
+
+@media (min-width:768px) {
+  .emotion-2 {
+    margin: 8px;
   }
 }
 
-.emotion-1 {
+.emotion-3 {
   background: unset;
   border: unset;
   height: 60px;
@@ -81,11 +76,12 @@ exports[`Nav matches snapshot 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  z-index: 2;
 }
 
-.emotion-1 .bar1,
-.emotion-1 .bar2,
-.emotion-1 .bar3 {
+.emotion-3 .bar1,
+.emotion-3 .bar2,
+.emotion-3 .bar3 {
   width: 24px;
   border: 1px solid #FFFFFF;
   margin: 6px 0;
@@ -94,59 +90,96 @@ exports[`Nav matches snapshot 1`] = `
   border-radius: 25px;
 }
 
-.emotion-1 .hamburger-X .bar2 {
+.emotion-3 .hamburger-X .bar2 {
   opacity: 0;
 }
 
-.emotion-1 .hamburger-X .bar1 {
+.emotion-3 .hamburger-X .bar1 {
   -webkit-transform: rotate(-45deg) translate(-4.5px, 4.5px);
   -moz-transform: rotate(-45deg) translate(-4.5px, 4.5px);
   -ms-transform: rotate(-45deg) translate(-4.5px, 4.5px);
   transform: rotate(-45deg) translate(-4.5px, 4.5px);
 }
 
-.emotion-1 .hamburger-X .bar3 {
+.emotion-3 .hamburger-X .bar3 {
   -webkit-transform: rotate(45deg) translate(-6.5px, -6.5px);
   -moz-transform: rotate(45deg) translate(-6.5px, -6.5px);
   -ms-transform: rotate(45deg) translate(-6.5px, -6.5px);
   transform: rotate(45deg) translate(-6.5px, -6.5px);
 }
 
-.emotion-2 {
-  padding: 16px 0px;
-  width: 272px;
-  background: rgba(62, 35, 79, 0.7);
-  border-radius: 12px;
-  -webkit-backdrop-filter: blur(24px);
-  backdrop-filter: blur(24px);
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+@media (min-width:768px) {
+  .emotion-3 {
+    display: none;
+  }
+}
+
+.emotion-4 {
+  display: none;
+  width: auto;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  -webkit-justify-content: right;
+  justify-content: right;
 }
 
 @media (min-width:768px) {
-  .emotion-2 {
-    width: 216px;
-    top: 88px;
-    margin: 0;
-    left: unset;
-    right: 16px;
+  .emotion-4 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
-@media (min-width:1280px) {
-  .emotion-2 {
-    right: calc(calc(100vw - 1024px) / 2);
-  }
+.emotion-4>.MuiList-root>.MuiListItemButton-root:first-of-type {
+  display: none!important;
 }
 
-.emotion-2.modal-close {
-  display: none;
+.emotion-4 .MuiList-root {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.emotion-3 {
+.emotion-4 .MuiButtonBase-root {
+  padding: 8px 24px;
+  border-radius: 24px;
+}
+
+.emotion-4 .submenu,
+.emotion-4 .active {
+  background: transparent none!important;
+}
+
+.emotion-4 .active.submenu {
+  background: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)!important;
+}
+
+.emotion-4 .submenu-box {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.emotion-4 .submenu-container {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  margin-top: 16px;
+  background: #3c52af none;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.emotion-4 .submenu-container .MuiButtonBase-root {
+  padding: 16px 24px;
+}
+
+.emotion-5 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -155,7 +188,7 @@ exports[`Nav matches snapshot 1`] = `
   padding-bottom: 8px;
 }
 
-.emotion-4 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -216,76 +249,82 @@ exports[`Nav matches snapshot 1`] = `
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   padding-left: 16px;
   padding-right: 16px;
-  text-align: center;
+  text-align: left;
+  padding: 8px 32px;
 }
 
-.emotion-4::-moz-focus-inner {
+.emotion-6::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-4.Mui-disabled {
+.emotion-6.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-4 {
+  .emotion-6 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-4:hover {
+.emotion-6:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.08);
 }
 
 @media (hover: none) {
-  .emotion-4:hover {
+  .emotion-6:hover {
     background-color: transparent;
   }
 }
 
-.emotion-4.Mui-selected {
+.emotion-6.Mui-selected {
   background-color: rgba(144, 202, 249, 0.16);
 }
 
-.emotion-4.Mui-selected.Mui-focusVisible {
+.emotion-6.Mui-selected.Mui-focusVisible {
   background-color: rgba(144, 202, 249, 0.28);
 }
 
-.emotion-4.Mui-selected:hover {
+.emotion-6.Mui-selected:hover {
   background-color: rgba(144, 202, 249, 0.24);
 }
 
 @media (hover: none) {
-  .emotion-4.Mui-selected:hover {
+  .emotion-6.Mui-selected:hover {
     background-color: rgba(144, 202, 249, 0.16);
   }
 }
 
-.emotion-4.Mui-focusVisible {
+.emotion-6.Mui-focusVisible {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-.emotion-4.Mui-disabled {
+.emotion-6.Mui-disabled {
   opacity: 0.38;
 }
 
-.emotion-4.MuiListItem-gutters {
+.emotion-6.MuiListItem-gutters {
   padding: 16px 20px;
 }
 
-.emotion-4 .MuiListItemText-root {
+.emotion-6 .MuiListItemText-root {
   color: #fff;
+  font-weight: 900;
 }
 
-.emotion-4.active {
+.emotion-6.active {
   background: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
 }
 
-.emotion-5 {
+.emotion-6.submenu {
+  background: #3c52af none;
+}
+
+.emotion-7 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -294,7 +333,7 @@ exports[`Nav matches snapshot 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-6 {
+.emotion-8 {
   margin: 0;
   font-size: 1rem;
   white-space: pre-wrap;
@@ -304,7 +343,7 @@ exports[`Nav matches snapshot 1`] = `
   display: block;
 }
 
-.emotion-7 {
+.emotion-9 {
   overflow: hidden;
   pointer-events: none;
   position: absolute;
@@ -348,135 +387,119 @@ exports[`Nav matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="modal-close emotion-2"
+        class="MuiBox-root emotion-4"
       >
         <ul
-          class="MuiList-root MuiList-padding emotion-3"
+          class="MuiList-root MuiList-padding emotion-5"
+          role="menu"
+          tabindex="-1"
         >
           <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
+            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-6"
             href="/"
             tabindex="0"
           >
             <div
-              class="MuiListItemText-root emotion-5"
+              class="MuiListItemText-root emotion-7"
             >
               <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-8"
               >
                 home
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root emotion-7"
+              class="MuiTouchRipple-root emotion-9"
             />
           </a>
           <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
+            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-6"
             href="/all-networks"
             tabindex="0"
           >
             <div
-              class="MuiListItemText-root emotion-5"
+              class="MuiListItemText-root emotion-7"
             >
               <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-8"
               >
                 allNetworks
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root emotion-7"
+              class="MuiTouchRipple-root emotion-9"
             />
           </a>
+          <div
+            class="submenu-box MuiBox-root emotion-14"
+          >
+            <div
+              class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters submenu emotion-6"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemText-root emotion-7"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-8"
+                >
+                  helpsAndSupport
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-18"
+                data-testid="KeyboardArrowDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+              <span
+                class="MuiTouchRipple-root emotion-9"
+              />
+            </div>
+            <div
+              class="submenu-container MuiBox-root emotion-14"
+            />
+          </div>
           <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
+            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-6"
             href="/about"
             tabindex="0"
           >
             <div
-              class="MuiListItemText-root emotion-5"
+              class="MuiListItemText-root emotion-7"
             >
               <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-8"
               >
                 about
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root emotion-7"
+              class="MuiTouchRipple-root emotion-9"
             />
           </a>
           <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
-            href="/faq"
-            tabindex="0"
-          >
-            <div
-              class="MuiListItemText-root emotion-5"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
-              >
-                faq
-              </span>
-            </div>
-            <span
-              class="MuiTouchRipple-root emotion-7"
-            />
-          </a>
-          <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
-            href="/feedback"
-            tabindex="0"
-          >
-            <div
-              class="MuiListItemText-root emotion-5"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
-              >
-                feedback
-              </span>
-            </div>
-            <span
-              class="MuiTouchRipple-root emotion-7"
-            />
-          </a>
-          <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
-            href="/donation"
-            tabindex="0"
-          >
-            <div
-              class="MuiListItemText-root emotion-5"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
-              >
-                donation
-              </span>
-            </div>
-            <span
-              class="MuiTouchRipple-root emotion-7"
-            />
-          </a>
-          <a
-            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-4"
+            class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters  emotion-6"
             href="https://docs.bigdipper.live/"
             tabindex="0"
           >
             <div
-              class="MuiListItemText-root emotion-5"
+              class="MuiListItemText-root emotion-7"
             >
               <span
-                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-6"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-8"
               >
                 docs
               </span>
             </div>
             <span
-              class="MuiTouchRipple-root emotion-7"
+              class="MuiTouchRipple-root emotion-9"
             />
           </a>
         </ul>

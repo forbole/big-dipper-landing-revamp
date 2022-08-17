@@ -8,8 +8,14 @@ import { SectionBoxProps } from './types';
  * @param props
  * @returns
  */
-const SectionBox: FC<SectionBoxProps & ComponentDefault> = ({ children, className, main }) => {
-  return <StyledSection className={classnames(className, { main })}>{children}</StyledSection>;
+const SectionBox: FC<SectionBoxProps> = ({
+  children, className, main, ...props
+}) => {
+  return (
+    <StyledSection className={classnames(className, { main })} {...props}>
+      {children}
+    </StyledSection>
+  );
 };
 
 export default SectionBox;

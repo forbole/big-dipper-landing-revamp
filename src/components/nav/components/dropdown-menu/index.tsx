@@ -1,14 +1,21 @@
 import { FC } from 'react';
-import classnames from 'classnames';
-import { StyledDiv } from './styles';
-import MenuItems from './components/menu-items';
+import { Wrapper, StyledHamburgerIcon } from '../../styles';
+import { StyledPaper, StyledModal } from './styles';
 import { DropdownMenuProps } from './types';
+import MenuItems from './components/menu-items';
 
-const DropdownMenu: FC<DropdownMenuProps> = ({ isMenu, ...props }) => {
+const DropdownMenu: FC<DropdownMenuProps> = ({ isMenu, toggleHamburgerMenu }) => {
   return (
-    <StyledDiv className={classnames(isMenu ? 'modal-open' : 'modal-close')} {...props}>
-      <MenuItems />
-    </StyledDiv>
+    <StyledModal open={isMenu} sx={{ backdropFilter: 'blur(10px)' }}>
+      <>
+        <Wrapper>
+          <StyledHamburgerIcon toggleHamburgerMenu={toggleHamburgerMenu} isIcon={false} />
+        </Wrapper>
+        <StyledPaper>
+          <MenuItems />
+        </StyledPaper>
+      </>
+    </StyledModal>
   );
 };
 

@@ -1,13 +1,21 @@
 // import useTranslation from 'next-translate/useTranslation';
 import { Layout, SectionBox } from '@components';
-import { StyledSectionLimit } from './styles';
+import { StyledSectionLimit, StyledImage } from './styles';
 
 const Home = () => {
   return (
     <Layout>
-      <SectionBox>
+      <SectionBox sx={{ padding: '0' }}>
         <StyledSectionLimit>
-          <h1>home page</h1>
+          <div className="logo">
+            <StyledImage
+              src="/images/big-dipper-transparent.png"
+              alt="Big Dipper"
+              layout="intrinsic"
+              width="603"
+              height="565"
+            />
+          </div>
         </StyledSectionLimit>
       </SectionBox>
     </Layout>

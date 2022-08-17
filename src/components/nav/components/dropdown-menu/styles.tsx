@@ -1,42 +1,29 @@
 import { styled } from '@mui/material/styles';
+import { ListItemButton, Modal, Paper } from '@mui/material';
 
-export const StyledDiv = styled('div')(({ theme }) => ({
-  padding: theme.spacing(2, 0),
-  width: '272px',
-  background: 'rgba(62, 35, 79, 0.7)',
-  borderRadius: '12px',
-  backdropFilter: 'blur(24px)',
-  position: 'absolute',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  left: '0',
-  right: '0',
-  zIndex: 1,
-  '&.modal-close': {
+export const StyledModal = styled(Modal)(({ theme }) => ({
+  backdropFilter: 'blur(10px)',
+  [theme.breakpoints.up('md')]: {
     display: 'none',
   },
-  [theme.breakpoints.up('md')]: {
-    padding: theme.spacing(2),
-    width: 'auto',
-    background: 'transparent none',
-    top: 0,
-    bottom: 0,
-    left: '50%',
-    right: 0,
-    '&.modal-close': {
-      display: 'unset',
-    },
-    '& .MuiList-root': {
-      display: 'flex',
-      margin: 0,
-      padding: 0,
-      background: 'transparent none',
-    },
-    '& .MuiList-root > .MuiListItemButton-root': {
-      background: 'transparent none',
-    },
-    '& .MuiList-root > .MuiListItemButton-root:first-of-type': {
-      display: 'none',
-    },
+}));
+
+export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
+  '&.MuiListItem-gutters': {
+    padding: theme.spacing(2, 2.5),
   },
+  '& .MuiListItemText-root': {
+    color: theme.palette.common.white,
+  },
+  '&.active': {
+    background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
+  },
+}));
+
+export const StyledPaper = styled(Paper)(({ theme }) => ({
+  background: '#334198',
+  width: '80vw',
+  padding: `${theme.spacing(2)} 0`,
+  borderRadius: theme.spacing(2),
+  margin: 'auto',
 }));

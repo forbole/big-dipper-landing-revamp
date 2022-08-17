@@ -19,20 +19,25 @@ export const getMenuItems = () => {
       url: ALL_NETWORKS,
     },
     {
+      key: 'helpsAndSupport',
+      submenus: [
+        {
+          key: 'faq',
+          url: FAQ,
+        },
+        {
+          key: 'donation',
+          url: DONATION,
+        },
+        {
+          key: 'feedback',
+          url: FEEDBACK,
+        },
+      ],
+    },
+    {
       key: 'about',
       url: ABOUT,
-    },
-    {
-      key: 'faq',
-      url: FAQ,
-    },
-    {
-      key: 'feedback',
-      url: FEEDBACK,
-    },
-    {
-      key: 'donation',
-      url: DONATION,
     },
     {
       key: 'docs',

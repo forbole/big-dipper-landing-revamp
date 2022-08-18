@@ -19,7 +19,7 @@ export const StyledSectionLimit = styled(SectionLimit)(({ theme }) => ({
   '& .MuiTypography-h3': {
     marginBottom: theme.spacing(2),
     color: theme.palette.secondary.main,
-    '&:not(:first-child)': {
+    '&:not(:first-of-type)': {
       marginTop: theme.spacing(6),
     },
   },
@@ -31,7 +31,7 @@ export const StyledSectionLimit = styled(SectionLimit)(({ theme }) => ({
   },
   '& .MuiTypography-h6': {
     marginBottom: theme.spacing(1),
-    '&:not(:first-child)': {
+    '&:not(:first-of-type)': {
       marginTop: theme.spacing(2),
     },
   },

@@ -12,7 +12,7 @@ const Nav: FC<HTMLAttributes<HTMLElement>> = () => {
     <div>
       <StyledSectionLimit>
         <div className="wrapper">
-          <BDLogo className="logo" />
+          <BDLogo className="logo" height={36} />
           <HamburgerIcon toggleHamburgerMenu={toggleHamburgerMenu} isIcon={isIcon} />
         </div>
         <DropdownMenu isMenu={isMenu} />

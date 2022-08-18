@@ -6,7 +6,7 @@ import { StyledSectionLimit } from './styles';
 import { definitions } from './utils';
 
 const TermsAndConditions = () => {
-  const { t } = useTranslation('terms');
+  const { t } = useTranslation('terms-and-conditions');
   return (
     <Layout>
       <SectionBox main>

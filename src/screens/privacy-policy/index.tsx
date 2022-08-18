@@ -14,7 +14,7 @@ import {
 } from './utils';
 
 const PrivacyPolicy = () => {
-  const { t } = useTranslation('privacy');
+  const { t } = useTranslation('privacy-policy');
   return (
     <Layout>
       <SectionBox main>

@@ -347,7 +347,6 @@ exports[`Dummy Test matches snapshot 1`] = `
   margin-left: auto;
   margin-right: auto;
   height: 500px;
-  eight: 500px;
 }
 
 .emotion-36 {
@@ -484,6 +483,7 @@ exports[`Dummy Test matches snapshot 1`] = `
         >
           <span
             class="logo"
+            height="36"
           />
           <button
             class="emotion-2"

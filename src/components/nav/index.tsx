@@ -16,15 +16,24 @@ const Nav: FC<HTMLAttributes<HTMLElement>> = () => {
   const { isIcon, isMenu, toggleHamburgerMenu } = useNav();
 
   return (
-    <div>
-      <StyledSectionLimit>
-        <div className="wrapper">
-          <BDLogo className="logo" height={36} />
-          <HamburgerIcon toggleHamburgerMenu={toggleHamburgerMenu} isIcon={isIcon} />
-        </div>
-        <DropdownMenu isMenu={isMenu} />
-      </StyledSectionLimit>
-    </div>
+    <StyledSectionLimit>
+      <Wrapper>
+        <Link href={HOME} passHref>
+          <a href="/#">
+            <StyledDBLogo className="logo" height={36} />
+          </a>
+        </Link>
+        <StyledHamburgerIcon
+          toggleHamburgerMenu={toggleHamburgerMenu}
+          isIcon={isIcon}
+          sx={{ display: isMenu ? 'none' : undefined }}
+        />
+        <StyledMenuBar className="menubar">
+          <MenuItems />
+        </StyledMenuBar>
+      </Wrapper>
+      <DropdownMenu isMenu={isMenu} toggleHamburgerMenu={toggleHamburgerMenu} />
+    </StyledSectionLimit>
   );
 };
 

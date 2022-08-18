@@ -189,7 +189,7 @@ exports[`Nav matches snapshot 1`] = `
   margin-top: 16px;
   background: #3c52af none;
   border-radius: 16px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .emotion-4 .submenu-container .MuiButtonBase-root {

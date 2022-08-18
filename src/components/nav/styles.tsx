@@ -37,7 +37,7 @@ export const StyledMenuBar = styled(Box)(({ theme }) => ({
     marginTop: theme.spacing(2),
     background: '#3c52af none',
     borderRadius: theme.spacing(2),
-    zIndex: 1,
+    zIndex: 10,
   },
   '& .submenu-container .MuiButtonBase-root': {
     padding: `${theme.spacing(2)} ${theme.spacing(3)}`,

@@ -94,7 +94,6 @@ export const common: ThemeOptions = {
       secondary: '#FEF3F2',
     },
     background: {
-      default: '#fef',
       mobileMenu: '#334198',
       activeMenuItem: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
       desktopMenu: '#3c52af none',

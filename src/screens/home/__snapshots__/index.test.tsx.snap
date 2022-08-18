@@ -20,7 +20,7 @@ exports[`Dummy Test matches snapshot 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  background-image: radial-gradient(300vw 100v at 50% 50vh, rgba(212,112,151,0), #30177d),url(/images/background/back.png);
+  background-image: radial-gradient(300vw 100vh at 50% 50vh, rgba(212,112,151,0), #30177d),url(/images/background/back.png);
   background-repeat: no-repeat;
   -webkit-background-position: 50% 0;
   background-position: 50% 0;

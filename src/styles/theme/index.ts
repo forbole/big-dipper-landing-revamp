@@ -1,20 +1,22 @@
 import { createTheme, ThemeOptions } from '@mui/material/styles';
 
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 375,
-      md: 768,
-      lg: 1280,
-      xl: 1920,
-    },
-    limit: 1024,
+const breakpoints = {
+  values: {
+    xs: 0,
+    sm: 375,
+    md: 768,
+    lg: 1280,
+    xl: 1920,
   },
+  limit: 1024,
+};
+
+const theme = createTheme({
+  breakpoints,
 });
 
 export const common: ThemeOptions = {
-  breakpoints: theme.breakpoints,
+  breakpoints,
   components: {
     MuiCssBaseline: {
       styleOverrides: `
@@ -80,6 +82,7 @@ export const common: ThemeOptions = {
       fontWeight: 600,
     },
   },
+
   palette: {
     mode: 'dark',
     secondary: {
@@ -90,29 +93,22 @@ export const common: ThemeOptions = {
       primary: '#EFEFEF',
       secondary: '#FEF3F2',
     },
-    custom: {
-      general: {
-        white: '#ffffff',
-        box: '#101828',
-        dropBackground: '#3E234F',
-      },
-      fonts: {
-        one: '#EFEFEF',
-        two: '#FEF3F2',
-        three: '#FFEAED',
-        four: '#FEE6E5',
-        five: '#FCCDCC',
-        six: '#F6504B',
-      },
+    background: {
+      default: '#fef',
+      mobileMenu: '#334198',
+      activeMenuItem: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
+      desktopMenu: '#3c52af none',
     },
   },
   mixins: {
     gradientBackground: {
-      backgroundImage: 'radial-gradient(300vw 100vh at 50% 50vh, rgba(212,112,151,0), #30177d), url(/images/background/back.png)',
+      backgroundImage:
+        'radial-gradient(300vw 100v at 50% 50vh, rgba(212,112,151,0), #30177d), url(/images/background/back.png)',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 0',
       [theme.breakpoints.up('md')]: {
-        backgroundImage: 'radial-gradient(300vw 1000px at 50% 500px, rgba(212,112,151,0), #30177d), url(/images/background/back.png)',
+        backgroundImage:
+          'radial-gradient(512px 512px at 50% 300px, rgba(212,112,151,0), #30177d), url(/images/background/back.png)',
       },
     },
     headerGlow: {

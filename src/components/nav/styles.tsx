@@ -24,7 +24,7 @@ export const StyledMenuBar = styled(Box)(({ theme }) => ({
     background: 'transparent none !important',
   },
   '& .active.submenu': {
-    background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%) !important',
+    background: `${theme.palette.background.activeMenuItem} !important`,
   },
   '& .submenu-box': {
     display: 'inline-flex',
@@ -35,7 +35,7 @@ export const StyledMenuBar = styled(Box)(({ theme }) => ({
     top: '100%',
     width: '100%',
     marginTop: theme.spacing(2),
-    background: '#3c52af none',
+    background: theme.palette.background.desktopMenu,
     borderRadius: theme.spacing(2),
     zIndex: 10,
   },

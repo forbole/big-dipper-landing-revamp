@@ -16,12 +16,12 @@ export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
     color: theme.palette.common.white,
   },
   '&.active': {
-    background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
+    background: theme.palette.background.activeMenuItem,
   },
 }));
 
 export const StyledPaper = styled(Paper)(({ theme }) => ({
-  background: '#334198',
+  background: theme.palette.background.mobileMenu,
   width: '80vw',
   padding: `${theme.spacing(2)} 0`,
   borderRadius: theme.spacing(2),

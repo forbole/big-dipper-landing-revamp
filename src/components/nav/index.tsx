@@ -18,7 +18,10 @@ const Nav: FC<HTMLAttributes<HTMLElement>> = () => {
   return (
     <StyledSectionLimit>
       <Wrapper>
-        <Link href={HOME} passHref>
+        <Link
+          href={HOME}
+          passHref
+        >
           <a href="/#">
             <StyledDBLogo className="logo" height={36} />
           </a>

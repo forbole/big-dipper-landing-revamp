@@ -18,7 +18,7 @@ export const StyledContentBox = styled(ContentBox)(({ theme }) => ({
     color: theme.palette.secondary.main,
   },
   '& .list__title--bullet': {
-    color: theme.palette.custom.fonts.one,
+    color: theme.palette.grey.A200,
     marginRight: theme.spacing(1),
   },
   '& .list__item:not(:last-child)': {

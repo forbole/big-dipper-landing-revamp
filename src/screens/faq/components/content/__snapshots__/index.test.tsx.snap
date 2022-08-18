@@ -21,7 +21,7 @@ exports[`Content matches snapshot 1`] = `
 }
 
 .emotion-0 .list__title--bullet {
-  color: #EFEFEF;
+  color: #eeeeee;
   margin-right: 8px;
 }
 

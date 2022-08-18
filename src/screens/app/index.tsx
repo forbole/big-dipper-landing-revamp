@@ -1,16 +1,18 @@
 import type { AppProps } from 'next/app';
-import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
-import { darkTheme } from '@src/styles/theme';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
+import { darkTheme } from '../../styles/theme';
 import { useApp } from './hooks';
 
 const App = ({ Component, pageProps }: AppProps) => {
   useApp();
   return (
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 };
 

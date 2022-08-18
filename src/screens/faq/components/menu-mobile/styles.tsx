@@ -13,7 +13,7 @@ export const StyledMenu = styled(Menu)(({ theme }) => ({
   '& .MuiMenuItem-root': {
     padding: theme.spacing(2, 4),
     justifyContent: 'center',
-    color: theme.palette.custom.general.white,
+    color: theme.palette.common.white,
   },
   '& .MuiMenuItem-root.active': {
     ...theme.mixins.button,
@@ -23,7 +23,7 @@ export const StyledMenu = styled(Menu)(({ theme }) => ({
     padding: 0,
   },
   '& .MuiMenu-paper': {
-    background: alpha(theme.palette.custom.general.dropBackground, 0.7),
+    background: alpha(theme.palette.background.mobileMenu, 0.7),
     backdropFilter: 'blur(24px)',
   },
 }));

@@ -4,7 +4,7 @@ import { Content, MenuDesktop, MenuMobile } from './components';
 
 export const StyledSectionLimit = styled(SectionLimit)(({ theme }) => ({
   '& .title': {
-    color: theme.palette.custom.general.white,
+    color: theme.palette.common.white,
   },
   '& .header__wrapper': {
     display: 'flex',

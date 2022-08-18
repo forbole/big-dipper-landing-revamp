@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { MockTheme } from '@mocks';
 import Home from '.';
 
 // ==================================
@@ -16,7 +17,9 @@ jest.mock('next-translate/useTranslation', () => () => mockI18n);
 // ==================================
 describe('Dummy Test', () => {
   it('matches snapshot', async () => {
-    const { asFragment, getByAltText } = render(<Home />);
+    const { asFragment, getByAltText } = render(
+      <MockTheme><Home /></MockTheme>,
+    );
     expect(getByAltText(/^Big Dipper$/)).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });

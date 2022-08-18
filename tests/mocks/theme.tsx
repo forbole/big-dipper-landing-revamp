@@ -1,7 +1,7 @@
 /* eslint-disable */
-import { ReactNode } from "react";
-import { ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
-import { darkTheme } from "@src/styles/theme";
+import { ReactNode } from 'react';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
+import { darkTheme } from '@src/styles/theme';
 
 /**
  * Theme mocker to handle custom keys

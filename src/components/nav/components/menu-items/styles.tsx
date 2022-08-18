@@ -12,9 +12,9 @@ export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
     fontWeight: 900,
   },
   '&.active': {
-    background: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
+    background: theme.palette.background.activeMenuItem,
   },
   '&.submenu': {
-    background: '#3c52af none',
+    background: theme.palette.background.desktopMenu,
   },
 }));

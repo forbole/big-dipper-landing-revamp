@@ -39,7 +39,7 @@ export const StyledSectionLimit = styled(SectionLimit)(({ theme }) => ({
         textShadow: '2px 2px rgba(0,0,0,0.1)',
       },
       '& .slick-dots li button:before': {
-        color: '#fff',
+        color: theme.palette.secondary.contrastText,
         opacity: 0.95,
         transform: 'scale(1.2)',
         textShadow: '1px 1px rgba(0,0,0,0.1)',

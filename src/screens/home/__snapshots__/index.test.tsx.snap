@@ -442,7 +442,128 @@ exports[`Dummy Test matches snapshot 1`] = `
 .emotion-32 {
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  max-width: 1024px;
+}
+
+.emotion-32 .logo {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+  background: url("/images/background/stars.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 95% auto;
+  background-size: 95% auto;
+  -webkit-background-position: 50% 50%;
+  background-position: 50% 50%;
+}
+
+@media (min-width:768px) {
+  .emotion-32 .logo {
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+
+.emotion-32 .logo .slider {
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+}
+
+.emotion-32 .logo .slider .slick-slider {
+  height: 85%;
+}
+
+.emotion-32 .logo .slider .slick-list {
+  height: 100%;
+}
+
+.emotion-32 .logo .slider .slick-track {
+  height: 100%;
+}
+
+.emotion-32 .logo .slider .slick-slide {
+  position: relative;
+}
+
+.emotion-32 .logo .slider .slick-arrow {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  text-shadow: 2px 2px rgba(0,0,0,0.1);
+}
+
+.emotion-32 .logo .slider .slick-dots li button:before {
+  color: #FFFFFF;
+  opacity: 0.95;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+.emotion-32 .logo .slider .slick-dots li.slick-active button:before {
+  color: red;
+}
+
+.emotion-34 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.emotion-35 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: SFPro,Arial,sans-serif;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+@media (min-width:768px) {
+  .emotion-35 {
+    font-size: 2rem;
+  }
+}
+
+.emotion-36 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: SFPro,Arial,sans-serif;
+  line-height: 1.235;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+  font-size: 0.8rem;
+}
+
+@media (min-width:768px) {
+  .emotion-36 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-37 {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  mix-blend-mode: screen;
+  padding: 0 40px;
+  -webkit-animation: animation-0 3s infinite ease;
+  animation: animation-0 3s infinite ease;
 }
 
 .emotion-38 {
@@ -570,36 +691,38 @@ exports[`Dummy Test matches snapshot 1`] = `
 <main
     class="emotion-0"
   >
-    <div>
+    <div
+      class="emotion-1"
+    >
       <div
-        class="emotion-1"
+        class="MuiBox-root emotion-2"
       >
-        <div
-          class="wrapper"
+        <a
+          href="/"
         >
           <span
-            class="logo"
+            class="logo emotion-3"
             height="36"
           />
-          <button
-            class="emotion-2"
-            type="button"
+        </a>
+        <button
+          class="emotion-4"
+          type="button"
+        >
+          <div
+            class="hamburger"
           >
             <div
-              class="hamburger"
-            >
-              <div
-                class="bar1"
-              />
-              <div
-                class="bar2"
-              />
-              <div
-                class="bar3"
-              />
-            </div>
-          </button>
-        </div>
+              class="bar1"
+            />
+            <div
+              class="bar2"
+            />
+            <div
+              class="bar3"
+            />
+          </div>
+        </button>
         <div
           class="menubar MuiBox-root emotion-5"
         >

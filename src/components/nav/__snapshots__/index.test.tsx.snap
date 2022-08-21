@@ -372,37 +372,56 @@ exports[`Nav matches snapshot 1`] = `
   border-radius: inherit;
 }
 
+.emotion-18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
 <div>
-  <div>
+  <div
+    class="emotion-0"
+  >
     <div
-      class="emotion-0"
+      class="MuiBox-root emotion-1"
     >
-      <div
-        class="wrapper"
+      <a
+        href="/"
       >
         <span
-          class="logo"
+          class="logo emotion-2"
           height="36"
         />
-        <button
-          class="emotion-1"
-          type="button"
+      </a>
+      <button
+        class="emotion-3"
+        type="button"
+      >
+        <div
+          class="hamburger"
         >
           <div
-            class="hamburger"
-          >
-            <div
-              class="bar1"
-            />
-            <div
-              class="bar2"
-            />
-            <div
-              class="bar3"
-            />
-          </div>
-        </button>
-      </div>
+            class="bar1"
+          />
+          <div
+            class="bar2"
+          />
+          <div
+            class="bar3"
+          />
+        </div>
+      </button>
       <div
         class="menubar MuiBox-root emotion-4"
       >

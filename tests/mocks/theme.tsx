@@ -1,28 +1,16 @@
 /* eslint-disable */
-import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-
-import {
-  StylesProvider, StylesOptions,
-} from '@material-ui/styles/';
-
-import { darkTheme } from '@src/styles/theme';
+import { ReactNode } from "react";
+import { ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
+import { darkTheme } from "@src/styles/theme";
 
 /**
  * Theme mocker to handle custom keys
  */
-const MockTheme = ({ children }: {children: React.ReactNode}) => {
-  const generateClassName: StylesOptions['generateClassName'] = (
-    rule,
-    sheet,
-  ): string => `${sheet!.options.classNamePrefix}-${rule.key}`;
-
+const MockTheme = ({ children }: { children: ReactNode }) => {
   return (
-    <StylesProvider generateClassName={generateClassName}>
-      <ThemeProvider theme={darkTheme}>
-        {children}
-      </ThemeProvider>
-    </StylesProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={darkTheme}>{children}</ThemeProvider>
+    </StyledEngineProvider>
   );
 };
 

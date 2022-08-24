@@ -1,23 +1,18 @@
-import React from 'react';
-import classnames from 'classnames';
-import { Typography } from '@material-ui/core';
-import { ContentBox } from '@components';
+import { FC, HTMLAttributes } from 'react';
+import { Typography } from '@mui/material';
 import { ContentType } from '../../types';
-import { useStyles } from './styles';
+import { StyledContentBox } from './styles';
 
-const Content: React.FC<ContentType & ComponentDefault> = (props) => {
-  const classes = useStyles();
+const Content: FC<ContentType & HTMLAttributes<HTMLElement>> = ({ className, content }) => {
   return (
-    <ContentBox className={classnames(props.className, classes.root)}>
-      {props.content.map((x) => {
+    <StyledContentBox className={className}>
+      {content.map((x) => {
         return (
           <div key={x.question} className="faq__wrapper">
             <Typography variant="h5" className="question">
               {x.question}
             </Typography>
-            <Typography>
-              {x.answer}
-            </Typography>
+            <Typography>{x.answer}</Typography>
             {!!x.list && (
               <div className="list">
                 {x.list.map((item) => {
@@ -29,9 +24,7 @@ const Content: React.FC<ContentType & ComponentDefault> = (props) => {
                         {item.title}
                         :
                       </Typography>
-                      <Typography>
-                        {item.description}
-                      </Typography>
+                      <Typography>{item.description}</Typography>
                     </div>
                   );
                 })}
@@ -40,7 +33,7 @@ const Content: React.FC<ContentType & ComponentDefault> = (props) => {
           </div>
         );
       })}
-    </ContentBox>
+    </StyledContentBox>
   );
 };
 

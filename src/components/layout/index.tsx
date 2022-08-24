@@ -1,21 +1,15 @@
-import React from 'react';
-import {
-  Nav,
-  Footer,
-} from '..';
+import { FC, HTMLAttributes } from 'react';
+import { Nav, Footer } from '..';
 import { LayoutProps } from './types';
-import { useStyles } from './styles';
+import { StyledMain, StyledDiv } from './styles';
 
-const Layout: React.FC<LayoutProps & ComponentDefault> = (props) => {
-  const classes = useStyles();
+const Layout: FC<LayoutProps & HTMLAttributes<HTMLElement>> = ({ children }) => {
   return (
-    <main className={classes.root}>
+    <StyledMain>
       <Nav />
-      <div className={classes.content}>
-        {props.children}
-      </div>
+      <StyledDiv>{children}</StyledDiv>
       <Footer />
-    </main>
+    </StyledMain>
   );
 };
 

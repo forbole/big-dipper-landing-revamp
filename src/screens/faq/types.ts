@@ -5,7 +5,7 @@ export type FAQType = {
 export type MenuType = {
   items: string[];
   selected: number;
-  handleChange: (selected: number) => void;
+  handleChange?: (selected: number) => void;
 };
 
 export type ContentType = {

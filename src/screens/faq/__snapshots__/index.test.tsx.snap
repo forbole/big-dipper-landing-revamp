@@ -1,6 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FAQ matches snapshot 1`] = `
+.emotion-0 .title {
+  color: #ffffff;
+}
+
+.emotion-0 .header__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.emotion-0 .content__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.emotion-1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: SFPro,Arial,sans-serif;
+  line-height: 1.2;
+}
+
+@media (min-width:1280px) {
+  .emotion-2 {
+    display: none;
+  }
+}
+
+.emotion-3 {
+  display: none;
+}
+
+@media (min-width:1280px) {
+  .emotion-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 32px;
+  }
+}
+
+.emotion-4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 <div>
   <div
     data-testid="Layout"
@@ -9,19 +73,19 @@ exports[`FAQ matches snapshot 1`] = `
       data-testid="SectionBox"
     >
       <div
-        class="makeStyles-root"
+        class="emotion-0"
         data-testid="SectionLimit"
       >
         <div
           class="header__wrapper"
         >
           <h2
-            class="MuiTypography-root title MuiTypography-h2"
+            class="MuiTypography-root MuiTypography-h2 title emotion-1"
           >
             faq
           </h2>
           <div
-            class="makeStyles-menuMobile"
+            class="emotion-2"
             data-testid="MenuMobile"
             items="blockchain.title,stakers.title,validators.title,governance.title"
           />
@@ -30,12 +94,12 @@ exports[`FAQ matches snapshot 1`] = `
           class="content__wrapper"
         >
           <div
-            class="makeStyles-menuDesktop"
+            class="emotion-3"
             data-testid="MenuDesktop"
             items="blockchain.title,stakers.title,validators.title,governance.title"
           />
           <div
-            class="makeStyles-content"
+            class="emotion-4"
             content="[object Object],[object Object]"
             data-testid="Content"
           />

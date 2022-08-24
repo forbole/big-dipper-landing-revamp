@@ -1,4 +1,4 @@
-import TermsAndConditions from '../screens/terms_and_conditions';
+import TermsAndConditions from '../screens/terms-and-conditions';
 
 const TermsAndConditionsPage = () => {
   return (

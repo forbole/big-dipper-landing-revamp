@@ -9,7 +9,7 @@ const mockI18n = {
   lang: 'en',
 };
 jest.mock('next-translate/useTranslation', () => () => mockI18n);
-jest.mock('~src/components/LayoutComponent', () => (props: object) => (
+jest.mock('~src/components/Layout', () => (props: object) => (
   <motion.div data-testid="Layout" {...props} />
 ));
 jest.mock('~src/components/SectionBox', () =>

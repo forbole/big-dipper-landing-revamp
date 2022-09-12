@@ -1,4 +1,4 @@
-import PrivacyPolicy from '../screens/PrivacyPolicyScreen';
+import PrivacyPolicy from '../screens/PrivacyPolicy';
 
 const PrivacyPolicyPage = () => {
   return <PrivacyPolicy />;

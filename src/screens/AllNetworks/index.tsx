@@ -8,7 +8,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { equals } from 'ramda';
 import { FC, useCallback, useEffect, useMemo, useState } from 'react';
-import Layout from '~src/components/LayoutComponent';
+import Layout from '~src/components/Layout';
 import LinkAnchor from '~src/components/LinkAnchor';
 import SectionLimit from '~src/components/SectionLimit';
 import allNetworksTab from '~src/utils/allNetworksTab';

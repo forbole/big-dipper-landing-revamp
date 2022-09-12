@@ -3,7 +3,7 @@ import {
   LinkedinIcon,
   TelegramIcon,
   TwitterIcon,
-} from '~src/components/iconsComponents';
+} from '~src/components/icons';
 import * as LINKS from '~src/utils/links';
 import type { IconType, LinkType } from './types';
 

@@ -7,7 +7,7 @@ import { FC } from 'react';
 import CopySvg from '~src/assets/copy.svg';
 import { SectionLimit } from '~src/components';
 import ContentBox from '~src/components/ContentBox';
-import Layout from '~src/components/LayoutComponent';
+import Layout from '~src/components/Layout';
 import SectionBox from '~src/components/SectionBox';
 import { useDonation } from './hooks';
 import useStyles from './useStyles';

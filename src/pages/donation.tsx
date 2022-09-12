@@ -1,4 +1,4 @@
-import DonationPage from '../screens/DonationScreen';
+import DonationPage from '../screens/Donation';
 
 const Donation = () => <DonationPage />;
 

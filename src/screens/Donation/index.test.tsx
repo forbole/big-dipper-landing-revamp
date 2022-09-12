@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/display-name */
 import { render, screen } from '@testing-library/react';
 import { motion } from 'framer-motion';
@@ -9,7 +10,8 @@ const mockI18n = {
   lang: 'en',
 };
 jest.mock('next-translate/useTranslation', () => () => mockI18n);
-jest.mock('~src/components/LayoutComponent', () => (props: object) => (
+jest.mock('~src/assets/copy.svg', () => () => <svg data-testid="copy" />);
+jest.mock('~src/components/Layout', () => (props: object) => (
   <motion.div data-testid="Layout" {...props} />
 ));
 jest.mock('~src/components/SectionBox', () =>
@@ -27,7 +29,7 @@ jest.mock('~src/components/ContentBox', () => (props: object) => (
 // ==================================
 // unit tests
 // ==================================
-describe('About', () => {
+describe('Donation', () => {
   it('matches snapshot', async () => {
     const { container } = render(
       <MockTheme>
@@ -35,12 +37,12 @@ describe('About', () => {
       </MockTheme>
     );
 
-    expect(screen.getByText(/about/i)).toBeInTheDocument();
+    expect(screen.getByText(/donation/i)).toBeInTheDocument();
     expect(screen.getByText(/description/i)).toBeInTheDocument();
     expect(screen.getByTestId('Layout')).toBeInTheDocument();
     expect(screen.getByTestId('SectionBox')).toBeInTheDocument();
     expect(screen.getByTestId('SectionLimit')).toBeInTheDocument();
-    expect(screen.getByTestId('ContentBox')).toBeInTheDocument();
+    expect(screen.getAllByTestId('ContentBox').length).toBe(3);
     expect(container).toMatchSnapshot();
   });
 

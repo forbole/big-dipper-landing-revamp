@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import React from 'react';
 import { SectionBox } from '~src/components';
-import Layout from '~src/components/LayoutComponent';
+import Layout from '~src/components/Layout';
 import SectionLimit from '~src/components/SectionLimit';
 import Content from './components/Content';
 import MenuDesktop from './components/MenuDesktop';

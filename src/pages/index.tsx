@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { ComponentProps } from 'react';
 import loadNetworkList from '~src/utils/loadNetworkList';
-import HomePage from '../screens/HomeScreen';
+import HomePage from '../screens/Home';
 
 /**
  * It returns an object with a `props` property that contains the `networkList` property

@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import ContentBox from '~src/components/ContentBox';
-import Layout from '~src/components/LayoutComponent';
+import Layout from '~src/components/Layout';
 import LinkAnchor from '~src/components/LinkAnchor';
 import SectionBox from '~src/components/SectionBox';
 import SectionLimit from '~src/components/SectionLimit';

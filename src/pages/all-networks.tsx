@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react';
 import { NextPage } from 'next';
 import loadNetworkList from '~src/utils/loadNetworkList';
-import AllNetworksPage from '../screens/AllNetworksScreen';
+import AllNetworksPage from '../screens/AllNetworks';
 
 /**
  * It returns an object with a `props` property that contains the `networkList` property

@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import { SectionLimit } from '~src/components';
 import ContentBox from '~src/components/ContentBox';
-import Layout from '~src/components/LayoutComponent';
+import Layout from '~src/components/Layout';
 import SectionBox from '~src/components/SectionBox';
 import useStyles from './useStyles';
 

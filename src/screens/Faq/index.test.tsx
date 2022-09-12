@@ -38,7 +38,7 @@ jest.mock(
       <motion.div data-testid="MenuMobile" {...props} />
 );
 jest.mock(
-  './components/content',
+  './components/Content',
   () =>
     ({ handleChange: _, ...props }: { [p: string]: unknown }) =>
       <motion.div data-testid="Content" {...props} />

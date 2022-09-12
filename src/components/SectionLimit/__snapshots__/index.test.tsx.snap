@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionLimit matches snapshot 1`] = `
+.emotion-0 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+<div>
+  <div
+    class="sectionlimit__container emotion-0"
+  >
+    <div>
+      HELLO WORLD
+    </div>
+  </div>
+</div>
+`;

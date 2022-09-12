@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentBox matches snapshot 1`] = `
+.emotion-0 {
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+  overflow: auto;
+  padding: 24px;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width:768px) {
+  .emotion-0 {
+    padding: 32px;
+  }
+}
+
+<div>
+  <div
+    class="contentbox__container emotion-0"
+  >
+    <div>
+      HELLO WORLD
+    </div>
+  </div>
+</div>
+`;

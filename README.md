@@ -1,5 +1,3 @@
-
-
 ## General Structure
 
 ├── Big-Dipper-Landing-Revamp
@@ -20,8 +18,7 @@
         │   └── Supported networks
         ├── All Networks
         │   ├── Content
-        │   └── Networks        
+        │   └── Networks
         ├── FAQ
         ├── About
         └── Donation
-

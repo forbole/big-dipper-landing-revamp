@@ -1,0 +1,3803 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dummy Test matches snapshot 1`] = `
+<DocumentFragment>
+  @keyframes animation-0 {
+  50% {
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes animation-2 {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: #000;
+  background-image: url(/images/background/back2.webp);
+  background-repeat: no-repeat;
+  -webkit-background-position: 50% 0%;
+  background-position: 50% 0%;
+  -webkit-background-size: 1920px auto;
+  background-size: 1920px auto;
+  background-blend-mode: screen;
+  background-image: url(/images/background/back.webp)!important;
+}
+
+.emotion-0.layout__scrolled .nav__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(64px);
+  backdrop-filter: blur(64px);
+}
+
+@media (min-width:375px) {
+  .emotion-0.layout__scrolled .nav__container {
+    background-color: rgba(9, 57, 176, 0.4);
+  }
+}
+
+.emotion-0.layout__scrolled .layout__scroll-fab {
+  display: block;
+}
+
+@media (min-width:375px) {
+  .emotion-0.layout__scrolled.layout__footerinview .layout__scroll-fab {
+    display: none;
+  }
+}
+
+.emotion-0 .layout__wrapper-content {
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  max-width: 100vw;
+  min-width: 320px;
+  padding: 0px 24px;
+}
+
+.emotion-0 .layout__scroll-fab {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 2;
+  padding: 0;
+  max-width: 48px;
+  max-height: 48px;
+  border: 1px solid #EFEFEF;
+  color: #EFEFEF;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  border-radius: 50%;
+  display: none;
+  opacity: 0.8;
+}
+
+.emotion-0 .layout__scroll-fab:hover {
+  background-color: #0939B0;
+}
+
+.emotion-0 .layout__scroll-fab .MuiSvgIcon-root {
+  font-size: 40px;
+}
+
+.emotion-1 {
+  overflow: visible;
+  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-width: 296px;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0px 8px 0px 24px;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+  z-index: 4;
+}
+
+.emotion-1.sectionbox__main {
+  padding: 24px;
+}
+
+@media (min-width:768px) {
+  .emotion-1.sectionbox__main {
+    padding: 64px 0px;
+  }
+}
+
+.emotion-2 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 79px;
+  padding: 16px 0px;
+}
+
+@media (min-width:768px) {
+  .emotion-3 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+.emotion-3 .menuitems__submenu-paper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  margin-top: 16px;
+  background-color: rgba(9, 57, 176, 0.9);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.emotion-3 .menuitems__submenu-paper>.MuiListItemButton-root {
+  border-radius: 0;
+  padding: 16px 24px;
+}
+
+.emotion-3 .menuitems__submenu-paper>.MuiListItemButton-root:first-of-type {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.emotion-3 .menuitems__submenu-paper>.MuiListItemButton-root:last-of-type {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.emotion-3 .menudesktop__menu-container {
+  display: none;
+  width: auto;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  -webkit-justify-content: right;
+  justify-content: right;
+}
+
+@media (min-width:768px) {
+  .emotion-3 .menudesktop__menu-container {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.emotion-3 .menudesktop__menu-container>.menuitems__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.emotion-3 .menudesktop__menu-container>.menuitems__container>.MuiListItemButton-root {
+  border-radius: 200px;
+}
+
+.emotion-3 .menudesktop__menu-container>.menuitems__container>.MuiListItemButton-root:first-of-type {
+  display: none!important;
+}
+
+.emotion-3 .menudesktop__menu-container>.menuitems__container>.menuitems__submenu-container {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.emotion-3 .menudesktop__menu-container>.menuitems__container>.MuiListItemButton-root,
+.emotion-3 .menudesktop__menu-container>.menuitems__container>.menuitems__submenu-container>.MuiListItemButton-root {
+  padding: 8px 24px;
+  border-radius: 24px;
+}
+
+.emotion-3 .menudesktop__menu-container>.menuitems__container>.MuiBox-root>.menuitems__submenu-container .menuitems__list-item-btn-btn {
+  border-radius: 200px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.214;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #0939B0;
+  background: unset;
+  border: unset;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.emotion-4::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-4.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-4 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(9, 57, 176, 0.5);
+}
+
+@media (hover: none) {
+  .emotion-4:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-4.Mui-disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width:768px) {
+  .emotion-4 {
+    display: none;
+  }
+}
+
+.emotion-4 .hambergericon__bar1,
+.emotion-4 .hambergericon__bar2,
+.emotion-4 .hambergericon__bar3 {
+  width: 24px;
+  border: 1px solid #FFFFFF;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.emotion-4 .hambergericon__x .hambergericon__bar2 {
+  opacity: 0;
+}
+
+.emotion-4 .hambergericon__x .hambergericon__bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  -moz-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  -ms-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  transform: rotate(-45deg) translate(-4.5px, 4.5px);
+}
+
+.emotion-4 .hambergericon__x .hambergericon__bar3 {
+  -webkit-transform: rotate(45deg) translate(-6.5px, -6.5px);
+  -moz-transform: rotate(45deg) translate(-6.5px, -6.5px);
+  -ms-transform: rotate(45deg) translate(-6.5px, -6.5px);
+  transform: rotate(45deg) translate(-6.5px, -6.5px);
+}
+
+.emotion-5 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.emotion-7 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.emotion-7 .menuitems__submenu-container {
+  background-color: transparent;
+}
+
+.emotion-7 .menuitems__list-item-btn {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.emotion-7 .menuitems__list-item-btn.MuiListItem-gutters {
+  padding: 16px 20px;
+}
+
+.emotion-7 .menuitems__list-item-btn:hover {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+}
+
+.emotion-7 .menuitems__list-item-btn.menuitems__active {
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  background-color: #F6504B;
+  background-image: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
+  color: #FFFFFF;
+}
+
+.emotion-7 .menuitems__list-item-btn.menuitems__active:hover {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+}
+
+.emotion-7 .menuitems__list-item-btn .MuiListItemText-root {
+  color: #fff;
+  font-weight: 900;
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.emotion-8::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-8.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-8 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-8:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (hover: none) {
+  .emotion-8:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-8.Mui-selected {
+  background-color: rgba(9, 57, 176, 0.16);
+}
+
+.emotion-8.Mui-selected.Mui-focusVisible {
+  background-color: rgba(9, 57, 176, 0.28);
+}
+
+.emotion-8.Mui-selected:hover {
+  background-color: rgba(9, 57, 176, 0.66);
+}
+
+@media (hover: none) {
+  .emotion-8.Mui-selected:hover {
+    background-color: rgba(9, 57, 176, 0.16);
+  }
+}
+
+.emotion-8.Mui-focusVisible {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.emotion-8.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-9 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.emotion-10 {
+  margin: 0;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+}
+
+.emotion-19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+.emotion-21 {
+  background-color: rgba(9,57,176,0.8);
+  color: #EFEFEF;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+
+.emotion-30 {
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  background-image: url(/images/background/stars.webp);
+  background-repeat: repeat-x;
+  -webkit-background-size: 95vw auto;
+  background-size: 95vw auto;
+  -webkit-background-position: 0vw 50%;
+  background-position: 0vw 50%;
+  margin: 0px -24px;
+  margin-bottom: 64px;
+}
+
+.emotion-30 .slick-slider .slick-track,
+.emotion-30 .slick-slider .slick-list {
+  -webkit-transform: none!important;
+  -moz-transform: none!important;
+  -ms-transform: none!important;
+  transform: none!important;
+}
+
+.emotion-30 .home__slider-left {
+  position: absolute;
+  bottom: 45%;
+  left: 24px;
+  z-index: 1;
+  padding: 0;
+  max-width: 36px;
+  max-height: 36px;
+  border: 1px solid #EFEFEF;
+  color: #EFEFEF;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  border-radius: 50%;
+}
+
+.emotion-30 .home__slider-left .MuiSvgIcon-root {
+  font-size: 28px;
+}
+
+.emotion-30 .home__slider-right {
+  position: absolute;
+  bottom: 45%;
+  right: 24px;
+  z-index: 1;
+  padding: 0;
+  max-width: 36px;
+  max-height: 36px;
+  border: 1px solid #EFEFEF;
+  color: #EFEFEF;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  border-radius: 50%;
+}
+
+.emotion-30 .home__slider-right .MuiSvgIcon-root {
+  font-size: 28px;
+}
+
+.emotion-30 .home__slider {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+@media (min-width:768px) {
+  .emotion-30 .home__slider {
+    margin-bottom: 8px;
+  }
+}
+
+.emotion-30 .slick-dots li button:before {
+  color: #f5f5f5;
+  text-shadow: none;
+  font-size: 9.6px;
+}
+
+.emotion-30 .slick-dots li.slick-active button:before {
+  color: #F6504B;
+}
+
+.emotion-31 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.214;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  text-transform: uppercase;
+  min-height: 36px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+  padding: 0;
+  min-width: 0;
+  width: 56px;
+  height: 56px;
+  z-index: 1050;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #DDDDDD;
+}
+
+.emotion-31::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-31.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-31 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-31:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.emotion-31:hover {
+  background-color: #f5f5f5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (hover: none) {
+  .emotion-31:hover {
+    background-color: #DDDDDD;
+  }
+}
+
+.emotion-31.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-31.Mui-disabled {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.emotion-38 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.emotion-38 .caption {
+  width: 100%;
+}
+
+.emotion-38 .MuiTypography-h1 {
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 16px #695769;
+  margin: 64px 0px 0px 0px;
+  font-size: 2rem;
+}
+
+@media (min-width:768px) {
+  .emotion-38 .MuiTypography-h1 {
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px 0px 16px #695769;
+    font-size: 3rem;
+  }
+}
+
+.emotion-38 .MuiTypography-h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+@media (min-width:768px) {
+  .emotion-38 .MuiTypography-h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.emotion-38 .image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  min-height: 160px;
+  max-width: 70%;
+  height: auto;
+}
+
+.emotion-41 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.167;
+}
+
+.emotion-42 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.167;
+}
+
+.emotion-43 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.emotion-43 .MuiTypography-h1 {
+  margin: 64px 0px 0px 0px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-43 .MuiTypography-h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-43 .MuiTypography-h1 {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 0px 16px #695769;
+    z-index: 1;
+    bottom: 96px;
+  }
+}
+
+.emotion-43 .image {
+  mix-blend-mode: screen;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: animation-0 3s infinite ease;
+  animation: animation-0 3s infinite ease;
+  min-height: 160px;
+  max-width: 90%;
+  height: auto;
+}
+
+.emotion-46 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.emotion-46 .caption {
+  margin-top: 0;
+}
+
+@media (min-width:768px) {
+  .emotion-46 .caption {
+    margin-top: -144px;
+    position: absolute;
+    z-index: 1;
+    bottom: 32px;
+  }
+}
+
+.emotion-46 .MuiTypography-h1 {
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 16px #695769;
+  margin: 48px 0px 0px 0px;
+  font-size: 2rem;
+}
+
+@media (min-width:768px) {
+  .emotion-46 .MuiTypography-h1 {
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px 0px 16px #695769;
+    font-size: 3rem;
+  }
+}
+
+.emotion-46 .MuiTypography-h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+@media (min-width:768px) {
+  .emotion-46 .MuiTypography-h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.emotion-46 .image {
+  mix-blend-mode: screen;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  max-width: 100%;
+  min-height: 160px;
+}
+
+.emotion-46 svg {
+  height: auto;
+}
+
+.emotion-51 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.emotion-51 .caption {
+  width: 100%;
+}
+
+.emotion-51 .MuiTypography-h1 {
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 16px #695769;
+  margin: 88px 0px 0px 0px;
+  font-size: 2rem;
+}
+
+@media (min-width:768px) {
+  .emotion-51 .MuiTypography-h1 {
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px 0px 16px #695769;
+    font-size: 3rem;
+  }
+}
+
+.emotion-51 .MuiTypography-h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+@media (min-width:768px) {
+  .emotion-51 .MuiTypography-h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.emotion-51 .image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  min-height: 160px;
+  max-width: 90%;
+  height: auto;
+}
+
+.emotion-79 {
+  overflow: visible;
+  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-width: 296px;
+}
+
+.emotion-79.sectionbox__main {
+  padding: 24px;
+}
+
+@media (min-width:768px) {
+  .emotion-79.sectionbox__main {
+    padding: 64px 0px;
+  }
+}
+
+.emotion-79 .home__section-box {
+  padding: 0;
+}
+
+.emotion-81 .home__content {
+  padding: 0;
+}
+
+@media (min-width:768px) {
+  .emotion-81 .home__content {
+    padding: 0;
+  }
+}
+
+.emotion-81 .home__content .home__search-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 0px 16px 0px;
+}
+
+.emotion-81 .home__content .home__search-bar .MuiTypography-h2 {
+  padding: 24px 0px;
+  text-align: center;
+  width: auto;
+  display: block;
+}
+
+@media (max-width:767.95px) {
+  .emotion-81 .home__content .home__search-bar .MuiTypography-h2 {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.emotion-81 .home__networks {
+  padding: 24px 0px 96px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  grid-gap: 16px;
+}
+
+@media (min-width:768px) {
+  .emotion-81 .home__networks {
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+    padding: 0px 0px 96px 0px;
+    grid-gap: 24px;
+  }
+}
+
+.emotion-84 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.2;
+}
+
+@media (max-width:767.95px) {
+  .emotion-85 {
+    width: 100%;
+  }
+}
+
+@media (max-width:767.95px) {
+  .emotion-85.emotion-85.searchbox__focused {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px 16px 16px 32px;
+    background-color: rgba(29, 30, 34, 0.32);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
+
+  .emotion-85.emotion-85.searchbox__focused .searchbox__cancel-btn {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.emotion-85.emotion-85 .searchbox__cancel-btn {
+  color: #FFFFFF;
+  display: none;
+}
+
+.emotion-85 .MuiAutocomplete-root {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .emotion-85 .MuiAutocomplete-root {
+    width: 291px;
+    min-width: 291px;
+    height: 38px;
+  }
+}
+
+.emotion-85 .MuiAutocomplete-root .MuiInputBase-root {
+  border: 1px solid #FFFFFF!important;
+  border-radius: 16px;
+  padding: 4px 18px 4px 18px!important;
+}
+
+.emotion-86.Mui-focused .MuiAutocomplete-clearIndicator {
+  visibility: visible;
+}
+
+@media (pointer: fine) {
+  .emotion-86:hover .MuiAutocomplete-clearIndicator {
+    visibility: visible;
+  }
+}
+
+.emotion-86 .MuiAutocomplete-tag {
+  margin: 3px;
+  max-width: calc(100% - 6px);
+}
+
+.emotion-86 .MuiAutocomplete-inputRoot {
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.MuiAutocomplete-hasPopupIcon.emotion-86 .MuiAutocomplete-inputRoot,
+.MuiAutocomplete-hasClearIcon.emotion-86 .MuiAutocomplete-inputRoot {
+  padding-right: 30px;
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.emotion-86 .MuiAutocomplete-inputRoot {
+  padding-right: 56px;
+}
+
+.emotion-86 .MuiAutocomplete-inputRoot .MuiAutocomplete-input {
+  width: 0;
+  min-width: 30px;
+}
+
+.emotion-86 .MuiInput-root {
+  padding-bottom: 1px;
+}
+
+.emotion-86 .MuiInput-root .MuiInput-input {
+  padding: 4px 4px 4px 0px;
+}
+
+.emotion-86 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input {
+  padding: 2px 4px 3px 0;
+}
+
+.emotion-86 .MuiOutlinedInput-root {
+  padding: 9px;
+}
+
+.MuiAutocomplete-hasPopupIcon.emotion-86 .MuiOutlinedInput-root,
+.MuiAutocomplete-hasClearIcon.emotion-86 .MuiOutlinedInput-root {
+  padding-right: 39px;
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.emotion-86 .MuiOutlinedInput-root {
+  padding-right: 65px;
+}
+
+.emotion-86 .MuiOutlinedInput-root .MuiAutocomplete-input {
+  padding: 7.5px 4px 7.5px 6px;
+}
+
+.emotion-86 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  right: 9px;
+}
+
+.emotion-86 .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
+  padding: 6px;
+}
+
+.emotion-86 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding: 2.5px 4px 2.5px 6px;
+}
+
+.emotion-86 .MuiFilledInput-root {
+  padding-top: 19px;
+  padding-left: 8px;
+}
+
+.MuiAutocomplete-hasPopupIcon.emotion-86 .MuiFilledInput-root,
+.MuiAutocomplete-hasClearIcon.emotion-86 .MuiFilledInput-root {
+  padding-right: 39px;
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.emotion-86 .MuiFilledInput-root {
+  padding-right: 65px;
+}
+
+.emotion-86 .MuiFilledInput-root .MuiFilledInput-input {
+  padding: 7px 4px;
+}
+
+.emotion-86 .MuiFilledInput-root .MuiAutocomplete-endAdornment {
+  right: 9px;
+}
+
+.emotion-86 .MuiFilledInput-root.MuiInputBase-sizeSmall {
+  padding-bottom: 1px;
+}
+
+.emotion-86 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input {
+  padding: 2.5px 4px;
+}
+
+.emotion-86 .MuiInputBase-hiddenLabel {
+  padding-top: 8px;
+}
+
+.emotion-86 .MuiAutocomplete-input {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  opacity: 1;
+}
+
+.emotion-87 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+.emotion-88 {
+  font-size: 1rem;
+  white-space: pre-wrap;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight: 400;
+  line-height: 1.4375em;
+  color: #EFEFEF;
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.emotion-88.Mui-disabled {
+  color: #FEF3F2;
+  cursor: default;
+}
+
+.emotion-88:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #EFEFEF;
+}
+
+@media (hover: none) {
+  .emotion-88:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23);
+  }
+}
+
+.emotion-88.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #0939B0;
+  border-width: 2px;
+}
+
+.emotion-88.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #f44336;
+}
+
+.emotion-88.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.emotion-89 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.01em;
+  max-height: 2em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.emotion-90 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.25rem;
+}
+
+.emotion-91 {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.emotion-91::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.emotion-91::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.emotion-91:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.emotion-91::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.emotion-91:focus {
+  outline: 0;
+}
+
+.emotion-91:invalid {
+  box-shadow: none;
+}
+
+.emotion-91::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91::-webkit-input-placeholder {
+  opacity: 0!important;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91::-moz-placeholder {
+  opacity: 0!important;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91:-ms-input-placeholder {
+  opacity: 0!important;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91::-ms-input-placeholder {
+  opacity: 0!important;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .emotion-91:focus::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.emotion-91.Mui-disabled {
+  opacity: 1;
+  -webkit-text-fill-color: #FEF3F2;
+}
+
+.emotion-91:-webkit-autofill {
+  -webkit-animation-duration: 5000s;
+  animation-duration: 5000s;
+  -webkit-animation-name: mui-auto-fill;
+  animation-name: mui-auto-fill;
+}
+
+.emotion-91:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #266798 inset;
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
+  border-radius: inherit;
+}
+
+.emotion-92 {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 14px);
+}
+
+.emotion-93 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  overflow: visible;
+  color: #fff;
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding: 2px;
+  margin-right: -2px;
+}
+
+.emotion-93::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-93.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-93 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-93:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (hover: none) {
+  .emotion-93:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-93.Mui-disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.emotion-95 {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: -5px;
+  left: 0;
+  margin: 0;
+  padding: 0 8px;
+  pointer-events: none;
+  border-radius: inherit;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  min-width: 0%;
+  border-color: rgba(255, 255, 255, 0.23);
+}
+
+.emotion-96 {
+  float: unset;
+  overflow: hidden;
+  padding: 0;
+  line-height: 11px;
+  -webkit-transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+
+.emotion-97 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.214;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #0939B0;
+}
+
+.emotion-97::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-97.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-97 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-97:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(9, 57, 176, 0.5);
+}
+
+@media (hover: none) {
+  .emotion-97:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-97.Mui-disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.emotion-100 {
+  min-width: 120px;
+  min-height: 80px;
+  border-radius: 12px;
+  background-color: #C2C2C2;
+  border: 2px solid #EFEFEF;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.emotion-100 .MuiLinearProgress-root {
+  width: 100%;
+}
+
+.emotion-100:hover {
+  background-color: #EFEFEF;
+}
+
+.emotion-100 .image {
+  background-color: #fff;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+}
+
+.emotion-100 .networkbox__explore-btn {
+  padding: 0.75rem 1rem;
+  border-radius: 200px;
+  background-color: #F6504B;
+  background-image: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
+  color: #FFFFFF;
+}
+
+.emotion-100 .networkbox__explore-btn:hover {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+}
+
+.emotion-100 .networkbox__close-btn {
+  position: absolute;
+  right: 16px;
+  margin-top: -8px;
+}
+
+@media (min-width:768px) {
+  .emotion-100 .networkbox__close-btn {
+    display: none;
+  }
+}
+
+.emotion-100 .networkbox__desktop-anchor,
+.emotion-100 .networkbox__mobile-anchor {
+  color: #051D5B;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  gap: 4px;
+  padding: 20% 0;
+}
+
+.emotion-100 .networkbox__desktop-anchor:hover,
+.emotion-100 .networkbox__mobile-anchor:hover {
+  opacity: 1;
+}
+
+.emotion-100 .networkbox__desktop-anchor {
+  display: none;
+  position: relative;
+}
+
+@media (min-width:768px) {
+  .emotion-100 .networkbox__desktop-anchor {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .emotion-100 .networkbox__desktop-anchor:hover .networkbox__popover {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+  }
+}
+
+.emotion-100 .networkbox__desktop-anchor .networkbox__popover {
+  pointer-events: none;
+}
+
+@media (min-width:768px) {
+  .emotion-100 .networkbox__desktop-anchor:hover .networkbox__popover {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+  }
+}
+
+.emotion-100 .networkbox__desktop-anchor:hover .networkbox__popover .networkbox__explore-btn {
+  display: none;
+}
+
+.emotion-100 .networkbox__mobile-anchor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  gap: 24px;
+}
+
+.emotion-100 .networkbox__mobile-anchor:hover {
+  background-color: #afafaf;
+}
+
+@media (min-width:768px) {
+  .emotion-100 .networkbox__mobile-anchor {
+    display: none;
+  }
+}
+
+.emotion-100 .networkbox__mobile-popover-contaier {
+  display: block;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+@media (min-width:768px) {
+  .emotion-100 .networkbox__mobile-popover-contaier {
+    display: none;
+  }
+}
+
+.emotion-100 .networkbox__mobile-popover-contaier.networkbox__active .networkbox__popover {
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.emotion-100 .networkbox__mobile-popover-contaier .networkbox__popover {
+  left: 24px;
+  right: 24px;
+}
+
+.emotion-100 .MuiTypography-h4 {
+  text-overflow: clip;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width:374.95px) {
+  .emotion-100 .MuiTypography-h4 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-100 .networkbox__popover {
+  position: absolute;
+  display: none;
+  z-index: 3;
+  padding: 16px;
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  background-color: rgba(9, 57, 176, 0.7);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  color: #EFEFEF;
+  border-radius: 12px;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  gap: 16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+@media (max-width:767.95px) {
+  .emotion-100 .networkbox__popover {
+    margin-top: -8px;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-100 .networkbox__popover {
+    min-width: 125%;
+    min-height: 125%;
+    max-width: 272px;
+    max-height: 218px;
+  }
+}
+
+.emotion-100 .networkbox__popover .MuiTypography-h6 {
+  text-align: left;
+}
+
+.emotion-100 .networkbox__popover .MuiTypography-body1 {
+  text-align: right;
+}
+
+.emotion-100 .networkbox__popover>.MuiBox-root:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  gap: 8px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  width: 100%;
+}
+
+.emotion-100 .networkbox__popover>.MuiBox-root:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.emotion-100 .networkbox__popover>.MuiBox-root:nth-of-type(2)>.MuiBox-root {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  gap: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-100 .networkbox__popover>.MuiBox-root:nth-of-type(2)>.MuiBox-root>.MuiBox-root {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.emotion-100 .networkbox__popover>.MuiBox-root:nth-of-type(2)>.MuiBox-root>.MuiBox-root:nth-of-type(1) {
+  font-weight: 700;
+  text-align: left;
+}
+
+.emotion-100 .networkbox__popover>.MuiBox-root:nth-of-type(2)>.MuiBox-root>.MuiBox-root:nth-of-type(2) {
+  text-align: right;
+}
+
+.emotion-107 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 4px;
+  z-index: 0;
+  background-color: rgb(123, 40, 37);
+}
+
+@media print {
+  .emotion-107 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-108 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transform-origin: left;
+  background-color: #F6504B;
+  width: auto;
+  -webkit-animation: animation-1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+  animation: animation-1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+.emotion-109 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transform-origin: left;
+  background-color: #F6504B;
+  width: auto;
+  -webkit-animation: animation-2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+  animation: animation-2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+}
+
+.emotion-110 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.214;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #FFFFFF;
+  background-color: #F6504B;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-110::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-110.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-110 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-110:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #051D5B;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+@media (hover: none) {
+  .emotion-110:hover {
+    background-color: #F6504B;
+  }
+}
+
+.emotion-110:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+.emotion-110.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-110.Mui-disabled {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.emotion-111 {
+  display: inherit;
+  margin-right: -4px;
+  margin-left: 8px;
+}
+
+.emotion-111>*:nth-of-type(1) {
+  font-size: 20px;
+}
+
+.emotion-128 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.235;
+}
+
+.emotion-133 .sectionlimit__container {
+  padding: 8px 0px 0px 0px;
+  max-width: 100vw;
+  min-width: 300px;
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  -webkit-justify-content: center!important;
+  justify-content: center!important;
+}
+
+@media (min-width:768px) {
+  .emotion-133 .sectionlimit__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+.emotion-133 .footer__icons-wrapper path {
+  fill: #fff;
+}
+
+.emotion-133 .footer__icons-wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0px 48px;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 300px;
+  gap: 32px;
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .emotion-133 .footer__icons-wrapper {
+    width: auto;
+    -webkit-box-pack: start!important;
+    -ms-flex-pack: start!important;
+    -webkit-justify-content: flex-start!important;
+    justify-content: flex-start!important;
+    margin-right: -128px;
+    padding: 0;
+    gap: 8px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.emotion-133 .MuiTypography-caption {
+  font-weight: 500;
+  color: #fff;
+  font-size: 0.625rem;
+  line-height: 0.83333;
+}
+
+.emotion-133 .MuiTypography-caption a {
+  font-size: 0.625rem;
+  line-height: 0.83333;
+}
+
+.emotion-133 .footer__terms-links {
+  margin: 8px 0px;
+}
+
+.emotion-133 .footer__terms-links .MuiTypography-root {
+  font-size: 0.625rem;
+}
+
+.emotion-133 .footer__terms-dash {
+  margin: 0px 8px;
+  display: none;
+}
+
+.emotion-133 .footer__terms-dash:first-of-type {
+  display: inline;
+}
+
+@media (min-width:768px) {
+  .emotion-133 .footer__terms-dash {
+    display: inline;
+  }
+
+  .emotion-133 .footer__terms-dash.footer__desktop {
+    display: inline;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-133 .footer__social {
+    margin: 0px 12px;
+  }
+
+  .emotion-133 .footer__social:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.emotion-133 .footer__terms-wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 300px;
+  width: 100%;
+  padding: 0px 8px;
+}
+
+@media (min-width:768px) {
+  .emotion-133 .footer__terms-wrapper {
+    width: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-box-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+
+.emotion-133 .footer__bottom {
+  padding: 0px 24px;
+  gap: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-item: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  max-width: 1024px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-133 .footer__bottom {
+    -webkit-box-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+
+.emotion-133 .footer__scroll-top {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: flex-end;
+  align-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px 0px 16px 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+  background-color: url(/images/background/footerXs.svg);
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  -webkit-background-position: 50% 0%;
+  background-position: 50% 0%;
+  min-height: 226px;
+}
+
+.emotion-133 .footer__scroll-top .MuiFab-root {
+  padding: 0;
+  max-width: 48px;
+  max-height: 48px;
+  border: 1px solid #EFEFEF;
+  color: #EFEFEF;
+  top: 32px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  border-radius: 50%;
+  display: none;
+}
+
+.emotion-133 .footer__scroll-top .MuiFab-root:hover {
+  background-color: #0939B0;
+}
+
+.emotion-133 .footer__scroll-top .MuiFab-root .MuiSvgIcon-root {
+  font-size: 40px;
+}
+
+@media (min-width:375px) {
+  .layout__scrolled .emotion-133 .footer__scroll-top .MuiFab-root {
+    display: block;
+  }
+}
+
+@media (min-width:375px) {
+  .emotion-133 .footer__scroll-top {
+    padding: 10px 0 20px 0;
+    background-image: url(/images/background/footerSm.svg);
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+    -webkit-background-position: 50% 100%;
+    background-position: 50% 100%;
+    min-height: 315px;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-133 .footer__scroll-top {
+    padding: 10px 0 20px 0;
+    background-image: url(/images/background/footerMd.svg);
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+    -webkit-background-position: 50% 100%;
+    background-position: 50% 100%;
+    min-height: 315px;
+  }
+}
+
+@media (min-width:1280px) {
+  .emotion-133 .footer__scroll-top {
+    padding: 10px 0 20px 0;
+    background-image: url(/images/background/footerLg.svg);
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+    -webkit-background-position: 50% 100%;
+    background-position: 50% 100%;
+    min-height: 315px;
+  }
+}
+
+.emotion-140 {
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
+<main
+    class="layout__container emotion-0"
+  >
+    <section
+      class="nav__container sectionbox__container emotion-1"
+      style="transform: none;"
+    >
+      <div
+        class="sectionlimit__container emotion-2"
+      >
+        <nav
+          class="horizontalmenubar__container emotion-3"
+        >
+          <a
+            href="/"
+          >
+            <svg
+              data-testid="bigDipperRedSvg"
+            />
+          </a>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium emotion-4"
+            tabindex="0"
+            type="button"
+          >
+            <div
+              class="hambergericon__menu"
+            >
+              <div
+                class="hambergericon__bar1"
+              />
+              <div
+                class="hambergericon__bar2"
+              />
+              <div
+                class="hambergericon__bar3"
+              />
+            </div>
+            <span
+              class="MuiTouchRipple-root emotion-5"
+            />
+          </button>
+          <div
+            class="menudesktop__menu-container MuiBox-root emotion-6"
+          >
+            <ul
+              class="MuiList-root MuiList-padding menuitems__container emotion-7"
+              role="menu"
+              tabindex="-1"
+            >
+              <a
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitems__list-item-btn emotion-8"
+                href="/"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root emotion-9"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-10"
+                  >
+                    home
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root emotion-5"
+                />
+              </a>
+              <a
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitems__list-item-btn emotion-8"
+                href="/all-networks"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root emotion-9"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-10"
+                  >
+                    allNetworks
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root emotion-5"
+                />
+              </a>
+              <div
+                class="menuitems__submenu-container"
+              >
+                <div
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitems__list-item-btn emotion-8"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiListItemText-root emotion-9"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-10"
+                    >
+                      helpAndSupport
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+                    data-testid="KeyboardArrowDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root emotion-5"
+                  />
+                </div>
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 menuitems__submenu-paper emotion-21"
+                />
+              </div>
+              <a
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitems__list-item-btn emotion-8"
+                href="/about"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root emotion-9"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-10"
+                  >
+                    about
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root emotion-5"
+                />
+              </a>
+              <a
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitems__list-item-btn emotion-8"
+                href="https://docs.bigdipper.live/"
+                tabindex="0"
+              >
+                <div
+                  class="MuiListItemText-root emotion-9"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-10"
+                  >
+                    docs
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root emotion-5"
+                />
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div
+      class="layout__wrapper-content"
+    >
+      <div
+        class="home_slider-container emotion-30"
+        style="background-position-x: 0vw;"
+      >
+        <button
+          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default home__slider-left emotion-31"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+            data-testid="KeyboardArrowLeftIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root emotion-5"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default home__slider-right emotion-31"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+            data-testid="KeyboardArrowRightIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root emotion-5"
+          />
+        </button>
+        <div
+          class="home__slider home__slide0 MuiBox-root emotion-6"
+        >
+          <div
+            class="slick-slider slick-initialized"
+            dir="ltr"
+          >
+            <div
+              class="slick-list"
+            >
+              <div
+                class="slick-track"
+                style="left: 0px; opacity: 1;"
+              >
+                <div
+                  aria-hidden="true"
+                  class="slick-slide slick-cloned"
+                  data-index="-1"
+                  style="width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-38"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider4Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider4Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="false"
+                  class="slick-slide slick-active slick-current"
+                  data-index="0"
+                  style="outline: none; width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <h1
+                        class="MuiTypography-root MuiTypography-h1 emotion-41"
+                      >
+                        slider1Header
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide"
+                  data-index="1"
+                  style="outline: none; width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-46"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          fill="none"
+                          height="420"
+                          viewBox="0 0 415 291"
+                          width="600"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            clip-path="url(#a)"
+                            style="mix-blend-mode: color-dodge;"
+                          >
+                            <path
+                              d="m316.006 119.404 16.367-16.893 42.644 29.562-38.601-1.407-20.41-11.262Zm59.974 13.553 11.196-26.629 9.818 8.995-21.014 17.634Zm-43.607-76.729L318.406 41.04l-13.935-1.877-35.373-12.744 54.451 4.298 3.55-7.508 12.867-1.877 11.536 11.262-19.129 23.635Z"
+                              fill="#665A75"
+                            />
+                            <path
+                              d="m305.858 216.424-29.289-30.844 18.74 1.558 37.168.907 28.694 16.558 8.634 10.689-5.823 9.207-43.198 6.827-14.926-14.902ZM29.593 252.482l38.522-55.054 6.767 47.897 23.505 15.119 2.915 20.632-21.423-.381-50.286-28.213Zm85.281 3.85-6.745-47.739 40.8-8.869 8.513 40.088 26.476-4.184 1.354 9.58-10.028 10.624-43.069 6.806-17.301-6.306Zm99.372-12.757-2.755-59.83 30.089 31.471 6.022 7.334 7.032 9.436 18.532.085 2.706 19.158-42.501 6.717-19.125-14.371Z"
+                              fill="#805F8F"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="m266.354 24.693 38.116 15.49 27.066 62.329-15.53 16.892-10.205 4.693-6.211 10.323 19.648 17.727 15.452 36.287-61.004-2.934-11.323-22.923-13.89 59.302-39.548-38.761-100.414 25.888-33.413 37.301L59.17 143.884l7.623-32.543 49.084-60.828 92.415-10.33 21.839-15.77 36.223.28Z"
+                              fill="#615085"
+                              opacity="0.7"
+                            />
+                            <path
+                              d="m332.977 102.786 46.08-26.307-3.218 13.74 11.819 14.61-12.93 27.315-41.751-29.358Z"
+                              fill="#C3CCE2"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="m375.653 133.426-.199.031-39.543-2.256a.976.976 0 0 1-.653-.365 1.086 1.086 0 0 1-.235-.739c.014-.27.125-.523.311-.708a.966.966 0 0 1 .687-.287l39.183 2.21 21.07-15.634-22.082-24.172a1.085 1.085 0 0 1-.253-.49 1.117 1.117 0 0 1 .017-.556l4.481-15.244c.08-.264.256-.485.489-.614a.956.956 0 0 1 1.098.117c.101.088.184.196.245.319a1.097 1.097 0 0 1 .067.802l-4.295 14.683 22.491 24.63c.099.109.175.238.223.381a1.09 1.09 0 0 1-.079.873 1.01 1.01 0 0 1-.291.328l-22.295 16.594a.95.95 0 0 1-.437.097Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m330.757 102.972-26.442-63.728 14.529 3.037 13.187 14.969 15.17-18.286 30.294 25.591 2.415 11.379-49.153 27.038Z"
+                              fill="#4C92D2"
+                              opacity="0.8"
+                            />
+                            <path
+                              d="M299.732 134.613a1.028 1.028 0 0 1-.285.045l-97.886-14.2a.981.981 0 0 1-.643-.392 1.093 1.093 0 0 1-.208-.753l6.936-79.03c.013-.158.06-.31.137-.445.078-.135.183-.25.309-.335l21.393-14.724a.977.977 0 0 1 .516-.166l31.411-.716a.97.97 0 0 1 .653.24c.185.158.309.381.353.628l8.318 49.435 36.143 47.904c.128.17.202.379.212.597.011.218-.044.433-.156.617l-6.505 10.858c-.08.121-.184.223-.304.298a.956.956 0 0 1-.394.139Zm-96.96-16.148 96.308 13.973 5.792-9.653-35.871-47.545a1.233 1.233 0 0 1-.199-.473L260.59 25.96l-30.276.686-20.749 14.276-6.793 77.543ZM73.281 247.363c-.16.022-.322.006-.475-.046a1 1 0 0 1-.436-.319 1.085 1.085 0 0 1-.22-.511L57.877 145.461a1.096 1.096 0 0 1 .057-.55c.065-.175.174-.328.315-.443l23.092-18.95-16.37-13.629a1.07 1.07 0 0 1-.374-.716 1.082 1.082 0 0 1 .035-.416c.039-.135.103-.259.19-.366l48.992-61.367c.084-.106.187-.193.303-.257a.956.956 0 0 1 1.101.128c.1.089.182.197.242.319a1.087 1.087 0 0 1-.122 1.156l-48.33 60.553 15.958 13.274 45.921-37.645a.973.973 0 0 1 .398-.198.942.942 0 0 1 .44.001.97.97 0 0 1 .396.203c.117.097.211.221.275.363l16.984 37.17c.073.168.099.355.076.539l-3.393 51.014a1.081 1.081 0 0 1-.278.661L73.79 247.086a.946.946 0 0 1-.509.277Zm-13.356-101.6 13.902 98.396 67.745-68.513-58.617-48.777-23.03 18.894Zm24.653-20.224 57.647 47.978 3.209-48.754-16.346-35.787-44.51 36.563Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m103.334 279.807-24.913 3.937a.97.97 0 0 1-.74-.195 1.026 1.026 0 0 1-.26-.304 1.093 1.093 0 0 1-.132-.386l-5.14-36.382a1.118 1.118 0 0 1 .073-.558c.072-.175.187-.327.334-.44a.962.962 0 0 1 .507-.187.941.941 0 0 1 .525.118l27.615 15.119c.14.075.261.185.353.32.091.135.15.292.172.456l2.451 17.351c.027.27-.046.54-.204.755a.988.988 0 0 1-.641.396Zm-24.23 1.701 22.96-3.629-2.226-15.752-25.44-13.923 4.706 33.304Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="M78.412 283.745a.971.971 0 0 1-.635-.123l-49.079-29.41a.996.996 0 0 1-.304-.283 1.063 1.063 0 0 1-.17-.389 1.062 1.062 0 0 1 .148-.826l36.794-57.535c.073-.114.166-.211.274-.287a.955.955 0 0 1 .744-.153.954.954 0 0 1 .356.158c.107.076.2.175.272.289a1.084 1.084 0 0 1 .144.786 1.082 1.082 0 0 1-.15.376l-36.175 56.597 48.147 28.885c.169.113.301.278.38.472.079.195.1.41.063.617a1.072 1.072 0 0 1-.278.547.977.977 0 0 1-.52.287l-.01-.008Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="M59.009 146.346a.96.96 0 0 1-.712-.169 1.003 1.003 0 0 1-.272-.292 1.077 1.077 0 0 1-.138-.79l6.728-34.233a1.05 1.05 0 0 1 .429-.666.957.957 0 0 1 .75-.151 1 1 0 0 1 .63.454c.144.234.196.519.142.792l-6.738 34.225c-.04.21-.14.402-.287.55a.974.974 0 0 1-.532.28Zm84.228 30.269a.957.957 0 0 1-.617-.113 1.036 1.036 0 0 1-.431-.479 1.11 1.11 0 0 1-.076-.656 1.07 1.07 0 0 1 .31-.575l57.449-55.094-70.767-31.351a.978.978 0 0 1-.318-.224 1.037 1.037 0 0 1-.212-.336l-14.882-37.68a1.095 1.095 0 0 1 .433-1.306.926.926 0 0 1 .468-.134l67.191-3.15 26.702-6.161a.918.918 0 0 1 .754.133c.11.075.205.173.279.288.074.115.124.245.149.381.056.273.007.557-.136.791a.998.998 0 0 1-.624.46l-26.779 6.173-.173.027-65.817 3.12 14.171 35.896 71.857 31.814c.152.072.285.183.386.324a1.101 1.101 0 0 1 .141.999 1.057 1.057 0 0 1-.28.43l-58.609 56.202a.95.95 0 0 1-.569.221Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m261.724 254.777-27.54 4.352a.937.937 0 0 1-.665-.138l-19.532-12.504a1.01 1.01 0 0 1-.344-.364 1.085 1.085 0 0 1-.14-.493l-3.718-61.206-59.115 15.224 6.342 40.075c.036.237-.006.48-.117.689-.112.21-.287.373-.498.463l-39.403 16.496a.924.924 0 0 1-.892-.064 1.02 1.02 0 0 1-.326-.318 1.09 1.09 0 0 1-.161-.436l-6.691-47.358a1.112 1.112 0 0 1 .149-.732c.132-.216.334-.375.568-.446l39.578-10.194.043-.007 61.136-15.748a.957.957 0 0 1 .828.17c.118.091.215.209.284.344.07.136.11.286.118.44l3.77 61.954 18.777 11.97 25.925-4.097-12.649-30.312a1.113 1.113 0 0 1 .032-.761 1.03 1.03 0 0 1 .51-.539.95.95 0 0 1 .72-.035c.235.084.433.258.553.488l13.174 31.527a1.127 1.127 0 0 1-.035.939 1.05 1.05 0 0 1-.27.397.965.965 0 0 1-.411.224Zm-150.662-44.893 6.373 45.102 37.492-15.699-6.188-39.11-37.677 9.707Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="m276.483 252.444-14.759 2.333a.958.958 0 0 1-.74-.195 1.097 1.097 0 0 1-.208-1.472.985.985 0 0 1 .654-.415l13.774-2.177-2.481-17.561-19.99.265-38.049 12.072a.954.954 0 0 1-1.116-.301 1.081 1.081 0 0 1-.23-.804c.016-.144.06-.283.129-.408s.161-.233.272-.319a.98.98 0 0 1 .369-.178l38.158-12.117.277-.043 20.995-.275a.966.966 0 0 1 .666.246c.186.165.308.396.344.65l2.756 19.505c.039.273-.026.551-.179.775a.99.99 0 0 1-.642.419Zm-101.604 4.565-41.972 6.632a.976.976 0 0 1-.493-.052l-16.109-6.155a.997.997 0 0 1-.62-.531 1.107 1.107 0 0 1-.052-.842 1.04 1.04 0 0 1 .549-.612.941.941 0 0 1 .798.011l15.875 6.061 39.466-6.237-16.849-14.141a1.054 1.054 0 0 1-.32-.493 1.1 1.1 0 0 1-.015-.597c.05-.197.153-.374.296-.51a.976.976 0 0 1 .51-.258l27.877-4.405a.957.957 0 0 1 .74.195c.212.166.354.414.393.69l1.37 9.698c.023.17.007.343-.047.504a1.057 1.057 0 0 1-.264.423l-10.594 10.366a.94.94 0 0 1-.539.253Zm-16.399-16.024 16.181 13.603 9.593-9.386-1.146-8.109-24.628 3.892Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="M331.751 103.245a.965.965 0 0 1-.532-.075l-61.805-27.576a.987.987 0 0 1-.358-.214 1.06 1.06 0 0 1-.245-.348 1.105 1.105 0 0 1-.014-.85 1.07 1.07 0 0 1 .234-.356c.101-.1.22-.178.35-.227a.949.949 0 0 1 .802.062l59.407 26.546-26.808-60.685-41.673-13.58a1.01 1.01 0 0 1-.546-.468 1.102 1.102 0 0 1-.116-.733c.046-.252.178-.476.371-.632a.958.958 0 0 1 .673-.215l62.364 6.015a.932.932 0 0 1 .443.152.994.994 0 0 1 .326.352 1.106 1.106 0 0 1 .06.924l-4.265 10.775c-.088.22-.244.402-.443.517a.958.958 0 0 1-.651.114l-14.126-2.688 13.637 30.87 13.638 30.87c.087.191.116.405.084.614a1.052 1.052 0 0 1-.264.554.984.984 0 0 1-.543.282Zm-27.996-65.594 15.179 2.885 3.43-8.673-51.547-4.925 32.938 10.713Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m332.289 58.965-.147.023a.961.961 0 0 1-.425-.1 1.015 1.015 0 0 1-.345-.283l-12.643-16.262a1.107 1.107 0 0 1-.214-.785c.03-.282.164-.539.373-.716a.974.974 0 0 1 1.42.168l11.872 15.246 17.754-23.223-10.697-10.68-11.329 1.79-3.213 7.212a1.059 1.059 0 0 1-.225.35.997.997 0 0 1-.338.23.945.945 0 0 1-.785-.032 1 1 0 0 1-.32-.255 1.073 1.073 0 0 1-.244-.79c.012-.141.051-.28.115-.405l3.433-7.712a1.05 1.05 0 0 1 .325-.413.964.964 0 0 1 .474-.19l12.297-1.943a.92.92 0 0 1 .444.037.958.958 0 0 1 .381.243l11.715 11.695a1.096 1.096 0 0 1 .087 1.424l-19.132 25.037a.996.996 0 0 1-.633.334Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="M335.675 131.015a.946.946 0 0 1-.616-.108l-18.702-10.563-9.741 4.34a.949.949 0 0 1-.757-.004 1.032 1.032 0 0 1-.536-.565 1.11 1.11 0 0 1-.005-.8c.098-.257.288-.463.529-.573l10.173-4.53a.923.923 0 0 1 .889.037l17.376 9.811-3.49-24.702a1.11 1.11 0 0 1 .098-.627c.093-.193.24-.352.421-.454L378.89 75.35l-1.379-9.762-30.372-26.008a1.05 1.05 0 0 1-.385-.712 1.106 1.106 0 0 1 .215-.788c.084-.11.188-.2.305-.266a.962.962 0 0 1 .773-.074.98.98 0 0 1 .345.204l30.677 26.287c.191.167.316.404.35.663l1.548 10.959a1.1 1.1 0 0 1-.092.625 1.025 1.025 0 0 1-.418.454L332.88 103.86l3.679 26.035c.018.271-.064.539-.229.748a.987.987 0 0 1-.655.372Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="M375.223 133.308a.95.95 0 0 1-.694-.161l-42.734-29.591-14.665 16.386a1.01 1.01 0 0 1-.316.274.945.945 0 0 1-.797.057.971.971 0 0 1-.348-.227c-.1-.1-.179-.22-.233-.354a1.115 1.115 0 0 1 .012-.845c.057-.133.139-.251.242-.348l15.194-17.012a.945.945 0 0 1 1.262-.199l42.521 29.4 11.874-26.326c.121-.238.324-.418.567-.502a.946.946 0 0 1 .737.05c.231.115.41.32.502.572.092.252.088.532-.009.781l-12.364 27.422a1.07 1.07 0 0 1-.262.351.999.999 0 0 1-.374.207l-.115.065Zm-11.161 91.834-43.777 6.918a.95.95 0 0 1-.845-.287l-42.92-44.228a1.635 1.635 0 0 1-.151-.19l-13.994-23.453-12.939 58.489c-.034.19-.116.366-.239.509a.976.976 0 0 1-.457.301.93.93 0 0 1-.538.004.975.975 0 0 1-.46-.295l-37.698-39.031a1.079 1.079 0 0 1-.288-.599l-9.008-63.759a1.113 1.113 0 0 1 .14-.838c.077-.121.177-.225.294-.303a.967.967 0 0 1 .386-.152.937.937 0 0 1 .411.026.992.992 0 0 1 .624.538 1.1 1.1 0 0 1 .107.419l8.959 63.412 36.215 37.474 13.114-59.124c.057-.254.202-.477.407-.624l37.616-27.641a.944.944 0 0 1 .905-.128.986.986 0 0 1 .391.275c.107.123.185.272.226.434l18.361 17.187 14.949 36.947 27.626 15.805c.18-.027.365 0 .532.077.167.078.31.203.413.362l7.627 11.277c.118.172.183.378.188.591.005.212-.051.421-.161.599l-5.33 8.545a1.036 1.036 0 0 1-.297.307.976.976 0 0 1-.389.156Zm-43.588 4.759 42.853-6.772 4.711-7.55-6.836-10.178-27.686-15.796a.953.953 0 0 1-.533-.084 1.015 1.015 0 0 1-.414-.364l-15.391-37.642a1.122 1.122 0 0 1-.133-.315l-18.032-15.923-35.731 26.232 14.69 24.621 42.502 43.771Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="M331.349 188.237a.54.54 0 0 1-.164.026l-54.55-1.277a.948.948 0 0 1-.38-.089 1.007 1.007 0 0 1-.527-.584 1.115 1.115 0 0 1 .018-.806c.053-.126.129-.24.224-.335a.947.947 0 0 1 .713-.285l54.55 1.277a.97.97 0 0 1 .658.3 1.094 1.094 0 0 1 .08 1.41.986.986 0 0 1-.62.381l-.002-.018Zm-11.064 43.823a.948.948 0 0 1-.583-.105 1.023 1.023 0 0 1-.424-.435 1.107 1.107 0 0 1 .118-1.187l19.842-23.319a.99.99 0 0 1 .605-.351.95.95 0 0 1 .674.149l23.937 16.41c.222.152.377.391.432.664a1.1 1.1 0 0 1-.138.793 1 1 0 0 1-.628.457.955.955 0 0 1-.751-.146l-23.224-15.935-19.274 22.651a.952.952 0 0 1-.586.354Z"
+                              fill="#B398FF"
+                            />
+                          </g>
+                          <defs>
+                            <clippath
+                              id="a"
+                            >
+                              <path
+                                d="M0 0h385.853v232.381H0z"
+                                fill="#fff"
+                                transform="matrix(.98774 -.1561 .1399 .99017 .985 60.748)"
+                              />
+                            </clippath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider2Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider2Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide"
+                  data-index="2"
+                  style="outline: none; width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-51"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider3Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider3Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide"
+                  data-index="3"
+                  style="outline: none; width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-38"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider4Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider4Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide slick-cloned"
+                  data-index="4"
+                  style="width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-43"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <h1
+                        class="MuiTypography-root MuiTypography-h1 emotion-41"
+                      >
+                        slider1Header
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide slick-cloned"
+                  data-index="5"
+                  style="width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-46"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          fill="none"
+                          height="420"
+                          viewBox="0 0 415 291"
+                          width="600"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            clip-path="url(#a)"
+                            style="mix-blend-mode: color-dodge;"
+                          >
+                            <path
+                              d="m316.006 119.404 16.367-16.893 42.644 29.562-38.601-1.407-20.41-11.262Zm59.974 13.553 11.196-26.629 9.818 8.995-21.014 17.634Zm-43.607-76.729L318.406 41.04l-13.935-1.877-35.373-12.744 54.451 4.298 3.55-7.508 12.867-1.877 11.536 11.262-19.129 23.635Z"
+                              fill="#665A75"
+                            />
+                            <path
+                              d="m305.858 216.424-29.289-30.844 18.74 1.558 37.168.907 28.694 16.558 8.634 10.689-5.823 9.207-43.198 6.827-14.926-14.902ZM29.593 252.482l38.522-55.054 6.767 47.897 23.505 15.119 2.915 20.632-21.423-.381-50.286-28.213Zm85.281 3.85-6.745-47.739 40.8-8.869 8.513 40.088 26.476-4.184 1.354 9.58-10.028 10.624-43.069 6.806-17.301-6.306Zm99.372-12.757-2.755-59.83 30.089 31.471 6.022 7.334 7.032 9.436 18.532.085 2.706 19.158-42.501 6.717-19.125-14.371Z"
+                              fill="#805F8F"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="m266.354 24.693 38.116 15.49 27.066 62.329-15.53 16.892-10.205 4.693-6.211 10.323 19.648 17.727 15.452 36.287-61.004-2.934-11.323-22.923-13.89 59.302-39.548-38.761-100.414 25.888-33.413 37.301L59.17 143.884l7.623-32.543 49.084-60.828 92.415-10.33 21.839-15.77 36.223.28Z"
+                              fill="#615085"
+                              opacity="0.7"
+                            />
+                            <path
+                              d="m332.977 102.786 46.08-26.307-3.218 13.74 11.819 14.61-12.93 27.315-41.751-29.358Z"
+                              fill="#C3CCE2"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="m375.653 133.426-.199.031-39.543-2.256a.976.976 0 0 1-.653-.365 1.086 1.086 0 0 1-.235-.739c.014-.27.125-.523.311-.708a.966.966 0 0 1 .687-.287l39.183 2.21 21.07-15.634-22.082-24.172a1.085 1.085 0 0 1-.253-.49 1.117 1.117 0 0 1 .017-.556l4.481-15.244c.08-.264.256-.485.489-.614a.956.956 0 0 1 1.098.117c.101.088.184.196.245.319a1.097 1.097 0 0 1 .067.802l-4.295 14.683 22.491 24.63c.099.109.175.238.223.381a1.09 1.09 0 0 1-.079.873 1.01 1.01 0 0 1-.291.328l-22.295 16.594a.95.95 0 0 1-.437.097Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m330.757 102.972-26.442-63.728 14.529 3.037 13.187 14.969 15.17-18.286 30.294 25.591 2.415 11.379-49.153 27.038Z"
+                              fill="#4C92D2"
+                              opacity="0.8"
+                            />
+                            <path
+                              d="M299.732 134.613a1.028 1.028 0 0 1-.285.045l-97.886-14.2a.981.981 0 0 1-.643-.392 1.093 1.093 0 0 1-.208-.753l6.936-79.03c.013-.158.06-.31.137-.445.078-.135.183-.25.309-.335l21.393-14.724a.977.977 0 0 1 .516-.166l31.411-.716a.97.97 0 0 1 .653.24c.185.158.309.381.353.628l8.318 49.435 36.143 47.904c.128.17.202.379.212.597.011.218-.044.433-.156.617l-6.505 10.858c-.08.121-.184.223-.304.298a.956.956 0 0 1-.394.139Zm-96.96-16.148 96.308 13.973 5.792-9.653-35.871-47.545a1.233 1.233 0 0 1-.199-.473L260.59 25.96l-30.276.686-20.749 14.276-6.793 77.543ZM73.281 247.363c-.16.022-.322.006-.475-.046a1 1 0 0 1-.436-.319 1.085 1.085 0 0 1-.22-.511L57.877 145.461a1.096 1.096 0 0 1 .057-.55c.065-.175.174-.328.315-.443l23.092-18.95-16.37-13.629a1.07 1.07 0 0 1-.374-.716 1.082 1.082 0 0 1 .035-.416c.039-.135.103-.259.19-.366l48.992-61.367c.084-.106.187-.193.303-.257a.956.956 0 0 1 1.101.128c.1.089.182.197.242.319a1.087 1.087 0 0 1-.122 1.156l-48.33 60.553 15.958 13.274 45.921-37.645a.973.973 0 0 1 .398-.198.942.942 0 0 1 .44.001.97.97 0 0 1 .396.203c.117.097.211.221.275.363l16.984 37.17c.073.168.099.355.076.539l-3.393 51.014a1.081 1.081 0 0 1-.278.661L73.79 247.086a.946.946 0 0 1-.509.277Zm-13.356-101.6 13.902 98.396 67.745-68.513-58.617-48.777-23.03 18.894Zm24.653-20.224 57.647 47.978 3.209-48.754-16.346-35.787-44.51 36.563Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m103.334 279.807-24.913 3.937a.97.97 0 0 1-.74-.195 1.026 1.026 0 0 1-.26-.304 1.093 1.093 0 0 1-.132-.386l-5.14-36.382a1.118 1.118 0 0 1 .073-.558c.072-.175.187-.327.334-.44a.962.962 0 0 1 .507-.187.941.941 0 0 1 .525.118l27.615 15.119c.14.075.261.185.353.32.091.135.15.292.172.456l2.451 17.351c.027.27-.046.54-.204.755a.988.988 0 0 1-.641.396Zm-24.23 1.701 22.96-3.629-2.226-15.752-25.44-13.923 4.706 33.304Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="M78.412 283.745a.971.971 0 0 1-.635-.123l-49.079-29.41a.996.996 0 0 1-.304-.283 1.063 1.063 0 0 1-.17-.389 1.062 1.062 0 0 1 .148-.826l36.794-57.535c.073-.114.166-.211.274-.287a.955.955 0 0 1 .744-.153.954.954 0 0 1 .356.158c.107.076.2.175.272.289a1.084 1.084 0 0 1 .144.786 1.082 1.082 0 0 1-.15.376l-36.175 56.597 48.147 28.885c.169.113.301.278.38.472.079.195.1.41.063.617a1.072 1.072 0 0 1-.278.547.977.977 0 0 1-.52.287l-.01-.008Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="M59.009 146.346a.96.96 0 0 1-.712-.169 1.003 1.003 0 0 1-.272-.292 1.077 1.077 0 0 1-.138-.79l6.728-34.233a1.05 1.05 0 0 1 .429-.666.957.957 0 0 1 .75-.151 1 1 0 0 1 .63.454c.144.234.196.519.142.792l-6.738 34.225c-.04.21-.14.402-.287.55a.974.974 0 0 1-.532.28Zm84.228 30.269a.957.957 0 0 1-.617-.113 1.036 1.036 0 0 1-.431-.479 1.11 1.11 0 0 1-.076-.656 1.07 1.07 0 0 1 .31-.575l57.449-55.094-70.767-31.351a.978.978 0 0 1-.318-.224 1.037 1.037 0 0 1-.212-.336l-14.882-37.68a1.095 1.095 0 0 1 .433-1.306.926.926 0 0 1 .468-.134l67.191-3.15 26.702-6.161a.918.918 0 0 1 .754.133c.11.075.205.173.279.288.074.115.124.245.149.381.056.273.007.557-.136.791a.998.998 0 0 1-.624.46l-26.779 6.173-.173.027-65.817 3.12 14.171 35.896 71.857 31.814c.152.072.285.183.386.324a1.101 1.101 0 0 1 .141.999 1.057 1.057 0 0 1-.28.43l-58.609 56.202a.95.95 0 0 1-.569.221Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m261.724 254.777-27.54 4.352a.937.937 0 0 1-.665-.138l-19.532-12.504a1.01 1.01 0 0 1-.344-.364 1.085 1.085 0 0 1-.14-.493l-3.718-61.206-59.115 15.224 6.342 40.075c.036.237-.006.48-.117.689-.112.21-.287.373-.498.463l-39.403 16.496a.924.924 0 0 1-.892-.064 1.02 1.02 0 0 1-.326-.318 1.09 1.09 0 0 1-.161-.436l-6.691-47.358a1.112 1.112 0 0 1 .149-.732c.132-.216.334-.375.568-.446l39.578-10.194.043-.007 61.136-15.748a.957.957 0 0 1 .828.17c.118.091.215.209.284.344.07.136.11.286.118.44l3.77 61.954 18.777 11.97 25.925-4.097-12.649-30.312a1.113 1.113 0 0 1 .032-.761 1.03 1.03 0 0 1 .51-.539.95.95 0 0 1 .72-.035c.235.084.433.258.553.488l13.174 31.527a1.127 1.127 0 0 1-.035.939 1.05 1.05 0 0 1-.27.397.965.965 0 0 1-.411.224Zm-150.662-44.893 6.373 45.102 37.492-15.699-6.188-39.11-37.677 9.707Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="m276.483 252.444-14.759 2.333a.958.958 0 0 1-.74-.195 1.097 1.097 0 0 1-.208-1.472.985.985 0 0 1 .654-.415l13.774-2.177-2.481-17.561-19.99.265-38.049 12.072a.954.954 0 0 1-1.116-.301 1.081 1.081 0 0 1-.23-.804c.016-.144.06-.283.129-.408s.161-.233.272-.319a.98.98 0 0 1 .369-.178l38.158-12.117.277-.043 20.995-.275a.966.966 0 0 1 .666.246c.186.165.308.396.344.65l2.756 19.505c.039.273-.026.551-.179.775a.99.99 0 0 1-.642.419Zm-101.604 4.565-41.972 6.632a.976.976 0 0 1-.493-.052l-16.109-6.155a.997.997 0 0 1-.62-.531 1.107 1.107 0 0 1-.052-.842 1.04 1.04 0 0 1 .549-.612.941.941 0 0 1 .798.011l15.875 6.061 39.466-6.237-16.849-14.141a1.054 1.054 0 0 1-.32-.493 1.1 1.1 0 0 1-.015-.597c.05-.197.153-.374.296-.51a.976.976 0 0 1 .51-.258l27.877-4.405a.957.957 0 0 1 .74.195c.212.166.354.414.393.69l1.37 9.698c.023.17.007.343-.047.504a1.057 1.057 0 0 1-.264.423l-10.594 10.366a.94.94 0 0 1-.539.253Zm-16.399-16.024 16.181 13.603 9.593-9.386-1.146-8.109-24.628 3.892Z"
+                              fill="#B398FF"
+                              opacity="0.5"
+                            />
+                            <path
+                              d="M331.751 103.245a.965.965 0 0 1-.532-.075l-61.805-27.576a.987.987 0 0 1-.358-.214 1.06 1.06 0 0 1-.245-.348 1.105 1.105 0 0 1-.014-.85 1.07 1.07 0 0 1 .234-.356c.101-.1.22-.178.35-.227a.949.949 0 0 1 .802.062l59.407 26.546-26.808-60.685-41.673-13.58a1.01 1.01 0 0 1-.546-.468 1.102 1.102 0 0 1-.116-.733c.046-.252.178-.476.371-.632a.958.958 0 0 1 .673-.215l62.364 6.015a.932.932 0 0 1 .443.152.994.994 0 0 1 .326.352 1.106 1.106 0 0 1 .06.924l-4.265 10.775c-.088.22-.244.402-.443.517a.958.958 0 0 1-.651.114l-14.126-2.688 13.637 30.87 13.638 30.87c.087.191.116.405.084.614a1.052 1.052 0 0 1-.264.554.984.984 0 0 1-.543.282Zm-27.996-65.594 15.179 2.885 3.43-8.673-51.547-4.925 32.938 10.713Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="m332.289 58.965-.147.023a.961.961 0 0 1-.425-.1 1.015 1.015 0 0 1-.345-.283l-12.643-16.262a1.107 1.107 0 0 1-.214-.785c.03-.282.164-.539.373-.716a.974.974 0 0 1 1.42.168l11.872 15.246 17.754-23.223-10.697-10.68-11.329 1.79-3.213 7.212a1.059 1.059 0 0 1-.225.35.997.997 0 0 1-.338.23.945.945 0 0 1-.785-.032 1 1 0 0 1-.32-.255 1.073 1.073 0 0 1-.244-.79c.012-.141.051-.28.115-.405l3.433-7.712a1.05 1.05 0 0 1 .325-.413.964.964 0 0 1 .474-.19l12.297-1.943a.92.92 0 0 1 .444.037.958.958 0 0 1 .381.243l11.715 11.695a1.096 1.096 0 0 1 .087 1.424l-19.132 25.037a.996.996 0 0 1-.633.334Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="M335.675 131.015a.946.946 0 0 1-.616-.108l-18.702-10.563-9.741 4.34a.949.949 0 0 1-.757-.004 1.032 1.032 0 0 1-.536-.565 1.11 1.11 0 0 1-.005-.8c.098-.257.288-.463.529-.573l10.173-4.53a.923.923 0 0 1 .889.037l17.376 9.811-3.49-24.702a1.11 1.11 0 0 1 .098-.627c.093-.193.24-.352.421-.454L378.89 75.35l-1.379-9.762-30.372-26.008a1.05 1.05 0 0 1-.385-.712 1.106 1.106 0 0 1 .215-.788c.084-.11.188-.2.305-.266a.962.962 0 0 1 .773-.074.98.98 0 0 1 .345.204l30.677 26.287c.191.167.316.404.35.663l1.548 10.959a1.1 1.1 0 0 1-.092.625 1.025 1.025 0 0 1-.418.454L332.88 103.86l3.679 26.035c.018.271-.064.539-.229.748a.987.987 0 0 1-.655.372Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="M375.223 133.308a.95.95 0 0 1-.694-.161l-42.734-29.591-14.665 16.386a1.01 1.01 0 0 1-.316.274.945.945 0 0 1-.797.057.971.971 0 0 1-.348-.227c-.1-.1-.179-.22-.233-.354a1.115 1.115 0 0 1 .012-.845c.057-.133.139-.251.242-.348l15.194-17.012a.945.945 0 0 1 1.262-.199l42.521 29.4 11.874-26.326c.121-.238.324-.418.567-.502a.946.946 0 0 1 .737.05c.231.115.41.32.502.572.092.252.088.532-.009.781l-12.364 27.422a1.07 1.07 0 0 1-.262.351.999.999 0 0 1-.374.207l-.115.065Zm-11.161 91.834-43.777 6.918a.95.95 0 0 1-.845-.287l-42.92-44.228a1.635 1.635 0 0 1-.151-.19l-13.994-23.453-12.939 58.489c-.034.19-.116.366-.239.509a.976.976 0 0 1-.457.301.93.93 0 0 1-.538.004.975.975 0 0 1-.46-.295l-37.698-39.031a1.079 1.079 0 0 1-.288-.599l-9.008-63.759a1.113 1.113 0 0 1 .14-.838c.077-.121.177-.225.294-.303a.967.967 0 0 1 .386-.152.937.937 0 0 1 .411.026.992.992 0 0 1 .624.538 1.1 1.1 0 0 1 .107.419l8.959 63.412 36.215 37.474 13.114-59.124c.057-.254.202-.477.407-.624l37.616-27.641a.944.944 0 0 1 .905-.128.986.986 0 0 1 .391.275c.107.123.185.272.226.434l18.361 17.187 14.949 36.947 27.626 15.805c.18-.027.365 0 .532.077.167.078.31.203.413.362l7.627 11.277c.118.172.183.378.188.591.005.212-.051.421-.161.599l-5.33 8.545a1.036 1.036 0 0 1-.297.307.976.976 0 0 1-.389.156Zm-43.588 4.759 42.853-6.772 4.711-7.55-6.836-10.178-27.686-15.796a.953.953 0 0 1-.533-.084 1.015 1.015 0 0 1-.414-.364l-15.391-37.642a1.122 1.122 0 0 1-.133-.315l-18.032-15.923-35.731 26.232 14.69 24.621 42.502 43.771Z"
+                              fill="#B398FF"
+                            />
+                            <path
+                              d="M331.349 188.237a.54.54 0 0 1-.164.026l-54.55-1.277a.948.948 0 0 1-.38-.089 1.007 1.007 0 0 1-.527-.584 1.115 1.115 0 0 1 .018-.806c.053-.126.129-.24.224-.335a.947.947 0 0 1 .713-.285l54.55 1.277a.97.97 0 0 1 .658.3 1.094 1.094 0 0 1 .08 1.41.986.986 0 0 1-.62.381l-.002-.018Zm-11.064 43.823a.948.948 0 0 1-.583-.105 1.023 1.023 0 0 1-.424-.435 1.107 1.107 0 0 1 .118-1.187l19.842-23.319a.99.99 0 0 1 .605-.351.95.95 0 0 1 .674.149l23.937 16.41c.222.152.377.391.432.664a1.1 1.1 0 0 1-.138.793 1 1 0 0 1-.628.457.955.955 0 0 1-.751-.146l-23.224-15.935-19.274 22.651a.952.952 0 0 1-.586.354Z"
+                              fill="#B398FF"
+                            />
+                          </g>
+                          <defs>
+                            <clippath
+                              id="a"
+                            >
+                              <path
+                                d="M0 0h385.853v232.381H0z"
+                                fill="#fff"
+                                transform="matrix(.98774 -.1561 .1399 .99017 .985 60.748)"
+                              />
+                            </clippath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider2Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider2Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide slick-cloned"
+                  data-index="6"
+                  style="width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-51"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider3Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider3Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="slick-slide slick-cloned"
+                  data-index="7"
+                  style="width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="MuiBox-root emotion-38"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <div
+                        class="caption MuiBox-root emotion-6"
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-h1 emotion-41"
+                        >
+                          slider4Header
+                        </h1>
+                        <h3
+                          class="MuiTypography-root MuiTypography-h3 emotion-42"
+                        >
+                          slider4Description
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul
+              class="slick-dots"
+              style="display: block;"
+            >
+              <li
+                class="slick-active"
+              >
+                <button>
+                  1
+                </button>
+              </li>
+              <li
+                class=""
+              >
+                <button>
+                  2
+                </button>
+              </li>
+              <li
+                class=""
+              >
+                <button>
+                  3
+                </button>
+              </li>
+              <li
+                class=""
+              >
+                <button>
+                  4
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section
+        class="home__section-box sectionbox__container emotion-79"
+      >
+        <div
+          class="sectionlimit__container emotion-2"
+        >
+          <div
+            class="MuiBox-root emotion-81"
+          >
+            <div
+              class="home__content MuiBox-root emotion-6"
+            >
+              <div
+                class="home__search-bar MuiBox-root emotion-6"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 emotion-84"
+                >
+                  supportedNetworks
+                </h2>
+                <div
+                  class="searchbox__container MuiBox-root emotion-85"
+                >
+                  <div
+                    class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon emotion-86"
+                    inputmode="search"
+                  >
+                    <div
+                      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root emotion-87"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd MuiAutocomplete-inputRoot emotion-88"
+                      >
+                        <div
+                          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium emotion-89"
+                        >
+                          <span
+                            class="notranslate"
+                          >
+                            ​
+                          </span>
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-90"
+                            data-testid="SearchIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                            />
+                          </svg>
+                        </div>
+                        <input
+                          aria-autocomplete="list"
+                          aria-expanded="false"
+                          aria-invalid="false"
+                          autocapitalize="none"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused emotion-91"
+                          id=":r0:"
+                          placeholder="searchNetwork"
+                          role="combobox"
+                          spellcheck="false"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="MuiAutocomplete-endAdornment emotion-92"
+                        >
+                          <button
+                            aria-label="Open"
+                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator emotion-93"
+                            tabindex="-1"
+                            title="Open"
+                            type="button"
+                          >
+                            <span
+                              class="MuiTouchRipple-root emotion-5"
+                            />
+                          </button>
+                        </div>
+                        <fieldset
+                          aria-hidden="true"
+                          class="MuiOutlinedInput-notchedOutline emotion-95"
+                        >
+                          <legend
+                            class="emotion-96"
+                          >
+                            <span
+                              class="notranslate"
+                            >
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-97"
+                    tabindex="0"
+                    type="button"
+                  >
+                    cancel
+                    <span
+                      class="MuiTouchRipple-root emotion-5"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="home__networks MuiBox-root emotion-6"
+            >
+              <div
+                class="emotion-100"
+                style="opacity: 0; transform: scale(0.8) translateZ(0);"
+              >
+                <div
+                  class="networkbox__mobile-popover-contaier MuiBox-root emotion-6"
+                >
+                  <div
+                    class="networkbox__popover MuiBox-root emotion-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall networkbox__close-btn emotion-90"
+                      data-testid="CloseIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                    <div
+                      class="MuiBox-root emotion-6"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <h3
+                        class="MuiTypography-root MuiTypography-h3 emotion-42"
+                      >
+                        Cosmos Hub
+                      </h3>
+                    </div>
+                    <span
+                      class="MuiLinearProgress-root MuiLinearProgress-colorSecondary MuiLinearProgress-indeterminate emotion-107"
+                      role="progressbar"
+                    >
+                      <span
+                        class="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar1Indeterminate emotion-108"
+                      />
+                      <span
+                        class="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar2Indeterminate emotion-109"
+                      />
+                    </span>
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-110"
+                      tabindex="0"
+                      type="button"
+                    >
+                      explore
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium emotion-111"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+                          data-testid="ChevronRightIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root emotion-5"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="networkbox__desktop-anchor MuiBox-root emotion-6"
+                >
+                  <div
+                    class="networkbox__popover MuiBox-root emotion-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall networkbox__close-btn emotion-90"
+                      data-testid="CloseIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                    <div
+                      class="MuiBox-root emotion-6"
+                    >
+                      <div
+                        class="image MuiBox-root emotion-6"
+                      >
+                        <svg
+                          data-testid="next-image"
+                        />
+                      </div>
+                      <h3
+                        class="MuiTypography-root MuiTypography-h3 emotion-42"
+                      >
+                        Cosmos Hub
+                      </h3>
+                    </div>
+                    <span
+                      class="MuiLinearProgress-root MuiLinearProgress-colorSecondary MuiLinearProgress-indeterminate emotion-107"
+                      role="progressbar"
+                    >
+                      <span
+                        class="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar1Indeterminate emotion-108"
+                      />
+                      <span
+                        class="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar2Indeterminate emotion-109"
+                      />
+                    </span>
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-110"
+                      tabindex="0"
+                      type="button"
+                    >
+                      explore
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium emotion-111"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+                          data-testid="ChevronRightIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root emotion-5"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    class="image MuiBox-root emotion-6"
+                  >
+                    <svg
+                      data-testid="next-image"
+                    />
+                  </div>
+                  <h4
+                    class="MuiTypography-root MuiTypography-h4 emotion-128"
+                  >
+                    Cosmos Hub
+                  </h4>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium networkbox__mobile-anchor emotion-97"
+                  tabindex="0"
+                  type="button"
+                >
+                  <div
+                    class="image MuiBox-root emotion-6"
+                  >
+                    <svg
+                      data-testid="next-image"
+                    />
+                  </div>
+                  <h4
+                    class="MuiTypography-root MuiTypography-h4 emotion-128"
+                  >
+                    Cosmos Hub
+                  </h4>
+                  <span
+                    class="MuiTouchRipple-root emotion-5"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer
+      class="footer__container emotion-133"
+    >
+      <div
+        class="sectionlimit__container emotion-2"
+      >
+        <div
+          class="footer__scroll-top MuiBox-root emotion-6"
+        >
+          <button
+            class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-31"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+              data-testid="KeyboardArrowUpIcon"
+              focusable="false"
+              height="36"
+              viewBox="0 0 24 24"
+              width="36"
+            >
+              <path
+                d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root emotion-5"
+            />
+          </button>
+          <div
+            class="footer__bottom MuiBox-root emotion-6"
+          >
+            <div
+              class="footer__icons-wrapper"
+            >
+              <a
+                class="footer__social twitter"
+                href="https://twitter.com/bigdipperlive"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="none"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.33 3.23897C12.3353 3.35997 12.3353 3.47547 12.3353 3.59647C12.3406 7.26499 9.64538 11.5 4.71643 11.5C3.26269 11.5 1.83547 11.0655 0.609863 10.2515C0.822089 10.279 1.03431 10.29 1.24654 10.29C2.45092 10.29 3.62347 9.87199 4.57318 9.09649C3.42716 9.07449 2.41909 8.29899 2.06892 7.16599C2.47215 7.24849 2.88599 7.23199 3.2786 7.11649C2.03178 6.86349 1.13512 5.72498 1.12982 4.39948C1.12982 4.38848 1.12982 4.37748 1.12982 4.36648C1.50121 4.58098 1.92036 4.70198 2.34481 4.71298C1.17226 3.89898 0.806172 2.27647 1.51713 1.00597C2.88068 2.74397 4.88621 3.79448 7.04031 3.90998C6.82277 2.94747 7.11989 1.93547 7.81493 1.25347C8.89198 0.202964 10.5898 0.257964 11.6085 1.37447C12.208 1.25347 12.7863 1.02247 13.3116 0.697965C13.11 1.34147 12.6908 1.88597 12.1337 2.23247C12.6643 2.16647 13.1842 2.01797 13.6724 1.79797C13.3116 2.35897 12.8553 2.84297 12.33 3.23897Z"
+                    fill="#FCCDCC"
+                  />
+                </svg>
+              </a>
+              <a
+                class="footer__social telegram"
+                href="https://t.me/forbole"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="none"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M1.89631 5.16592C5.78325 3.47245 8.37516 2.356 9.67202 1.81659C13.3748 0.276465 14.1442 0.00892841 14.6457 9.41924e-05C14.756 -0.00184879 15.0027 0.0254864 15.1624 0.155112C15.2973 0.264566 15.3344 0.412421 15.3522 0.516195C15.3699 0.619969 15.392 0.856369 15.3745 1.04108C15.1738 3.1494 14.3056 8.26572 13.8639 10.6271C13.677 11.6262 13.3089 11.9613 12.9527 11.9941C12.1784 12.0653 11.5904 11.4823 10.8405 10.9908C9.66695 10.2215 9.00399 9.74265 7.86489 8.992C6.54847 8.1245 7.40185 7.64771 8.15208 6.86849C8.34841 6.66457 11.76 3.56151 11.826 3.28001C11.8343 3.2448 11.8419 3.11357 11.764 3.04428C11.686 2.97498 11.5709 2.99868 11.4879 3.01753C11.3702 3.04424 9.4955 4.28334 5.86381 6.73483C5.33168 7.10023 4.8497 7.27826 4.41786 7.26893C3.94179 7.25865 3.02602 6.99976 2.34524 6.77846C1.51024 6.50704 0.846598 6.36353 0.904387 5.90257C0.934487 5.66247 1.26513 5.41692 1.89631 5.16592Z"
+                    fill="#FCCDCC"
+                    fill-rule="evenodd"
+                    id="Vector"
+                  />
+                </svg>
+              </a>
+              <a
+                class="footer__social github"
+                href="https://github.com/forbole"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 18 16"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M9.1384 0C7.18005 0.00101608 5.28592 0.694626 3.79469 1.9568C2.30346 3.21898 1.31238 4.96742 0.998662 6.88949C0.684944 8.81155 1.06904 10.7819 2.08229 12.4482C3.09553 14.1145 4.67184 15.3682 6.52935 15.9849C6.93915 16.061 7.09351 15.807 7.09351 15.5911C7.09351 15.3751 7.08531 14.749 7.08258 14.0644C4.78771 14.5602 4.30278 13.096 4.30278 13.096C3.9285 12.1452 3.38757 11.8953 3.38757 11.8953C2.639 11.3873 3.44358 11.3969 3.44358 11.3969C4.27273 11.4553 4.70849 12.243 4.70849 12.243C5.44339 13.4967 6.63863 13.134 7.10853 12.9221C7.18229 12.3911 7.39676 12.0298 7.63308 11.8247C5.79991 11.6182 3.87386 10.9147 3.87386 7.77176C3.8625 6.95666 4.1667 6.1684 4.72351 5.57008C4.63882 5.36363 4.35605 4.52968 4.8041 3.39692C4.8041 3.39692 5.49667 3.17689 7.07302 4.23766C8.42512 3.87001 9.85169 3.87001 11.2038 4.23766C12.7788 3.17689 13.47 3.39692 13.47 3.39692C13.9194 4.52696 13.6366 5.36091 13.5519 5.57008C14.1105 6.1685 14.4153 6.95813 14.4029 7.77447C14.4029 10.9242 12.4728 11.6182 10.6369 11.8206C10.9319 12.076 11.1956 12.5744 11.1956 13.3405C11.1956 14.4379 11.186 15.3208 11.186 15.5911C11.186 15.8097 11.3349 16.0651 11.7529 15.9849C13.6106 15.3681 15.1871 14.1142 16.2003 12.4476C17.2136 10.781 17.5975 8.81039 17.2834 6.88815C16.9693 4.9659 15.9777 3.21745 14.486 1.95549C12.9943 0.693525 11.0997 0.000372037 9.14113 0H9.1384Z"
+                    fill="#FCCDCC"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a
+                class="footer__social linkedin"
+                href="https://www.linkedin.com/company/forbole"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="none"
+                  height="14"
+                  viewBox="0 0 15 14"
+                  width="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1076 0H1.17459C0.900492 0 0.637624 0.108884 0.44381 0.302697C0.249997 0.496511 0.141113 0.759378 0.141113 1.03347V12.9665C0.141113 13.2406 0.249997 13.5035 0.44381 13.6973C0.637624 13.8911 0.900492 14 1.17459 14H13.1076C13.3817 14 13.6446 13.8911 13.8384 13.6973C14.0322 13.5035 14.1411 13.2406 14.1411 12.9665V1.03347C14.1411 0.759378 14.0322 0.496511 13.8384 0.302697C13.6446 0.108884 13.3817 0 13.1076 0ZM4.31389 11.9262H2.20903V5.24028H4.31389V11.9262ZM3.26 4.31375C3.02124 4.31241 2.78823 4.24036 2.59037 4.10672C2.39252 3.97307 2.23869 3.78381 2.14829 3.56282C2.0579 3.34183 2.03499 3.09901 2.08246 2.86502C2.12994 2.63102 2.24566 2.41633 2.41504 2.24804C2.58441 2.07975 2.79984 1.96541 3.03414 1.91944C3.26843 1.87346 3.5111 1.89793 3.7315 1.98974C3.95191 2.08155 4.14018 2.2366 4.27255 2.43531C4.40492 2.63402 4.47547 2.86749 4.47528 3.10625C4.47753 3.2661 4.44758 3.42477 4.3872 3.5728C4.32683 3.72083 4.23727 3.85519 4.12386 3.96787C4.01046 4.08055 3.87552 4.16925 3.72711 4.22867C3.5787 4.28809 3.41984 4.31703 3.26 4.31375ZM12.0722 11.9321H9.96834V8.27944C9.96834 7.20222 9.51042 6.86972 8.91931 6.86972C8.29514 6.86972 7.68264 7.34028 7.68264 8.30667V11.9321H5.57778V5.24514H7.60195V6.17167H7.62917C7.83236 5.76042 8.54403 5.0575 9.63 5.0575C10.8044 5.0575 12.0732 5.75458 12.0732 7.79625L12.0722 11.9321Z"
+                    fill="#FCCDCC"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="footer__terms-wrapper"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-caption emotion-140"
+              >
+                copyright
+              </span>
+              <span
+                class="MuiTypography-root MuiTypography-caption footer__terms-dash footer__desktop emotion-140"
+              >
+                |
+              </span>
+              <div
+                class="footer__terms-links"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-140"
+                  href="/terms-and-conditions"
+                  target="_self"
+                >
+                  termsAndConditions
+                </a>
+                <span
+                  class="MuiTypography-root MuiTypography-caption footer__terms-dash emotion-140"
+                >
+                  |
+                </span>
+                <a
+                  class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-140"
+                  href="/privacy-policy"
+                  target="_self"
+                >
+                  privacyPolicy
+                </a>
+              </div>
+              <span
+                class="MuiTypography-root MuiTypography-caption footer__terms-dash footer__desktop emotion-140"
+              >
+                |
+              </span>
+              <span
+                class="MuiTypography-root MuiTypography-caption emotion-140"
+              >
+                common:productOf
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button
+      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-31"
+      tabindex="0"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-19"
+        data-testid="KeyboardArrowUpIcon"
+        focusable="false"
+        height="36"
+        viewBox="0 0 24 24"
+        width="36"
+      >
+        <path
+          d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+        />
+      </svg>
+      <span
+        class="MuiTouchRipple-root emotion-5"
+      />
+    </button>
+  </main>
+</DocumentFragment>
+`;

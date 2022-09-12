@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content matches snapshot 1`] = `
+.emotion-0 .faqcontent__wrapper:not(:last-child) {
+  margin-bottom: 96px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .faqcontent__wrapper:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
+.emotion-0 .faqcontent__question {
+  color: #F6504B;
+  margin-bottom: 16px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .faqcontent__question {
+    font-size: 1rem;
+  }
+}
+
+.emotion-0 .faqcontent__list {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.emotion-0 .faqcontent__list-title {
+  color: #F6504B;
+  margin-bottom: 8px;
+}
+
+.emotion-0 .faqcontent__list-title-bullet {
+  color: #0939B0;
+  margin-right: 8px;
+}
+
+.emotion-0 .faqcontent__list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.emotion-1 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.334;
+}
+
+.emotion-2 {
+  margin: 0;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<div>
+  <div
+    class="emotion-0"
+    data-testid="ContentBox"
+  >
+    <div
+      class="faqcontent__wrapper"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 faqcontent__question emotion-1"
+      >
+        How are you?
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 emotion-2"
+      >
+        Fine.
+      </p>
+    </div>
+  </div>
+</div>
+`;

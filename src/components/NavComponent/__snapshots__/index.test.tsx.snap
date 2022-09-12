@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav matches snapshot 1`] = `
+.emotion-0 {
+  overflow: visible;
+  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-width: 296px;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0px 8px 0px 24px;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+  z-index: 4;
+}
+
+.emotion-0.sectionbox__main {
+  padding: 24px;
+}
+
+@media (min-width:768px) {
+  .emotion-0.sectionbox__main {
+    padding: 64px 0px;
+  }
+}
+
+.emotion-1 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+<div>
+  <section
+    class="nav__container sectionbox__container emotion-0"
+  >
+    <div
+      class="sectionlimit__container emotion-1"
+    >
+      <div
+        data-testid="MenuDesktop"
+      />
+      <div
+        data-testid="MenuMobile"
+      />
+    </div>
+  </section>
+</div>
+`;

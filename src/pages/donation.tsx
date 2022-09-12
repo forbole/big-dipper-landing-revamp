@@ -1,7 +1,5 @@
-import DonationPage from '../screens/donation';
+import DonationPage from '../screens/DonationScreen';
 
-const Donation = () => (
-  <DonationPage />
-);
+const Donation = () => <DonationPage />;
 
 export default Donation;

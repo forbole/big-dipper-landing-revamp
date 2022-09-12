@@ -1,7 +1,5 @@
-import FAQPage from '../screens/faq';
+import FAQPage from '../screens/FaqScreen';
 
-const FAQ = () => (
-  <FAQPage />
-);
+const FAQ = () => <FAQPage />;
 
 export default FAQ;

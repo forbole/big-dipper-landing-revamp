@@ -26,9 +26,14 @@ a:hover {
 }
 
 @font-face {
-  font-family: "SFPro";
+  font-family: 'SF Pro Text';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url("/fonts/SF-Pro-Text-Regular.woff2") format("woff2");
+  src: url('/fonts/sfProText.woff2') format('woff2');
+}
+
+body {
+  background-color: #000000;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
 }

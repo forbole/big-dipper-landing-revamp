@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 matches snapshot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-0 svg {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.emotion-0 h3 {
+  font-size: 1.2rem;
+}
+
+.emotion-0 h4 {
+  font-size: 0.95rem;
+}
+
+@media (min-width:768px) {
+  .emotion-0 h3 {
+    font-size: 2rem;
+  }
+
+  .emotion-0 h4 {
+    font-size: 1.4rem;
+  }
+}
+
+.emotion-1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.167;
+}
+
+.emotion-2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.235;
+}
+
+<div>
+  <div
+    data-testid="Layout"
+  >
+    <div
+      class="container MuiBox-root emotion-0"
+    >
+      <div
+        class="image"
+      >
+        <svg
+          data-testid="unicorn404"
+        />
+      </div>
+      <h3
+        class="MuiTypography-root MuiTypography-h3 emotion-1"
+      >
+        404
+      </h3>
+      <p>
+         
+      </p>
+      <h4
+        class="MuiTypography-root MuiTypography-h4 emotion-2"
+      >
+        404Description
+      </h4>
+    </div>
+  </div>
+</div>
+`;

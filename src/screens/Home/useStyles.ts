@@ -16,10 +16,10 @@ const useStyles = () => {
       position: 'relative',
       backgroundImage: `url(${basePath('/images/background/stars.webp')})`,
       backgroundRepeat: 'repeat-x',
-      backgroundSize: '95vw auto',
-      backgroundPosition: '0vw 50%',
+      backgroundPosition: '0vw 0',
       margin: theme.spacing(0, -3),
       marginBottom: theme.spacing(8),
+      backgroundSize: `auto 100%`,
       '& .slick-slider .slick-track, & .slick-slider .slick-list': {
         transform: 'none !important',
       },

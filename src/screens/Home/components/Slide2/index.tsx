@@ -12,7 +12,7 @@ const Slide1 = () => {
   return (
     <Box css={styles.root}>
       <Box className="image">
-        <HeroSvg width="600" height="420" />
+        <HeroSvg width="415" height="291" />
       </Box>
       <Box className="caption">
         <Typography variant="h1">{t('slider2Header')}</Typography>

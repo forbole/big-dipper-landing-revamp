@@ -445,7 +445,7 @@ exports[`Footer matches snapshot 1`] = `
     class="footer__container emotion-0"
   >
     <div
-      class="sectionlimit__container emotion-1"
+      class="sectionlimit__container MuiBox-root emotion-1"
     >
       <div
         class="footer__scroll-top MuiBox-root emotion-2"

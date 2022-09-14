@@ -1,11 +1,10 @@
 import Button from '@mui/material/Button';
 import classnames from 'classnames';
-import { motion } from 'framer-motion';
-import type { ComponentProps, FC } from 'react';
+import type { FC } from 'react';
 import type { MenuType } from './types';
 import useStyles from './useStyles';
 
-const MenuDesktop: FC<MenuType & ComponentProps<typeof motion.nav>> = ({
+const MenuDesktop: FC<MenuType & JSX.IntrinsicElements['nav']> = ({
   handleChange,
   items,
   selected,
@@ -13,7 +12,7 @@ const MenuDesktop: FC<MenuType & ComponentProps<typeof motion.nav>> = ({
 }) => {
   const styles = useStyles();
   return (
-    <motion.nav {...props} css={styles.root}>
+    <nav {...props} css={styles.root}>
       {items.map((x, i) => {
         return (
           <Button
@@ -31,7 +30,7 @@ const MenuDesktop: FC<MenuType & ComponentProps<typeof motion.nav>> = ({
           </Button>
         );
       })}
-    </motion.nav>
+    </nav>
   );
 };
 

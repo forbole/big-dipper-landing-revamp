@@ -2,11 +2,12 @@
 
 exports[`ContentBox matches snapshot 1`] = `
 .emotion-0 {
-  border: solid rgba(255, 255, 255, 0.1) 2px;
+  border: solid #fff 2px;
   overflow: auto;
   padding: 24px;
   border-radius: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
 }
 
 @media (min-width:768px) {
@@ -17,7 +18,7 @@ exports[`ContentBox matches snapshot 1`] = `
 
 <div>
   <div
-    class="contentbox__container emotion-0"
+    class="contentbox__container MuiBox-root emotion-0"
   >
     <div>
       HELLO WORLD

@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import Image from 'next/image';
-import { FC } from 'react';
+import { FC, useCallback, useState } from 'react';
 import CopySvg from '~src/assets/copy.svg';
 import { SectionLimit } from '~src/components';
 import ContentBox from '~src/components/ContentBox';
@@ -16,6 +16,11 @@ import { addresses } from './utils';
 const Content: FC<{ x: typeof addresses[number] }> = ({ x }) => {
   const { t } = useTranslation('donation');
   const { handleCopyToClipboard } = useDonation();
+  const [copied, setCopied] = useState(false);
+  const handleCopy = useCallback(() => {
+    handleCopyToClipboard(x.address);
+    setCopied(true);
+  }, [handleCopyToClipboard, x.address])
   return (
     <ContentBox key={x.address}>
       {!!x.imgSrc && (
@@ -34,10 +39,10 @@ const Content: FC<{ x: typeof addresses[number] }> = ({ x }) => {
       <Button
         variant="contained"
         className="donation__address-button"
-        onClick={() => handleCopyToClipboard(x.address)}
+        onClick={handleCopy}
       >
         <CopySvg className="donation__address-button-copy" />
-        {t('copy')}
+        {copied ? t('copied') : t('copy')}
       </Button>
     </ContentBox>
   );
@@ -59,7 +64,10 @@ const Donation = () => {
             {t('donation')}
           </Typography>
           <Typography className="donation__description">
-            {t('description')}
+            {t('description1')}
+          </Typography>
+          <Typography className="donation__description">
+            {t('description2')}
           </Typography>
           <div className="donation__address-container">
             {addresses.map((x) => (

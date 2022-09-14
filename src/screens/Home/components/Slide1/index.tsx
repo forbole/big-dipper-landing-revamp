@@ -14,15 +14,12 @@ const Slide1 = () => {
     <Box css={styles.root}>
       <Box className="image">
         {!!bigDipperWebp && (
-          <Image
-            src={bigDipperWebp}
-            alt="Big Dipper"
-            width="482"
-            height="452"
-          />
+          <Image layout='fill' objectFit="contain" src={bigDipperWebp} alt="Big Dipper" width="523" height="490" />
         )}
       </Box>
-      <Typography variant="h1">{t('slider1Header')}</Typography>
+      <Box className="caption">
+        <Typography variant="h1">{t('slider1Header')}</Typography>
+      </Box>
     </Box>
   );
 };

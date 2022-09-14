@@ -9,7 +9,7 @@ exports[`SectionLimit matches snapshot 1`] = `
 
 <div>
   <div
-    class="sectionlimit__container emotion-0"
+    class="sectionlimit__container MuiBox-root emotion-0"
   >
     <div>
       HELLO WORLD

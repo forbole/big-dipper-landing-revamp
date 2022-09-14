@@ -8,10 +8,9 @@ exports[`Nav matches snapshot 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  min-width: 296px;
+  min-width: 272px;
   position: -webkit-sticky;
   position: sticky;
-  padding: 0px 8px 0px 24px;
   top: 0;
   width: 100%;
   overflow: visible;
@@ -39,12 +38,14 @@ exports[`Nav matches snapshot 1`] = `
     class="nav__container sectionbox__container emotion-0"
   >
     <div
-      class="sectionlimit__container emotion-1"
+      class="sectionlimit__container MuiBox-root emotion-1"
     >
       <div
+        class="MuiBox-root emotion-2"
         data-testid="MenuDesktop"
       />
       <div
+        class="MuiBox-root emotion-2"
         data-testid="MenuMobile"
       />
     </div>

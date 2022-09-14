@@ -1,15 +1,13 @@
+import Box from '@mui/material/Box';
 import { render, screen } from '@testing-library/react';
 import { motion } from 'framer-motion';
-import { ComponentProps, forwardRef } from 'react';
+import { forwardRef } from 'react';
 import Component from '.';
 
 jest.mock('..', () => ({
-  Nav: (props: object) => <motion.div data-testid="Nav" {...props} />,
-  Footer: forwardRef(function _(
-    props: object,
-    ref: ComponentProps<typeof motion.div>['ref']
-  ) {
-    return <motion.div data-testid="Footer" {...props} ref={ref} />;
+  Nav: (props: object) => <Box data-testid="Nav" {...props} />,
+  Footer: forwardRef<HTMLElement, BarProp>(function _(props, ref) {
+    return <motion.footer data-testid="Footer" {...props} ref={ref} />;
   }),
 }));
 // ==================================

@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
+import Box from '@mui/material/Box';
 import { act, render, screen } from '@testing-library/react';
-import { motion } from 'framer-motion';
 import { MockTheme } from '~tests/mocks';
 import Component from '.';
 
@@ -10,12 +10,12 @@ const mockI18n = {
 };
 jest.mock('next-translate/useTranslation', () => () => mockI18n);
 jest.mock('~src/components/Layout', () => (props: object) => (
-  <motion.div data-testid="Layout" {...props} />
+  <Box data-testid="Layout" {...props} />
 ));
 jest.mock('~src/components/SectionBox', () =>
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ main, ...props }: { [p: string]: unknown }) => (
-    <motion.div data-testid="SectionBox" {...props} />
+    <Box data-testid="SectionBox" {...props} />
   )
 );
 jest.mock('~src/assets/unicorn404.svg', () => () => (

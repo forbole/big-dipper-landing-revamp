@@ -5,6 +5,7 @@ const { i18n, ...nextConfig } = nextTranslate({
   basePath: process.env.BASE_PATH ?? '',
   poweredByHeader: false,
   reactStrictMode: true,
+  deviceSizes: [375, 768, 1280, 1920],
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/i,

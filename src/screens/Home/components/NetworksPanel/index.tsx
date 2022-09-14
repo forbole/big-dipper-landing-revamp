@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { LayoutGroup } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
 import {
   FC,
@@ -7,14 +8,14 @@ import {
   useEffect,
   useMemo,
   useRef,
-  useState,
+  useState
 } from 'react';
 import basePath from '~src/utils/basePath';
 import { NetworkSummary } from '~src/utils/loadNetworkSummary';
 import NetworkBox from '../NetworkBox';
 import SearchBox from '../SearchBox';
-import useStyles from './useStyles';
 import { NetworksPanelProps } from './types';
+import useStyles from './useStyles';
 
 function initialNetworkSummaries(networkList: Network[]): {
   [name: string]: NetworkSummary | undefined;
@@ -76,6 +77,7 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
         </Box>
       </Box>
       <Box className="home__networks">
+            <LayoutGroup>
         {sortedNetworks.map((network) => (
           <NetworkBox
             key={network.name}
@@ -85,6 +87,7 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
             setShowMobilePopover={setShowMobilePopover}
           />
         ))}
+        </LayoutGroup>
       </Box>
     </Box>
   );

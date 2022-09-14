@@ -1,17 +1,13 @@
 import Link, { LinkProps } from 'next/link';
-import { FC, forwardRef, PropsWithChildren, RefAttributes } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
 // eslint-disable-next-line react/display-name
-const LinkAnchor: FC<
-  PropsWithChildren<LinkProps & JSX.IntrinsicElements['a']> &
-    RefAttributes<HTMLAnchorElement>
-> = forwardRef(function _(
+const LinkAnchor: FC<PropsWithChildren<LinkProps & JSX.IntrinsicElements['a']>> = (
   {
     children,
     href,
     as,
     replace,
-    soft,
     scroll,
     shallow,
     passHref: _,
@@ -19,15 +15,13 @@ const LinkAnchor: FC<
     locale,
     legacyBehavior,
     ...props
-  },
-  ref
-) {
+  }
+) => {
   return (
     <Link
       href={href}
       as={as}
       replace={replace}
-      soft={soft}
       scroll={scroll}
       shallow={shallow}
       passHref
@@ -35,12 +29,12 @@ const LinkAnchor: FC<
       locale={locale}
       legacyBehavior={legacyBehavior}
     >
-      <a {...props} ref={ref}>
+      <a {...props}>
         {children}
       </a>
     </Link>
   );
-});
+};
 
 // eslint-disable-next-line react/display-name
 export default LinkAnchor;

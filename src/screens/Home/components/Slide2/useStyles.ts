@@ -5,47 +5,52 @@ const useStyles = () => {
   return {
     root: css({
       display: 'flex',
-      justifyContent: 'center',
-      flexFlow: 'row wrap',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      flexFlow: 'column nowrap',
+      height: '100%',
       position: 'relative',
       '& .caption': {
-        marginTop: 0,
-        [theme.breakpoints.up('md')]: {
-          marginTop: `-${theme.spacing(18)}`,
-          position: 'absolute',
-          zIndex: 1,
-          bottom: theme.spacing(4),
+        width: '100%',
+        [theme.breakpoints.down('md')]: {
+          display: 'flex',
+          flexFlow: 'column nowrap',
+          height: '39%',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '1rem',
         },
       },
       '& .MuiTypography-h1': {
         width: '100%',
-        textAlign: 'center',
+        lineHeight: 1.5,
         textShadow: theme.shadows[24],
-        margin: theme.spacing(6, 0, 0, 0),
-        fontSize: theme.typography.h2.fontSize,
-        [theme.breakpoints.up('md')]: {
-          margin: 0,
-          textAlign: 'center',
-          textShadow: theme.shadows[24],
-          fontSize: theme.typography.h1.fontSize,
+        [theme.breakpoints.down('md')]: {
+          fontSize: theme.typography.h2.fontSize,
         },
       },
       '& .MuiTypography-h3': {
         fontWeight: 400,
-        fontSize: theme.typography.h5.fontSize,
-        [theme.breakpoints.up('md')]: {
-          fontSize: theme.typography.h3.fontSize,
+        [theme.breakpoints.down('md')]: {
+          fontSize: theme.typography.h5.fontSize,
         },
       },
       '& .image': {
         mixBlendMode: 'screen',
-        display: 'flex',
-        justifyContent: 'center',
-        transform: 'scale(1)',
-        maxWidth: '100%',
-        minHeight: theme.spacing(20),
+        position: 'absolute',
+        top: '18%',
+        height: '100%',
+        [theme.breakpoints.down('md')]: {
+          position: 'static',
+          flexGrow: 1,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '80%',
+        },
       },
-      '& svg': {
+      '& .image svg': {
+        width: '100%',
         height: 'auto',
       },
     }),

@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import SearchIcon from '@mui/icons-material/Search';
-import Autocomplete from '@mui/material/Autocomplete';
+import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -12,7 +13,7 @@ import TextField from '@mui/material/TextField';
 import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
-import React, {
+import {
   ComponentProps,
   FC,
   FocusEventHandler,
@@ -23,6 +24,10 @@ import React, {
 import getUrlFromNetwork from '~src/utils/getUrlFromNetwork';
 import type { SearchBoxProps } from './types';
 import useStyles from './useStyles';
+
+const filterOptions = createFilterOptions({
+  matchFrom: 'start',
+});
 
 /**
  * It takes an object with a property called `startAdornment` and returns an object with a property
@@ -48,7 +53,7 @@ const Options: FC<OptionsProps> = ({ props, network }) => {
   const url = getUrlFromNetwork(network);
   const styles = useStyles();
   return (
-    <ListItem {...props} title={url} css={styles.root}>
+    <ListItem {...props} title={url} css={styles.listItem}>
       <ListItemIcon>
         <Box className="image">
           <Image
@@ -109,20 +114,23 @@ type StyledAutocompleteProps = ComponentProps<typeof Autocomplete>;
 const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
   const { t } = useTranslation('common');
   const options = networks.map((network) => ({ label: network.name, network }));
+  const styles = useStyles();
   const renderInput: StyledAutocompleteProps['renderInput'] = useCallback(
     ({ InputProps, ...params }) => (
       <TextField
         {...params}
         placeholder={t('searchNetwork')}
         InputProps={addSearch(InputProps)}
+        css={styles.textField}
       />
     ),
-    [t]
+    []
   );
   const [focused, setFocused] = useState(false);
   const handleFocus: FocusEventHandler = useCallback((event) => {
     setFocused(true);
-    const headerOffset = 80;
+    if (window.innerWidth < 768) return;
+    const headerOffset = 100;
     const elementPosition = event.target.getBoundingClientRect().top;
     const top = elementPosition + window.pageYOffset - headerOffset;
     window.scrollTo({
@@ -131,7 +139,6 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
     });
   }, []);
   const handleBlur = useCallback(() => setFocused(false), []);
-  const styles = useStyles();
   return (
     <Box
       className={classnames(
@@ -155,6 +162,7 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
         onChange={handleChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
+        filterOptions={filterOptions}
       />
       <Button
         variant="text"

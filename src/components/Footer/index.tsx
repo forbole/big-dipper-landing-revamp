@@ -6,30 +6,20 @@ import Typography from '@mui/material/Typography';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
-import { ComponentProps, FC, forwardRef } from 'react';
-import { Fragment } from 'react';
+import { forwardRef, Fragment } from 'react';
 import handleScrollToTop from '~src/utils/handleScrollToTop';
 import LinkAnchor from '../LinkAnchor';
 import useStyles from './useStyles';
 import { socialLinks, termsLinks } from './utils';
 import SectionLimit from '../SectionLimit';
 import classnames from 'classnames';
-import { motion } from 'framer-motion';
 
-const Footer: FC<ComponentProps<typeof motion.footer>> = forwardRef(function _(
-  { className, ...props },
-  ref
-) {
+const Footer = forwardRef<HTMLElement, JSX.IntrinsicElements['footer']>(function _({ className, ...props }, ref) {
   const { t } = useTranslation('common');
   const year = new Date().getFullYear();
   const styles = useStyles();
   return (
-    <motion.footer
-      className={classnames(className, 'footer__container')}
-      {...props}
-      ref={ref}
-      css={styles.root}
-    >
+    <footer className={classnames(className, 'footer__container')} {...props} css={styles.root} ref={ref}>
       <SectionLimit>
         <Box className="footer__scroll-top">
           <Fab onClick={handleScrollToTop}>
@@ -52,13 +42,8 @@ const Footer: FC<ComponentProps<typeof motion.footer>> = forwardRef(function _(
               })}
             </div>
             <div className="footer__terms-wrapper">
-              <Typography variant="caption">
-                {t('copyright', { year })}
-              </Typography>
-              <Typography
-                variant="caption"
-                className="footer__terms-dash footer__desktop"
-              >
+              <Typography variant="caption">{t('copyright', { year })}</Typography>
+              <Typography variant="caption" className="footer__terms-dash footer__desktop">
                 |
               </Typography>
               <div className="footer__terms-links">
@@ -76,10 +61,7 @@ const Footer: FC<ComponentProps<typeof motion.footer>> = forwardRef(function _(
                         </Typography>
                       </Link>
                       {i !== termsLinks.length - 1 && (
-                        <Typography
-                          variant="caption"
-                          className="footer__terms-dash"
-                        >
+                        <Typography variant="caption" className="footer__terms-dash">
                           |
                         </Typography>
                       )}
@@ -87,30 +69,20 @@ const Footer: FC<ComponentProps<typeof motion.footer>> = forwardRef(function _(
                   );
                 })}
               </div>
-              <Typography
-                variant="caption"
-                className="footer__terms-dash footer__desktop"
-              >
+              <Typography variant="caption" className="footer__terms-dash footer__desktop">
                 |
               </Typography>
               <Typography variant="caption">
                 <Trans
                   i18nKey="common:productOf"
-                  components={[
-                    <LinkAnchor
-                      href="https://www.forbole.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      key={0}
-                    />,
-                  ]}
+                  components={[<LinkAnchor href="https://www.forbole.com" target="_blank" rel="noreferrer" key={0} />]}
                 />
               </Typography>
             </div>
           </Box>
         </Box>
       </SectionLimit>
-    </motion.footer>
+    </footer>
   );
 });
 

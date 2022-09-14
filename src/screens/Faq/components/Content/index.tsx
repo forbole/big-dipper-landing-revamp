@@ -1,13 +1,10 @@
 import Typography from '@mui/material/Typography';
-import type { ComponentProps, FC } from 'react';
+import { ComponentProps, FC } from 'react';
 import useStyles from './useStyles';
 import type { ContentType } from './types';
 import { ContentBox } from '~src/components';
 
-const Content: FC<ContentType & ComponentProps<typeof ContentBox>> = ({
-  content,
-  ...props
-}) => {
+const Content: FC<ContentType & ComponentProps<typeof ContentBox>> = ({ content, ...props }) => {
   const styles = useStyles();
   return (
     <ContentBox {...props} css={styles.root}>
@@ -23,14 +20,8 @@ const Content: FC<ContentType & ComponentProps<typeof ContentBox>> = ({
                 {x.list.map((item) => {
                   return (
                     <div key={item.title} className="faqcontent__list-item">
-                      <Typography
-                        variant="h5"
-                        className="faqcontent__list-title"
-                      >
-                        <span className="faqcontent__list-title-bullet">
-                          &#x2022;
-                        </span>{' '}
-                        {item.title}:
+                      <Typography variant="h5" className="faqcontent__list-title">
+                        <span className="faqcontent__list-title-bullet">&#x2022;</span> {item.title}:
                       </Typography>
                       <Typography>{item.description}</Typography>
                     </div>

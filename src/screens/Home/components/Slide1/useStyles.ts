@@ -11,33 +11,45 @@ const useStyles = () => {
   return {
     root: css({
       display: 'flex',
-      justifyContent: 'center',
-      flexFlow: 'row wrap',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      flexFlow: 'column nowrap',
+      height: '100%',
       position: 'relative',
       /* Creating a Typography component with the styles applied. */
+      '& .caption': {
+        width: '100%',
+        [theme.breakpoints.down('md')]: {
+          display: 'flex',
+          flexFlow: 'column nowrap',
+          height: '39%',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '1rem',
+        },
+      },
       '& .MuiTypography-h1': {
-        margin: theme.spacing(8, 0, 0, 0),
+        width: '100%',
+        lineHeight: 1.5,
+        textShadow: theme.shadows[24],
         [theme.breakpoints.down('md')]: {
           fontSize: theme.typography.h2.fontSize,
-        },
-        [theme.breakpoints.up('md')]: {
-          margin: 0,
-          position: 'absolute',
-          textAlign: 'center',
-          textShadow: theme.shadows[24],
-          zIndex: 1,
-          bottom: theme.spacing(12),
         },
       },
       '& .image': {
         mixBlendMode: 'screen',
-        display: 'flex',
-        justifyContent: 'center',
-        transform: 'scale(1)',
         animation: `${breathing} 3s infinite ease`,
-        minHeight: theme.spacing(20),
-        maxWidth: '90%',
-        height: 'auto',
+        position: 'absolute',
+        top: 0,
+        bottom: `-${theme.spacing(14)}`,
+        width: '100%',
+        [theme.breakpoints.down('md')]: {
+          position: 'static',
+          flexGrow: 1,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
       },
     }),
   };

@@ -1,4 +1,5 @@
-import { css, darken, useTheme } from '@mui/material';
+import { css, useTheme } from '@mui/material';
+import { alpha } from '@mui/system';
 
 const useStyles = () => {
   const theme = useTheme();
@@ -7,7 +8,7 @@ const useStyles = () => {
       minWidth: theme.spacing(30),
       minHeight: theme.spacing(10),
       borderRadius: theme.spacing(1.5),
-      backgroundColor: theme.palette.grey.A400,
+      backgroundColor: alpha(theme.palette.common.white, 0.6),
       border: `2px solid ${theme.palette.text.primary}`,
       display: 'inline-flex',
       justifyContent: 'center',
@@ -20,18 +21,19 @@ const useStyles = () => {
         minWidth: theme.spacing(28),
       },
       '& .MuiTypography-h4': {
+        whiteSpace: 'nowrap',
         [theme.breakpoints.down('md')]: {
           fontSize: theme.typography.h6.fontSize,
         },
       },
       '& .MuiTypography-body2': {
-        fontSize: theme.typography.h4.fontSize,
+        whiteSpace: 'nowrap',
         [theme.breakpoints.down('md')]: {
           fontSize: theme.typography.caption.fontSize,
         },
       },
       '&&:hover, &&.networkbox__active': {
-        backgroundColor: theme.palette.grey[300],
+        backgroundColor: alpha(theme.palette.common.white, 0.8),
       },
 
       '& .networkbox__popover': {
@@ -44,20 +46,15 @@ const useStyles = () => {
         top: '110%',
         width: 'calc(100% + 2px)',
         marginLeft: '-2px',
-        backgroundColor: theme.palette.grey.A200,
+        backgroundColor: alpha(theme.palette.common.white, 0.8),
         color: theme.palette.common.black,
-        outline: `1px solid ${theme.palette.common.black}`,
         boxShadow: theme.shadows[2],
+        ...theme.mixins.blur03,
         '& .MuiListItemButton-root': {
           padding: `${theme.spacing(1, 2, 3)} !important`,
           // eslint-disable-next-line max-len
-          backgroundImage: `linear-gradient(0deg, ${
-            theme.palette.grey.A200
-          }, ${darken(theme.palette.grey.A200, 0.05)} 60%, ${
-            theme.palette.grey.A200
-          })`,
           '&:hover': {
-            backgroundColor: theme.palette.grey.A400,
+            backgroundColor: alpha(theme.palette.primary.main, 0.2),
           },
           '& .MuiListItemIcon-root': {
             color: theme.palette.common.black,
@@ -104,7 +101,6 @@ const useStyles = () => {
         },
       },
       '& .image': {
-        backgroundColor: theme.palette.common.white,
         minWidth: theme.spacing(6),
         minHeight: theme.spacing(6),
         maxWidth: theme.spacing(6),
@@ -147,6 +143,7 @@ const useStyles = () => {
 
         '& .MuiBadge-badge': {
           transform: 'scale(1) translate(1.5rem, -0.1rem)',
+          color: theme.palette.common.white,
         },
       },
     }),

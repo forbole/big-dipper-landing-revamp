@@ -8,8 +8,7 @@ const useStyles = () => {
       flexFlow: 'row nowrap',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '79px',
-      padding: theme.spacing(2, 0),
+      height: theme.spacing(9.875),
       [theme.breakpoints.up('md')]: {
         justifyContent: 'space-between',
       },

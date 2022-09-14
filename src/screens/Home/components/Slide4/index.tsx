@@ -14,7 +14,7 @@ const Slide1 = () => {
     <Box css={styles.root}>
       <Box className="image">
         {!!slide4Webp && (
-          <Image src={slide4Webp} width="300" height="300" alt="Ease of Use" />
+          <Image objectFit="contain" src={slide4Webp} width="242" height="242" alt="Ease of Use" />
         )}
       </Box>
       <Box className="caption">

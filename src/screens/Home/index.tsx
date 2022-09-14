@@ -2,8 +2,7 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
-import classNames from 'classnames';
-import { motion, useTime, useTransform } from 'framer-motion';
+import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import { FC, LegacyRef, useCallback, useRef, useState } from 'react';
@@ -18,7 +17,6 @@ import Slide3 from './components/Slide3';
 import Slide4 from './components/Slide4';
 import type { HomeProps } from './types';
 import useStyles from './useStyles';
-
 /* A React component that renders the Homepage. */
 const Home: FC<HomeProps> = ({ networkList }) => {
   const sliderRef: LegacyRef<Slider> = useRef(null);
@@ -37,21 +35,13 @@ const Home: FC<HomeProps> = ({ networkList }) => {
   }, []);
   const { t } = useTranslation('common');
   const styles = useStyles();
-  const time = useTime();
-  const backgroundPositionX = useTransform(
-    time,
-    (x) => `${(-x % 100000) / 1000}vw`
-  );
+
   return (
     <Layout css={styles.layout}>
       <Head>
         <title>{t('bigDipper')}</title>
       </Head>
-      <motion.div
-        className="home_slider-container"
-        css={[styles.slider]}
-        style={{ backgroundPositionX }}
-      >
+      <div className="home_slider-container" css={[styles.slider]}>
         <Fab className="home__slider-left" onClick={handleSlideLeft}>
           <KeyboardArrowLeftIcon />
         </Fab>
@@ -59,10 +49,10 @@ const Home: FC<HomeProps> = ({ networkList }) => {
           <KeyboardArrowRightIcon />
         </Fab>
         <Box
-          className={classNames('home__slider', {
+          className={classnames({
             [`home__slide${slide}`]: true,
             home__sliding: sliding,
-          })}
+          }, 'home__slider')}
         >
           <Slider
             dots
@@ -80,7 +70,7 @@ const Home: FC<HomeProps> = ({ networkList }) => {
             <Slide4 />
           </Slider>
         </Box>
-      </motion.div>
+      </div>
       <SectionBox className="home__section-box" css={styles.root}>
         <SectionLimit>
           <NetworksPanel networkList={networkList} />

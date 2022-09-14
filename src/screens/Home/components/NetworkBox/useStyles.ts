@@ -7,7 +7,7 @@ const useStyles = () => {
       minWidth: theme.spacing(15),
       minHeight: theme.spacing(10),
       borderRadius: theme.spacing(1.5),
-      backgroundColor: theme.palette.grey.A400,
+      backgroundColor: alpha(theme.palette.common.white, 0.6),
       border: `2px solid ${theme.palette.text.primary}`,
       display: 'inline-flex',
       justifyContent: 'center',
@@ -20,8 +20,10 @@ const useStyles = () => {
       '&:hover': {
         backgroundColor: theme.palette.grey.A200,
       },
+      '& .MuiTypography-h3, & .MuiTypography-h6, & .MuiTypography-body1': {
+        whiteSpace: 'nowrap',
+      },
       '& .image': {
-        backgroundColor: theme.palette.common.white,
         minWidth: theme.spacing(6),
         minHeight: theme.spacing(6),
         maxWidth: theme.spacing(6),
@@ -36,6 +38,7 @@ const useStyles = () => {
       },
       '& .networkbox__explore-btn': {
         ...theme.mixins.button,
+        fontSize: theme.typography.body1.fontSize,
       },
       '& .networkbox__close-btn': {
         position: 'absolute',
@@ -64,6 +67,7 @@ const useStyles = () => {
       '& .networkbox__desktop-anchor': {
         display: 'none',
         position: 'relative',
+        cursor: 'pointer',
         [theme.breakpoints.up('md')]: {
           display: 'flex',
           '&:hover .networkbox__popover': {
@@ -77,9 +81,9 @@ const useStyles = () => {
           [theme.breakpoints.up('md')]: {
             display: 'flex !important',
           },
-          '& .networkbox__explore-btn': {
-            display: 'none',
-          },
+        },
+        '& .networkbox__explore-btn': {
+          display: 'none',
         },
       },
       '& .networkbox__mobile-anchor': {
@@ -106,6 +110,12 @@ const useStyles = () => {
         '& .networkbox__popover': {
           left: theme.spacing(3),
           right: theme.spacing(3),
+        },
+        '& .MuiTypography-h3': {
+          fontSize: theme.typography.h5.fontSize,
+        },
+        '& .MuiTypography-h6, & .MuiTypography-body1': {
+          fontSize: theme.typography.body2.fontSize,
         },
       },
       '& .MuiTypography-h4': {
@@ -165,7 +175,7 @@ const useStyles = () => {
             display: 'flex',
             flexFlow: 'row nowrap',
             justifyContent: 'space-between',
-            gap: theme.spacing(1),
+            gap: theme.spacing(3),
             alignItems: 'center',
             '& > .MuiBox-root': {
               flex: '1 0 auto',

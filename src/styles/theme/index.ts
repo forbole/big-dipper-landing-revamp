@@ -29,6 +29,11 @@ export const common: ThemeOptions = {
       defaultProps: {
         disableElevation: false,
       },
+      styleOverrides: {
+        root: {
+          textTransform: 'none'
+        }
+      }
     },
   },
 
@@ -109,7 +114,7 @@ export const common: ThemeOptions = {
     background: {
       /* Secondary Color/Royal Blue Transparent 03 */
       paper: 'rgba(9,57,176,0.8)', // default '#121212'
-      default: '#121212', // default
+      default: '#1122B5', // default '#121212'
     },
     action: {
       active: '#fff', // default
@@ -137,8 +142,7 @@ export const common: ThemeOptions = {
       borderRadius: '200px',
       /* Primary Color/BD Red Gradient 02 */
       backgroundColor: '#F6504B',
-      backgroundImage:
-        'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
+      backgroundImage: 'linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%)',
       /* Neutral Color/White */
       color: '#FFFFFF',
       '&:hover': {

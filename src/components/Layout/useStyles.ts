@@ -9,18 +9,23 @@ const useStyles = () => {
       flexDirection: 'column',
       minHeight: '100vh',
       minWidth: '320px',
-      backgroundColor: theme.palette.common.black,
-      backgroundImage: `url(${basePath('/images/background/back2.webp')})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 0%',
-      backgroundSize: '1920px auto',
-      backgroundBlendMode: 'screen',
+      backgroundColor: theme.palette.background.default,
+      backgroundImage: `url(${basePath('/images/background/back.webp')})`,
+      backgroundRepeat: `repeat`,
+      backgroundOrigin: 'content-box',
+      backgroundSize: '1920px 3814px',
+      backgroundPosition: `50% 0%`,
+      [theme.breakpoints.down('md')]: {
+        backgroundImage: `url(${basePath('/images/background/mobile.webp')})`,
+        backgroundSize: '100% 3814px',
+        backgroundPosition: `50% -1190px`,
+      },
       '&.layout__scrolled .nav__container': {
         /* Neutral Color/White Transparent 01 */
         backgroundColor: alpha(theme.palette.common.white, 0.1),
         /* Blur 4 */
         ...theme.mixins.blur04,
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
           /* Secondary Color/Royal Blue Transparent 02 */
           backgroundColor: alpha(theme.palette.primary.main, 0.4),
         },
@@ -50,7 +55,7 @@ const useStyles = () => {
         border: `1px solid ${theme.palette.text.primary}`,
         color: theme.palette.text.primary,
         /* Neutral Color/White Transparent 01 */
-        backgroundColor: alpha(theme.palette.common.white, 0.1),
+        backgroundColor: alpha(theme.palette.common.white, 0.3),
         boxShadow: theme.shadows[1],
         borderRadius: '50%',
         display: 'none',
@@ -62,6 +67,7 @@ const useStyles = () => {
           fontSize: theme.spacing(5),
         },
       },
+      
     }),
   };
 };

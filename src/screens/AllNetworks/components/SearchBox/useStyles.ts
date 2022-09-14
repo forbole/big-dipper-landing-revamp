@@ -14,6 +14,7 @@ const useStyles = () => {
           left: 0,
           right: 0,
           zIndex: 10,
+          transform: 'translate3d(0,0,0)',
           height: theme.spacing(10),
           display: 'flex',
           gap: theme.spacing(2),
@@ -25,6 +26,9 @@ const useStyles = () => {
             display: 'inline-flex',
           },
         },
+      },
+      '& .MuiAutocomplete-inputRoot': {
+        backgroundColor: alpha(theme.palette.common.white, 0.2),
       },
       '&& .searchbox__cancel-btn': {
         color: theme.palette.secondary.contrastText,
@@ -44,14 +48,19 @@ const useStyles = () => {
         },
       },
     }),
+    textField: css({
+      '& .MuiOutlinedInput-notchedOutline': {
+        border: 'none',
+      },
+    }),
     listItem: css({
-      height: `${theme.spacing(7)} !important`,
+      height: `${theme.spacing(9)} !important`,
       display: 'flex !important',
       flexFlow: 'row nowrap !important',
       justifyContent: 'space-between !important',
       alignItems: 'center !important',
       cursor: 'pointer !important',
-      padding: `${theme.spacing(2, 0, 2, 0)} !important`,
+      padding: `0 !important`,
       '& .MuiListItemIcon-root': {
         flex: `0 0 ${theme.spacing(7)} !important`,
         justifyContent: 'center !important',
@@ -139,14 +148,14 @@ const useStyles = () => {
     popper: css({
       zIndex: '2001 !important',
       '& .MuiAutocomplete-listbox': {
-        maxHeight: `calc(50vh - ${theme.spacing(18)})`,
+        maxHeight: `calc(50vh - ${theme.spacing(10)})`,
         [theme.breakpoints.up('md')]: {
           maxHeight: '70vh',
         },
       },
       [theme.breakpoints.down('md')]: {
         position: 'fixed !important',
-        top: `${theme.spacing(10)} !important`,
+        top: `${theme.spacing(8)} !important`,
         bottom: '0 !important',
         left: '0 !important',
         right: '0 !important',

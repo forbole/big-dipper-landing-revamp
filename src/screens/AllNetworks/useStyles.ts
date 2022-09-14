@@ -6,7 +6,7 @@ const useStyles = () => {
     root: css({
       padding: theme.spacing(8, 0),
       [theme.breakpoints.down('md')]: {
-        padding: theme.spacing(3),
+        padding: theme.spacing(3, 0),
       },
 
       '& .allnetworks__search': {

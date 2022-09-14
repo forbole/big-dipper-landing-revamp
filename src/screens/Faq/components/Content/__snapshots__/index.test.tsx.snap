@@ -24,12 +24,18 @@ exports[`Content matches snapshot 1`] = `
 
 .emotion-0 .faqcontent__list {
   margin-top: 16px;
-  margin-left: 16px;
 }
 
 .emotion-0 .faqcontent__list-title {
   color: #F6504B;
+  margin-top: 40px;
   margin-bottom: 8px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .faqcontent__list-title {
+    font-size: 1rem;
+  }
 }
 
 .emotion-0 .faqcontent__list-title-bullet {
@@ -39,6 +45,12 @@ exports[`Content matches snapshot 1`] = `
 
 .emotion-0 .faqcontent__list-item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .MuiTypography-body1 {
+    font-size: 0.875rem;
+  }
 }
 
 .emotion-1 {
@@ -60,7 +72,7 @@ exports[`Content matches snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0"
+    class="MuiBox-root emotion-0"
     data-testid="ContentBox"
   >
     <div

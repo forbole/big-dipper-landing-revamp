@@ -1,22 +1,24 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import classnames from 'classnames';
+import { LayoutGroup } from 'framer-motion';
 import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { equals } from 'ramda';
 import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { SectionBox } from '~src/components';
 import Layout from '~src/components/Layout';
 import LinkAnchor from '~src/components/LinkAnchor';
 import SectionLimit from '~src/components/SectionLimit';
 import allNetworksTab from '~src/utils/allNetworksTab';
 import NetworkBox from './components/NetworkBox';
 import SearchBox from './components/SearchBox';
-import useStyles from './useStyles';
 import type { AllNetworksProps } from './types';
-import { SectionBox } from '~src/components';
+import useStyles from './useStyles';
 
 function getTabIndexFromPath(path: string) {
   if (/\/all-networks#tab=Mainnet/i.test(path)) return allNetworksTab.Mainnet;
@@ -34,7 +36,7 @@ function useHooks(networkList: Network[]) {
     (name: string) => {
       setOpened((prev) => (equals(prev, name) ? '' : name));
     },
-    [setOpened]
+    []
   );
   const handleHashChange = useCallback((url: string) => {
     const newTabIndex = getTabIndexFromPath(url);
@@ -44,29 +46,18 @@ function useHooks(networkList: Network[]) {
     handleHashChange(router.asPath);
     router.events.on('hashChangeStart', handleHashChange);
     return () => router.events.off('hashChangeStart', handleHashChange);
-  }, [handleHashChange, router.asPath, router.events]);
-  const sortedNetworks = useMemo(
-    () => networkList.sort((a, b) => a.name.localeCompare(b.name)),
-    [networkList]
-  );
+  }, [router.asPath, router.events]);
+  const sortedNetworks = useMemo(() => networkList.sort((a, b) => a.name.localeCompare(b.name)), [networkList]);
   const filteredNetworks = useMemo(() => {
     switch (tabIndex) {
       case allNetworksTab.Mainnet:
-        return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^mainnet$/i.test(l.name))
-        );
+        return sortedNetworks.filter((n) => n.links?.some((l) => /^mainnet$/i.test(l.name)));
       case allNetworksTab.Testnet:
-        return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^testnet$/i.test(l.name))
-        );
+        return sortedNetworks.filter((n) => n.links?.some((l) => /^testnet$/i.test(l.name)));
       case allNetworksTab.Devnet:
-        return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^devnet$/i.test(l.name))
-        );
+        return sortedNetworks.filter((n) => n.links?.some((l) => /^devnet$/i.test(l.name)));
       case allNetworksTab.Retired:
-        return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^retired$/i.test(l.name))
-        );
+        return sortedNetworks.filter((n) => n.links?.some((l) => /^retired$/i.test(l.name)));
       default:
         return sortedNetworks;
     }
@@ -82,8 +73,7 @@ function useHooks(networkList: Network[]) {
 }
 
 const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
-  const { tabIndex, opened, handleOpen, filteredNetworks, t } =
-    useHooks(networkList);
+  const { tabIndex, opened, handleOpen, filteredNetworks, t } = useHooks(networkList);
   const styles = useStyles();
   return (
     <Layout>
@@ -98,12 +88,7 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
               <Typography>
                 <Trans
                   i18nKey="all-networks:allNetworksDescription"
-                  components={[
-                    <LinkAnchor
-                      href="https://www.forbole.com/contact"
-                      key={0}
-                    />,
-                  ]}
+                  components={[<LinkAnchor href="https://www.forbole.com/contact" key={0} />]}
                 />
               </Typography>
               <Box className="allnetworks__tabs">
@@ -172,19 +157,17 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
             <SearchBox networks={filteredNetworks} />
           </Box>
           <Box className="allnetworks__networks">
-            {filteredNetworks.map((network) => (
-              <NetworkBox
-                key={network.name}
-                network={network}
-                isOpened={network.name === opened}
-                onOpen={handleOpen}
-              />
-            ))}
-            {!filteredNetworks.length && (
-              <Box className="allnetworks__empty">
-                {t('common:noResultsFound')}
-              </Box>
-            )}
+            <LayoutGroup>
+              {filteredNetworks.map((network) => (
+                <NetworkBox
+                  key={network.name}
+                  network={network}
+                  isOpened={network.name === opened}
+                  onOpen={handleOpen}
+                />
+              ))}
+            </LayoutGroup>
+            {!filteredNetworks.length && <Box className="allnetworks__empty">{t('common:noResultsFound')}</Box>}
           </Box>
         </SectionLimit>
       </SectionBox>

@@ -1,14 +1,14 @@
 /* eslint-disable react/display-name */
 import { render } from '@testing-library/react';
-import { motion } from 'framer-motion';
+import Box from '@mui/material/Box';
 import { MockTheme } from '~tests/mocks';
 import Component from '.';
 
 jest.mock('./components/MenuDesktop', () => () => (
-  <motion.div data-testid="MenuDesktop" />
+  <Box data-testid="MenuDesktop" />
 ));
 jest.mock('./components/MenuMobile', () => () => (
-  <motion.div data-testid="MenuMobile" />
+  <Box data-testid="MenuMobile" />
 ));
 
 // ==================================

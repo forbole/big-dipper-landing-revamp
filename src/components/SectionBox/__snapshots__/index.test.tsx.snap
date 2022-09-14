@@ -8,7 +8,7 @@ exports[`SectionBox matches snapshot 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  min-width: 296px;
+  min-width: 272px;
 }
 
 .emotion-0.sectionbox__main {

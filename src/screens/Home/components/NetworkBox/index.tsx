@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import Typography from '@mui/material/Typography';
 import classnames from 'classnames';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import { FC, MouseEventHandler, useCallback, useRef } from 'react';
@@ -14,18 +14,8 @@ import getUrlFromNetwork from '~src/utils/getUrlFromNetwork';
 import useStyles from './useStyles';
 import type { NetworkBoxProps } from './types';
 
-const variants: Variants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0.8 },
-};
-
 /* A React component that renders a network box. */
-const NetworkBox: FC<NetworkBoxProps> = ({
-  network,
-  networkSummary,
-  showMobilePopover,
-  setShowMobilePopover,
-}) => {
+const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePopover, setShowMobilePopover }) => {
   const url = getUrlFromNetwork(network);
   const { name, logo } = network;
   const { t } = useTranslation('common');
@@ -33,11 +23,10 @@ const NetworkBox: FC<NetworkBoxProps> = ({
   /* Using framer-motion to animate the network box. */
   const ref = useRef(null);
 
-  const handleMobileAnchorClick: MouseEventHandler<HTMLButtonElement> =
-    useCallback(
-      () => setShowMobilePopover(network.name),
-      [network.name, setShowMobilePopover]
-    );
+  const handleMobileAnchorClick: MouseEventHandler<HTMLButtonElement> = useCallback(
+    () => setShowMobilePopover(network.name),
+    [network.name, setShowMobilePopover]
+  );
   const handleMobilPopoverClick: MouseEventHandler<Element> = useCallback(
     (event) => {
       event.stopPropagation();
@@ -56,14 +45,10 @@ const NetworkBox: FC<NetworkBoxProps> = ({
   /* A variable that is used to render the popover. */
   const popover = (
     <Box className="networkbox__popover">
-      <CloseIcon
-        fontSize="small"
-        className="networkbox__close-btn"
-        onClickCapture={handleMobilPopoverClick}
-      />
+      <CloseIcon fontSize="small" className="networkbox__close-btn" onClickCapture={handleMobilPopoverClick} />
       <Box onClickCapture={handleMobilPopoverClick}>
         <Box className="image">
-          <Image alt={name} src={logo} width="30" height="30" unoptimized />
+          <Image alt={name} src={logo} width="48" height="48" unoptimized />
         </Box>
         <Typography variant="h3">{name}</Typography>
       </Box>
@@ -72,9 +57,7 @@ const NetworkBox: FC<NetworkBoxProps> = ({
         <Box onClickCapture={handleMobilPopoverClick}>
           {!!networkSummary.token_price?.[0] && (
             <Box>
-              <Typography variant="h6">
-                {networkSummary.token_price[0].unit_name?.toUpperCase()}
-              </Typography>
+              <Typography variant="h6">{networkSummary.token_price[0].unit_name?.toUpperCase()}</Typography>
               <Typography>{networkSummary.token_price[0].price}</Typography>
             </Box>
           )}
@@ -109,10 +92,14 @@ const NetworkBox: FC<NetworkBoxProps> = ({
   return (
     <motion.div
       ref={ref}
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
       css={styles.root}
+      variants={{
+        initial: { opacity: 0, scale: 0.8 },
+        appear: { opacity: 1, scale: 1 },
+      }}
+      transition={{ duration: 0.3 }}
+      initial="initial"
+      whileInView="appear"
     >
       <Box
         className={classnames(
@@ -124,18 +111,14 @@ const NetworkBox: FC<NetworkBoxProps> = ({
       >
         {popover}
       </Box>
-      <Box className="networkbox__desktop-anchor">
+      <Box className="networkbox__desktop-anchor" onClick={handleExploreClick}>
         {popover}
         <Box className="image">
-          <Image alt={name} src={logo} width="30" height="30" unoptimized />
+          <Image alt={name} src={logo} width="48" height="48" unoptimized />
         </Box>
         <Typography variant="h4">{name}</Typography>
       </Box>
-      <Button
-        variant="text"
-        className="networkbox__mobile-anchor"
-        onClick={handleMobileAnchorClick}
-      >
+      <Button variant="text" className="networkbox__mobile-anchor" onClick={handleMobileAnchorClick}>
         <Box className="image">
           <Image alt={name} src={logo} width="30" height="30" unoptimized />
         </Box>

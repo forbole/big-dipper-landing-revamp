@@ -1,6 +1,6 @@
+import Box, { BoxProps } from '@mui/material/Box';
 import classnames from 'classnames';
-import { motion } from 'framer-motion';
-import { ComponentProps, FC, forwardRef } from 'react';
+import { FC } from 'react';
 import useStyles from './useStyles';
 
 /**
@@ -8,20 +8,13 @@ import useStyles from './useStyles';
  * from going past a certain width
  * @returns
  */
-const SectionLimit: FC<ComponentProps<typeof motion.div>> = forwardRef(
-  function _({ children, className, ...props }, ref) {
-    const styles = useStyles();
-    return (
-      <motion.div
-        className={classnames(className, 'sectionlimit__container')}
-        {...props}
-        ref={ref}
-        css={styles.root}
-      >
-        {children}
-      </motion.div>
-    );
-  }
-);
+const SectionLimit: FC<BoxProps> = ({ children, className, ...props }) => {
+  const styles = useStyles();
+  return (
+    <Box className={classnames(className, 'sectionlimit__container')} {...props} css={styles.root}>
+      {children}
+    </Box>
+  );
+};
 
 export default SectionLimit;

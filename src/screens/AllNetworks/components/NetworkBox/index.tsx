@@ -5,40 +5,34 @@ import Box from '@mui/material/Box';
 import MenuList from '@mui/material/MenuList';
 import Typography from '@mui/material/Typography';
 import classnames from 'classnames';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { ComponentProps, FC, forwardRef, useCallback } from 'react';
+import { FC, useCallback, useRef } from 'react';
 import getChainIdFromNetwork from '~src/utils/getChainIdFromNetwork';
 import NetworkMenuLink from '../NetworkMenuLink';
 import type { NetworkBoxProps } from './types';
 import useStyles from './useStyles';
 
-const variants: Variants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0.8 },
-};
-
 /* A React component that renders a network box. */
-const NetworkBox: FC<NetworkBoxProps> = forwardRef(function _(
-  { network, isOpened, onOpen },
-  ref: ComponentProps<typeof motion.div>['ref']
-) {
-  const handleClick = useCallback(
-    () => onOpen(network.name),
-    [network, onOpen]
-  );
+const NetworkBox: FC<NetworkBoxProps> = ({ network, isOpened, onOpen }) => {
+  const handleClick = useCallback(() => onOpen(network.name), [network.name, onOpen]);
   const chainId = getChainIdFromNetwork(network);
   const { name, logo, links } = network;
   const styles = useStyles();
+  const ref = useRef(null);
 
   return (
     <motion.div
       className={classnames({ networkbox__active: isOpened })}
       ref={ref}
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
       css={styles.root}
+      variants={{
+        initial: { opacity: 0, scale: 0.8 },
+        appear: { opacity: 1, scale: 1 },
+      }}
+      transition={{ duration: 0.3 }}
+      initial="initial"
+      whileInView="appear"
     >
       {isOpened && (
         <Box className="networkbox__popover">
@@ -51,7 +45,7 @@ const NetworkBox: FC<NetworkBoxProps> = forwardRef(function _(
       )}
       <Box onClick={handleClick} className="networkbox__dropdown-btn">
         <Box className="image">
-          <Image alt={name} src={logo} width="30" height="30" unoptimized />
+          <Image alt={name} src={logo} width="48" height="48" unoptimized />
         </Box>
         <Box>
           <Typography variant="h4">{name}</Typography>
@@ -70,6 +64,6 @@ const NetworkBox: FC<NetworkBoxProps> = forwardRef(function _(
       </Box>
     </motion.div>
   );
-});
+};
 
 export default NetworkBox;

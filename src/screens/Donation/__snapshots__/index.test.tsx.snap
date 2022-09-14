@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Donation matches snapshot 1`] = `
-.emotion-0 .sectionlimit__container {
+.emotion-1 .sectionlimit__container {
   padding: 0;
 }
 
-.emotion-0 .donation__title {
+.emotion-1 .donation__title {
   margin-bottom: 32px;
   text-align: center;
 }
 
 @media (min-width:768px) {
-  .emotion-0 .donation__title {
+  .emotion-1 .donation__title {
     text-align: left;
     margin-bottom: 40px;
   }
 }
 
-.emotion-0 .donation__description {
+.emotion-1 .donation__description {
   margin-bottom: 32px;
 }
 
-.emotion-0 .donation__address-container {
+.emotion-1 .donation__address-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,7 +36,7 @@ exports[`Donation matches snapshot 1`] = `
 }
 
 @media (max-width:767.95px) {
-  .emotion-0 .donation__address-container {
+  .emotion-1 .donation__address-container {
     -webkit-box-flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
@@ -44,24 +44,24 @@ exports[`Donation matches snapshot 1`] = `
   }
 }
 
-.emotion-0 .donation__address-logo {
+.emotion-1 .donation__address-logo {
   margin-bottom: 24px;
 }
 
-.emotion-0 .donation__address-key {
+.emotion-1 .donation__address-key {
   margin-bottom: 8px;
 }
 
-.emotion-0 .donation__address-address {
+.emotion-1 .donation__address-address {
   word-break: break-all;
   margin-bottom: 24px;
 }
 
-.emotion-0 .donation__address-button-copy {
+.emotion-1 .donation__address-button-copy {
   margin-right: 8px;
 }
 
-.emotion-0 .donation__address-button {
+.emotion-1 .donation__address-button {
   padding: 0.75rem 1rem;
   border-radius: 200px;
   background-color: #F6504B;
@@ -70,12 +70,12 @@ exports[`Donation matches snapshot 1`] = `
   width: 100%;
 }
 
-.emotion-0 .donation__address-button:hover {
+.emotion-1 .donation__address-button:hover {
   -webkit-filter: brightness(1.2);
   filter: brightness(1.2);
 }
 
-.emotion-1 {
+.emotion-3 {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
@@ -83,7 +83,7 @@ exports[`Donation matches snapshot 1`] = `
   line-height: 1.2;
 }
 
-.emotion-2 {
+.emotion-4 {
   margin: 0;
   font-size: 1rem;
   white-space: pre-wrap;
@@ -92,7 +92,7 @@ exports[`Donation matches snapshot 1`] = `
   line-height: 1.5;
 }
 
-.emotion-3 {
+.emotion-7 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
@@ -100,7 +100,7 @@ exports[`Donation matches snapshot 1`] = `
   line-height: 1.235;
 }
 
-.emotion-5 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -147,25 +147,26 @@ exports[`Donation matches snapshot 1`] = `
   color: rgba(0, 0, 0, 0.87);
   background-color: #0939B0;
   box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  text-transform: none;
 }
 
-.emotion-5::-moz-focus-inner {
+.emotion-9::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-5.Mui-disabled {
+.emotion-9.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-5 {
+  .emotion-9 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-5:hover {
+.emotion-9:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #202A43;
@@ -173,26 +174,26 @@ exports[`Donation matches snapshot 1`] = `
 }
 
 @media (hover: none) {
-  .emotion-5:hover {
+  .emotion-9:hover {
     background-color: #0939B0;
   }
 }
 
-.emotion-5:active {
+.emotion-9:active {
   box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
 }
 
-.emotion-5.Mui-focusVisible {
+.emotion-9.Mui-focusVisible {
   box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-5.Mui-disabled {
+.emotion-9.Mui-disabled {
   color: rgba(255, 255, 255, 0.3);
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-.emotion-6 {
+.emotion-10 {
   overflow: hidden;
   pointer-events: none;
   position: absolute;
@@ -206,29 +207,37 @@ exports[`Donation matches snapshot 1`] = `
 
 <div>
   <div
+    class="MuiBox-root emotion-0"
     data-testid="Layout"
   >
     <div
-      class="emotion-0"
+      class="MuiBox-root emotion-1"
       data-testid="SectionBox"
     >
       <div
+        class="MuiBox-root emotion-0"
         data-testid="SectionLimit"
       >
         <h2
-          class="MuiTypography-root MuiTypography-h2 donation__title emotion-1"
+          class="MuiTypography-root MuiTypography-h2 donation__title emotion-3"
         >
           donation
         </h2>
         <p
-          class="MuiTypography-root MuiTypography-body1 donation__description emotion-2"
+          class="MuiTypography-root MuiTypography-body1 donation__description emotion-4"
         >
-          description
+          description1
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1 donation__description emotion-4"
+        >
+          description2
         </p>
         <div
           class="donation__address-container"
         >
           <div
+            class="MuiBox-root emotion-0"
             data-testid="ContentBox"
           >
             <span
@@ -255,17 +264,17 @@ exports[`Donation matches snapshot 1`] = `
               <noscript />
             </span>
             <h4
-              class="MuiTypography-root MuiTypography-h4 donation__address-key emotion-3"
+              class="MuiTypography-root MuiTypography-h4 donation__address-key emotion-7"
             >
               btc
             </h4>
             <p
-              class="MuiTypography-root MuiTypography-body1 donation__address-address emotion-2"
+              class="MuiTypography-root MuiTypography-body1 donation__address-address emotion-4"
             >
               bc1qye4k27zsn5nehzded6jwsvzg8qd6kgvxyhckts
             </p>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-5"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
               tabindex="0"
               type="button"
             >
@@ -274,11 +283,12 @@ exports[`Donation matches snapshot 1`] = `
               />
               copy
               <span
-                class="MuiTouchRipple-root emotion-6"
+                class="MuiTouchRipple-root emotion-10"
               />
             </button>
           </div>
           <div
+            class="MuiBox-root emotion-0"
             data-testid="ContentBox"
           >
             <span
@@ -305,17 +315,17 @@ exports[`Donation matches snapshot 1`] = `
               <noscript />
             </span>
             <h4
-              class="MuiTypography-root MuiTypography-h4 donation__address-key emotion-3"
+              class="MuiTypography-root MuiTypography-h4 donation__address-key emotion-7"
             >
               eth
             </h4>
             <p
-              class="MuiTypography-root MuiTypography-body1 donation__address-address emotion-2"
+              class="MuiTypography-root MuiTypography-body1 donation__address-address emotion-4"
             >
               0x8CAb9F3fC6bBBD819050365627FC6B79d0ea73e6
             </p>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-5"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
               tabindex="0"
               type="button"
             >
@@ -324,11 +334,12 @@ exports[`Donation matches snapshot 1`] = `
               />
               copy
               <span
-                class="MuiTouchRipple-root emotion-6"
+                class="MuiTouchRipple-root emotion-10"
               />
             </button>
           </div>
           <div
+            class="MuiBox-root emotion-0"
             data-testid="ContentBox"
           >
             <span
@@ -355,17 +366,17 @@ exports[`Donation matches snapshot 1`] = `
               <noscript />
             </span>
             <h4
-              class="MuiTypography-root MuiTypography-h4 donation__address-key emotion-3"
+              class="MuiTypography-root MuiTypography-h4 donation__address-key emotion-7"
             >
               atom
             </h4>
             <p
-              class="MuiTypography-root MuiTypography-body1 donation__address-address emotion-2"
+              class="MuiTypography-root MuiTypography-body1 donation__address-address emotion-4"
             >
               cosmos1n67vdlaejpj3uzswr9qapeg76zlkusj5k875ma
             </p>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-5"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
               tabindex="0"
               type="button"
             >
@@ -374,7 +385,7 @@ exports[`Donation matches snapshot 1`] = `
               />
               copy
               <span
-                class="MuiTouchRipple-root emotion-6"
+                class="MuiTouchRipple-root emotion-10"
               />
             </button>
           </div>

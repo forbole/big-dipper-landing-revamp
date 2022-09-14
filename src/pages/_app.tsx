@@ -4,8 +4,8 @@ import { ThemeProvider } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
+import '~src/styles/slick.css';
+import '~src/styles/slick-theme.css';
 import '~src/styles/globals.css';
 import createEmotionCache from '~src/utils/createEmotionCache';
 import { darkTheme as theme } from '../styles/theme';
@@ -24,7 +24,9 @@ const MyApp = ({
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

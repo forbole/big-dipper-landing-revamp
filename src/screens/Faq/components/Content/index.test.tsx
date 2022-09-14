@@ -1,11 +1,11 @@
 /* eslint-disable react/display-name */
+import Box from '@mui/material/Box';
 import { render, screen } from '@testing-library/react';
-import { motion } from 'framer-motion';
 import { MockTheme } from '~tests/mocks';
 import Component from '.';
 
 jest.mock('~src/components/ContentBox', () => (props: object) => (
-  <motion.div data-testid="ContentBox" {...props} />
+  <Box data-testid="ContentBox" {...props} />
 ));
 // ==================================
 // unit tests

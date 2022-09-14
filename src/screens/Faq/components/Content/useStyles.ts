@@ -19,11 +19,14 @@ const useStyles = () => {
       },
       '& .faqcontent__list': {
         marginTop: theme.spacing(2),
-        marginLeft: theme.spacing(2),
       },
       '& .faqcontent__list-title': {
         color: theme.palette.secondary.main,
+        marginTop: theme.spacing(5),
         marginBottom: theme.spacing(1),
+        [theme.breakpoints.down('md')]: {
+          fontSize: theme.typography.h6.fontSize,
+        },
       },
       '& .faqcontent__list-title-bullet': {
         /* Secondary Color/Royal Blue 01 */
@@ -33,6 +36,11 @@ const useStyles = () => {
       '& .faqcontent__list-item:not(:last-child)': {
         marginBottom: theme.spacing(3),
       },
+      '& .MuiTypography-body1': {
+        [theme.breakpoints.down('md')]: {
+          fontSize: theme.typography.body2.fontSize,
+        },
+      }
     }),
   };
 };

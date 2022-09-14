@@ -1,22 +1,23 @@
 /* eslint-disable*/
+import { CSSInterpolation } from '@mui/material';
 import { Mixins, MixinsOptions } from '@mui/material/styles/createMixins';
 
 declare module '@mui/material/styles/createMixins' {
   interface Mixins {
-    headerGlow: CSSInterpolation;
-    button: CSSInterpolation;
-    buttonSecondary: CSSInterpolation;
-    blur02: CSSInterpolation;
-    blur03: CSSInterpolation;
-    blur04: CSSInterpolation;
+    headerGlow: CSSObject;
+    button: CSSObject;
+    buttonSecondary: CSSObject;
+    blur02: CSSObject;
+    blur03: CSSObject;
+    blur04: CSSObject;
   }
 
   interface MixinsOptions {
-    headerGlow?: CSSInterpolation;
-    button?: CSSInterpolation;
-    buttonSecondary?: CSSInterpolation;
-    blur02?: CSSInterpolation;
-    blur03?: CSSInterpolation;
-    blur04?: CSSInterpolation;
+    headerGlow?: CSSObject;
+    button?: CSSObject;
+    buttonSecondary?: CSSObject;
+    blur02?: CSSObject;
+    blur03?: CSSObject;
+    blur04?: CSSObject;
   }
 }

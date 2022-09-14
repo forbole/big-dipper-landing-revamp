@@ -7,7 +7,7 @@ exports[`All Networks matches snapshot 1`] = `
 
 @media (max-width:767.95px) {
   .emotion-0 {
-    padding: 24px;
+    padding: 24px 0px;
   }
 }
 
@@ -166,6 +166,10 @@ exports[`All Networks matches snapshot 1`] = `
     left: 0;
     right: 0;
     z-index: 10;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
     height: 80px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -188,6 +192,10 @@ exports[`All Networks matches snapshot 1`] = `
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
+}
+
+.emotion-7 .MuiAutocomplete-inputRoot {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .emotion-7.emotion-7 .searchbox__cancel-btn {
@@ -348,6 +356,10 @@ exports[`All Networks matches snapshot 1`] = `
   border: 0;
   vertical-align: top;
   width: 100%;
+}
+
+.emotion-9 .MuiOutlinedInput-notchedOutline {
+  border: none;
 }
 
 .emotion-10 {
@@ -719,6 +731,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: #0939B0;
+  text-transform: none;
 }
 
 .emotion-19::-moz-focus-inner {
@@ -757,7 +770,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   min-width: 240px;
   min-height: 80px;
   border-radius: 12px;
-  background-color: #C2C2C2;
+  background-color: rgba(255, 255, 255, 0.6);
   border: 2px solid #EFEFEF;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -786,6 +799,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   }
 }
 
+.emotion-22 .MuiTypography-h4 {
+  white-space: nowrap;
+}
+
 @media (max-width:767.95px) {
   .emotion-22 .MuiTypography-h4 {
     font-size: 1rem;
@@ -793,7 +810,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 }
 
 .emotion-22 .MuiTypography-body2 {
-  font-size: 1.25rem;
+  white-space: nowrap;
 }
 
 @media (max-width:767.95px) {
@@ -804,7 +821,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 
 .emotion-22.emotion-22:hover,
 .emotion-22.emotion-22.networkbox__active {
-  background-color: #DDDDDD;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .emotion-22 .networkbox__popover {
@@ -820,19 +837,19 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   top: 110%;
   width: calc(100% + 2px);
   margin-left: -2px;
-  background-color: #EFEFEF;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #000;
-  outline: 1px solid #000;
   box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
 }
 
 .emotion-22 .networkbox__popover .MuiListItemButton-root {
   padding: 8px 16px 24px!important;
-  background-image: linear-gradient(0deg, #EFEFEF, rgb(227, 227, 227) 60%, #EFEFEF);
 }
 
 .emotion-22 .networkbox__popover .MuiListItemButton-root:hover {
-  background-color: #C2C2C2;
+  background-color: rgba(9, 57, 176, 0.2);
 }
 
 .emotion-22 .networkbox__popover .MuiListItemButton-root .MuiListItemIcon-root {
@@ -917,7 +934,6 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 }
 
 .emotion-22 .image {
-  background-color: #fff;
   min-width: 48px;
   min-height: 48px;
   max-width: 48px;
@@ -989,6 +1005,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -moz-transform: scale(1) translate(1.5rem, -0.1rem);
   -ms-transform: scale(1) translate(1.5rem, -0.1rem);
   transform: scale(1) translate(1.5rem, -0.1rem);
+  color: #fff;
 }
 
 .emotion-26 {
@@ -1099,7 +1116,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
       data-testid="SectionBox"
     >
       <div
-        class="sectionlimit__container emotion-1"
+        class="sectionlimit__container MuiBox-root emotion-1"
       >
         <div
           class="allnetworks__search MuiBox-root emotion-2"
@@ -1265,7 +1282,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                     <img
                       alt=""
                       aria-hidden="true"
-                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
                       style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                     />
                   </span>

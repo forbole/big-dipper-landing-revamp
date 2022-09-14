@@ -1,13 +1,14 @@
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import classnames from 'classnames';
-import type { ComponentProps, FC } from 'react';
+import { FC } from 'react';
 import { useMenuMobile } from './hooks';
 import type { MenuType } from './types';
 import useStyles from './useStyles';
-import { motion } from 'framer-motion';
 
 interface MenuItemMobileProps {
   label: string;
@@ -40,7 +41,7 @@ const MenuItemMobile: FC<MenuItemMobileProps> = ({
   );
 };
 
-const MenuMobile: FC<MenuType & ComponentProps<typeof motion.nav>> = ({
+const MenuMobile: FC<MenuType & JSX.IntrinsicElements['nav']> = ({
   className,
   handleChange,
   items,
@@ -49,9 +50,10 @@ const MenuMobile: FC<MenuType & ComponentProps<typeof motion.nav>> = ({
   const { anchorEl, handleClick, handleClose } = useMenuMobile();
   const styles = useStyles();
   return (
-    <motion.nav className={className} css={styles.root}>
+    <nav className={className} css={styles.root}>
       <Button className="menumobile__selected" onClick={handleClick}>
         {items[selected]}
+        {anchorEl ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/>}
       </Button>
       <Menu
         elevation={0}
@@ -79,7 +81,7 @@ const MenuMobile: FC<MenuType & ComponentProps<typeof motion.nav>> = ({
           />
         ))}
       </Menu>
-    </motion.nav>
+    </nav>
   );
 };
 

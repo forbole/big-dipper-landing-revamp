@@ -1,26 +1,16 @@
 import classnames from 'classnames';
-import { ComponentProps, FC, forwardRef } from 'react';
+import { FC } from 'react';
 import useStyles from './useStyles';
-import { motion } from 'framer-motion';
+import Box, { BoxProps } from '@mui/material/Box';
 
 /**
  * A functional component that takes in children and className as props.
- * @param  - FC<ComponentProps<typeof motion.div>>
+ * @param  - FC<BoxProps>
  * @returns A styled div with the children and className passed in as props.
  */
-const ContentBox: FC<ComponentProps<typeof motion.div>> = forwardRef(function _(
-  { className, ...props },
-  ref
-) {
+const ContentBox: FC<BoxProps> = ({ className, ...props }) => {
   const styles = useStyles();
-  return (
-    <motion.div
-      css={styles.root}
-      {...props}
-      className={classnames(className, 'contentbox__container')}
-      ref={ref}
-    />
-  );
-});
+  return <Box className={classnames(className, 'contentbox__container')} {...props} css={styles.root} />;
+};
 
 export default ContentBox;

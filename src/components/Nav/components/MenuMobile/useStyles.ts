@@ -9,22 +9,6 @@ const useStyles = () => {
       [theme.breakpoints.up('md')]: {
         display: 'none',
       },
-      '& .menuitems__submenu-container': {
-        /* Neutral Color/White Transparent 02 */
-        backgroundColor: alpha(theme.palette.common.white, 0.2),
-        '& .menuitems__list-item-btn': {
-          gap: theme.spacing(1),
-          '& > .MuiListItemText-root': {
-            flex: '0 1 auto',
-          },
-          '& > .MuiSvgIcon-fontSizeMedium': {
-            color: theme.palette.grey[500],
-          },
-        },
-      },
-      '& .menuitems__submenu-paper': {
-        backgroundColor: 'transparent',
-      },
       '& .menumobile__paper': {
         /* Secondary Color/Royal Blue Transparent 03 */
         backgroundColor: alpha(theme.palette.primary.main, 0.7),
@@ -32,7 +16,23 @@ const useStyles = () => {
         ...theme.mixins.blur03,
         padding: theme.spacing(2, 0),
         borderRadius: theme.spacing(2),
-        margin: theme.spacing(3),
+        margin: theme.spacing(0, 3),
+      },
+      '& .horizontalmenubar__container button': {
+        backgroundColor: alpha(theme.palette.common.white, 0.3),
+        borderRadius: '50%',
+        minWidth: theme.spacing(5),
+        minHeight: theme.spacing(5),
+        width: theme.spacing(5),
+        height: theme.spacing(5),
+      },
+    }),
+    dbLogoSvg: css({
+      display: 'block',
+      height: theme.spacing(5.5),
+      margin: theme.spacing(1),
+      [theme.breakpoints.down('md')]: {
+        height: theme.spacing(4.5),
       },
     }),
   };

@@ -1,25 +1,27 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Modal from '@mui/material/Modal';
 import Paper from '@mui/material/Paper';
-import { FC, forwardRef } from 'react';
+import { FC, useCallback } from 'react';
+import BigDipperRedSvg from '~src/assets/bigDipperRed.svg';
+import LinkAnchor from '~src/components/LinkAnchor';
+import { HOME } from '~src/utils/links';
 import HamburgerIcon from '../HamburgerIcon';
 import HorizontalMenubar from '../HorizontalMenubar';
-import MenuItems from '../MenuItems';
+import MenuItems from '../MenuItemsMobile';
 import type { MenuMobileProps } from './types';
 import useStyles from './useStyles';
 
-const MenuMobile: FC<MenuMobileProps> = forwardRef(function _(
-  { isMenu, toggleHamburgerMenu, ...props },
-  ref
-) {
+const MenuMobile: FC<MenuMobileProps> = ({ isMenu, toggleHamburgerMenu, ...props }) => {
   const styles = useStyles();
+  const handleClose = useCallback(() => toggleHamburgerMenu(), []);
   return (
-    <Modal open={isMenu} css={styles.root}>
+    <Modal open={isMenu} css={styles.root} onClose={handleClose}>
       <>
-        <HorizontalMenubar {...props} ref={ref}>
-          <HamburgerIcon
-            toggleHamburgerMenu={toggleHamburgerMenu}
-            isIcon={false}
-          />
+        <HorizontalMenubar {...props}>
+        <LinkAnchor href={HOME}>
+          <BigDipperRedSvg width={214} height={44} css={styles.dbLogoSvg} />
+        </LinkAnchor>
+          <HamburgerIcon toggleHamburgerMenu={toggleHamburgerMenu} />
         </HorizontalMenubar>
         <Paper className="menumobile__paper">
           <MenuItems />
@@ -27,6 +29,6 @@ const MenuMobile: FC<MenuMobileProps> = forwardRef(function _(
       </>
     </Modal>
   );
-});
+};
 
 export default MenuMobile;

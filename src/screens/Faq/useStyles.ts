@@ -6,10 +6,9 @@ const useStyles = () => {
     root: css({
       padding: 0,
       '& .faq__title': {
-        marginBottom: theme.spacing(4),
         textAlign: 'left',
-        [theme.breakpoints.up('md')]: {
-          marginBottom: theme.spacing(5),
+        [theme.breakpoints.down('md')]: {
+          fontSize: theme.typography.h3.fontSize,
         },
       },
       '& .faq__content': {
@@ -28,9 +27,9 @@ const useStyles = () => {
       },
       '& .faq__header-wrapper': {
         display: 'flex',
-        alignItems: 'baseline',
+        alignItems: 'center',
         justifyContent: 'space-between',
-        marginBottom: theme.spacing(2),
+        marginBottom: theme.spacing(4),
       },
       '& .faq__content-wrapper': {
         display: 'flex',

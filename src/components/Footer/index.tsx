@@ -7,7 +7,7 @@ import Trans from 'next-translate/Trans';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import { forwardRef, Fragment } from 'react';
-import handleScrollToTop from '~src/utils/handleScrollToTop';
+import handleScrollToTop from '@/src/utils/handleScrollToTop';
 import LinkAnchor from '../LinkAnchor';
 import useStyles from './useStyles';
 import { socialLinks, termsLinks } from './utils';

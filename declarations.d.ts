@@ -15,7 +15,5 @@ interface NetworkLink {
 
 interface Network {
   name: string;
-  logo: string;
-  cover: string;
   links: Array<NetworkLink>;
 }

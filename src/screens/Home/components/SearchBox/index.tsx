@@ -12,16 +12,9 @@ import Popper, { PopperProps } from '@mui/material/Popper';
 import TextField from '@mui/material/TextField';
 import classnames from 'classnames';
 import useTranslation from 'next-translate/useTranslation';
-import Image from 'next/image';
-import {
-  ComponentProps,
-  FC,
-  FocusEventHandler,
-  HTMLAttributes,
-  useCallback,
-  useState,
-} from 'react';
-import getUrlFromNetwork from '~src/utils/getUrlFromNetwork';
+import { ComponentProps, FC, FocusEventHandler, HTMLAttributes, useCallback, useState } from 'react';
+import NetworkIcon from '@/src/components/NetworkIcon';
+import getUrlFromNetwork from '@/src/utils/getUrlFromNetwork';
 import type { SearchBoxProps } from './types';
 import useStyles from './useStyles';
 
@@ -56,13 +49,7 @@ const Options: FC<OptionsProps> = ({ props, network }) => {
     <ListItem {...props} title={url} css={styles.listItem}>
       <ListItemIcon>
         <Box className="image">
-          <Image
-            alt={network.name}
-            src={network.logo}
-            width="24"
-            height="24"
-            unoptimized
-          />
+          <NetworkIcon networkName={network.name} width="24" height="24" />
         </Box>
       </ListItemIcon>
       <ListItemText>{network.name}</ListItemText>
@@ -129,7 +116,10 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
   const [focused, setFocused] = useState(false);
   const handleFocus: FocusEventHandler = useCallback((event) => {
     setFocused(true);
-    if (window.innerWidth < 768) return;
+    if (window.innerWidth < 768) {
+      window.addEventListener('scroll', scrollLock);
+      return;
+    }
     const headerOffset = 100;
     const elementPosition = event.target.getBoundingClientRect().top;
     const top = elementPosition + window.pageYOffset - headerOffset;
@@ -138,7 +128,10 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
       behavior: 'smooth',
     });
   }, []);
-  const handleBlur = useCallback(() => setFocused(false), []);
+  const handleBlur = useCallback(() => {
+    window.removeEventListener('scroll', scrollLock);
+    setFocused(false);
+  }, []);
   return (
     <Box
       className={classnames(
@@ -161,18 +154,16 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
         renderInput={renderInput}
         onChange={handleChange}
         onFocus={handleFocus}
-        onBlur={handleBlur}
+        onBlurCapture={handleBlur}
         filterOptions={filterOptions}
       />
-      <Button
-        variant="text"
-        className="searchbox__cancel-btn"
-        onClick={handleBlur}
-      >
+      <Button variant="text" className="searchbox__cancel-btn" onClick={handleBlur}>
         {t('cancel')}
       </Button>
     </Box>
   );
 };
+
+function scrollLock() { window.scrollTo(0, 0); }
 
 export default SearchBox;

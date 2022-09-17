@@ -1,5 +1,5 @@
 import { alpha, css, useTheme } from '@mui/material';
-import basePath from '~src/utils/basePath';
+import basePath from '@/src/utils/basePath';
 
 const useStyles = () => {
   const theme = useTheme();

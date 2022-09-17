@@ -1,6 +1,6 @@
 import { alpha, css, useTheme } from '@mui/material';
-import { LIMIT } from '~src/styles/theme';
-import basePath from '~src/utils/basePath';
+import { LIMIT } from '@/src/styles/theme';
+import basePath from '@/src/utils/basePath';
 
 const useStyles = () => {
   const theme = useTheme();

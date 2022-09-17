@@ -38,12 +38,10 @@ const useStyles = () => {
         wordBreak: 'break-all',
         marginBottom: theme.spacing(3),
       },
-      '& .donation__address-button-copy': {
-        marginRight: theme.spacing(1),
-      },
       '& .donation__address-button': {
         ...theme.mixins.button,
         width: '100%',
+        gap: theme.spacing(1),
       },
     }),
   };

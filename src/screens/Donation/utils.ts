@@ -1,4 +1,4 @@
-import basePath from '~src/utils/basePath';
+import basePath from '@/src/utils/basePath';
 
 export const addresses = [
   {

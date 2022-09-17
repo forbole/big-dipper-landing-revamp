@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { Translate } from 'next-translate';
 import Trans from 'next-translate/Trans';
-import LinkAnchor from '~src/components/LinkAnchor';
+import LinkAnchor from '@/src/components/LinkAnchor';
 
 export const getMenuItems = (t: Translate) => [
   t('blockchain.title'),

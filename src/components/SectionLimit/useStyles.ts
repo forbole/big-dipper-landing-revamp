@@ -1,5 +1,5 @@
 import { css } from '@mui/material';
-import { LIMIT } from '~src/styles/theme';
+import { LIMIT } from '@/src/styles/theme';
 
 const useStyles = () => {
   return {

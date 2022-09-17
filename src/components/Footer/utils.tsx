@@ -3,8 +3,8 @@ import {
   LinkedinIcon,
   TelegramIcon,
   TwitterIcon,
-} from '~src/components/icons';
-import * as LINKS from '~src/utils/links';
+} from '@/src/components/icons';
+import * as LINKS from '@/src/utils/links';
 import type { IconType, LinkType } from './types';
 
 export const bdLinks: LinkType[] = [

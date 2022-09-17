@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import { render } from '@testing-library/react';
 import Box from '@mui/material/Box';
-import { MockTheme } from '~tests/mocks';
+import { MockTheme } from '@/__mocks__';
 import Component from '.';
 
 jest.mock('./components/MenuDesktop', () => () => (

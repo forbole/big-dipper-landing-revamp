@@ -1,15 +1,14 @@
 /* eslint-disable react/display-name */
 import { render, screen } from '@testing-library/react';
 import fetchMock from 'jest-fetch-mock';
-import { MockTheme } from '~tests/mocks';
+import { MockTheme } from '@/__mocks__';
 import Component from '.';
 
 const networkList = [
   {
     name: 'Cosmos Hub',
     logo: 'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/logos/cosmoshub.svg?sanitize=true',
-    cover:
-      'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/cosmos.png?sanitize=true',
+    cover: 'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/cosmos.png?sanitize=true',
     links: [
       {
         name: 'Mainnet',
@@ -48,14 +47,10 @@ const mockI18n = {
   lang: 'en',
 };
 jest.mock('next-translate/useTranslation', () => () => mockI18n);
-jest.mock('~src/components/Layout', () => (props: object) => (
-  <div data-testid="Layout" {...props} />
-));
-jest.mock('~src/components/SectionBox', () =>
+jest.mock('@/src/components/Layout', () => (props: object) => <div data-testid="Layout" {...props} />);
+jest.mock('@/src/components/SectionBox', () =>
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  ({ main, ...props }: { [p: string]: unknown }) => (
-    <div data-testid="SectionBox" {...props} />
-  )
+  ({ main, ...props }: { [p: string]: unknown }) => <div data-testid="SectionBox" {...props} />
 );
 
 jest.mock('next/router', () => ({
@@ -85,9 +80,7 @@ describe('All Networks', () => {
     );
 
     expect(screen.getByText('allNetworks')).toBeInTheDocument();
-    expect(
-      screen.getByText('all-networks:allNetworksDescription')
-    ).toBeInTheDocument();
+    expect(screen.getByText('all-networks:allNetworksDescription')).toBeInTheDocument();
     expect(screen.getByTestId('Layout')).toBeInTheDocument();
     expect(screen.getByTestId('SectionBox')).toBeInTheDocument();
     expect(container).toMatchSnapshot();

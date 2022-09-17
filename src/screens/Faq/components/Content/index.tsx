@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import { ComponentProps, FC } from 'react';
 import useStyles from './useStyles';
 import type { ContentType } from './types';
-import { ContentBox } from '~src/components';
+import { ContentBox } from '@/src/components';
 
 const Content: FC<ContentType & ComponentProps<typeof ContentBox>> = ({ content, ...props }) => {
   const styles = useStyles();

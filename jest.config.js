@@ -11,20 +11,20 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   transform: {
-    '^.+\\.js$': 'babel-jest',
     '^.+\\.tsx?$': 'ts-jest',
-    '^.+\\.svg$': 'jest-transformer-svg',
-    '.+\\.(css|styl|less|sass|scss|png|jpg|webp|ttf|woff|woff2)$':
-      'jest-transform-stub',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
   },
   moduleNameMapper: {
-    '^~(.+)$': '<rootDir>/$1',
+    '^@/(.+)$': '<rootDir>/$1',
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: '<rootDir>/',
     }),
+    "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+    '\\.svg$': '<rootDir>/__mocks__/svg.js',
   },
   testEnvironment: 'jest-environment-jsdom',
   snapshotSerializers: ['@emotion/jest/serializer'],
+  testPathIgnorePatterns: ['/node_modules/', '/e2e/'],
 };
 
 module.exports = createJestConfig(customJestConfig);

@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
-import slider3Webp from '~src/assets/slides/slide3.webp';
+import slider3Webp from '@/src/assets/slides/slide3.webp';
 import useStyles from './useStyles';
 
 /* A functional component that is using the `useTranslation` hook to get the translation for the

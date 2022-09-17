@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { ComponentProps, FC } from 'react';
-import SectionBox from '~src/components/SectionBox';
-import SectionLimit from '~src/components/SectionLimit';
+import SectionBox from '@/src/components/SectionBox';
+import SectionLimit from '@/src/components/SectionLimit';
 import MenuDesktop from './components/MenuDesktop';
 import MenuMobile from './components/MenuMobile';
 import { useNav } from './hooks';

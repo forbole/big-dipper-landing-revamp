@@ -4,10 +4,10 @@ import { ThemeProvider } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import '~src/styles/slick.css';
-import '~src/styles/slick-theme.css';
-import '~src/styles/globals.css';
-import createEmotionCache from '~src/utils/createEmotionCache';
+import '@/src/styles/slick.css';
+import '@/src/styles/slick-theme.css';
+import '@/src/styles/globals.css';
+import createEmotionCache from '@/src/utils/createEmotionCache';
 import { darkTheme as theme } from '../styles/theme';
 
 const clientSideEmotionCache = createEmotionCache();

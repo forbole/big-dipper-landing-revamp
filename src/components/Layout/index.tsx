@@ -1,9 +1,10 @@
+import { useTheme  } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fab from '@mui/material/Fab';
 import classnames from 'classnames';
 import { useInView, useScroll } from 'framer-motion';
 import { FC, useEffect, useRef, useState } from 'react';
-import handleScrollToTop from '~src/utils/handleScrollToTop';
+import handleScrollToTop from '@/src/utils/handleScrollToTop';
 import { Footer, Nav } from '..';
 import type { LayoutProps } from './types';
 import useStyles from './useStyles';
@@ -22,6 +23,15 @@ const Layout: FC<LayoutProps & JSX.IntrinsicElements['main']> = ({ children, cla
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => scrollY.onChange((latest) => setScrolled(latest > 0)), [])
   const styles = useStyles();
+
+  /* Adding a class to the document element to indicate the dark mode. */
+  const theme = useTheme();
+  useEffect(() => {
+    if (typeof document !== 'undefined' && document?.documentElement) {
+      document.documentElement.classList.toggle('mode-dark', theme.palette.mode === 'dark');
+    }
+  }, [theme.palette.mode]);
+
   return (
     <main
       className={classnames(

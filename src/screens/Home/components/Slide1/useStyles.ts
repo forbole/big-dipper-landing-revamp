@@ -44,7 +44,7 @@ const useStyles = () => {
         bottom: `-${theme.spacing(14)}`,
         width: '100%',
         [theme.breakpoints.down('md')]: {
-          position: 'static',
+          position: 'relative',
           flexGrow: 1,
           display: 'flex',
           justifyContent: 'center',

@@ -1,10 +1,10 @@
 /* eslint-disable react/display-name */
 import Box from '@mui/material/Box';
 import { render, screen } from '@testing-library/react';
-import { MockTheme } from '~tests/mocks';
+import { MockTheme } from '@/__mocks__';
 import Component from '.';
 
-jest.mock('~src/components/ContentBox', () => (props: object) => (
+jest.mock('@/src/components/ContentBox', () => (props: object) => (
   <Box data-testid="ContentBox" {...props} />
 ));
 // ==================================

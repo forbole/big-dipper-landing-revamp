@@ -4,8 +4,8 @@
 import { render, waitFor } from '@testing-library/react';
 import fetchMock from 'jest-fetch-mock';
 import React from 'react';
-import networkEndpoints from '~networkEndpoints.json';
-import { MockTheme } from '~tests/mocks';
+import networkEndpoints from '@/networkEndpoints.json';
+import { MockTheme } from '@/__mocks__';
 import Home from '.';
 
 // ==================================
@@ -56,9 +56,6 @@ const mockI18n = {
   lang: 'en',
 };
 jest.mock('next-translate/useTranslation', () => () => mockI18n);
-jest.mock('~src/assets/bigDipperRedSvg.svg', () => () => (
-  <svg data-testid="bigDipperRedSvg" />
-));
 jest.mock('next/image', () => ({
   __esModule: true,
   default: () => {

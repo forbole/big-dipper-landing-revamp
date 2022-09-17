@@ -1,21 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Box from '@mui/material/Box';
 import { FC } from 'react';
-import BigDipperRedSvg from '~src/assets/bigDipperRed.svg';
-import LinkAnchor from '~src/components/LinkAnchor';
-import { HOME } from '~src/utils/links';
+import BigDipperRedSvg from '@/src/assets/bigDipperRed.svg';
+import LinkAnchor from '@/src/components/LinkAnchor';
+import { HOME } from '@/src/utils/links';
+import Image from 'next/image';
 import HamburgerIcon from '../HamburgerIcon';
 import HorizontalMenubar from '../HorizontalMenubar';
 import MenuItems from '../MenuItemsDesktop';
 import { MenuDesktopProps } from './types';
 import useStyles from './useStyles';
+import useTranslation from 'next-translate/useTranslation';
 
 const MenuDesktop: FC<MenuDesktopProps> = ({ isMenu, toggleHamburgerMenu, ...props }) => {
   const styles = useStyles();
+  const { t } = useTranslation('common');
   return (
     <HorizontalMenubar {...props} css={styles.root}>
       <LinkAnchor href={HOME}>
-        <BigDipperRedSvg width={214} height={44} css={styles.dbLogoSvg} />
+        <span css={styles.dbLogoSvg}>
+          <Image src={BigDipperRedSvg} width={214} height={44} alt={t('bigDipper')} />
+        </span>
       </LinkAnchor>
       <HamburgerIcon
         toggleHamburgerMenu={toggleHamburgerMenu}

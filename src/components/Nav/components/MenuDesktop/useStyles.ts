@@ -21,12 +21,12 @@ const useStyles = () => {
       },
     }),
     dbLogoSvg: css({
-      display: 'block',
-      height: theme.spacing(5.5),
-      margin: theme.spacing(1),
-      [theme.breakpoints.down('md')]: {
-        height: theme.spacing(4.5),
-      },
+      '& img': {
+        [theme.breakpoints.down('md')]: {
+          width: `${theme.spacing(21.875)} !important`,
+          height: 'auto !important',
+        },
+      }
     }),
   };
 };

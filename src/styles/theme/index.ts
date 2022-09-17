@@ -1,5 +1,5 @@
 import { createTheme, ThemeOptions } from '@mui/material';
-import basePath from '~src/utils/basePath';
+import basePath from '@/src/utils/basePath';
 
 export const LIMIT = 1024;
 
@@ -38,7 +38,7 @@ export const common: ThemeOptions = {
   },
 
   palette: {
-    mode: 'dark', // dark or light
+    mode: 'light', // dark or light
     common: {
       black: '#000', // default
       white: '#fff', // default

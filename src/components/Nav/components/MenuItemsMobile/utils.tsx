@@ -6,7 +6,7 @@ import {
   FAQ,
   FEEDBACK,
   HOME,
-} from '~src/utils/links';
+} from '@/src/utils/links';
 
 export const getMenuItems = () => {
   return [

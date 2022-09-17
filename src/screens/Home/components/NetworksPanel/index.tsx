@@ -10,8 +10,8 @@ import {
   useRef,
   useState
 } from 'react';
-import basePath from '~src/utils/basePath';
-import { NetworkSummary } from '~src/utils/loadNetworkSummary';
+import basePath from '@/src/utils/basePath';
+import { NetworkSummary } from '@/src/utils/loadNetworkSummary';
 import NetworkBox from '../NetworkBox';
 import SearchBox from '../SearchBox';
 import { NetworksPanelProps } from './types';

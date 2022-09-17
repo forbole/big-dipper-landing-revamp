@@ -17,10 +17,10 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~*": ["*"]
+      "@/*": ["*"]
     },
     "types": ["node", "jest", "@testing-library/jest-dom"]
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

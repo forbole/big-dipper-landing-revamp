@@ -8,16 +8,16 @@ import Typography from '@mui/material/Typography';
 import classnames from 'classnames';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
-import Image from 'next/image';
 import { FC, MouseEventHandler, useCallback, useRef } from 'react';
-import getUrlFromNetwork from '~src/utils/getUrlFromNetwork';
-import useStyles from './useStyles';
+import NetworkIcon from '@/src/components/NetworkIcon';
+import getUrlFromNetwork from '@/src/utils/getUrlFromNetwork';
 import type { NetworkBoxProps } from './types';
+import useStyles from './useStyles';
 
 /* A React component that renders a network box. */
 const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePopover, setShowMobilePopover }) => {
   const url = getUrlFromNetwork(network);
-  const { name, logo } = network;
+  const { name } = network;
   const { t } = useTranslation('common');
 
   /* Using framer-motion to animate the network box. */
@@ -48,7 +48,7 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePo
       <CloseIcon fontSize="small" className="networkbox__close-btn" onClickCapture={handleMobilPopoverClick} />
       <Box onClickCapture={handleMobilPopoverClick}>
         <Box className="image">
-          <Image alt={name} src={logo} width="48" height="48" unoptimized />
+          <NetworkIcon networkName={name} width="48" height="48" />
         </Box>
         <Typography variant="h3">{name}</Typography>
       </Box>
@@ -114,13 +114,13 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePo
       <Box className="networkbox__desktop-anchor" onClick={handleExploreClick}>
         {popover}
         <Box className="image">
-          <Image alt={name} src={logo} width="48" height="48" unoptimized />
+          <NetworkIcon networkName={name} width="48" height="48" />
         </Box>
         <Typography variant="h4">{name}</Typography>
       </Box>
       <Button variant="text" className="networkbox__mobile-anchor" onClick={handleMobileAnchorClick}>
         <Box className="image">
-          <Image alt={name} src={logo} width="30" height="30" unoptimized />
+          <NetworkIcon networkName={name} width="48" height="48" />
         </Box>
         <Typography variant="h4">{name}</Typography>
       </Button>

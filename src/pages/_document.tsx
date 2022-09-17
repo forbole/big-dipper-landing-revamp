@@ -1,9 +1,9 @@
 /* eslint-disable no-underscore-dangle */
 import createEmotionServer from '@emotion/server/create-instance';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { defaultLocale } from '~i18n';
-import { darkTheme as theme } from '~src/styles/theme';
-import basePath from '~src/utils/basePath';
+import { defaultLocale } from '@/i18n';
+import { darkTheme as theme } from '@/src/styles/theme';
+import basePath from '@/src/utils/basePath';
 import createEmotionCache from '../utils/createEmotionCache';
 
 export default class MyDocument extends Document {

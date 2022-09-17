@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { MockTheme } from '~tests/mocks';
+import { MockTheme } from '@/__mocks__';
 import Component from '.';
 
 // ==================================

@@ -1,5 +1,5 @@
 /* A GraphQL query. */
-import networkEndpoints from '~networkEndpoints.json';
+import networkEndpoints from '@/networkEndpoints.json';
 
 const queryIBC = `
 query MyQuery {
@@ -46,8 +46,8 @@ export interface NetworkSummary {
  * @param {string} networkName - The name of the network you want to get the info for.
  * @returns NetworkSummary
  */
-export default async function loadNetworkSummary(networkName: string) {
-  const config = networkEndpoints as { [networkName: string]: string };
+export default async function loadNetworkSummary(networkName: keyof typeof networkEndpoints) {
+  const config = networkEndpoints;
   const url = config?.[networkName];
   if (!url) {
     throw new Error(

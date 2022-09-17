@@ -11,6 +11,11 @@ import '@testing-library/jest-dom/extend-expect';
 import { enableFetchMocks } from 'jest-fetch-mock';
 enableFetchMocks();
 
+jest.mock('next/dynamic', () => ({
+  __esModule: true,
+  default: () => null,
+}));
+
 /** * fix: `matchMedia` not present, legacy browsers require a polyfill */
 global.matchMedia =
   global.matchMedia ||
@@ -21,3 +26,15 @@ global.matchMedia =
       removeListener: function () {},
     };
   };
+
+const observe = jest.fn();
+const unobserve = jest.fn();
+const disconnect = jest.fn();
+
+// you can also pass the mock implementation
+// to jest.fn as an argument
+global.IntersectionObserver = jest.fn(() => ({
+  observe,
+  unobserve,
+  disconnect,
+}));

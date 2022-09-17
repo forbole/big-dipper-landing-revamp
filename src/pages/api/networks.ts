@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import type { NextApiRequest, NextApiResponse } from 'next';
-import loadNetworkSummaries from '~src/utils/loadNetworkSummaries';
+import loadNetworkSummaries from '@/src/utils/loadNetworkSummaries';
 
 export default async function handler(
   _req: NextApiRequest,

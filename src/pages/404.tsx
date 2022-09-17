@@ -1,4 +1,4 @@
-import Page404 from '../screens/Page400';
+import Page404 from '../screens/Page404';
 
 const Page = () => <Page404 />;
 

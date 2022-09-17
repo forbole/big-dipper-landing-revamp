@@ -17,7 +17,6 @@ COPY . .
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED 1
-ENV NEXT_PUBLIC_NETWORK_LIST_API https://raw.githubusercontent.com/forbole/big-dipper-networks/main/networks.json
 ENV NODE_OPTIONS "--max-old-space-size=8192"
 
 RUN npm run build
@@ -29,7 +28,6 @@ WORKDIR /app
 ENV NODE_ENV production
 # Uncomment the following line in case you want to disable telemetry during runtime.
 ENV NEXT_TELEMETRY_DISABLED 1
-ENV NEXT_PUBLIC_NETWORK_LIST_API https://raw.githubusercontent.com/forbole/big-dipper-networks/main/networks.json
 
 RUN addgroup --system --gid 1001 nextjs && adduser --system --uid 1001 nextjs
 

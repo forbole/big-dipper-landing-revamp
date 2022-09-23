@@ -48,6 +48,9 @@ const useStyles = () => {
     listItemButton: css({
       '&:hover': {
         animation: `${hover} 2s ease-out 1 forwards`,
+        '&.menuitemsdesktop__active': {
+          animation: 'none',
+        },
       },
     }),
     paper: css({

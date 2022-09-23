@@ -51,6 +51,9 @@ const useStyles = () => {
       },
       '&:hover': {
         animation: `${hover} 2s ease-out 1 forwards`,
+        '&.menuitemsdesktop__active': {
+          animation: 'none',
+        },
       },
     }),
     popover: css({

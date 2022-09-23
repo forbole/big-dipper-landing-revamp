@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FAQ matches snapshot 1`] = `
+.emotion-1 {
+  padding: 0;
+}
+
+.emotion-1 .faq__title {
+  text-align: left;
+}
+
+@media (max-width:767.95px) {
+  .emotion-1 .faq__title {
+    font-size: 1.5rem;
+  }
+}
+
+.emotion-1 .faq__content {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  color: #051D5B;
+  border-radius: 12px;
+  padding: 32px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (max-width:767.95px) {
+  .emotion-1 .faq__content {
+    font-size: 0.875rem;
+    padding: 56px;
+  }
+}
+
+.emotion-1 .faq__header-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.emotion-1 .faq__content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+@media (min-width:768px) {
+  .emotion-1 .faq_menu-mobile {
+    display: none;
+  }
+}
+
+.emotion-1 .faq__menu-desktop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  margin-right: 80px;
+}
+
+.emotion-1 .faq__menu-desktop>.MuiButtonBase-root {
+  color: #fff;
+}
+
+@media (max-width:767.95px) {
+  .emotion-1 .faq__menu-desktop {
+    display: none;
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.2;
+}
+
+<div>
+  <div
+    class="MuiBox-root emotion-0"
+    data-testid="Layout"
+  >
+    <div
+      class="MuiBox-root emotion-1"
+      data-testid="SectionBox"
+    >
+      <div
+        class="MuiBox-root emotion-0"
+        data-testid="SectionLimit"
+      >
+        <div
+          class="faq__header-wrapper"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h2 faq__title emotion-3"
+          >
+            faq
+          </h2>
+          <div
+            class="faq_menu-mobile MuiBox-root emotion-0"
+            data-testid="MenuMobile"
+            items="blockchain.title,stakers.title,validators.title,governance.title"
+          />
+        </div>
+        <div
+          class="faq__content-wrapper"
+        >
+          <div
+            class="faq__menu-desktop"
+            data-testid="MenuDesktop"
+            items="blockchain.title,stakers.title,validators.title,governance.title"
+          />
+          <div
+            class="faq__content MuiBox-root emotion-0"
+            content="[object Object],[object Object]"
+            data-testid="Content"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

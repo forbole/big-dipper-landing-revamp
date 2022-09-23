@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionBox matches snapshot 1`] = `
+.emotion-0 {
+  overflow: visible;
+  padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-width: 272px;
+}
+
+.emotion-0.sectionbox__main {
+  padding: 24px;
+}
+
+@media (min-width:768px) {
+  .emotion-0.sectionbox__main {
+    padding: 64px 0px;
+  }
+}
+
+<div>
+  <section
+    class="sectionbox__container emotion-0"
+  >
+    <div>
+      HELLO WORLD
+    </div>
+  </section>
+</div>
+`;

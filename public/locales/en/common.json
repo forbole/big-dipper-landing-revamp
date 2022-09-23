@@ -1,5 +1,9 @@
 {
   "home": "Home",
+  "helpAndSupport": "Help & Support",
+  "supportedNetworks": "Supported Networks",
+  "noResultsFound": "No results found",
+  "searchNetwork": "Search network",
   "allNetworks": "All Networks",
   "about": "About",
   "faq": "FAQs",
@@ -12,5 +16,22 @@
   "copyright": "Copyright © Forbole {{year}}",
   "termsAndConditions": "Terms and Conditions",
   "privacyPolicy": "Privacy Policy",
-  "productOf": "A Product of <0>Forbole</0>"
+  "productOf": "A Product of <0>Forbole</0>",
+  "explore": "Explore",
+  "slider1Header": "The Explorer for the Interchain",
+  "slider2Header": "Real-time Interchain Explorer",
+  "slider2Description": "View real-time status of different network",
+  "slider3Header": " User First",
+  "slider3Description": "Best user experience with good-looking dashboard",
+  "slider4Header": "Ease of Use",
+  "slider4Description": "Easy navigate the networks with all transactions’ details",
+  "404": "404 Error",
+  "404Description": "Oops, we can't find the page you're looking for!",
+  "500": "500 Error",
+  "500Description": "Houston, we have a problem.",
+  "tryAnotherSearchInstead": "Try another search instead?",
+  "showDevnetOrRetired": "Show Devnet or Retired...",
+  "hideDevnetOrRetired": "Hide Devnet or Retired...",
+  "bigDipper": "Big Dipper",
+  "cancel": "Cancel"
 }

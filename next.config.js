@@ -1,19 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-var-requires */
 const nextTranslate = require('next-translate');
 
-module.exports = nextTranslate({
+const nextConfig = nextTranslate({
+  basePath: process.env.BASE_PATH ?? '',
   poweredByHeader: false,
-  nextConfig: {
-    reactStrictMode: true,
-  },
-  experimental: {
-    outputStandalone: true,
-  },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    });
-    return config;
+  reactStrictMode: true,
+  images: {
+    deviceSizes: [375, 768, 1280, 1920],
   },
 });
+
+module.exports = nextConfig;

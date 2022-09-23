@@ -1,7 +1,5 @@
-import AboutPage from '../screens/about';
+import AboutPage from '../screens/About';
 
-const About = () => (
-  <AboutPage />
-);
+const About = () => <AboutPage />;
 
 export default About;

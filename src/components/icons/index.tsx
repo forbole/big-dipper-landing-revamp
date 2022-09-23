@@ -1,8 +1,8 @@
-export { default as FacebookIcon } from './facebook';
-export { default as ForboleIcon } from './forbole';
-export { default as GithubIcon } from './git-hub';
-export { default as LinkedinIcon } from './linked-in';
-export { default as MediumIcon } from './medium';
-export { default as TelegramIcon } from './telegram';
-export { default as YoutubeIcon } from './you-tube';
-export { default as TwitterIcon } from './twitter';
+export { default as FacebookIcon } from './Facebook';
+export { default as ForboleIcon } from './Forbole';
+export { default as GithubIcon } from './GitHub';
+export { default as LinkedinIcon } from './LinkedIn';
+export { default as MediumIcon } from './Medium';
+export { default as TelegramIcon } from './Telegram';
+export { default as YoutubeIcon } from './YouTube';
+export { default as TwitterIcon } from './Twitter';

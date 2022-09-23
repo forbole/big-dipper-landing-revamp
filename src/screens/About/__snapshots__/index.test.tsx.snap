@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About matches snapshot 1`] = `
+.emotion-1 .sectionlimit__container {
+  padding: 0;
+}
+
+.emotion-1 .about__title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .emotion-1 .about__title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+.emotion-1 .about__content {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  color: #051D5B;
+  border-radius: 12px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-1 .about__content {
+    padding: 32px;
+    font-size: 0.875rem;
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.2;
+}
+
+.emotion-5 {
+  margin: 0;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<div>
+  <div
+    class="MuiBox-root emotion-0"
+    data-testid="Layout"
+  >
+    <div
+      class="MuiBox-root emotion-1"
+      data-testid="SectionBox"
+    >
+      <div
+        class="MuiBox-root emotion-0"
+        data-testid="SectionLimit"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 about__title emotion-3"
+        >
+          about
+        </h2>
+        <div
+          class="about__content MuiBox-root emotion-0"
+          data-testid="ContentBox"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 emotion-5"
+          >
+            description
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

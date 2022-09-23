@@ -37,6 +37,7 @@ const SearchBoxContext = createContext<ContextType>([false, () => {}]);
 
 const filterOptions = createFilterOptions({
   matchFrom: 'start',
+  stringify: (option) => (option as { network: Network }).network.name
 });
 
 /**
@@ -97,7 +98,7 @@ const Options: FC<OptionsProps> = ({ props, network, link }) => {
  */
 function renderOption(props: HTMLAttributes<HTMLLIElement>, option: unknown) {
   const { network, link } = option as { network: Network; link: NetworkLink };
-  return <Options key={link.name} props={props} network={network} link={link} />;
+  return <Options key={`${network.name}-${link.url}`} props={props} network={network} link={link} />;
 }
 
 /**

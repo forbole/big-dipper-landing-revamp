@@ -20,6 +20,7 @@ import useStyles from './useStyles';
 
 const filterOptions = createFilterOptions({
   matchFrom: 'start',
+  stringify: (option) => (option as { network: Network }).network.name,
 });
 
 /**

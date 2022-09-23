@@ -575,6 +575,11 @@ exports[`Dummy Test matches snapshot 1`] = `
   animation: animation-0 2s ease-out 1 forwards;
 }
 
+.emotion-9:hover.menuitemsdesktop__active {
+  -webkit-animation: none;
+  animation: none;
+}
+
 .emotion-9.MuiListItem-gutters {
   padding: 16px 20px;
 }
@@ -746,6 +751,11 @@ exports[`Dummy Test matches snapshot 1`] = `
 .emotion-18:hover {
   -webkit-animation: animation-0 2s ease-out 1 forwards;
   animation: animation-0 2s ease-out 1 forwards;
+}
+
+.emotion-18:hover.menuitemsdesktop__active {
+  -webkit-animation: none;
+  animation: none;
 }
 
 .emotion-18.MuiListItem-gutters {

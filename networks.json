@@ -78,28 +78,6 @@
       ]
   },
   {
-      "name": "Kava",
-      "logo": "https://raw.githubusercontent.com/forbole/big-dipper-networks/main/logos/kava.svg?sanitize=true",
-      "cover": "https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/kava.png?sanitize=true",
-      "links": [
-          {
-              "name": "Mainnet",
-              "chain_id": "kava-7",
-              "url": "https://kava.bigdipper.live"
-          },
-          {
-              "name": "Retired",
-              "chain_id": "kava-3",
-              "url": "https://kava-3.bigdipper.live"
-          },
-          {
-              "name": "Retired",
-              "chain_id": "kava-2",
-              "url": "https://kava-2.bigdipper.live"
-          }
-      ]
-  },
-  {
       "name": "LikeCoin",
       "logo": "https://raw.githubusercontent.com/forbole/big-dipper-networks/main/logos/likecoin.svg?sanitize=true",
       "cover": "https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/likecoin.png?sanitize=true",
@@ -113,18 +91,6 @@
               "name": "Testnet",
               "chain_id": "likecoin-public-testnet-5",
               "url": "https://testnet.likecoin.bigdipper.live"
-          }
-      ]
-  },
-  {
-      "name": "Fetch.AI",
-      "logo": "https://raw.githubusercontent.com/forbole/big-dipper-networks/main/logos/fetch.ai.svg?sanitize=true",
-      "cover": "https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/fetch-ai.png?sanitize=true",
-      "links": [
-          {
-              "name": "Mainnet",
-              "chain_id": "fetchhub-1",
-              "url": "https://explore.fetch.ai/"
           }
       ]
   },

@@ -30,6 +30,12 @@ const useStyles = () => {
           backgroundColor: alpha(theme.palette.primary.main, 0.4),
         },
       },
+      '& .layout__wrapper-content': {
+        flex: '1 0 100%',
+        maxWidth: '100vw',
+        minWidth: '320px',
+        padding: theme.spacing(0, 3),
+      },
       '&.layout__scrolled .layout__scroll-fab': {
         display: 'block',
       },
@@ -37,12 +43,6 @@ const useStyles = () => {
         [theme.breakpoints.up('sm')]: {
           display: 'none',
         },
-      },
-      '& .layout__wrapper-content': {
-        flex: '1 0 100%',
-        maxWidth: '100vw',
-        minWidth: '320px',
-        padding: theme.spacing(0, 3),
       },
       '& .layout__scroll-fab': {
         position: 'fixed',
@@ -55,11 +55,12 @@ const useStyles = () => {
         border: `1px solid ${theme.palette.text.primary}`,
         color: theme.palette.text.primary,
         /* Neutral Color/White Transparent 01 */
-        backgroundColor: alpha(theme.palette.common.white, 0.3),
+        backgroundColor: alpha(theme.palette.common.white, 0.1),
         boxShadow: theme.shadows[1],
         borderRadius: '50%',
         display: 'none',
         opacity: 0.8,
+        ...theme.mixins.blur02,
         '&:hover': {
           backgroundColor: theme.palette.primary.main,
         },

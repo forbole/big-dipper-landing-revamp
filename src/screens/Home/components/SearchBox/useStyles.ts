@@ -53,7 +53,7 @@ const useStyles = () => {
       },
     }),
     listItem: css({
-      height: `${theme.spacing(7)} !important`,
+      minHeight: `${theme.spacing(7)} !important`,
       display: 'flex !important',
       flexFlow: 'row nowrap !important',
       justifyContent: 'space-between !important',

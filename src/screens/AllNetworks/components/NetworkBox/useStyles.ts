@@ -51,7 +51,7 @@ const useStyles = () => {
         boxShadow: theme.shadows[2],
         ...theme.mixins.blur03,
         '& .MuiListItemButton-root': {
-          padding: `${theme.spacing(1, 2, 3)} !important`,
+          padding: `${theme.spacing(1, 3)} !important`,
           // eslint-disable-next-line max-len
           '&:hover': {
             backgroundColor: alpha(theme.palette.primary.main, 0.2),
@@ -115,35 +115,51 @@ const useStyles = () => {
       },
       '& .networkbox__dropdown-btn': {
         display: 'flex',
-        width: '100%',
-        height: '100%',
+        minWidth: '100%',
+        minHeight: '100%',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        flexFlow: 'row unwrap',
+        flexDirection: 'row',
+        flexWrap: 'nowrap',
         padding: theme.spacing(0, 3),
-        gap: theme.spacing(2),
         textAlign: 'left',
         cursor: 'pointer',
         '& .MuiSvgIcon-root': {
           /* Neutral Color/Dark Grey */
           color: theme.palette.grey[800],
         },
-        '& .MuiBox-root': {
+        '& .MuiBox-root:nth-of-type(2)': {
           flex: '1 1 auto',
+          overflow: 'hidden',
+          flexDirection: 'column',
+          alignItems: 'stretch',
+          marginLeft: theme.spacing(2),
         },
         '& .MuiTypography-h4': {
           /* Primary Color/Forbole Blue 01 */
           color: theme.palette.primary.contrastText,
         },
-        '& .MuiTypography-body2': {
-          /* Secondary Color/Royal Blue 01 */
-          color: theme.palette.secondary.dark,
-          lineHeight: 1,
+        '& .networkbox__subtitlecontainer': {
+          width: '100%',
+          position: 'relative',
+          height: '1rem',
+          '& .MuiTypography-body2': {
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            /* Secondary Color/Royal Blue 01 */
+            color: theme.palette.secondary.dark,
+            lineHeight: 1,
+            textOverflow: 'ellipsis',
+            overflow: 'hidden',
+          },
         },
 
-        '& .MuiBadge-badge': {
-          transform: 'scale(1) translate(1.5rem, -0.1rem)',
+        '& .MuiBadge-root': {
+          position: 'absolute',
           color: theme.palette.common.white,
+          marginLeft: theme.spacing(6),
+          marginTop: theme.spacing(4),
         },
       },
     }),

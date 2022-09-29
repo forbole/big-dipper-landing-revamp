@@ -45,15 +45,16 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, isOpened, onOpen }) => {
       )}
       <Box onClick={handleClick} className="networkbox__dropdown-btn">
         <Box className="image">
+          <Badge color="success" badgeContent={links?.length}/>
           <NetworkIcon networkName={name} width="48" height="48" />
         </Box>
         <Box>
           <Typography variant="h4">{name}</Typography>
-          <Typography variant="body2">
-            <Badge color="success" badgeContent={links?.length}>
-              {chainId}
-            </Badge>
-          </Typography>
+          <Box className="networkbox__subtitlecontainer">
+            <Typography variant="body2">
+                {chainId}
+            </Typography>
+          </Box>
         </Box>
         {!!links?.[0] && (
           <>

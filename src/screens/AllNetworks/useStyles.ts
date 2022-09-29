@@ -82,9 +82,9 @@ const useStyles = () => {
         [theme.breakpoints.up('md')]: {
           padding: theme.spacing(0, 0, 20, 0),
           gridGap: theme.spacing(5),
-          gridTemplateColumns: `repeat(minmax(auto-fit, 3), minmax(${theme.spacing(
+          gridTemplateColumns: `repeat(3, minmax(${theme.spacing(
             32
-          )}, 1fr)))`,
+          )}, 1fr))`,
         },
       },
       '& .allnetworks__empty': {

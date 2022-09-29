@@ -51,6 +51,10 @@ const useStyles = () => {
       '& .MuiOutlinedInput-notchedOutline': {
         border: 'none',
       },
+      '& input::placeholder': {
+        color: theme.palette.common.white,
+        opacity: 1,
+      }
     }),
     listItem: css({
       minHeight: `${theme.spacing(7)} !important`,

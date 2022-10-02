@@ -72,24 +72,24 @@ type Props = {
 
 const NetworkIcon: FC<Props> = ({ networkName, src: _, ...props }) => {
   const styles = useStyles();
-  const LightIcon = Light[networkName as keyof typeof Light];
-  const DarkIcon = Dark[networkName as keyof typeof Dark];
-  if (LightIcon && DarkIcon) {
+  const lightUrl = Light[networkName as keyof typeof Light];
+  const darkUrl = Dark[networkName as keyof typeof Dark];
+  if (lightUrl && darkUrl) {
     return (
       <>
-        <img src={LightIcon} css={styles.light} alt="" {...props} />
-        <img src={DarkIcon} css={styles.dark} alt="" {...props} />
+        <img src={lightUrl} css={styles.light} alt="" {...props} />
+        <img src={darkUrl} css={styles.dark} alt="" {...props} />
       </>
     );
   }
-  if (LightIcon) {
+  if (lightUrl) {
     return (
-      <img src={LightIcon} alt="" {...props} />
+      <img src={lightUrl} alt="" {...props} />
     );
   }
-  if (DarkIcon) {
+  if (darkUrl) {
     return (
-      <img src={DarkIcon} alt="" {...props} />
+      <img src={darkUrl} alt="" {...props} />
     );
   }
   return null;

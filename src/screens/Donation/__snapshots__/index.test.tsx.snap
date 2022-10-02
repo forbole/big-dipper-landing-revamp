@@ -271,7 +271,7 @@ exports[`Donation matches snapshot 1`] = `
               bc1qye4k27zsn5nehzded6jwsvzg8qd6kgvxyhckts
             </p>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
               tabindex="0"
               type="button"
             >
@@ -342,7 +342,7 @@ exports[`Donation matches snapshot 1`] = `
               0x8CAb9F3fC6bBBD819050365627FC6B79d0ea73e6
             </p>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
               tabindex="0"
               type="button"
             >
@@ -413,7 +413,7 @@ exports[`Donation matches snapshot 1`] = `
               cosmos1n67vdlaejpj3uzswr9qapeg76zlkusj5k875ma
             </p>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium donation__address-button emotion-9"
               tabindex="0"
               type="button"
             >

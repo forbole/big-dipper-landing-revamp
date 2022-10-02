@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import Image from 'next/image';
 import { FC, useCallback, useState } from 'react';
-import CopySvg from '@/src/assets/copy.svg?url';
+import copyUrl from '@/src/assets/copy.svg?url';
 import { SectionLimit } from '@/src/components';
 import ContentBox from '@/src/components/ContentBox';
 import Layout from '@/src/components/Layout';
@@ -41,7 +41,7 @@ const Content: FC<{ x: typeof addresses[number] }> = ({ x }) => {
         className="donation__address-button"
         onClick={handleCopy}
       >
-        <Image width="15" height="15" src={CopySvg} className="donation__address-button-copy" alt={t('copy')} />
+        <Image width="15" height="15" src={copyUrl} className="donation__address-button-copy" alt={t('copy')} />
         {copied ? t('copied') : t('copy')}
       </Button>
     </ContentBox>

@@ -1667,9 +1667,7 @@ exports[`Dummy Test matches snapshot 1`] = `
 }
 
 .emotion-89 .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 6px;
+  padding: 6px;
 }
 
 .emotion-89 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
@@ -2062,7 +2060,6 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 
 .emotion-99 {
   float: unset;
-  width: auto;
   overflow: hidden;
   padding: 0;
   line-height: 11px;
@@ -2974,7 +2971,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
             </span>
           </a>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium emotion-5"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium emotion-5"
             tabindex="0"
             type="button"
           >
@@ -3004,7 +3001,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
               tabindex="-1"
             >
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="/"
                 tabindex="0"
               >
@@ -3022,7 +3019,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                 />
               </a>
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="/all-networks"
                 tabindex="0"
               >
@@ -3043,7 +3040,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                 class="menuitemsdesktop__submenu-container MuiBox-root emotion-7"
               >
                 <div
-                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-18"
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-18"
                   role="button"
                   tabindex="0"
                 >
@@ -3073,7 +3070,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                 </div>
               </div>
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="/about"
                 tabindex="0"
               >
@@ -3091,7 +3088,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                 />
               </a>
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="https://docs.bigdipper.live/"
                 tabindex="0"
               >
@@ -3810,7 +3807,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                     </div>
                   </div>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-100"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-100"
                     tabindex="0"
                     type="button"
                   >
@@ -3877,7 +3874,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       />
                     </span>
                     <button
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
                       tabindex="0"
                       type="button"
                     >
@@ -3951,7 +3948,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       />
                     </span>
                     <button
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
                       tabindex="0"
                       type="button"
                     >
@@ -3993,7 +3990,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   </h4>
                 </div>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium networkbox__mobile-anchor emotion-100"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium networkbox__mobile-anchor emotion-100"
                   tabindex="0"
                   type="button"
                 >

@@ -2,7 +2,7 @@
 import Modal from '@mui/material/Modal';
 import Paper from '@mui/material/Paper';
 import { FC, useCallback } from 'react';
-import BigDipperRedSvg from '@/src/assets/bigDipperRed.svg?url';
+import bigDipperRedUrl from '@/src/assets/bigDipperRed.svg?url';
 import Image from 'next/image';
 import LinkAnchor from '@/src/components/LinkAnchor';
 import { HOME } from '@/src/utils/links';
@@ -23,7 +23,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isMenu, toggleHamburgerMenu, ...props
         <HorizontalMenubar {...props}>
         <LinkAnchor href={HOME}>
           <span css={styles.dbLogoSvg}>
-            <Image src={BigDipperRedSvg} width={214} height={44} alt={t('bigDipper')} />
+            <Image src={bigDipperRedUrl} width={214} height={44} alt={t('bigDipper')} />
           </span>
         </LinkAnchor>
           <HamburgerIcon toggleHamburgerMenu={toggleHamburgerMenu} />

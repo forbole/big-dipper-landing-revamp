@@ -88,8 +88,9 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
               <Typography>
                 <Trans
                   i18nKey="all-networks:allNetworksDescription"
-                  components={[<LinkAnchor href="https://www.forbole.com/contact" key={0} />]}
-                />
+                  components={{
+                    a: <LinkAnchor href="https://www.forbole.com/contact"/>
+                  }}/>
               </Typography>
               <Box className="allnetworks__tabs">
                 <LinkAnchor

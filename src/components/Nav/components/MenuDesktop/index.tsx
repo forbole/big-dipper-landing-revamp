@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Box from '@mui/material/Box';
 import { FC } from 'react';
-import BigDipperRedSvg from '@/src/assets/bigDipperRed.svg';
+import BigDipperRedSvg from '@/src/assets/bigDipperRed.svg?url';
 import LinkAnchor from '@/src/components/LinkAnchor';
 import { HOME } from '@/src/utils/links';
 import Image from 'next/image';

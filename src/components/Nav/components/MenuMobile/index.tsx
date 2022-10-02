@@ -2,7 +2,7 @@
 import Modal from '@mui/material/Modal';
 import Paper from '@mui/material/Paper';
 import { FC, useCallback } from 'react';
-import BigDipperRedSvg from '@/src/assets/bigDipperRed.svg';
+import BigDipperRedSvg from '@/src/assets/bigDipperRed.svg?url';
 import Image from 'next/image';
 import LinkAnchor from '@/src/components/LinkAnchor';
 import { HOME } from '@/src/utils/links';

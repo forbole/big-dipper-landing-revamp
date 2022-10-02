@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import UniconrSvg from '@/src/assets/unicorn404.svg';
+import UniconrSvg from '@/src/assets/unicorn404.svg?url';
 import { Layout } from '@/src/components';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';

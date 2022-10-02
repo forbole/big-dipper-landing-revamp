@@ -73,10 +73,9 @@ const Footer = forwardRef<HTMLElement, JSX.IntrinsicElements['footer']>(function
                 |
               </Typography>
               <Typography variant="caption">
-                <Trans
-                  i18nKey="common:productOf"
-                  components={[<LinkAnchor href="https://www.forbole.com" target="_blank" rel="noreferrer" key={0} />]}
-                />
+                <Trans i18nKey="common:productOf" components={{
+                  a: <LinkAnchor href="https://www.forbole.com" target="_blank" rel="noreferrer"/>,
+                }}/>
               </Typography>
             </div>
           </Box>

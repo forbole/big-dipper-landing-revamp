@@ -15,8 +15,8 @@ const customJestConfig = {
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
   },
   moduleNameMapper: {
-    '^@/(.+)$': '<rootDir>/$1',
     '.+\\.svg\\?url$': 'jest-transform-stub',
+    '^@/(.+)$': '<rootDir>/$1',
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: '<rootDir>/',
     }),

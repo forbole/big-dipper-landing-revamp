@@ -1319,8 +1319,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                     5
                   </span>
                 </span>
-                <svg
+                <img
+                  alt=""
                   height="48"
+                  src="[object Object]"
                   width="48"
                 />
               </div>

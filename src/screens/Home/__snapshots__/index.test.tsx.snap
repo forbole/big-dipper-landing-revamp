@@ -3852,8 +3852,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
+                        <img
+                          alt=""
                           height="48"
+                          src="[object Object]"
                           width="48"
                         />
                       </div>
@@ -3924,8 +3926,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
+                        <img
+                          alt=""
                           height="48"
+                          src="[object Object]"
                           width="48"
                         />
                       </div>
@@ -3975,8 +3979,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   <div
                     class="image MuiBox-root emotion-7"
                   >
-                    <svg
+                    <img
+                      alt=""
                       height="48"
+                      src="[object Object]"
                       width="48"
                     />
                   </div>
@@ -3994,8 +4000,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   <div
                     class="image MuiBox-root emotion-7"
                   >
-                    <svg
+                    <img
+                      alt=""
                       height="48"
+                      src="[object Object]"
                       width="48"
                     />
                   </div>

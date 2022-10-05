@@ -19,6 +19,7 @@ const useStyles = () => {
       '& .MuiTypography-subtitle1': {
         /* Secondary Color/Royal Blue 01 */
         color: theme.palette.secondary.dark,
+        fontWeight: '100',
       },
     }),
   };

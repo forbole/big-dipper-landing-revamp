@@ -1,59 +1,98 @@
-import CircularProgress from '@mui/material/CircularProgress';
-import dynamic from 'next/dynamic';
-import { Component, FC, PropsWithChildren, ReactNode, Suspense } from 'react';
+/* eslint-disable @next/next/no-img-element */
+import AgoricLight from '@/src/assets/logos/agoric-light.svg?url';
+import AkashLight from '@/src/assets/logos/akash-light.svg?url';
+import AssetMantleLight from '@/src/assets/logos/assetMantle-light.svg?url';
+import BandProtocolLight from '@/src/assets/logos/bandProtocol-light.svg?url';
+import BitsongLight from '@/src/assets/logos/bitsong-light.svg?url';
+import CheqdLight from '@/src/assets/logos/cheqd-light.svg?url';
+import ComdexDark from '@/src/assets/logos/comdex-dark.svg?url';
+import ComdexLight from '@/src/assets/logos/comdex-light.svg?url';
+import CosmosHubLight from '@/src/assets/logos/cosmosHub-light.svg?url';
+import CrescentLight from '@/src/assets/logos/crescent-light.svg?url';
+import CryptoorgChainLight from '@/src/assets/logos/cryptoorgChain-light.svg?url';
+import DesmosLight from '@/src/assets/logos/desmos-light.svg?url';
+import ElrondDark from '@/src/assets/logos/elrond-dark.svg?url';
+import ElrondLight from '@/src/assets/logos/elrond-light.svg?url';
+import EMoneyDark from '@/src/assets/logos/eMoney-dark.svg?url';
+import EMoneyLight from '@/src/assets/logos/eMoney-light.svg?url';
+import EvmosLight from '@/src/assets/logos/evmos-light.svg?url';
+import FetchAILight from '@/src/assets/logos/fetchAI-light.svg?url';
+import FlowLight from '@/src/assets/logos/flow-light.svg?url';
+import KavaLight from '@/src/assets/logos/kava-light.svg?url';
+import LikeCoinLight from '@/src/assets/logos/likeCoin-light.svg?url';
+import OsmosisDark from '@/src/assets/logos/osmosis-dark.svg?url';
+import OsmosisLight from '@/src/assets/logos/osmosis-light.svg?url';
+import ProvenanceLight from '@/src/assets/logos/provenance-light.svg?url';
+import RegenNetworkLight from '@/src/assets/logos/regenNetwork-light.svg?url';
+import RizonLight from '@/src/assets/logos/rizon-light.svg?url';
+import SifchainLight from '@/src/assets/logos/sifchain-light.svg?url';
+import SolanaDark from '@/src/assets/logos/solana-dark.svg?url';
+import SolanaLight from '@/src/assets/logos/solana-light.svg?url';
+import { FC } from 'react';
+import useStyles from './useStyles';
 
-const Icons = {
-  Agoric: dynamic(() => import(`@/src/assets/logos/agoric`), { suspense: true, ssr: false }),
-  Akash: dynamic(() => import(`@/src/assets/logos/akash`), { suspense: true, ssr: false }),
-  AssetMantle: dynamic(() => import(`@/src/assets/logos/assetMantle`), { suspense: true, ssr: false }),
-  'Band Protocol': dynamic(() => import(`@/src/assets/logos/bandProtocol`), { suspense: true, ssr: false }),
-  Bitsong: dynamic(() => import(`@/src/assets/logos/bitsong`), { suspense: true, ssr: false }),
-  Cheqd: dynamic(() => import(`@/src/assets/logos/cheqd`), { suspense: true, ssr: false }),
-  Comdex: dynamic(() => import(`@/src/assets/logos/comdex`), { suspense: true, ssr: false }),
-  'Cosmos Hub': dynamic(() => import(`@/src/assets/logos/cosmosHub`), { suspense: true, ssr: false }),
-  Crescent: dynamic(() => import(`@/src/assets/logos/crescent`), { suspense: true, ssr: false }),
-  'Crypto.org Chain': dynamic(() => import(`@/src/assets/logos/cryptoorgChain`), { suspense: true, ssr: false }),
-  Desmos: dynamic(() => import(`@/src/assets/logos/desmos`), { suspense: true, ssr: false }),
-  'e-Money': dynamic(() => import(`@/src/assets/logos/eMoney`), { suspense: true, ssr: false }),
-  Elrond: dynamic(() => import(`@/src/assets/logos/elrond`), { suspense: true, ssr: false }),
-  Evmos: dynamic(() => import(`@/src/assets/logos/evmos`), { suspense: true, ssr: false }),
-  'Fetch.AI': dynamic(() => import(`@/src/assets/logos/fetchAI`), { suspense: true, ssr: false }),
-  Flow: dynamic(() => import(`@/src/assets/logos/flow`), { suspense: true, ssr: false }),
-  Kava: dynamic(() => import(`@/src/assets/logos/kava`), { suspense: true, ssr: false }),
-  LikeCoin: dynamic(() => import(`@/src/assets/logos/likeCoin`), { suspense: true, ssr: false }),
-  Osmosis: dynamic(() => import(`@/src/assets/logos/osmosis`), { suspense: true, ssr: false }),
-  Provenance: dynamic(() => import(`@/src/assets/logos/provenance`), { suspense: true, ssr: false }),
-  'Regen Network': dynamic(() => import(`@/src/assets/logos/regenNetwork`), { suspense: true, ssr: false }),
-  Rizon: dynamic(() => import(`@/src/assets/logos/rizon`), { suspense: true, ssr: false }),
-  Sifchain: dynamic(() => import(`@/src/assets/logos/sifchain`), { suspense: true, ssr: false }),
-  Solana: dynamic(() => import(`@/src/assets/logos/solana`), { suspense: true, ssr: false }),
+const Light = {
+  Agoric: AgoricLight,
+  Akash: AkashLight,
+  AssetMantle: AssetMantleLight,
+  'Band Protocol': BandProtocolLight,
+  Bitsong: BitsongLight,
+  Cheqd: CheqdLight,
+  Comdex: ComdexLight,
+  'Cosmos Hub': CosmosHubLight,
+  Crescent: CrescentLight,
+  'Crypto.org Chain': CryptoorgChainLight,
+  Desmos: DesmosLight,
+  'e-Money': EMoneyLight,
+  Elrond: ElrondLight,
+  Evmos: EvmosLight,
+  'Fetch.AI': FetchAILight,
+  Flow: FlowLight,
+  Kava: KavaLight,
+  LikeCoin: LikeCoinLight,
+  Osmosis: OsmosisLight,
+  Provenance: ProvenanceLight,
+  'Regen Network': RegenNetworkLight,
+  Rizon: RizonLight,
+  Sifchain: SifchainLight,
+  Solana: SolanaLight,
+};
+
+const Dark = {
+  Comdex: ComdexDark,
+  EMoney: EMoneyDark,
+  Elrond: ElrondDark,
+  Osmosis: OsmosisDark,
+  Solana: SolanaDark,
 };
 
 type Props = {
   networkName: string;
-} & JSX.IntrinsicElements['svg'];
+} & JSX.IntrinsicElements['img'];
 
-const NetworkIcon: FC<Props> = ({ networkName, ...props }) => {
-  const Component = Icons[networkName as keyof typeof Icons];
-  if (!Component) return <svg {...props}></svg>;
-  return (
-    <ErrorBoundary fallback={<svg {...props}></svg>}>
-      <Suspense fallback={<CircularProgress />}>
-        <Component {...props} />
-      </Suspense>
-    </ErrorBoundary>
-  );
+const NetworkIcon: FC<Props> = ({ networkName, src: _, ...props }) => {
+  const styles = useStyles();
+  const lightUrl = Light[networkName as keyof typeof Light];
+  const darkUrl = Dark[networkName as keyof typeof Dark];
+  if (lightUrl && darkUrl) {
+    return (
+      <>
+        <img src={lightUrl} css={styles.light} alt="" {...props} />
+        <img src={darkUrl} css={styles.dark} alt="" {...props} />
+      </>
+    );
+  }
+  if (lightUrl) {
+    return (
+      <img src={lightUrl} alt="" {...props} />
+    );
+  }
+  if (darkUrl) {
+    return (
+      <img src={darkUrl} alt="" {...props} />
+    );
+  }
+  return null;
 };
-
-/* If an error occurs, don't render anything. */
-class ErrorBoundary extends Component<PropsWithChildren<{ fallback: ReactNode }>, Error> {
-  static getDerivedStateFromError(error: Error) {
-    return error;
-  }
-  render() {
-    if (this.state) return this.props.fallback;
-    return this.props.children;
-  }
-}
 
 export default NetworkIcon;

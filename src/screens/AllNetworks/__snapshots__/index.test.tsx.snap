@@ -119,7 +119,7 @@ exports[`All Networks matches snapshot 1`] = `
   .emotion-0 .allnetworks__networks {
     padding: 0px 0px 160px 0px;
     grid-gap: 40px;
-    grid-template-columns: repeat(minmax(auto-fit, 3), minmax(256px, 1fr)));
+    grid-template-columns: repeat(3, minmax(256px, 1fr));
   }
 }
 
@@ -356,6 +356,26 @@ exports[`All Networks matches snapshot 1`] = `
 
 .emotion-9 .MuiOutlinedInput-notchedOutline {
   border: none;
+}
+
+.emotion-9 input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.emotion-9 input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.emotion-9 input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.emotion-9 input::placeholder {
+  color: #fff;
+  opacity: 1;
 }
 
 .emotion-10 {
@@ -838,7 +858,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 }
 
 .emotion-22 .networkbox__popover .MuiListItemButton-root {
-  padding: 8px 16px 24px!important;
+  padding: 8px 24px!important;
 }
 
 .emotion-22 .networkbox__popover .MuiListItemButton-root:hover {
@@ -954,8 +974,8 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -964,12 +984,14 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-flex-flow: row unwrap;
-  -webkit-flex-flow: row unwrap;
-  -ms-flex-flow: row unwrap;
-  flex-flow: row unwrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding: 0px 24px;
-  gap: 16px;
   text-align: left;
   cursor: pointer;
 }
@@ -978,46 +1000,49 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   color: #424242;
 }
 
-.emotion-22 .networkbox__dropdown-btn .MuiBox-root {
+.emotion-22 .networkbox__dropdown-btn .MuiBox-root:nth-of-type(2) {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-left: 16px;
 }
 
 .emotion-22 .networkbox__dropdown-btn .MuiTypography-h4 {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.emotion-22 .networkbox__dropdown-btn .MuiTypography-body2 {
+.emotion-22 .networkbox__dropdown-btn .networkbox__subtitlecontainer {
+  width: 100%;
+  position: relative;
+  height: 1rem;
+}
+
+.emotion-22 .networkbox__dropdown-btn .networkbox__subtitlecontainer .MuiTypography-body2 {
+  position: absolute;
+  left: 0;
+  right: 0;
   color: #051D5B;
   line-height: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.emotion-22 .networkbox__dropdown-btn .MuiBadge-badge {
-  -webkit-transform: scale(1) translate(1.5rem, -0.1rem);
-  -moz-transform: scale(1) translate(1.5rem, -0.1rem);
-  -ms-transform: scale(1) translate(1.5rem, -0.1rem);
-  transform: scale(1) translate(1.5rem, -0.1rem);
+.emotion-22 .networkbox__dropdown-btn .MuiBadge-root {
+  position: absolute;
   color: #fff;
+  margin-left: 48px;
+  margin-top: 32px;
 }
 
-.emotion-26 {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
-  line-height: 1.235;
-}
-
-.emotion-27 {
-  margin: 0;
-  font-size: 0.875rem;
-  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
-  font-weight: 400;
-  line-height: 1.43;
-}
-
-.emotion-28 {
+.emotion-25 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1029,7 +1054,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   flex-shrink: 0;
 }
 
-.emotion-29 {
+.emotion-26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1076,14 +1101,30 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   transform-origin: 100% 0%;
 }
 
-.emotion-29.MuiBadge-invisible {
+.emotion-26.MuiBadge-invisible {
   -webkit-transform: scale(0) translate(50%, -50%);
   -moz-transform: scale(0) translate(50%, -50%);
   -ms-transform: scale(0) translate(50%, -50%);
   transform: scale(0) translate(50%, -50%);
 }
 
+.emotion-28 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height: 1.235;
+}
+
 .emotion-30 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+}
+
+.emotion-31 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1266,8 +1307,19 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
               <div
                 class="image MuiBox-root emotion-2"
               >
-                <svg
+                <span
+                  class="MuiBadge-root BaseBadge-root emotion-25"
+                >
+                  <span
+                    class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSuccess BaseBadge-badge emotion-26"
+                  >
+                    5
+                  </span>
+                </span>
+                <img
+                  alt=""
                   height="48"
+                  src="[object Object]"
                   width="48"
                 />
               </div>
@@ -1275,28 +1327,23 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                 class="MuiBox-root emotion-2"
               >
                 <h4
-                  class="MuiTypography-root MuiTypography-h4 emotion-26"
+                  class="MuiTypography-root MuiTypography-h4 emotion-28"
                 >
                   Cosmos Hub
                 </h4>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-27"
+                <div
+                  class="networkbox__subtitlecontainer MuiBox-root emotion-2"
                 >
-                  <span
-                    class="MuiBadge-root BaseBadge-root emotion-28"
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 emotion-30"
                   >
                     cosmoshub-4
-                    <span
-                      class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSuccess BaseBadge-badge emotion-29"
-                    >
-                      5
-                    </span>
-                  </span>
-                </p>
+                  </p>
+                </div>
               </div>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge emotion-30"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge emotion-31"
                 data-testid="KeyboardArrowDownIcon"
                 focusable="false"
                 viewBox="0 0 24 24"

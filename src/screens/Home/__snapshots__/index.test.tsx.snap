@@ -113,6 +113,15 @@ exports[`Dummy Test matches snapshot 1`] = `
   }
 }
 
+.emotion-0 .layout__wrapper-content {
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  max-width: 100vw;
+  min-width: 320px;
+  padding: 0px 24px;
+}
+
 .emotion-0.layout__scrolled .layout__scroll-fab {
   display: block;
 }
@@ -121,15 +130,6 @@ exports[`Dummy Test matches snapshot 1`] = `
   .emotion-0.layout__scrolled.layout__footerinview .layout__scroll-fab {
     display: none;
   }
-}
-
-.emotion-0 .layout__wrapper-content {
-  -webkit-flex: 1 0 100%;
-  -ms-flex: 1 0 100%;
-  flex: 1 0 100%;
-  max-width: 100vw;
-  min-width: 320px;
-  padding: 0px 24px;
 }
 
 .emotion-0 .layout__scroll-fab {
@@ -142,11 +142,13 @@ exports[`Dummy Test matches snapshot 1`] = `
   max-height: 48px;
   border: 1px solid #EFEFEF;
   color: #EFEFEF;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
   border-radius: 50%;
   display: none;
   opacity: 0.8;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 .emotion-0 .layout__scroll-fab:hover {
@@ -1736,6 +1738,26 @@ exports[`Dummy Test matches snapshot 1`] = `
   border: none;
 }
 
+.emotion-90 input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.emotion-90 input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.emotion-90 input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.emotion-90 input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
 .emotion-91 {
   font-size: 1rem;
   white-space: pre-wrap;
@@ -2154,10 +2176,6 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
   width: 100%;
 }
 
-.emotion-103:hover {
-  background-color: #EFEFEF;
-}
-
 .emotion-103 .MuiTypography-h3,
 .emotion-103 .MuiTypography-h6,
 .emotion-103 .MuiTypography-body1 {
@@ -2287,10 +2305,6 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
   display: flex;
   position: static;
   gap: 24px;
-}
-
-.emotion-103 .networkbox__mobile-anchor:hover {
-  background-color: #afafaf;
 }
 
 @media (min-width:768px) {
@@ -3835,8 +3849,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
+                        <img
+                          alt=""
                           height="48"
+                          src="[object Object]"
                           width="48"
                         />
                       </div>
@@ -3907,8 +3923,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
+                        <img
+                          alt=""
                           height="48"
+                          src="[object Object]"
                           width="48"
                         />
                       </div>
@@ -3958,8 +3976,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   <div
                     class="image MuiBox-root emotion-7"
                   >
-                    <svg
+                    <img
+                      alt=""
                       height="48"
+                      src="[object Object]"
                       width="48"
                     />
                   </div>
@@ -3977,8 +3997,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   <div
                     class="image MuiBox-root emotion-7"
                   >
-                    <svg
+                    <img
+                      alt=""
                       height="48"
+                      src="[object Object]"
                       width="48"
                     />
                   </div>

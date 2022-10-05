@@ -13,9 +13,7 @@ const Slide1 = () => {
   return (
     <Box css={styles.root}>
       <Box className="image">
-        {!!bigDipperWebp && (
-          <Image layout='fill' objectFit="contain" src={bigDipperWebp} alt="Big Dipper" />
-        )}
+        <Image layout='fill' objectFit="contain" src={bigDipperWebp} alt="Big Dipper" />
       </Box>
       <Box className="caption">
         <Typography variant="h1">{t('slider1Header')}</Typography>

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import UniconrSvg from '@/src/assets/unicorn404.svg';
+import unicornUrl from '@/src/assets/unicorn404.svg?url';
 import { Layout } from '@/src/components';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -19,7 +19,7 @@ const Page500 = () => {
       </Head>
       <Box className="container" css={styles.root}>
         <div className="image">
-          <Image src={UniconrSvg} alt="500" />
+          <Image src={unicornUrl} alt="500" />
         </div>
         <Typography variant="h3">{t('500')}</Typography>
         <p> </p>

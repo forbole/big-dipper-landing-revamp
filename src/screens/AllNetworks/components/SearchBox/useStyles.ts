@@ -51,9 +51,13 @@ const useStyles = () => {
       '& .MuiOutlinedInput-notchedOutline': {
         border: 'none',
       },
+      '& input::placeholder': {
+        color: theme.palette.common.white,
+        opacity: 1,
+      }
     }),
     listItem: css({
-      height: `${theme.spacing(7)} !important`,
+      minHeight: `${theme.spacing(7)} !important`,
       display: 'flex !important',
       flexFlow: 'row nowrap !important',
       justifyContent: 'space-between !important',

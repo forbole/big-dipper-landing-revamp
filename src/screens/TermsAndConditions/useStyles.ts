@@ -7,7 +7,7 @@ const useStyles = () => {
       '& .sectionlimit__container': {
         padding: theme.spacing(0, 2),
       },
-      '& .termsandconditions__privacypolicy__title': {
+      '& .termsandconditions__title': {
         marginBottom: theme.spacing(4),
         textAlign: 'center',
         [theme.breakpoints.up('md')]: {
@@ -26,6 +26,15 @@ const useStyles = () => {
           padding: theme.spacing(4),
           fontSize: theme.typography.body2.fontSize,
         },
+
+        '& .MuiTypography-h6': {
+          fontWeight: 'normal',
+          textDecoration: 'underline',
+          marginBottom: 0,
+        },
+        '& a': {
+          cursor: 'pointer',
+        }
       },
 
       '& .termsandconditions__intro': {

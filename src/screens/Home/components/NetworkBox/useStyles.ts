@@ -17,9 +17,6 @@ const useStyles = () => {
       '& .MuiLinearProgress-root': {
         width: '100%',
       },
-      '&:hover': {
-        backgroundColor: theme.palette.grey.A200,
-      },
       '& .MuiTypography-h3, & .MuiTypography-h6, & .MuiTypography-body1': {
         whiteSpace: 'nowrap',
       },
@@ -90,9 +87,6 @@ const useStyles = () => {
         display: 'flex',
         position: 'static',
         gap: theme.spacing(3),
-        '&:hover': {
-          backgroundColor: theme.palette.grey[500],
-        },
         [theme.breakpoints.up('md')]: {
           display: 'none',
         },

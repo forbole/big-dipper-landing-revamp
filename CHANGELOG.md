@@ -13,3 +13,4 @@
 - Add Header
 - Add Home page
 - Add All Networks page
+- Show metrics for Akash, Crypto.Org, Elrond ([\#43](https://github.com/forbole/big-dipper-landing-revamp/issues/43))

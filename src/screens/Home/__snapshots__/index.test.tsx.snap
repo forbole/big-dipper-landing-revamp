@@ -2407,6 +2407,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 
 .emotion-103 .networkbox__popover .MuiTypography-body1 {
   text-align: right;
+  white-space: initial;
 }
 
 .emotion-103 .networkbox__popover>.MuiBox-root:nth-of-type(1) {

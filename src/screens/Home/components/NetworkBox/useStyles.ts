@@ -149,6 +149,7 @@ const useStyles = () => {
         },
         '& .MuiTypography-body1': {
           textAlign: 'right',
+          whiteSpace: 'initial',
         },
         '& > .MuiBox-root:nth-of-type(1)': {
           display: 'flex',

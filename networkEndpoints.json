@@ -1,26 +1,94 @@
 {
-  "Agoric": "https://gql.agoric.forbole.com/v1/graphql",
-  "Akash": "https://gql.akash.forbole.com/v1/grahql",
-  "AssetMantle": "https://gql.assetmantle.forbole.com/v1/graphql",
-  "Band Protocol": "https://gql.band.forbole.com/v1/graphql",
-  "Bitsong": "https://gql.bitsong.forbole.com/v1/graphql",
-  "Cheqd": "https://explorer-gql.cheqd.io/v1/graphql",
-  "Comdex": "https://gql.comdex.forbole.com/v1/graphql",
-  "Cosmos Hub": "https://gql.cosmos.forbole.com/v1/graphql",
-  "Crescent": "https://gql.crescent.forbole.com/v1/graphql",
-  "Crypto.org Chain": null,
-  "Desmos": "https://gql.desmos.forbole.com/v1/graphql",
-  "e-Money": "https://gql.emoney.forbole.com/v1/graphql",
-  "Elrond": null,
-  "Evmos": "https://gql.evmos.forbole.com/v1/graphql",
-  "Fetch.AI": null,
-  "Flow": "https://gql.flow.forbole.com/v1/graphql",
-  "Kava": null,
-  "LikeCoin": "https://gql.likecoin.forbole.com/v1/graphql",
-  "Osmosis": "https://gql.osmosis.forbole.com/v1/graphql",
-  "Provenance": "https://gql.provenance.forbole.com/v1/graphql",
-  "Regen Network": "https://gql.regen.forbole.com/v1/graphql",
-  "Rizon": "https://gql.rizon.forbole.com/v1/graphql",
-  "Sifchain": "https://gql.sifchain.forbole.com/v1/graphql",
-  "Solana": "https://gql.solana.forbole.com/v1/graphql"
+  "Agoric": {
+    "type": "gql",
+    "endpoint": "https://gql.agoric.forbole.com/v1/graphql"
+  },
+  "Akash": {
+    "type": "gql",
+    "endpoint": "https://gql.akash.forbole.com/v1/graphql"
+  },
+  "AssetMantle": {
+    "type": "gql",
+    "endpoint": "https://gql.assetmantle.forbole.com/v1/graphql"
+  },
+  "Band Protocol": {
+    "type": "gql",
+    "endpoint": "https://gql.band.forbole.com/v1/graphql"
+  },
+  "Bitsong": {
+    "type": "gql",
+    "endpoint": "https://gql.bitsong.forbole.com/v1/graphql"
+  },
+  "Cheqd": {
+    "type": "gql",
+    "endpoint": "https://explorer-gql.cheqd.io/v1/graphql"
+  },
+  "Comdex": {
+    "type": "gql",
+    "endpoint": "https://gql.comdex.forbole.com/v1/graphql"
+  },
+  "Cosmos Hub": {
+    "type": "gql",
+    "endpoint": "https://gql.cosmos.forbole.com/v1/graphql"
+  },
+  "Crescent": {
+    "type": "gql",
+    "endpoint": "https://gql.crescent.forbole.com/v1/graphql"
+  },
+  "Crypto.org Chain": {
+    "type": "cryptoorg",
+    "blocks": "https://api.crypto-org.forbole.com/blocks/latest",
+    "price": "https://api.coingecko.com/api/v3/simple/price?ids=crypto-com-chain&vs_currencies=usd"
+  },
+  "Desmos": {
+    "type": "gql",
+    "endpoint": "https://gql.desmos.forbole.com/v1/graphql"
+  },
+  "e-Money": {
+    "type": "gql",
+    "endpoint": "https://gql.emoney.forbole.com/v1/graphql"
+  },
+  "Elrond": {
+    "type": "elrond",
+    "chain_id": "mainnet",
+    "stats": "https://api.elrond.com/stats",
+    "economics": "https://api.elrond.com/economics"
+  },
+  "Evmos": {
+    "type": "gql",
+    "endpoint": "https://gql.evmos.forbole.com/v1/graphql"
+  },
+  "Flow": {
+    "type": "gql",
+    "endpoint": "https://gql.flow.forbole.com/v1/graphql"
+  },
+  "LikeCoin": {
+    "type": "gql",
+    "endpoint": "https://gql.likecoin.forbole.com/v1/graphql"
+  },
+  "Osmosis": {
+    "type": "gql",
+    "endpoint": "https://gql.osmosis.forbole.com/v1/graphql"
+  },
+  "Provenance": {
+    "type": "gql",
+    "endpoint": "https://gql.provenance.forbole.com/v1/graphql"
+  },
+  "Regen Network": {
+    "type": "gql",
+    "endpoint": "https://gql.regen.forbole.com/v1/graphql"
+  },
+  "Rizon": {
+    "type": "gql",
+    "endpoint": "https://gql.rizon.forbole.com/v1/graphql"
+  },
+  "Sifchain": { 
+    "type": "gql",
+    "endpoint": "https://gql.sifchain.forbole.com/v1/graphql"
+  },
+  "Solana": {
+    "type": "solana",
+    "chain_id": "mainnet-beta",
+    "endpoint": "https://gql.solana.forbole.com/v1/graphql"
+  }
 }

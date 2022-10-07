@@ -18,8 +18,11 @@ export default async function loadNetworkSummaries() {
     Object.keys(config).map((networkName) =>
       loadNetworkSummary(networkName as keyof typeof networkEndpoints)
         .then((data) => ({ networkName, data }))
-        .catch(() => ({ networkName, data: null }))
-    )
+        .catch(error => {
+          const errorMessage = ((err): err is Error => !!(err as Error).message)(error) ? error.message : String(error);
+          console.error('errorMessage', errorMessage);
+          return { networkName, data: null }
+        }))
   );
   const result = allNetworks.reduce((map, { networkName, data }) => {
     return { [networkName]: data, ...map };

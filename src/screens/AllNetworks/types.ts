@@ -1,3 +1,3 @@
 export interface AllNetworksProps {
-  networkList: Array<Network>;
+  networkList: Network[];
 }

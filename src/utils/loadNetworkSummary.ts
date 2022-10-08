@@ -1,6 +1,3 @@
-/* A GraphQL query. */
-import networkEndpoints from '@/networkEndpoints.json';
-
 /**
  * `NetworkSummary` is an object with three properties: `genesis`, `block`, and `token_price`.
  * @property genesis - The chain_id of the network.
@@ -13,25 +10,30 @@ export interface NetworkSummary {
   token_price: Array<{ price: number; unit_name: string }>;
 }
 
-export interface Config {
-  type: string;
+const handlers: {[key: string]: (network: Network) => Promise<NetworkSummary | undefined>} = {
+  Solana: handleSolana,
+  Elrond: handleElrond,
+  "Crypto.org Chain": handleCryptoorg,
 }
 
-/* Creating a map of handlers for different types of network endpoints. */
-const handlers = new Map<Config['type'], (networkName: string, config: Config) => Promise<NetworkSummary>>();
-
-
-export interface GqlEndpoint extends Config {
-  type: 'gql';
-  endpoint: string;
+/**
+ * It takes a network name,
+ * looks up the GraphQL URL for that network in the `networks.json` file,
+ * environment variable, and then queries the GraphQL endpoint for the network's information
+ * @param {Network} network - The network you want to get the info for.
+ * @returns NetworkSummary
+ */
+ export default async function loadNetworkSummary(network: Network) {
+  const handler = handlers[network.name] || handleDefault;
+  return await handler(network);
 }
 
-handlers.set('gql', async (networkName: string, config: Config) => {
-  if (!((c): c is GqlEndpoint => 'endpoint' in c)(config)) {
-    throw new Error(`Invalid config for ${networkName}`);
+ async function handleDefault(network: Network) {
+  if (!isNetwork(network)) {
+    return undefined;
   }
 
-  const res = await fetch(config.endpoint, {
+  const res = await fetch(network.endpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: `
@@ -51,26 +53,24 @@ query MyQuery {
   });
   const { data } = await res.json();
 
-  if (!('genesis' in data && 'block' in data && 'token_price' in data)) {
-    throw new Error(`Could not parse data from ${networkName}`);
+  if (!data || !('genesis' in data && 'block' in data && 'token_price' in data)) {
+    throw new Error(`Could not parse data from ${network.name}`);
   }
 
   return data;
-});
 
-
-export interface SolanaEndpoint extends Config {
-  type: 'solana';
-  chain_id: string;
-  endpoint: string;
+  function isNetwork(u: unknown): u is DefaultNetwork {
+    const n = u as DefaultNetwork;
+    return 'endpoint' in n;
+  }
 }
 
-handlers.set('solana', async (networkName: string, config: Config) => {
-  if (!((c): c is SolanaEndpoint => 'chain_id' in c && 'endpoint' in c)(config)) {
-    throw new Error(`Invalid config for ${networkName}`);
+async function handleSolana(network: Network) {
+  if (!isSolana(network)) {
+    return undefined;
   }
 
-  const res = await fetch(config.endpoint, {
+  const res = await fetch(network.endpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: `
@@ -87,38 +87,36 @@ query MyQuery {
   });
   const { data } = await res.json();
 
-  if (!('block' in data && 'token_price' in data)) {
-    throw new Error(`Could not parse data from ${networkName}`);
+  if (!data || !('block' in data && 'token_price' in data)) {
+    throw new Error(`Could not parse data from ${network.name}`);
   }
 
   return {
     genesis: [
-      { chain_id: config.chain_id }
+      { chain_id: network.chain_id }
     ],
     ...data,
   };
-});
-
-
-export interface ElrondEndpoint extends Config {
-  type: 'elrond';
-  chain_id: string;
-  stats: string;
-  economics: string;
+  function isSolana(u: unknown): u is SolanaNetwork {
+    const n = u as SolanaNetwork;
+    return n?.name === 'Solana' && 'chain_id' in n && 'endpoint' in n;
+  }
 }
 
-handlers.set('elrond', async (networkName: string, config: Config) => {
-  if (!((c): c is ElrondEndpoint => 'chain_id' in c && 'stats' in c && 'economics' in c)(config)) {
-    throw new Error(`Invalid config for ${networkName}`);
+async function handleElrond(network: Network) {
+  if (!isElrond(network)) {
+    return undefined;
   }
 
-  const promises = [fetch(config.stats).then(r => r.json()), fetch(config.economics).then(r => r.json())];
+  const promises = [
+    fetch(network.stats).then(r => r.json()),
+    fetch(network.economics).then(r => r.json())];
   const [stats, economics] = await Promise.all(promises);
   const { blocks } = stats;
   const { price } = economics;
   return {
     genesis: [
-      { chain_id: config.chain_id }
+      { chain_id: network.chain_id }
     ],
     block: [
       { height: blocks }
@@ -127,21 +125,20 @@ handlers.set('elrond', async (networkName: string, config: Config) => {
       { price: price, unit_name: "EGLD" }
     ]
   };
-});
-
-
-export interface CryptoorgEndpoint extends Config {
-  type: 'cryptoorg';
-  blocks: string;
-  price: string;
+  function isElrond(u: unknown): u is ElrondNetwork {
+    const n = u as ElrondNetwork
+    return n?.name === 'Elrond' && 'chain_id' in n && 'stats' in n && 'economics' in  n;
+  }
 }
 
-handlers.set('cryptoorg', async (networkName: string, config: Config) => {
-  if (!((c): c is CryptoorgEndpoint => 'blocks' in c && 'price' in c)(config)) {
-    throw new Error(`Invalid config for ${networkName}`);
+async function handleCryptoorg(network: Network) {
+  if (!isCryptoorg(network)) {
+    return undefined;
   }
 
-  const promises = [fetch(config.blocks).then(r => r.json()), fetch(config.price).then(r => r.json())];
+  const promises = [
+    fetch(network.blocks).then(r => r.json()),
+    fetch(network.price).then(r => r.json())];
   const [blocks, price] = await Promise.all(promises);
   const { block: { header: { chain_id, height } } } = blocks;
   const {"crypto-com-chain": {usd}} = price;
@@ -156,22 +153,8 @@ handlers.set('cryptoorg', async (networkName: string, config: Config) => {
       { price: usd, unit_name: "CRO" }
     ]
   };
-});
-
-/**
- * It takes a network name,
- * looks up the GraphQL URL for that network in the `networkEndpoints.json` file,
- * environment variable, and then queries the GraphQL endpoint for the network's information
- * @param {string} networkName - The name of the network you want to get the info for.
- * @returns NetworkSummary
- */
-export default function loadNetworkSummary(networkName: keyof typeof networkEndpoints) {
-  const config = networkEndpoints?.[networkName] as Config;
-  const handler = handlers.get(config?.type);
-
-  if (!handler) {
-    throw new Error(`Invalid config for  ${networkName}`);
+  function isCryptoorg(u: unknown): u is CryptoorgNetwork {
+    const n = u as CryptoorgNetwork;
+    return n?.name === 'Crypto.org Chain' && 'blocks' in n && 'price' in n;
   }
-
-  return handler(networkName, config);
 }

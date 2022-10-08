@@ -1,6 +1,7 @@
 [
   {
     "name": "Cosmos Hub",
+    "endpoint": "https://gql.cosmos.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -31,6 +32,7 @@
   },
   {
     "name": "Akash",
+    "endpoint": "https://gql.akash.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -46,6 +48,7 @@
   },
   {
     "name": "e-Money",
+    "endpoint": "https://gql.emoney.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -56,6 +59,7 @@
   },
   {
     "name": "Band Protocol",
+    "endpoint": "https://gql.band.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Retired",
@@ -71,6 +75,7 @@
   },
   {
     "name": "LikeCoin",
+    "endpoint": "https://gql.likecoin.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -86,6 +91,7 @@
   },
   {
     "name": "Desmos",
+    "endpoint": "https://gql.desmos.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Testnet",
@@ -101,6 +107,7 @@
   },
   {
     "name": "Flow",
+    "endpoint": "https://gql.flow.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -111,6 +118,8 @@
   },
   {
     "name": "Crypto.org Chain",
+    "blocks": "https://api.crypto-org.forbole.com/blocks/latest",
+    "price": "https://api.coingecko.com/api/v3/simple/price?ids=crypto-com-chain&vs_currencies=usd",
     "links": [
       {
         "name": "Mainnet",
@@ -121,6 +130,7 @@
   },
   {
     "name": "Osmosis",
+    "endpoint": "https://gql.osmosis.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -131,6 +141,7 @@
   },
   {
     "name": "Bitsong",
+    "endpoint": "https://gql.bitsong.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -141,6 +152,7 @@
   },
   {
     "name": "Regen Network",
+    "endpoint": "https://gql.regen.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -151,6 +163,7 @@
   },
   {
     "name": "Agoric",
+    "endpoint": "https://gql.agoric.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -161,6 +174,7 @@
   },
   {
     "name": "Rizon",
+    "endpoint": "https://gql.rizon.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -171,6 +185,9 @@
   },
   {
     "name": "Elrond",
+    "chain_id": "mainnet",
+    "stats": "https://api.elrond.com/stats",
+    "economics": "https://api.elrond.com/economics",
     "links": [
       {
         "name": "Mainnet",
@@ -181,6 +198,7 @@
   },
   {
     "name": "Evmos",
+    "endpoint": "https://gql.evmos.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -196,6 +214,7 @@
   },
   {
     "name": "Cheqd",
+    "endpoint": "https://explorer-gql.cheqd.io/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -211,6 +230,7 @@
   },
   {
     "name": "Comdex",
+    "endpoint": "https://gql.comdex.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -221,6 +241,8 @@
   },
   {
     "name": "Solana",
+    "chain_id": "mainnet-beta",
+    "endpoint": "https://gql.solana.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -231,6 +253,7 @@
   },
   {
     "name": "Crescent",
+    "endpoint": "https://gql.crescent.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -241,6 +264,7 @@
   },
   {
     "name": "Sifchain",
+    "endpoint": "https://gql.sifchain.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -251,6 +275,7 @@
   },
   {
     "name": "AssetMantle",
+    "endpoint": "https://gql.assetmantle.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -261,6 +286,7 @@
   },
   {
     "name": "Provenance",
+    "endpoint": "https://gql.provenance.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -271,6 +297,7 @@
   },
   {
     "name": "Shentu",
+    "endpoint": "https://gql.certik.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -281,6 +308,7 @@
   },
   {
     "name": "Persistence",
+    "endpoint": "https://gql.persistence.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -291,6 +319,7 @@
   },
   {
     "name": "Stride",
+    "endpoint": "https://gql.stride.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
@@ -301,6 +330,7 @@
   },
   {
     "name": "NYM",
+    "endpoint": "https://gql.nym.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",

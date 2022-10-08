@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import TTLCache from '@isaacs/ttlcache';
-import networkEndpoints from '@/networkEndpoints.json';
+import networks from '@/networks.json';
 import loadNetworkSummary from '@/src/utils/loadNetworkSummary';
 
 const cache = new TTLCache({ max: 1, ttl: 1000 * 30 });
@@ -13,15 +13,15 @@ export default async function loadNetworkSummaries() {
   if (cached) return cached;
 
   /* Loading the network summary for each network. */
-  const config = networkEndpoints;
+  const config = networks;
   const allNetworks = await Promise.all(
-    Object.keys(config).map((networkName) =>
-      loadNetworkSummary(networkName as keyof typeof networkEndpoints)
-        .then((data) => ({ networkName, data }))
+    config.map((network) =>
+      loadNetworkSummary(network as Network)
+        .then((data) => ({ networkName: network.name, data }))
         .catch(error => {
           const errorMessage = ((err): err is Error => !!(err as Error).message)(error) ? error.message : String(error);
           console.error('errorMessage', errorMessage);
-          return { networkName, data: null }
+          return { networkName: network.name, data: null }
         }))
   );
   const result = allNetworks.reduce((map, { networkName, data }) => {

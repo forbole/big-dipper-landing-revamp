@@ -4,7 +4,7 @@
 import { render, waitFor } from '@testing-library/react';
 import fetchMock from 'jest-fetch-mock';
 import React from 'react';
-import networkEndpoints from '@/networkEndpoints.json';
+import networks from '@/networks.json';
 import { MockTheme } from '@/__mocks__';
 import Home from '.';
 
@@ -14,9 +14,7 @@ import Home from '.';
 const networkList = [
   {
     name: 'Cosmos Hub',
-    logo: 'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/logos/cosmoshub.svg?sanitize=true',
-    cover:
-      'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/cosmos.png?sanitize=true',
+    endpoint: "https://gql.cosmos.forbole.com/v1/graphql",
     links: [
       {
         name: 'Mainnet',
@@ -48,7 +46,7 @@ const networkList = [
 ];
 
 beforeEach(() => {
-  fetchMock.mockIf(/\/api\/networks/, JSON.stringify(networkEndpoints));
+  fetchMock.mockIf(/\/api\/networks/, JSON.stringify(networks));
 });
 
 const mockI18n = {

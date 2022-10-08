@@ -36,16 +36,16 @@ handlers.set('gql', async (networkName: string, config: Config) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: `
 query MyQuery {
-genesis {
-chain_id
-}
-block(order_by: {height: desc}, limit: 1) {
-height
-}
-token_price(order_by:{id: asc}, limit:1) {
-price
-unit_name
-}
+  genesis {
+    chain_id
+  }
+  block(order_by: {height: desc}, limit: 1) {
+    height
+  }
+  token_price(order_by:{id: asc}, limit:1) {
+    price
+    unit_name
+  }
 }`
     }),
   });
@@ -75,13 +75,13 @@ handlers.set('solana', async (networkName: string, config: Config) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: `
 query MyQuery {
-block(order_by: {height: desc}, limit: 1) {
-height
-}
-token_price(order_by: {id: asc}, where: {symbol: {_eq: "sol"}}) {
-price
-unit_name: symbol
-}
+  block(order_by: {height: desc}, limit: 1) {
+    height
+  }
+  token_price(order_by: {id: asc}, where: {symbol: {_eq: "sol"}}) {
+    price
+    unit_name: symbol
+  }
 }`
     }),
   });

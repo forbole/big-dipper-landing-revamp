@@ -94,14 +94,14 @@
     "endpoint": "https://gql.desmos.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Testnet",
-        "chain_id": "morpheus-apollo-2",
-        "url": "https://morpheus.desmos.network"
-      },
-      {
         "name": "Mainnet",
         "chain_id": "desmos-mainnet",
         "url": "https://explorer.desmos.network"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "morpheus-apollo-2",
+        "url": "https://morpheus.desmos.network"
       }
     ]
   },

@@ -62,14 +62,14 @@
     "endpoint": "https://gql.band.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Retired",
-        "chain_id": "band-guanyu-mainnet",
-        "url": "https://band-guanyu.bigdipper.live"
-      },
-      {
         "name": "Mainnet",
         "chain_id": "laozi-mainnet",
         "url": "https://band.bigdipper.live"
+      },
+      {
+        "name": "Retired",
+        "chain_id": "band-guanyu-mainnet",
+        "url": "https://band-guanyu.bigdipper.live"
       }
     ]
   },

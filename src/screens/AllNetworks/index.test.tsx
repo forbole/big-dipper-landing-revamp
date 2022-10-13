@@ -7,8 +7,7 @@ import Component from '.';
 const networkList = [
   {
     name: 'Cosmos Hub',
-    logo: 'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/logos/cosmoshub.svg?sanitize=true',
-    cover: 'https://raw.githubusercontent.com/forbole/big-dipper-networks/main/covers/cosmos.png?sanitize=true',
+    endpoint: "https://gql.cosmos.forbole.com/v1/graphql",
     links: [
       {
         name: 'Mainnet',

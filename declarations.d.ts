@@ -14,7 +14,32 @@ interface NetworkLink {
   url: string;
 }
 
-interface Network {
+interface DefaultNetwork {
   name: string;
+  endpoint: string;
   links: Array<NetworkLink>;
 }
+
+interface SolanaNetwork {
+  name: 'Solana';
+  chain_id: string;
+  endpoint: string;
+  links: Array<NetworkLink>;
+}
+
+interface ElrondNetwork {
+  name: 'Elrond';
+  chain_id: string;
+  stats: string;
+  economics: string;
+  links: Array<NetworkLink>;
+}
+
+interface CryptoorgNetwork {
+  name: 'Crypto.org Chain' ;
+  blocks: string;
+  price: string;
+  links: Array<NetworkLink>;
+}
+
+type Network = SolanaNetwork | ElrondNetwork | CryptoorgNetwork | DefaultNetwork;

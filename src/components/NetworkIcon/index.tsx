@@ -34,6 +34,7 @@ import PersistenceDark from '@/src/assets/logos/persistence-dark.svg?url';
 import StrideLight from '@/src/assets/logos/stride-light.svg?url';
 import NymLight from '@/src/assets/logos/nym-light.svg?url';
 import NymDark from '@/src/assets/logos/nym-dark.svg?url';
+import NomicDark from '@/src/assets/logos/nomic-dark.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -66,6 +67,7 @@ const Light = {
   Persistence: PersistenceLight,
   Stride: StrideLight,
   NYM: NymLight,
+  Nomic: NomicDark
 };
 
 const Dark = {
@@ -76,6 +78,7 @@ const Dark = {
   Solana: SolanaDark,
   Persistence: PersistenceDark,
   NYM: NymDark,
+  Nomic: NomicDark,
 };
 
 type Props = {

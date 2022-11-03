@@ -289,6 +289,17 @@
     ]
   },
   {
+    "name": "Nomic",
+    "endpoint": "https://gql.nomic.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "nomic-stakenet-2",
+        "url": "https://bigdipper.live/nomic"
+      }
+    ]
+  },
+  {
     "name": "Shentu",
     "endpoint": "https://gql.certik.forbole.com/v1/graphql",
     "links": [

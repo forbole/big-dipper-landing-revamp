@@ -14,6 +14,11 @@
         "url": "https://gaia.bigdipper.live/"
       },
       {
+        "name": "Testnet",
+        "chain_id": "theta-testnet-001",
+        "url": "https://testnet.cosmos.bigdipper.live/"
+      },
+      {
         "name": "Retired",
         "chain_id": "cosmoshub-3",
         "url": "https://cosmoshub-3.bigdipper.live"
@@ -100,18 +105,18 @@
       },
       {
         "name": "Testnet",
-        "chain_id": "morpheus-apollo-2",
+        "chain_id": "morpheus-apollo-3",
         "url": "https://morpheus.desmos.network"
       }
     ]
   },
   {
     "name": "Flow",
-    "endpoint": "https://gql.flow.forbole.com/v1/graphql",
+    "endpoint": "https://gql.flow.bigdipper.live/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
-        "chain_id": "Mainnet",
+        "chain_id": "likecoin-mainnet-2",
         "url": "https://flow.bigdipper.live/"
       }
     ]
@@ -145,7 +150,7 @@
     "links": [
       {
         "name": "Mainnet",
-        "chain_id": "bitsong-1",
+        "chain_id": "bitsong-2b",
         "url": "https://bitsong.bigdipper.live/"
       }
     ]
@@ -240,18 +245,6 @@
     ]
   },
   {
-    "name": "Solana",
-    "chain_id": "mainnet-beta",
-    "endpoint": "https://gql.solana.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "mainnet-beta",
-        "url": "https://solana.bigdipper.live/"
-      }
-    ]
-  },
-  {
     "name": "Crescent",
     "endpoint": "https://gql.crescent.forbole.com/v1/graphql",
     "links": [
@@ -292,6 +285,17 @@
         "name": "Mainnet",
         "chain_id": "pio-mainnet-1",
         "url": "https://bigdipper.live/provenance"
+      }
+    ]
+  },
+  {
+    "name": "Nomic",
+    "endpoint": "https://gql.nomic.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "nomic-stakenet-2",
+        "url": "https://bigdipper.live/nomic"
       }
     ]
   },

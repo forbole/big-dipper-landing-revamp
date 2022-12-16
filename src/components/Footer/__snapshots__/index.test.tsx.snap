@@ -451,7 +451,7 @@ exports[`Footer matches snapshot 1`] = `
         class="footer__scroll-top MuiBox-root emotion-2"
       >
         <button
-          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-3"
+          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-3"
           tabindex="0"
           type="button"
         >

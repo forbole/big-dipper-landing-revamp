@@ -1,5 +1,7 @@
 # Unreleased
 
+# main-v1.0.0
+
 ## Changes
 
 - Add About page

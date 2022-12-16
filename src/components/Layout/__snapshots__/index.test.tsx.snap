@@ -228,7 +228,7 @@ exports[`Layout matches snapshot 1`] = `
       data-testid="Footer"
     />
     <button
-      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-2"
+      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-2"
       tabindex="0"
       type="button"
     >

@@ -162,7 +162,7 @@ exports[`MenuDesktop matches snapshot 1`] = `
     class="emotion-0"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__active menudesktop__button emotion-1"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__active menudesktop__button emotion-1"
       tabindex="0"
       type="button"
     >
@@ -172,7 +172,7 @@ exports[`MenuDesktop matches snapshot 1`] = `
       />
     </button>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__button emotion-1"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__button emotion-1"
       tabindex="0"
       type="button"
     >

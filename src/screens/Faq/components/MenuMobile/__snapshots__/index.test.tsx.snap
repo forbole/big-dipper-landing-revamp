@@ -132,7 +132,7 @@ exports[`MenuMobile matches snapshot 1`] = `
     class="emotion-0"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium menumobile__selected emotion-1"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium menumobile__selected emotion-1"
       tabindex="0"
       type="button"
     >

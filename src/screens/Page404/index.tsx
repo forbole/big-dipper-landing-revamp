@@ -19,7 +19,7 @@ const Page404 = () => {
       </Head>
       <Box className="container" css={styles.root}>
         <div className="image">
-          <Image src={unicornUrl} alt="404" />
+          <Image src={unicornUrl} alt="404" width="515" height="259" />
         </div>
         <Typography variant="h3">{t('404')}</Typography>
         <p> </p>

@@ -18,7 +18,7 @@ exports[`Nav matches snapshot 1`] = `
 }
 
 .emotion-0.sectionbox__main {
-  padding: 24px;
+  padding: 24px 0px;
 }
 
 @media (min-width:768px) {

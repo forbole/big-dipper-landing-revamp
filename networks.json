@@ -111,17 +111,6 @@
     ]
   },
   {
-    "name": "Flow",
-    "endpoint": "https://gql.flow.bigdipper.live/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "likecoin-mainnet-2",
-        "url": "https://flow.bigdipper.live/"
-      }
-    ]
-  },
-  {
     "name": "Crypto.org Chain",
     "blocks": "https://api.crypto-org.forbole.com/blocks/latest",
     "price": "https://api.coingecko.com/api/v3/simple/price?ids=crypto-com-chain&vs_currencies=usd",

@@ -1,5 +1,7 @@
 # Unreleased
 
+# main-v1.0.0
+
 ## Changes
 
 - Add About page
@@ -16,3 +18,4 @@
 - Show metrics for Akash, Crypto.org, Elrond ([\#43](https://github.com/forbole/big-dipper-landing-revamp/issues/43))
 - Update Stride network icon ([\#45](https://github.com/forbole/big-dipper-landing-revamp/issues/45))
 - Remove Solana Network
+- Remove Flow Network

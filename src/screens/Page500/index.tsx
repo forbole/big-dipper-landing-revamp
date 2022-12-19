@@ -19,7 +19,7 @@ const Page500 = () => {
       </Head>
       <Box className="container" css={styles.root}>
         <div className="image">
-          <Image src={unicornUrl} alt="500" />
+          <Image src={unicornUrl} alt="500" width="515" height="259" />
         </div>
         <Typography variant="h3">{t('500')}</Typography>
         <p> </p>

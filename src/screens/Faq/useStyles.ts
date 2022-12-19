@@ -21,7 +21,6 @@ const useStyles = () => {
         padding: theme.spacing(4),
         [theme.breakpoints.down('md')]: {
           fontSize: theme.typography.body2.fontSize,
-          padding: theme.spacing(7),
         },
         flex: 1,
       },

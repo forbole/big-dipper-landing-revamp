@@ -6,7 +6,6 @@ const useStyles = () => {
     root: css({
       '& .sectionlimit__container': {
         wordBreak: 'break-word',
-        padding: theme.spacing(0, 2),
       },
       '& .privacypolicy__title': {
         marginBottom: theme.spacing(4),

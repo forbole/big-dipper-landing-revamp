@@ -43,17 +43,17 @@ const useStyles = () => {
       '& .MuiTypography-caption': {
         fontWeight: 500,
         color: theme.palette.common.white,
-        fontSize: '0.625rem',
+        fontSize: theme.spacing(1.75),
         lineHeight: 0.83333,
         '& a': {
-          fontSize: '0.625rem',
+          fontSize: theme.spacing(1.75),
           lineHeight: 0.83333,
         },
       },
       '& .footer__terms-links': {
         margin: theme.spacing(1, 0),
         '& .MuiTypography-root': {
-          fontSize: '0.625rem',
+          fontSize: theme.spacing(1.75),
         },
       },
       '& .footer__terms-dash': {

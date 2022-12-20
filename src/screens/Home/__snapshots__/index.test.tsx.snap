@@ -83,9 +83,9 @@ exports[`Dummy Test matches snapshot 1`] = `
   background-size: 1920px 3814px;
   -webkit-background-position: 50% 0%;
   background-position: 50% 0%;
-  background-image: linear-gradient(180.28deg, rgba(17, 34, 181, 1) -158.81%, rgba(17, 34, 181, 0) 99.76%),url(/images/background/backHome.webp);
-  -webkit-background-size: 100% 195px,1920px auto;
-  background-size: 100% 195px,1920px auto;
+  background-image: url(/images/background/backHome.webp);
+  -webkit-background-size: cover;
+  background-size: cover;
   -webkit-background-position: 50% 0,50% 0px;
   background-position: 50% 0,50% 0px;
   background-repeat: no-repeat,repeat;
@@ -187,7 +187,7 @@ exports[`Dummy Test matches snapshot 1`] = `
 }
 
 .emotion-1.sectionbox__main {
-  padding: 24px;
+  padding: 24px 0px;
 }
 
 @media (min-width:768px) {
@@ -1451,7 +1451,7 @@ exports[`Dummy Test matches snapshot 1`] = `
 }
 
 .emotion-82.sectionbox__main {
-  padding: 24px;
+  padding: 24px 0px;
 }
 
 @media (min-width:768px) {
@@ -2713,12 +2713,12 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 .emotion-136 .MuiTypography-caption {
   font-weight: 500;
   color: #fff;
-  font-size: 0.625rem;
+  font-size: 14px;
   line-height: 0.83333;
 }
 
 .emotion-136 .MuiTypography-caption a {
-  font-size: 0.625rem;
+  font-size: 14px;
   line-height: 0.83333;
 }
 
@@ -2727,7 +2727,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 }
 
 .emotion-136 .footer__terms-links .MuiTypography-root {
-  font-size: 0.625rem;
+  font-size: 14px;
 }
 
 .emotion-136 .footer__terms-dash {

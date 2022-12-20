@@ -6,8 +6,8 @@ const useStyles = () => {
   const theme = useTheme();
   return {
     layout: css({
-      backgroundImage: `linear-gradient(180.28deg, rgba(17, 34, 181, 1) -158.81%, rgba(17, 34, 181, 0) 99.76%), url(${basePath('/images/background/backHome.webp')})`,
-      backgroundSize: '100% 195px, 1920px auto',
+      backgroundImage: `url(${basePath('/images/background/backHome.webp')})`,
+      backgroundSize: 'cover',
       backgroundPosition: `50% 0, 50% 0px`,
       backgroundRepeat: 'no-repeat, repeat',
       [theme.breakpoints.down('md')]: {

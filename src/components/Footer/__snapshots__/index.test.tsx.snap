@@ -75,12 +75,12 @@ exports[`Footer matches snapshot 1`] = `
 .emotion-0 .MuiTypography-caption {
   font-weight: 500;
   color: #fff;
-  font-size: 0.625rem;
+  font-size: 14px;
   line-height: 0.83333;
 }
 
 .emotion-0 .MuiTypography-caption a {
-  font-size: 0.625rem;
+  font-size: 14px;
   line-height: 0.83333;
 }
 
@@ -89,7 +89,7 @@ exports[`Footer matches snapshot 1`] = `
 }
 
 .emotion-0 .footer__terms-links .MuiTypography-root {
-  font-size: 0.625rem;
+  font-size: 14px;
 }
 
 .emotion-0 .footer__terms-dash {

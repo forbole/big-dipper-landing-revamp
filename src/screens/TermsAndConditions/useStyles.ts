@@ -4,9 +4,6 @@ const useStyles = () => {
   const theme = useTheme();
   return {
     root: css({
-      '& .sectionlimit__container': {
-        padding: theme.spacing(0, 2),
-      },
       '& .termsandconditions__title': {
         marginBottom: theme.spacing(4),
         textAlign: 'center',

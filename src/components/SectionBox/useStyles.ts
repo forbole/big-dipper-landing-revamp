@@ -9,7 +9,7 @@ const useStyles = () => {
       justifyContent: 'center',
       minWidth: '272px',
       '&.sectionbox__main': {
-        padding: theme.spacing(3),
+        padding: theme.spacing(3, 0),
         [theme.breakpoints.up('md')]: {
           padding: theme.spacing(8, 0),
         },

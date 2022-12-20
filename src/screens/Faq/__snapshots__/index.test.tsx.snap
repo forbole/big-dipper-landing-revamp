@@ -29,7 +29,6 @@ exports[`FAQ matches snapshot 1`] = `
 @media (max-width:767.95px) {
   .emotion-1 .faq__content {
     font-size: 0.875rem;
-    padding: 56px;
   }
 }
 

@@ -245,17 +245,6 @@
     ]
   },
   {
-    "name": "Sifchain",
-    "endpoint": "https://gql.sifchain.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "sifchain-1",
-        "url": "https://bigdipper.live/sifchain"
-      }
-    ]
-  },
-  {
     "name": "AssetMantle",
     "endpoint": "https://gql.assetmantle.forbole.com/v1/graphql",
     "links": [

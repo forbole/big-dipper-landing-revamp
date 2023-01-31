@@ -19,3 +19,4 @@
 - Update Stride network icon ([\#45](https://github.com/forbole/big-dipper-landing-revamp/issues/45))
 - Remove Solana Network
 - Remove Flow Network
+- Remove Sifchain Network

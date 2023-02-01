@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
       - name: Prepare tags
         id: vars
         run: |
@@ -25,7 +25,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build and push
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
@@ -33,9 +33,3 @@ jobs:
           tags: |
             forbole/big-dipper-landing:revamp-${{ steps.vars.outputs.sha_short }}
             forbole/big-dipper-landing:revamp-latest
-      - name: Publish to Akash
-        run: >
-          curl -i -X POST -H "Content-Type: application/json"
-          -d '{"parameters":{"tag": "revamp-${{ steps.vars.outputs.sha_short }}"}}'
-          -k ${{ secrets.WEBHOOK_URL }}/big-dipper-landing
-          -u "deploy:${{ secrets.AKASH_WEBHOOK_SECRET }}" | tee -a $GITHUB_STEP_SUMMARY

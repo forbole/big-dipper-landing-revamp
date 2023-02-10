@@ -320,5 +320,16 @@
         "url": "https://bigdipper.live/nym"
       }
     ]
+  },
+  {
+    "name": "Quicksilver",
+    "endpoint": "https://gql-testnet.quicksilver.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "innuendo-3",
+        "url": "https://bigdipper.live/quicksilver"
+      }
+    ]
   }
 ]

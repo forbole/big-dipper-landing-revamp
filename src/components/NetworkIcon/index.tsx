@@ -35,6 +35,8 @@ import StrideLight from '@/src/assets/logos/stride-light.svg?url';
 import NymLight from '@/src/assets/logos/nym-light.svg?url';
 import NymDark from '@/src/assets/logos/nym-dark.svg?url';
 import NomicDark from '@/src/assets/logos/nomic-dark.svg?url';
+import QuicksilverLight from '@/src/assets/logos/quicksilver-light.svg?url';
+import QuicksilverDark from '@/src/assets/logos/quicksilver-light.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -67,7 +69,8 @@ const Light = {
   Persistence: PersistenceLight,
   Stride: StrideLight,
   NYM: NymLight,
-  Nomic: NomicDark
+  Nomic: NomicDark,
+  Quicksilver: QuicksilverLight,
 };
 
 const Dark = {
@@ -79,6 +82,7 @@ const Dark = {
   Persistence: PersistenceDark,
   NYM: NymDark,
   Nomic: NomicDark,
+  Quicksilver: QuicksilverDark,
 };
 
 type Props = {
@@ -98,14 +102,10 @@ const NetworkIcon: FC<Props> = ({ networkName, src: _, ...props }) => {
     );
   }
   if (lightUrl) {
-    return (
-      <img src={lightUrl} alt="" {...props} />
-    );
+    return <img src={lightUrl} alt="" {...props} />;
   }
   if (darkUrl) {
-    return (
-      <img src={darkUrl} alt="" {...props} />
-    );
+    return <img src={darkUrl} alt="" {...props} />;
   }
   return null;
 };

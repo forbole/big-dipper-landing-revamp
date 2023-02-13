@@ -36,7 +36,7 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
         .sort((a, b) => a.name.localeCompare(b.name)),
     [networkList]
   );
-  console.log('sorted network', sortedNetworks);
+
   const { t } = useTranslation('common');
 
   const [showMobilePopover, setShowMobilePopover] = useState('');

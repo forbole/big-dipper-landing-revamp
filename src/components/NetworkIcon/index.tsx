@@ -36,7 +36,7 @@ import NymLight from '@/src/assets/logos/nym-light.svg?url';
 import NymDark from '@/src/assets/logos/nym-dark.svg?url';
 import NomicDark from '@/src/assets/logos/nomic-dark.svg?url';
 import QuicksilverLight from '@/src/assets/logos/quicksilver-light.svg?url';
-import QuicksilverDark from '@/src/assets/logos/quicksilver-light.svg?url';
+import QuicksilverDark from '@/src/assets/logos/quicksilver-dark.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 

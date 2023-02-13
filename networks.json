@@ -331,5 +331,16 @@
         "url": "https://bigdipper.live/quicksilver"
       }
     ]
+  },
+  {
+    "name": "BlockX",
+    "endpoint": "https://bigdipper.blockxnet.com/api/v1/graphql",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "blockx_12345-1",
+        "url": "https://bigdipper.blockxnet.com/"
+      }
+    ]
   }
 ]

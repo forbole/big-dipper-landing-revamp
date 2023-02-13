@@ -37,6 +37,8 @@ import NymDark from '@/src/assets/logos/nym-dark.svg?url';
 import NomicDark from '@/src/assets/logos/nomic-dark.svg?url';
 import QuicksilverLight from '@/src/assets/logos/quicksilver-light.svg?url';
 import QuicksilverDark from '@/src/assets/logos/quicksilver-dark.svg?url';
+import BlockXDark from '@/src/assets/logos/blockx-dark.svg?url';
+import BlockXLight from '@/src/assets/logos/blockx-dark.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -71,6 +73,7 @@ const Light = {
   NYM: NymLight,
   Nomic: NomicDark,
   Quicksilver: QuicksilverLight,
+  BlockX: BlockXLight,
 };
 
 const Dark = {
@@ -83,6 +86,7 @@ const Dark = {
   NYM: NymDark,
   Nomic: NomicDark,
   Quicksilver: QuicksilverDark,
+  BlockX: BlockXDark,
 };
 
 type Props = {

@@ -323,11 +323,11 @@
   },
   {
     "name": "Quicksilver",
-    "endpoint": "https://gql-testnet.quicksilver.forbole.com/v1/graphql",
+    "endpoint": "https://gql.quicksilver.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Testnet",
-        "chain_id": "innuendo-3",
+        "name": "Mainnet",
+        "chain_id": "quicksilver-2",
         "url": "https://bigdipper.live/quicksilver"
       }
     ]

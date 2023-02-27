@@ -11,8 +11,8 @@ import CosmosHubLight from '@/src/assets/logos/cosmosHub-light.svg?url';
 import CrescentLight from '@/src/assets/logos/crescent-light.svg?url';
 import CryptoorgChainLight from '@/src/assets/logos/cryptoorgChain-light.svg?url';
 import DesmosLight from '@/src/assets/logos/desmos-light.svg?url';
-import ElrondDark from '@/src/assets/logos/elrond-dark.svg?url';
-import ElrondLight from '@/src/assets/logos/elrond-light.svg?url';
+import MultiversXDark from '@/src/assets/logos/multiversx-dark.svg?url';
+import MultiversXLight from '@/src/assets/logos/multiversx-light.svg?url';
 import EMoneyDark from '@/src/assets/logos/eMoney-dark.svg?url';
 import EMoneyLight from '@/src/assets/logos/eMoney-light.svg?url';
 import EvmosLight from '@/src/assets/logos/evmos-light.svg?url';
@@ -55,7 +55,6 @@ const Light = {
   'Crypto.org Chain': CryptoorgChainLight,
   Desmos: DesmosLight,
   'e-Money': EMoneyLight,
-  Elrond: ElrondLight,
   Evmos: EvmosLight,
   'Fetch.AI': FetchAILight,
   Flow: FlowLight,
@@ -74,12 +73,12 @@ const Light = {
   Nomic: NomicDark,
   Quicksilver: QuicksilverLight,
   BlockX: BlockXLight,
+  MultiversX: MultiversXLight,
 };
 
 const Dark = {
   Comdex: ComdexDark,
   EMoney: EMoneyDark,
-  Elrond: ElrondDark,
   Osmosis: OsmosisDark,
   Solana: SolanaDark,
   Persistence: PersistenceDark,
@@ -87,6 +86,7 @@ const Dark = {
   Nomic: NomicDark,
   Quicksilver: QuicksilverDark,
   BlockX: BlockXDark,
+  MultiversX: MultiversXDark,
 };
 
 type Props = {

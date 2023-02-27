@@ -178,15 +178,15 @@
     ]
   },
   {
-    "name": "Elrond",
+    "name": "MultiversX",
     "chain_id": "mainnet",
-    "stats": "https://api.elrond.com/stats",
-    "economics": "https://api.elrond.com/economics",
+    "stats": "https://api.multiversx.com/stats",
+    "economics": "https://api.multiversx.com/economics",
     "links": [
       {
         "name": "Mainnet",
         "chain_id": "mainnet",
-        "url": "https://elrond.bigdipper.live/"
+        "url": "https://bigdipper.live/multiversx"
       }
     ]
   },

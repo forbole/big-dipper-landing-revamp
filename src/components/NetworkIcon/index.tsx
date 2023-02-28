@@ -11,8 +11,8 @@ import CosmosHubLight from '@/src/assets/logos/cosmosHub-light.svg?url';
 import CrescentLight from '@/src/assets/logos/crescent-light.svg?url';
 import CryptoorgChainLight from '@/src/assets/logos/cryptoorgChain-light.svg?url';
 import DesmosLight from '@/src/assets/logos/desmos-light.svg?url';
-import ElrondDark from '@/src/assets/logos/elrond-dark.svg?url';
-import ElrondLight from '@/src/assets/logos/elrond-light.svg?url';
+import MultiversXDark from '@/src/assets/logos/multiversx-dark.svg?url';
+import MultiversXLight from '@/src/assets/logos/multiversx-light.svg?url';
 import EMoneyDark from '@/src/assets/logos/eMoney-dark.svg?url';
 import EMoneyLight from '@/src/assets/logos/eMoney-light.svg?url';
 import EvmosLight from '@/src/assets/logos/evmos-light.svg?url';
@@ -35,6 +35,10 @@ import StrideLight from '@/src/assets/logos/stride-light.svg?url';
 import NymLight from '@/src/assets/logos/nym-light.svg?url';
 import NymDark from '@/src/assets/logos/nym-dark.svg?url';
 import NomicDark from '@/src/assets/logos/nomic-dark.svg?url';
+import QuicksilverLight from '@/src/assets/logos/quicksilver-light.svg?url';
+import QuicksilverDark from '@/src/assets/logos/quicksilver-dark.svg?url';
+import BlockXDark from '@/src/assets/logos/blockx-dark.svg?url';
+import BlockXLight from '@/src/assets/logos/blockx-dark.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -51,7 +55,6 @@ const Light = {
   'Crypto.org Chain': CryptoorgChainLight,
   Desmos: DesmosLight,
   'e-Money': EMoneyLight,
-  Elrond: ElrondLight,
   Evmos: EvmosLight,
   'Fetch.AI': FetchAILight,
   Flow: FlowLight,
@@ -67,18 +70,23 @@ const Light = {
   Persistence: PersistenceLight,
   Stride: StrideLight,
   NYM: NymLight,
-  Nomic: NomicDark
+  Nomic: NomicDark,
+  Quicksilver: QuicksilverLight,
+  BlockX: BlockXLight,
+  MultiversX: MultiversXLight,
 };
 
 const Dark = {
   Comdex: ComdexDark,
   EMoney: EMoneyDark,
-  Elrond: ElrondDark,
   Osmosis: OsmosisDark,
   Solana: SolanaDark,
   Persistence: PersistenceDark,
   NYM: NymDark,
   Nomic: NomicDark,
+  Quicksilver: QuicksilverDark,
+  BlockX: BlockXDark,
+  MultiversX: MultiversXDark,
 };
 
 type Props = {
@@ -98,14 +106,10 @@ const NetworkIcon: FC<Props> = ({ networkName, src: _, ...props }) => {
     );
   }
   if (lightUrl) {
-    return (
-      <img src={lightUrl} alt="" {...props} />
-    );
+    return <img src={lightUrl} alt="" {...props} />;
   }
   if (darkUrl) {
-    return (
-      <img src={darkUrl} alt="" {...props} />
-    );
+    return <img src={darkUrl} alt="" {...props} />;
   }
   return null;
 };

@@ -49,10 +49,13 @@ const Home: FC<HomeProps> = ({ networkList }) => {
           <KeyboardArrowRightIcon />
         </Fab>
         <Box
-          className={classnames({
-            [`home__slide${slide}`]: true,
-            home__sliding: sliding,
-          }, 'home__slider')}
+          className={classnames(
+            {
+              [`home__slide${slide}`]: true,
+              home__sliding: sliding,
+            },
+            'home__slider'
+          )}
         >
           <Slider
             dots

@@ -8,7 +8,7 @@ import {
   useEffect,
   useMemo,
   useRef,
-  useState
+  useState,
 } from 'react';
 import basePath from '@/src/utils/basePath';
 import { NetworkSummary } from '@/src/utils/loadNetworkSummary';
@@ -36,6 +36,7 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
         .sort((a, b) => a.name.localeCompare(b.name)),
     [networkList]
   );
+
   const { t } = useTranslation('common');
 
   const [showMobilePopover, setShowMobilePopover] = useState('');
@@ -77,16 +78,16 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
         </Box>
       </Box>
       <Box className="home__networks">
-            <LayoutGroup>
-        {sortedNetworks.map((network) => (
-          <NetworkBox
-            key={network.name}
-            network={network}
-            networkSummary={networkSummaries[network.name]}
-            showMobilePopover={showMobilePopover}
-            setShowMobilePopover={setShowMobilePopover}
-          />
-        ))}
+        <LayoutGroup>
+          {sortedNetworks.map((network) => (
+            <NetworkBox
+              key={network.name}
+              network={network}
+              networkSummary={networkSummaries[network.name]}
+              showMobilePopover={showMobilePopover}
+              setShowMobilePopover={setShowMobilePopover}
+            />
+          ))}
         </LayoutGroup>
       </Box>
     </Box>

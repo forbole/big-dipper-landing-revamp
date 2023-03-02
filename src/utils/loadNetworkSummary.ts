@@ -33,31 +33,55 @@ const handlers: {[key: string]: (network: Network) => Promise<NetworkSummary | u
     return undefined;
   }
 
-  const res = await fetch(network.endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: `
-query MyQuery {
-  genesis {
-    chain_id
-  }
-  block(order_by: {height: desc}, limit: 1) {
-    height
-  }
-  token_price(order_by:{id: asc}, limit:1) {
-    price
-    unit_name
-  }
-}`
-    }),
-  });
-  const { data } = await res.json();
+  try {
+    const res = await fetch(network.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: `
+  query MyQuery {
+    genesis {
+      chain_id
+    }
+    block(order_by: {height: desc}, limit: 1) {
+      height
+    }
+    token_price(order_by:{id: asc}, limit:1) {
+      price
+      unit_name
+    }
+  }`
+      }),
+    });
+    const { data } = await res.json();
 
-  if (!data || !('genesis' in data && 'block' in data && 'token_price' in data)) {
-    throw new Error(`Could not parse data from ${network.name}`);
-  }
+    if (!data || !('genesis' in data && 'block' in data && 'token_price' in data)) {
+      throw new Error(`Could not parse data from ${network.name}`);
+    }
 
-  return data;
+    return data;
+  } catch (error) {
+    const res = await fetch(network.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: `
+  query MyQuery {
+    genesis {
+      chain_id
+    }
+    block(order_by: {height: desc}, limit: 1) {
+      height
+    }
+  }`
+      }),
+    });
+    const { data } = await res.json();
+
+    if (!data || !('genesis' in data && 'block' in data)) {
+      throw new Error(`Could not parse data from ${network.name}`);
+    }
+
+    return data;
+  }
 
   function isNetwork(u: unknown): u is DefaultNetwork {
     const n = u as DefaultNetwork;

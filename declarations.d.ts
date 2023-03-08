@@ -27,8 +27,8 @@ interface SolanaNetwork {
   links: Array<NetworkLink>;
 }
 
-interface ElrondNetwork {
-  name: 'Elrond';
+interface MultiversXNetwork {
+  name: 'MultiversX';
   chain_id: string;
   stats: string;
   economics: string;
@@ -42,4 +42,4 @@ interface CryptoorgNetwork {
   links: Array<NetworkLink>;
 }
 
-type Network = SolanaNetwork | ElrondNetwork | CryptoorgNetwork | DefaultNetwork;
+type Network = SolanaNetwork | MultiversXNetwork | CryptoorgNetwork | DefaultNetwork;

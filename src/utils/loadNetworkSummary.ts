@@ -12,7 +12,7 @@ export interface NetworkSummary {
 
 const handlers: {[key: string]: (network: Network) => Promise<NetworkSummary | undefined>} = {
   Solana: handleSolana,
-  Elrond: handleElrond,
+  MultiversX: handleMultiversX,
   "Crypto.org Chain": handleCryptoorg,
 }
 
@@ -127,8 +127,8 @@ query MyQuery {
   }
 }
 
-async function handleElrond(network: Network) {
-  if (!isElrond(network)) {
+async function handleMultiversX(network: Network) {
+  if (!isMultiversX(network)) {
     return undefined;
   }
 
@@ -149,9 +149,9 @@ async function handleElrond(network: Network) {
       { price: price, unit_name: "EGLD" }
     ]
   };
-  function isElrond(u: unknown): u is ElrondNetwork {
-    const n = u as ElrondNetwork
-    return n?.name === 'Elrond' && 'chain_id' in n && 'stats' in n && 'economics' in  n;
+  function isMultiversX(u: unknown): u is MultiversXNetwork {
+    const n = u as MultiversXNetwork
+    return n?.name === 'MultiversX' && 'chain_id' in n && 'stats' in n && 'economics' in  n;
   }
 }
 

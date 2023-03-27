@@ -296,6 +296,11 @@
         "name": "Mainnet",
         "chain_id": "core-1",
         "url": "https://bigdipper.live/persistence"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "test-core-1",
+        "url": "https://testnet.bigdipper.live/persistence"
       }
     ]
   },

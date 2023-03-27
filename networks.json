@@ -208,7 +208,7 @@
   },
   {
     "name": "Cheqd",
-    "endpoint": "https://explorer-gql.cheqd.io/v1/graphql",
+    "endpoint": "https://gql.cheqd.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",

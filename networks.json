@@ -213,7 +213,7 @@
       {
         "name": "Mainnet",
         "chain_id": "cheqd-mainnet-1",
-        "url": "https://explorer.cheqd.io"
+        "url": "https://bigdipper.live/cheqd"
       },
       {
         "name": "Testnet",

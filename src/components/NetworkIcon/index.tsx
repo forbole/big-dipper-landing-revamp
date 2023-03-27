@@ -41,6 +41,7 @@ import BlockXDark from '@/src/assets/logos/blockx-dark.svg?url';
 import BlockXLight from '@/src/assets/logos/blockx-dark.svg?url';
 import LavaBoth from '@/src/assets/logos/lava-both.svg?url';
 import HumansaiBoth from '@/src/assets/logos/humansai-both.svg?url';
+import QuasarBoth from '@/src/assets/logos/quasar-both.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -78,6 +79,7 @@ const Light = {
   MultiversX: MultiversXLight,
   Lava: LavaBoth,
   'Humans.ai': HumansaiBoth,
+  Quasar: QuasarBoth,
 };
 
 const Dark = {
@@ -93,6 +95,7 @@ const Dark = {
   MultiversX: MultiversXDark,
   Lava: LavaBoth,
   'Humans.ai': HumansaiBoth,
+  Quasar: QuasarBoth,
 };
 
 type Props = {

@@ -329,6 +329,11 @@
         "name": "Mainnet",
         "chain_id": "quicksilver-2",
         "url": "https://bigdipper.live/quicksilver"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "innuendo-3",
+        "url": "https://testnet.bigdipper.live/quicksilver"
       }
     ]
   },
@@ -362,6 +367,22 @@
         "name": "Testnet",
         "chain_id": "testnet-1",
         "url": "https://testnet.bigdipper.live/humansai"
+      }
+    ]
+  },
+  {
+    "name": "Quasar",
+    "endpoint": "https://gql.quasar.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "quasar",
+        "url": "https://bigdipper.live/quasar"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "qsr-questnet-04",
+        "url": "https://testnet.bigdipper.live/quasar"
       }
     ]
   }

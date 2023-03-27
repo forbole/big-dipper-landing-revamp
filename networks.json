@@ -342,5 +342,16 @@
         "url": "https://bigdipper.blockxnet.com/"
       }
     ]
+  },
+  {
+    "name": "Lava",
+    "endpoint": "",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "lava-testnet-1",
+        "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
+      }
+    ]
   }
 ]

@@ -353,5 +353,16 @@
         "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
       }
     ]
+  },
+  {
+    "name": "Humans.ai",
+    "endpoint": "https://gql-testnet.humansai.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "testnet-1",
+        "url": "https://testnet.bigdipper.live/humansai"
+      }
+    ]
   }
 ]

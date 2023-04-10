@@ -208,12 +208,12 @@
   },
   {
     "name": "Cheqd",
-    "endpoint": "https://explorer-gql.cheqd.io/v1/graphql",
+    "endpoint": "https://gql.cheqd.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
         "chain_id": "cheqd-mainnet-1",
-        "url": "https://explorer.cheqd.io"
+        "url": "https://bigdipper.live/cheqd"
       },
       {
         "name": "Testnet",
@@ -296,6 +296,11 @@
         "name": "Mainnet",
         "chain_id": "core-1",
         "url": "https://bigdipper.live/persistence"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "test-core-1",
+        "url": "https://testnet.bigdipper.live/persistence"
       }
     ]
   },
@@ -329,6 +334,11 @@
         "name": "Mainnet",
         "chain_id": "quicksilver-2",
         "url": "https://bigdipper.live/quicksilver"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "innuendo-3",
+        "url": "https://testnet.bigdipper.live/quicksilver"
       }
     ]
   },
@@ -340,6 +350,44 @@
         "name": "Testnet",
         "chain_id": "blockx_12345-1",
         "url": "https://bigdipper.blockxnet.com/"
+      }
+    ]
+  },
+  {
+    "name": "Lava",
+    "endpoint": "",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "lava-testnet-1",
+        "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
+      }
+    ]
+  },
+  {
+    "name": "Humans.ai",
+    "endpoint": "https://gql-testnet.humansai.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "testnet-1",
+        "url": "https://testnet.bigdipper.live/humansai"
+      }
+    ]
+  },
+  {
+    "name": "Quasar",
+    "endpoint": "https://gql.quasar.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "quasar",
+        "url": "https://bigdipper.live/quasar"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "qsr-questnet-04",
+        "url": "https://testnet.bigdipper.live/quasar"
       }
     ]
   }

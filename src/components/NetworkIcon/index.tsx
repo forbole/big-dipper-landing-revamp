@@ -4,7 +4,7 @@ import AkashLight from '@/src/assets/logos/akash-light.svg?url';
 import AssetMantleLight from '@/src/assets/logos/assetMantle-light.svg?url';
 import BandProtocolLight from '@/src/assets/logos/bandProtocol-light.svg?url';
 import BitsongLight from '@/src/assets/logos/bitsong-light.svg?url';
-import CheqdLight from '@/src/assets/logos/cheqd-light.svg?url';
+import CheqdLight from '@/src/assets/logos/cheqd.svg?url';
 import ComdexDark from '@/src/assets/logos/comdex-dark.svg?url';
 import ComdexLight from '@/src/assets/logos/comdex-light.svg?url';
 import CosmosHubLight from '@/src/assets/logos/cosmosHub-light.svg?url';
@@ -41,7 +41,7 @@ import BlockXDark from '@/src/assets/logos/blockx-dark.svg?url';
 import BlockXLight from '@/src/assets/logos/blockx-dark.svg?url';
 import LavaBoth from '@/src/assets/logos/lava-both.svg?url';
 import HumansaiBoth from '@/src/assets/logos/humansai-both.svg?url';
-import QuasarBoth from '@/src/assets/logos/quasar-both.svg?url';
+import QuasarBoth from '@/src/assets/logos/quasar.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 

@@ -390,5 +390,16 @@
         "url": "https://testnet.bigdipper.live/quasar"
       }
     ]
+  },
+  {
+    "name": "Coreum",
+    "endpoint": "",
+    "links": [
+      {
+        "name": "Coreum-Mainnet",
+        "chain_id": "coreum",
+        "url": "https://explorer.coreum.com/coreum"
+      }
+    ]
   }
 ]

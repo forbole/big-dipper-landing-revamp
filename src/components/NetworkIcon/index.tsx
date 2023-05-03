@@ -42,6 +42,7 @@ import BlockXLight from '@/src/assets/logos/blockx-dark.svg?url';
 import LavaBoth from '@/src/assets/logos/lava-both.svg?url';
 import HumansaiBoth from '@/src/assets/logos/humansai-both.svg?url';
 import QuasarBoth from '@/src/assets/logos/quasar.svg?url';
+import CoreumBoth from '@/src/assets/logos/coreum-light.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -80,6 +81,7 @@ const Light = {
   Lava: LavaBoth,
   'Humans.ai': HumansaiBoth,
   Quasar: QuasarBoth,
+  Coreum: CoreumBoth,
 };
 
 const Dark = {
@@ -96,6 +98,7 @@ const Dark = {
   Lava: LavaBoth,
   'Humans.ai': HumansaiBoth,
   Quasar: QuasarBoth,
+  Coreum: CoreumBoth,
 };
 
 type Props = {

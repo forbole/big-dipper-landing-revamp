@@ -401,5 +401,16 @@
         "url": "https://explorer.coreum.com/coreum"
       }
     ]
+  },
+  {
+    "name": "Wormhole",
+    "endpoint": "https://gql.wormchain.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "wormchain",
+        "url": "https://bigdipper.live/wormhole"
+      }
+    ]
   }
 ]

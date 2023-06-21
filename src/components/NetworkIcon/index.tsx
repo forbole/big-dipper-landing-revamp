@@ -43,6 +43,10 @@ import HumansaiBoth from '@/src/assets/logos/humansai-both.svg?url';
 import QuasarBoth from '@/src/assets/logos/quasar.svg?url';
 import CoreumBoth from '@/src/assets/logos/coreum-light.svg?url';
 import WormholeBoth from '@/src/assets/logos/wormhole-light.svg?url';
+import MarsBoth from '@/src/assets/logos/mars-both.svg?url';
+import CelestiaBoth from '@/src/assets/logos/celestia-both.svg?url';
+import KyveBoth from '@/src/assets/logos/kyve-both.svg?url';
+import GitopiaBoth from '@/src/assets/logos/gitopia-both.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -78,10 +82,14 @@ const Light = {
   BlockX: BlockXLight,
   MultiversX: MultiversXLight,
   Lava: LavaBoth,
-  'Humans.ai': HumansaiBoth,
+  Humansai: HumansaiBoth,
   Quasar: QuasarBoth,
   Coreum: CoreumBoth,
   Wormhole: WormholeBoth,
+  Mars: MarsBoth,
+  Celestia: CelestiaBoth,
+  Kyve: KyveBoth,
+  Gitopia: GitopiaBoth,
 };
 
 const Dark = {
@@ -96,10 +104,14 @@ const Dark = {
   BlockX: BlockXDark,
   MultiversX: MultiversXDark,
   Lava: LavaBoth,
-  'Humans.ai': HumansaiBoth,
+  Humansai: HumansaiBoth,
   Quasar: QuasarBoth,
   Coreum: CoreumBoth,
   Wormhole: WormholeBoth,
+  Mars: MarsBoth,
+  Celestia: CelestiaBoth,
+  Kyve: KyveBoth,
+  Gitopia: GitopiaBoth,
 };
 
 type Props = {

@@ -6,17 +6,7 @@
       {
         "name": "Mainnet",
         "chain_id": "cosmoshub-4",
-        "url": "https://cosmos.bigdipper.live"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "stargate-final",
-        "url": "https://gaia.bigdipper.live/"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "theta-testnet-001",
-        "url": "https://testnet.cosmos.bigdipper.live/"
+        "url": "https://bigdipper.live/cosmos"
       },
       {
         "name": "Retired",
@@ -42,7 +32,7 @@
       {
         "name": "Mainnet",
         "chain_id": "akashnet-2",
-        "url": "https://akash.bigdipper.live"
+        "url": "https://bigdipper.live/akash"
       },
       {
         "name": "Retired",
@@ -58,7 +48,7 @@
       {
         "name": "Mainnet",
         "chain_id": "emoney-3",
-        "url": "https://emoney.bigdipper.live"
+        "url": "https://bigdipper.live/emoney"
       }
     ]
   },
@@ -69,12 +59,12 @@
       {
         "name": "Mainnet",
         "chain_id": "laozi-mainnet",
-        "url": "https://band.bigdipper.live"
+        "url": "https://bigdipper.live/band"
       },
       {
         "name": "Retired",
         "chain_id": "band-guanyu-mainnet",
-        "url": "https://band-guanyu.bigdipper.live"
+        "url": "https://band-guanyu.bigdipper.live/"
       }
     ]
   },
@@ -90,7 +80,7 @@
       {
         "name": "Testnet",
         "chain_id": "likecoin-public-testnet-5",
-        "url": "https://testnet.likecoin.bigdipper.live"
+        "url": "https://testnet.bigdipper.live/likecoin"
       }
     ]
   },
@@ -101,12 +91,12 @@
       {
         "name": "Mainnet",
         "chain_id": "desmos-mainnet",
-        "url": "https://explorer.desmos.network"
+        "url": "https://bigdipper.live/desmos"
       },
       {
         "name": "Testnet",
         "chain_id": "morpheus-apollo-3",
-        "url": "https://morpheus.desmos.network"
+        "url": "https://testnet.bigdipper.live/desmos"
       }
     ]
   },
@@ -129,7 +119,7 @@
       {
         "name": "Mainnet",
         "chain_id": "osmosis-1",
-        "url": "https://osmosis.bigdipper.live/"
+        "url": "https://bigdipper.live/osmosis"
       }
     ]
   },
@@ -140,7 +130,7 @@
       {
         "name": "Mainnet",
         "chain_id": "bitsong-2b",
-        "url": "https://bitsong.bigdipper.live/"
+        "url": "https://bigdipper.live/bitsong"
       }
     ]
   },
@@ -151,7 +141,7 @@
       {
         "name": "Mainnet",
         "chain_id": "regen-1",
-        "url": "https://regen.bigdipper.live/"
+        "url": "https://bigdipper.live/regen"
       }
     ]
   },
@@ -162,7 +152,7 @@
       {
         "name": "Mainnet",
         "chain_id": "agoric-3",
-        "url": "https://agoric.bigdipper.live/"
+        "url": "https://bigdipper.live/agoric"
       }
     ]
   },
@@ -179,9 +169,7 @@
   },
   {
     "name": "MultiversX",
-    "chain_id": "mainnet",
-    "stats": "https://api.multiversx.com/stats",
-    "economics": "https://api.multiversx.com/economics",
+    "endpoint": "",
     "links": [
       {
         "name": "Mainnet",
@@ -197,12 +185,12 @@
       {
         "name": "Mainnet",
         "chain_id": "evmos_9001-2",
-        "url": "https://evmos.bigdipper.live/"
+        "url": "https://bigdipper.live/evmos"
       },
       {
         "name": "Testnet",
         "chain_id": "evmos_9000-4",
-        "url": "https://testnet.evmos.bigdipper.live/"
+        "url": "https://testnet.bigdipper.live/evmos"
       }
     ]
   },
@@ -229,7 +217,7 @@
       {
         "name": "Mainnet",
         "chain_id": "comdex-1",
-        "url": "https://comdex.bigdipper.live/"
+        "url": "https://bigdipper.live/comdex"
       }
     ]
   },
@@ -240,7 +228,7 @@
       {
         "name": "Mainnet",
         "chain_id": "crescent-1",
-        "url": "https://crescent.bigdipper.live/"
+        "url": "https://bigdipper.live/crescent"
       }
     ]
   },
@@ -332,35 +320,29 @@
     ]
   },
   {
-    "name": "BlockX",
-    "endpoint": "https://bigdipper.blockxnet.com/api/v1/graphql",
+    "name": "Wormhole",
+    "endpoint": "https://gql.wormchain.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Testnet",
-        "chain_id": "blockx_12345-1",
-        "url": "https://bigdipper.blockxnet.com/"
+        "name": "Mainnet",
+        "chain_id": "wormchain",
+        "url": "https://bigdipper.live/wormhole"
       }
     ]
   },
   {
-    "name": "Lava",
-    "endpoint": "",
+    "name": "Mars",
+    "endpoint": "https://gql.mainnet.desmos.network/v1/graphql",
     "links": [
       {
-        "name": "Testnet",
-        "chain_id": "lava-testnet-1",
-        "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
-      }
-    ]
-  },
-  {
-    "name": "Humans.ai",
-    "endpoint": "https://gql-testnet.humansai.forbole.com/v1/graphql",
-    "links": [
+        "name": "Mainnet-Explorer",
+        "chain_id": "mars-1",
+        "url": "https://explorer.marsprotocol.io/"
+      },
       {
         "name": "Testnet",
-        "chain_id": "testnet-1",
-        "url": "https://testnet.bigdipper.live/humansai"
+        "chain_id": "ares-1",
+        "url": "https://testnet-explorer.marsprotocol.io/"
       }
     ]
   },
@@ -381,24 +363,73 @@
     ]
   },
   {
-    "name": "Coreum",
-    "endpoint": "",
+    "name": "Humansai",
+    "endpoint": "https://gql.humansai.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Coreum-Mainnet",
-        "chain_id": "coreum",
-        "url": "https://explorer.coreum.com/coreum"
+        "name": "Mainnet",
+        "chain_id": "humans_1089-1",
+        "url": "https://bigdipper.live/humansai/"
+      },
+      {
+        "name": "Testnet",
+        "chain_id": "humans_3000-31",
+        "url": "https://testnet.bigdipper.live/humansai"
       }
     ]
   },
   {
-    "name": "Wormhole",
-    "endpoint": "https://gql.wormchain.forbole.com/v1/graphql",
+    "name": "Celestia",
+    "endpoint": "https://gql-testnet.celestia.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "blockspacerace-0",
+        "url": "https://testnet.bigdipper.live/celestia"
+      }
+    ]
+  },
+  {
+    "name": "Coreum",
+    "endpoint": "https://gql.coreum.forbole.com/v1/graphql",
     "links": [
       {
         "name": "Mainnet",
-        "chain_id": "wormchain",
-        "url": "https://bigdipper.live/wormhole"
+        "chain_id": "coreum-mainnet-1",
+        "url": "https://bigdipper.live/coreum"
+      }
+    ]
+  },
+  {
+    "name": "Kyve",
+    "endpoint": "https://gql.kyve.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "kyve-1",
+        "url": "https://bigdipper.live/kyve"
+      }
+    ]
+  },
+  {
+    "name": "Gitopia",
+    "endpoint": "https://gql.gitopia.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "gitopia",
+        "url": "https://bigdipper.live/gitopia"
+      }
+    ]
+  },
+  {
+    "name": "Lava",
+    "endpoint": "",
+    "links": [
+      {
+        "name": "Testnet",
+        "chain_id": "lava-testnet-1",
+        "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
       }
     ]
   }

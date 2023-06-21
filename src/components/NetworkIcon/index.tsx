@@ -28,7 +28,6 @@ import RizonLight from '@/src/assets/logos/rizon-light.svg?url';
 import SifchainLight from '@/src/assets/logos/sifchain-light.svg?url';
 import SolanaDark from '@/src/assets/logos/solana-dark.svg?url';
 import SolanaLight from '@/src/assets/logos/solana-light.svg?url';
-import ShentuLight from '@/src/assets/logos/shentu-light.svg?url';
 import PersistenceLight from '@/src/assets/logos/persistence-light.svg?url';
 import PersistenceDark from '@/src/assets/logos/persistence-dark.svg?url';
 import StrideLight from '@/src/assets/logos/stride-light.svg?url';
@@ -71,7 +70,6 @@ const Light = {
   Rizon: RizonLight,
   Sifchain: SifchainLight,
   Solana: SolanaLight,
-  Shentu: ShentuLight,
   Persistence: PersistenceLight,
   Stride: StrideLight,
   NYM: NymLight,

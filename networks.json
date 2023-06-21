@@ -278,17 +278,6 @@
     ]
   },
   {
-    "name": "Shentu",
-    "endpoint": "https://gql.certik.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "shentu-2.2",
-        "url": "https://bigdipper.live/shentu"
-      }
-    ]
-  },
-  {
     "name": "Persistence",
     "endpoint": "https://gql.persistence.forbole.com/v1/graphql",
     "links": [

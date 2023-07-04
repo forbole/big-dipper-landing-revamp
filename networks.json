@@ -363,7 +363,7 @@
     ]
   },
   {
-    "name": "Humansai",
+    "name": "Humans.ai",
     "endpoint": "https://gql.humansai.forbole.com/v1/graphql",
     "links": [
       {
@@ -401,7 +401,7 @@
     ]
   },
   {
-    "name": "Kyve",
+    "name": "KYVE",
     "endpoint": "https://gql.kyve.forbole.com/v1/graphql",
     "links": [
       {
@@ -430,6 +430,17 @@
         "name": "Testnet",
         "chain_id": "lava-testnet-1",
         "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
+      }
+    ]
+  },
+  {
+    "name": "Neutron",
+    "endpoint": "https://gql.neutron.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "neutron-1",
+        "url": "https://bigdipper.live/neutron"
       }
     ]
   }

@@ -47,6 +47,7 @@ import MarsBoth from '@/src/assets/logos/mars-both.svg?url';
 import CelestiaBoth from '@/src/assets/logos/celestia-both.svg?url';
 import KyveBoth from '@/src/assets/logos/kyve-both.svg?url';
 import GitopiaBoth from '@/src/assets/logos/gitopia-both.svg?url';
+import NeutronBoth from '@/src/assets/logos/neutron-both.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -82,14 +83,15 @@ const Light = {
   BlockX: BlockXLight,
   MultiversX: MultiversXLight,
   Lava: LavaBoth,
-  Humansai: HumansaiBoth,
+  'Humans.ai': HumansaiBoth,
   Quasar: QuasarBoth,
   Coreum: CoreumBoth,
   Wormhole: WormholeBoth,
   Mars: MarsBoth,
   Celestia: CelestiaBoth,
-  Kyve: KyveBoth,
+  KYVE: KyveBoth,
   Gitopia: GitopiaBoth,
+  Neutron: NeutronBoth,
 };
 
 const Dark = {
@@ -104,14 +106,15 @@ const Dark = {
   BlockX: BlockXDark,
   MultiversX: MultiversXDark,
   Lava: LavaBoth,
-  Humansai: HumansaiBoth,
+  'Humans.ai': HumansaiBoth,
   Quasar: QuasarBoth,
   Coreum: CoreumBoth,
   Wormhole: WormholeBoth,
   Mars: MarsBoth,
   Celestia: CelestiaBoth,
-  Kyve: KyveBoth,
+  KYVE: KyveBoth,
   Gitopia: GitopiaBoth,
+  Neutron: NeutronBoth,
 };
 
 type Props = {

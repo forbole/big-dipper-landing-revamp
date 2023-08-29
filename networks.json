@@ -35,8 +35,13 @@
         "url": "https://bigdipper.live/akash"
       },
       {
+        "name": "Testnet",
+        "chain_id": "testnet-02",
+        "url": "https://testnet.bigdipper.live/akash"
+      },
+      {
         "name": "Retired",
-        "chain_id": "akashnet-1",
+        "chain_id": "",
         "url": "https://akashnet-1.bigdipper.live"
       }
     ]
@@ -441,6 +446,28 @@
         "name": "Mainnet",
         "chain_id": "neutron-1",
         "url": "https://bigdipper.live/neutron"
+      }
+    ]
+  },
+  {
+    "name": "Jackal",
+    "endpoint": "https://gql.jackal.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "jackal-1",
+        "url": "https://bigdipper.live/jackal"
+      }
+    ]
+  },
+  {
+    "name": "Archway",
+    "endpoint": "https://gql.archway.forbole.com/v1/graphql",
+    "links": [
+      {
+        "name": "Mainnet",
+        "chain_id": "archway-1",
+        "url": "https://bigdipper.live/archway"
       }
     ]
   }

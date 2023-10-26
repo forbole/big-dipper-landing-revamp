@@ -48,6 +48,8 @@ import CelestiaBoth from '@/src/assets/logos/celestia-both.svg?url';
 import KyveBoth from '@/src/assets/logos/kyve-both.svg?url';
 import GitopiaBoth from '@/src/assets/logos/gitopia-both.svg?url';
 import NeutronBoth from '@/src/assets/logos/neutron-both.svg?url';
+import JackalBoth from '@/src/assets/logos/jackal-both.svg?url';
+import ArchwayBoth from '@/src/assets/logos/archway-both.svg?url';
 import { FC } from 'react';
 import useStyles from './useStyles';
 
@@ -92,6 +94,8 @@ const Light = {
   KYVE: KyveBoth,
   Gitopia: GitopiaBoth,
   Neutron: NeutronBoth,
+  Jackal: JackalBoth,
+  Archway: ArchwayBoth,
 };
 
 const Dark = {
@@ -115,6 +119,8 @@ const Dark = {
   KYVE: KyveBoth,
   Gitopia: GitopiaBoth,
   Neutron: NeutronBoth,
+  Jackal: JackalBoth,
+  Archway: ArchwayBoth,
 };
 
 type Props = {

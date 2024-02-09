@@ -14,9 +14,8 @@ export interface NetworkSummary {
 const handlers: {
   [key: string]: (network: Network) => Promise<NetworkSummary | undefined>;
 } = {
-  "Crypto.org Chain": handleCryptoorg,
-  "MultiversX": handleMultiversX,
-  "Solana": handleSolana,
+  MultiversX: handleMultiversX,
+  Solana: handleSolana,
 };
 
 /**

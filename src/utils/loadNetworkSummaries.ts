@@ -26,7 +26,7 @@ export default async function loadNetworkSummaries() {
             ? error.message
             : String(error);
 
-          console.error("errorMessage", errorMessage);
+          console.error("errorMessage", network.name, errorMessage);
 
           return { data: null, networkName: network.name };
         }),

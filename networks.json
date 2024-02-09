@@ -337,7 +337,6 @@
   },
   {
     "name": "Mars",
-    "endpoint": "https://gql.mainnet.desmos.network/v1/graphql",
     "links": [
       {
         "name": "Mainnet-Explorer",
@@ -385,11 +384,10 @@
   },
   {
     "name": "Celestia",
-    "endpoint": "https://gql-testnet.celestia.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Testnet",
         "chain_id": "blockspacerace-0",
+        "name": "Testnet",
         "url": "https://testnet.bigdipper.live/celestia"
       }
     ]
@@ -429,7 +427,6 @@
   },
   {
     "name": "Lava",
-    "endpoint": "",
     "links": [
       {
         "name": "Testnet",
@@ -472,3 +469,4 @@
     ]
   }
 ]
+

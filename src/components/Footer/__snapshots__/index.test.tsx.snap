@@ -86,8 +86,8 @@ exports[`Footer matches snapshot 1`] = `
   -webkit-background-position: 50% 0%;
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  -webkit-background-size: auto;
-  background-size: auto;
+  -webkit-background-size: cover;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -141,11 +141,9 @@ exports[`Footer matches snapshot 1`] = `
 @media (min-width:1280px) {
   .emotion-0 .footer__scroll-top {
     background-image: url(/images/background/footerLg.svg);
-    -webkit-background-position: 50% 100%;
-    background-position: 50% 100%;
+    -webkit-background-position: 50% 20px;
+    background-position: 50% 20px;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     min-height: 315px;
     padding: 10px 0 20px 0;
   }
@@ -154,11 +152,9 @@ exports[`Footer matches snapshot 1`] = `
 @media (min-width:768px) {
   .emotion-0 .footer__scroll-top {
     background-image: url(/images/background/footerMd.svg);
-    -webkit-background-position: 50% 100%;
-    background-position: 50% 100%;
+    -webkit-background-position: 50% 20px;
+    background-position: 50% 20px;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     min-height: 315px;
     padding: 10px 0 20px 0;
   }
@@ -167,11 +163,9 @@ exports[`Footer matches snapshot 1`] = `
 @media (min-width:375px) {
   .emotion-0 .footer__scroll-top {
     background-image: url(/images/background/footerSm.svg);
-    -webkit-background-position: 50% 100%;
-    background-position: 50% 100%;
+    -webkit-background-position: 50% 20px;
+    background-position: 50% 20px;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     min-height: 315px;
     padding: 10px 0 20px 0;
   }

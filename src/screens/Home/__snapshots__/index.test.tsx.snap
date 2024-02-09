@@ -2742,8 +2742,8 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
   -webkit-background-position: 50% 0%;
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  -webkit-background-size: auto;
-  background-size: auto;
+  -webkit-background-size: cover;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2797,11 +2797,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 @media (min-width:1280px) {
   .emotion-136 .footer__scroll-top {
     background-image: url(/images/background/footerLg.svg);
-    -webkit-background-position: 50% 100%;
-    background-position: 50% 100%;
+    -webkit-background-position: 50% 20px;
+    background-position: 50% 20px;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     min-height: 315px;
     padding: 10px 0 20px 0;
   }
@@ -2810,11 +2808,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 @media (min-width:768px) {
   .emotion-136 .footer__scroll-top {
     background-image: url(/images/background/footerMd.svg);
-    -webkit-background-position: 50% 100%;
-    background-position: 50% 100%;
+    -webkit-background-position: 50% 20px;
+    background-position: 50% 20px;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     min-height: 315px;
     padding: 10px 0 20px 0;
   }
@@ -2823,11 +2819,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 @media (min-width:375px) {
   .emotion-136 .footer__scroll-top {
     background-image: url(/images/background/footerSm.svg);
-    -webkit-background-position: 50% 100%;
-    background-position: 50% 100%;
+    -webkit-background-position: 50% 20px;
+    background-position: 50% 20px;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     min-height: 315px;
     padding: 10px 0 20px 0;
   }

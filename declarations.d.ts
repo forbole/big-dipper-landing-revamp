@@ -9,37 +9,37 @@ interface ComponentDefault {
 }
 
 interface NetworkLink {
-  name: string;
   chain_id: string;
+  name: string;
   url: string;
 }
 
 interface DefaultNetwork {
-  name: string;
   endpoint: string;
   links: Array<NetworkLink>;
+  name: string;
 }
 
 interface SolanaNetwork {
-  name: 'Solana';
   chain_id: string;
   endpoint: string;
   links: Array<NetworkLink>;
+  name: 'Solana';
 }
 
 interface MultiversXNetwork {
-  name: 'MultiversX';
   chain_id: string;
-  stats: string;
   economics: string;
   links: Array<NetworkLink>;
+  name: 'MultiversX';
+  stats: string;
 }
 
 interface CryptoorgNetwork {
-  name: 'Crypto.org Chain' ;
   blocks: string;
-  price: string;
   links: Array<NetworkLink>;
+  name: 'Crypto.org Chain' ;
+  price: string;
 }
 
-type Network = SolanaNetwork | MultiversXNetwork | CryptoorgNetwork | DefaultNetwork;
+type Network = CryptoorgNetwork | DefaultNetwork | MultiversXNetwork | SolanaNetwork;

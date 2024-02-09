@@ -7,19 +7,21 @@ const hover = keyframes({
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
-    root: css({
-      gap: theme.spacing(2),
-      display: "flex",
-      flexFlow: "column wrap",
-      "& .menuitemsmobile__submenu-container": {
-        /* Neutral Color/White Transparent 02 */
-        backgroundColor: alpha(theme.palette.common.white, 0.2),
+    listItemButton: css({
+      "&:hover": {
+        "&.menuitemsdesktop__active": {
+          animation: "none",
+        },
+        "animation": `${hover} 2s ease-out 1 forwards`,
       },
+    }),
+    paper: css({
+      backgroundColor: "transparent",
+    }),
+    root: css({
       "& .menuitemsmobile__list-item-btn": {
-        textAlign: "left",
-        padding: theme.spacing(1, 4),
-        gap: theme.spacing(1),
         "& > .MuiListItemText-root": {
           flex: "0 1 auto",
         },
@@ -29,32 +31,31 @@ const useStyles = () => {
         "&.MuiListItem-gutters": {
           padding: theme.spacing(2, 2.5),
         },
+        "gap": theme.spacing(1),
+        "padding": theme.spacing(1, 4),
+        "textAlign": "left",
         ...theme.mixins.buttonSecondary,
-        borderRadius: 0,
-        "&.menuitemsmobile__active": {
-          ...theme.mixins.button,
-          borderRadius: 0,
-          pointerEvents: "none",
-          "&.menuitemsmobile__list-item-btn": {
-            pointerEvents: "auto",
-          },
-        },
         "& .MuiListItemText-root": {
           color: theme.palette.common.white,
           fontWeight: 900,
         },
-      },
-    }),
-    listItemButton: css({
-      "&:hover": {
-        animation: `${hover} 2s ease-out 1 forwards`,
-        "&.menuitemsdesktop__active": {
-          animation: "none",
+        "&.menuitemsmobile__active": {
+          ...theme.mixins.button,
+          "&.menuitemsmobile__list-item-btn": {
+            pointerEvents: "auto",
+          },
+          "borderRadius": 0,
+          "pointerEvents": "none",
         },
+        "borderRadius": 0,
       },
-    }),
-    paper: css({
-      backgroundColor: "transparent",
+      "& .menuitemsmobile__submenu-container": {
+        /* Neutral Color/White Transparent 02 */
+        backgroundColor: alpha(theme.palette.common.white, 0.2),
+      },
+      "display": "flex",
+      "flexFlow": "column wrap",
+      "gap": theme.spacing(2),
     }),
   };
 };

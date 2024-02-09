@@ -1,10 +1,13 @@
-import { useTheme } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { useTheme } from "@mui/material";
 import Fab from "@mui/material/Fab";
 import classnames from "classnames";
 import { useInView, useScroll } from "framer-motion";
-import { FC, useEffect, useRef, useState } from "react";
+import type { FC } from "react";
+import { useEffect, useRef, useState } from "react";
+
 import handleScrollToTop from "@/src/utils/handleScrollToTop";
+
 import { Footer, Nav } from "..";
 import type { LayoutProps } from "./types";
 import useStyles from "./useStyles";
@@ -24,12 +27,15 @@ const Layout: FC<LayoutProps & JSX.IntrinsicElements["main"]> = ({
   const isFooterInView = useInView(navRef);
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => scrollY.onChange((latest) => setScrolled(latest > 0)), []);
+
   const styles = useStyles();
 
   /* Adding a class to the document element to indicate the dark mode. */
   const theme = useTheme();
+
   useEffect(() => {
     if (typeof document !== "undefined" && document?.documentElement) {
       document.documentElement.classList.toggle(
@@ -44,8 +50,8 @@ const Layout: FC<LayoutProps & JSX.IntrinsicElements["main"]> = ({
       className={classnames(
         className,
         {
-          layout__scrolled: scrolled,
           layout__footerinview: isFooterInView,
+          layout__scrolled: scrolled,
         },
         "layout__container",
       )}
@@ -56,7 +62,7 @@ const Layout: FC<LayoutProps & JSX.IntrinsicElements["main"]> = ({
       <div className="layout__wrapper-content">{children}</div>
       <Footer ref={navRef} />
       <Fab className="layout__scroll-fab" onClick={handleScrollToTop}>
-        <KeyboardArrowUpIcon width={36} height={36} />
+        <KeyboardArrowUpIcon height={36} width={36} />
       </Fab>
     </main>
   );

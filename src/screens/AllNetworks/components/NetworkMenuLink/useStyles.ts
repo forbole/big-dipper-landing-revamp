@@ -2,15 +2,15 @@ import { css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
     root: css({
-      padding: `${theme.spacing(1)} !important`,
+      "& .MuiListItemIcon-root": {
+        justifyContent: "center",
+        padding: theme.spacing(0, 0, 0, 0),
+      },
       "& .MuiListItemText-root": {
         padding: theme.spacing(0, 0, 0, 2),
-      },
-      "& .MuiListItemIcon-root": {
-        padding: theme.spacing(0, 0, 0, 0),
-        justifyContent: "center",
       },
       "& .MuiTypography-h5": {
         /* Secondary Color/Royal Blue 01 */
@@ -21,6 +21,7 @@ const useStyles = () => {
         color: theme.palette.secondary.dark,
         fontWeight: "100",
       },
+      "padding": `${theme.spacing(1)} !important`,
     }),
   };
 };

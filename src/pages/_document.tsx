@@ -1,33 +1,37 @@
 /* eslint-disable no-underscore-dangle */
+import { defaultLocale } from "@/i18n";
 import createEmotionServer from "@emotion/server/create-instance";
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import { defaultLocale } from "@/i18n";
+
 import { darkTheme as theme } from "@/src/styles/theme";
 import basePath from "@/src/utils/basePath";
+
 import createEmotionCache from "../utils/createEmotionCache";
 
 export default class MyDocument extends Document {
   render() {
     const { locale } = this.props.__NEXT_DATA__.query;
+
     const { emotionStyleTags } = this.props as unknown as {
       emotionStyleTags: JSX.Element[];
     };
+
     return (
       <Html
         lang={(Array.isArray(locale) ? locale[0] : locale) || defaultLocale}
       >
         <Head>
           <link
-            rel="preload"
-            href={basePath("/fonts/sfProText.woff2")}
             as="font"
-            type="font/woff2"
             crossOrigin="anonymous"
+            href={basePath("/fonts/sfProText.woff2")}
+            rel="preload"
+            type="font/woff2"
           />
 
-          <meta name="theme-color" content={theme.palette.primary.main} />
-          <link rel="shortcut icon" href={basePath("/favicon.ico")} />
-          <meta name="emotion-insertion-point" content="" />
+          <meta content={theme.palette.primary.main} name="theme-color" />
+          <link href={basePath("/favicon.ico")} rel="shortcut icon" />
+          <meta content="" name="emotion-insertion-point" />
           {emotionStyleTags}
         </Head>
         <body>
@@ -78,6 +82,7 @@ MyDocument.getInitialProps = async (ctx) => {
             emotionCache: cache,
             ...props,
           } as unknown as typeof props;
+
           return <App {...propsWithCache} />;
         },
     });
@@ -86,12 +91,13 @@ MyDocument.getInitialProps = async (ctx) => {
   // This is important. It prevents Emotion to render invalid HTML.
   // See https://github.com/mui/material-ui/issues/26561#issuecomment-855286153
   const emotionStyles = extractCriticalToChunks(initialProps.html);
+
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(" ")}`}
-      key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}
+      data-emotion={`${style.key} ${style.ids.join(" ")}`}
+      key={style.key}
     />
   ));
 

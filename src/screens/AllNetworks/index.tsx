@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -7,24 +8,31 @@ import { LayoutGroup } from "framer-motion";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { equals } from "ramda";
-import { FC, useCallback, useEffect, useMemo, useState } from "react";
+import type { FC } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+
 import { SectionBox } from "@/src/components";
 import Layout from "@/src/components/Layout";
 import SectionLimit from "@/src/components/SectionLimit";
 import allNetworksTab from "@/src/utils/allNetworksTab";
+
 import NetworkBox from "./components/NetworkBox";
 import SearchBox from "./components/SearchBox";
 import type { AllNetworksProps } from "./types";
 import useStyles from "./useStyles";
-import Link from "next/link";
 
 function getTabIndexFromPath(path: string) {
   if (/\/all-networks#tab=Mainnet/i.test(path)) return allNetworksTab.Mainnet;
+
   if (/\/all-networks#tab=Testnet/i.test(path)) return allNetworksTab.Testnet;
+
   if (/\/all-networks#tab=Devnet/i.test(path)) return allNetworksTab.Devnet;
+
   if (/\/all-networks#tab=Retired/i.test(path)) return allNetworksTab.Retired;
+
   return allNetworksTab.All;
 }
 
@@ -32,22 +40,29 @@ function useHooks(networkList: Network[]) {
   const router = useRouter();
   const [tabIndex, setTabIndex] = useState(0);
   const [opened, setOpened] = useState("");
+
   const handleOpen = useCallback((name: string) => {
     setOpened((prev) => (equals(prev, name) ? "" : name));
   }, []);
+
   const handleHashChange = useCallback((url: string) => {
     const newTabIndex = getTabIndexFromPath(url);
+
     setTabIndex((prev) => (prev === newTabIndex ? prev : newTabIndex));
   }, []);
+
   useEffect(() => {
     handleHashChange(router.asPath);
     router.events.on("hashChangeStart", handleHashChange);
+
     return () => router.events.off("hashChangeStart", handleHashChange);
   }, [router.asPath, router.events]);
+
   const sortedNetworks = useMemo(
     () => networkList.sort((a, b) => a.name.localeCompare(b.name)),
     [networkList],
   );
+
   const filteredNetworks = useMemo(() => {
     switch (tabIndex) {
       case allNetworksTab.Mainnet:
@@ -70,20 +85,24 @@ function useHooks(networkList: Network[]) {
         return sortedNetworks;
     }
   }, [sortedNetworks, tabIndex]);
+
   const { t } = useTranslation("all-networks");
+
   return {
-    tabIndex,
-    opened,
-    handleOpen,
     filteredNetworks,
+    handleOpen,
+    opened,
     t,
+    tabIndex,
   };
 }
 
 const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
-  const { tabIndex, opened, handleOpen, filteredNetworks, t } =
+  const { filteredNetworks, handleOpen, opened, t, tabIndex } =
     useHooks(networkList);
+
   const styles = useStyles();
+
   return (
     <Layout>
       <Head>
@@ -96,70 +115,70 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
             <Box className="allnetworks__header">
               <Typography>
                 <Trans
-                  i18nKey="all-networks:allNetworksDescription"
                   components={{
                     a: <Link href="https://www.forbole.com/contact" />,
                   }}
+                  i18nKey="all-networks:allNetworksDescription"
                 />
               </Typography>
               <Box className="allnetworks__tabs">
                 <Link
-                  scroll={false}
-                  href="/all-networks"
                   className={classnames(
                     {
                       allnetworks__active: tabIndex === allNetworksTab.All,
                     },
                     "allnetworks__tab",
                   )}
+                  href="/all-networks"
+                  scroll={false}
                 >
                   All
                 </Link>
                 <Link
-                  scroll={false}
-                  href="/all-networks#tab=Mainnet"
                   className={classnames(
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Mainnet,
                     },
                     "allnetworks__tab",
                   )}
+                  href="/all-networks#tab=Mainnet"
+                  scroll={false}
                 >
                   Mainnet
                 </Link>
                 <Link
-                  scroll={false}
-                  href="/all-networks#tab=Testnet"
                   className={classnames(
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Testnet,
                     },
                     "allnetworks__tab",
                   )}
+                  href="/all-networks#tab=Testnet"
+                  scroll={false}
                 >
                   Testnet
                 </Link>
                 <Link
-                  scroll={false}
-                  href="/all-networks#tab=Devnet"
                   className={classnames(
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Devnet,
                     },
                     "allnetworks__tab",
                   )}
+                  href="/all-networks#tab=Devnet"
+                  scroll={false}
                 >
                   Devnet
                 </Link>
                 <Link
-                  scroll={false}
-                  href="/all-networks#tab=Retired"
                   className={classnames(
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Retired,
                     },
                     "allnetworks__tab",
                   )}
+                  href="/all-networks#tab=Retired"
+                  scroll={false}
                 >
                   Retired
                 </Link>
@@ -171,9 +190,9 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
             <LayoutGroup>
               {filteredNetworks.map((network) => (
                 <NetworkBox
+                  isOpened={network.name === opened}
                   key={network.name}
                   network={network}
-                  isOpened={network.name === opened}
                   onOpen={handleOpen}
                 />
               ))}

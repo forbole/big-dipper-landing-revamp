@@ -1,6 +1,8 @@
-import Box, { BoxProps } from "@mui/material/Box";
+import type { BoxProps } from "@mui/material/Box";
+import Box from "@mui/material/Box";
 import classnames from "classnames";
-import { FC } from "react";
+import type { FC } from "react";
+
 import useStyles from "./useStyles";
 
 /**
@@ -10,6 +12,7 @@ import useStyles from "./useStyles";
  */
 const SectionLimit: FC<BoxProps> = ({ children, className, ...props }) => {
   const styles = useStyles();
+
   return (
     <Box
       className={classnames(className, "sectionlimit__container")}

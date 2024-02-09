@@ -1,12 +1,14 @@
 /* eslint-disable react/display-name */
-import { render } from "@testing-library/react";
-import Box from "@mui/material/Box";
 import { MockTheme } from "@/__mocks__";
+import Box from "@mui/material/Box";
+import { render } from "@testing-library/react";
+
 import Component from ".";
 
 jest.mock("./components/MenuDesktop", () => () => (
   <Box data-testid="MenuDesktop" />
 ));
+
 jest.mock("./components/MenuMobile", () => () => (
   <Box data-testid="MenuMobile" />
 ));
@@ -21,6 +23,7 @@ describe("Nav", () => {
         <Component />
       </MockTheme>,
     );
+
     // expect(screen.getByText(
     //   /Home/i,
     // )).toBeInTheDocument();

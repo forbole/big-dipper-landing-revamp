@@ -8,6 +8,7 @@ export const useMenuMobile = () => {
   ) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };

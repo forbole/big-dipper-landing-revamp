@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
+
 import HeroSvg from "./hero";
 import useStyles from "./useStyles";
 
@@ -9,10 +10,11 @@ import useStyles from "./useStyles";
 const Slide1 = () => {
   const { t } = useTranslation("common");
   const styles = useStyles();
+
   return (
     <Box css={styles.root}>
       <Box className="image">
-        <HeroSvg width="415" height="291" />
+        <HeroSvg height="291" width="415" />
       </Box>
       <Box className="caption">
         <Typography variant="h1">{t("slider2Header")}</Typography>

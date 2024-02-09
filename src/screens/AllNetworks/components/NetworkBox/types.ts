@@ -1,6 +1,6 @@
 export interface NetworkBoxProps {
-  network: Network;
   isOpened: boolean;
+  network: Network;
   onOpen: (name: string) => void;
 }
 export interface NetworkMenuLinkProps {

@@ -2,19 +2,15 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { LayoutGroup } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
-import {
-  FC,
-  startTransition,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import type { FC } from "react";
+import { startTransition, useEffect, useMemo, useRef, useState } from "react";
+
 import basePath from "@/src/utils/basePath";
-import { NetworkSummary } from "@/src/utils/loadNetworkSummary";
+import type { NetworkSummary } from "@/src/utils/loadNetworkSummary";
+
 import NetworkBox from "../NetworkBox";
 import SearchBox from "../SearchBox";
-import { NetworksPanelProps } from "./types";
+import type { NetworksPanelProps } from "./types";
 import useStyles from "./useStyles";
 
 function initialNetworkSummaries(networkList: Network[]): {
@@ -40,35 +36,42 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
   const { t } = useTranslation("common");
 
   const [showMobilePopover, setShowMobilePopover] = useState("");
+
   const [networkSummaries, setNetworkSummaries] = useState(() =>
     initialNetworkSummaries(networkList),
   );
+
   const called = useRef(false);
+
   useEffect(() => {
     if (called.current) return;
+
     called.current = true;
+
     startTransition(() => {
       fetch(basePath("/api/networks"))
         .then((res) => res.json())
         .then((d) =>
-          setNetworkSummaries((prev) => {
-            return Object.keys(prev).reduce(
+          setNetworkSummaries((prev) =>
+            Object.keys(prev).reduce(
               (map, name) => ({ ...map, [name]: d[name] ?? null }),
               {},
-            );
-          }),
+            ),
+          ),
         )
         .catch(() =>
-          setNetworkSummaries((prev) => {
-            return Object.keys(prev).reduce(
+          setNetworkSummaries((prev) =>
+            Object.keys(prev).reduce(
               (map, name) => ({ ...map, [name]: null }),
               {},
-            );
-          }),
+            ),
+          ),
         );
     });
   }, []);
+
   const styles = useStyles();
+
   return (
     <Box css={styles.root}>
       <Box className="home__content">
@@ -84,8 +87,8 @@ const NetworksPanel: FC<NetworksPanelProps> = ({ networkList }) => {
               key={network.name}
               network={network}
               networkSummary={networkSummaries[network.name]}
-              showMobilePopover={showMobilePopover}
               setShowMobilePopover={setShowMobilePopover}
+              showMobilePopover={showMobilePopover}
             />
           ))}
         </LayoutGroup>

@@ -2,13 +2,14 @@ import { css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
     root: css({
+      alignItems: "center",
       display: "flex",
       flexFlow: "row nowrap",
-      justifyContent: "center",
-      alignItems: "center",
       height: theme.spacing(9.875),
+      justifyContent: "center",
       [theme.breakpoints.up("md")]: {
         justifyContent: "space-between",
       },

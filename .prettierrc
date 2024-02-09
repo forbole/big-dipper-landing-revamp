@@ -1,0 +1,7 @@
+{
+  "importOrder": ["^~(.*)$", "@/(src|utils|models|api)", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "quoteProps": "consistent"
+}

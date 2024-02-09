@@ -1,5 +1,6 @@
-import { ListItemButtonProps } from "@mui/material/ListItemButton";
-import { getMenuItems } from "./utils";
+import type { ListItemButtonProps } from "@mui/material/ListItemButton";
+
+import type { getMenuItems } from "./utils";
 
 export type MenuItemsProps = ReturnType<typeof getMenuItems>;
 

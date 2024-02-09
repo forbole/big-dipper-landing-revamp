@@ -1,5 +1,9 @@
 // lint-staged.config.js
 module.exports = {
+  // Format MarkDown and JSON
+  '**/*.(md|json)': (filenames) =>
+    `npx prettier --write ${filenames.join(' ')}`,
+
   // Type check TypeScript files
   '**/*.(ts|tsx)': () => 'npx tsc --noEmit',
 
@@ -8,8 +12,4 @@ module.exports = {
     `npx eslint --fix ${filenames.join(' ')}`,
     `npx prettier --write ${filenames.join(' ')}`,
   ],
-
-  // Format MarkDown and JSON
-  '**/*.(md|json)': (filenames) =>
-    `npx prettier --write ${filenames.join(' ')}`,
 };

@@ -5,6 +5,7 @@ import {
   TwitterIcon,
 } from "@/src/components/icons";
 import * as LINKS from "@/src/utils/links";
+
 import type { IconType, LinkType } from "./types";
 
 export const bdLinks: LinkType[] = [
@@ -21,49 +22,49 @@ export const bdLinks: LinkType[] = [
     url: LINKS.DONATION,
   },
   {
+    external: true,
     key: "docs",
     url: LINKS.DOCS,
-    external: true,
   },
 ];
 
 export const forboleLinks: LinkType[] = [
   {
+    external: true,
     key: "stakeNow",
     url: LINKS.STAKE_NOW,
-    external: true,
   },
   {
+    external: true,
     key: "networks",
     url: LINKS.NETWORKS,
-    external: true,
   },
   {
+    external: true,
     key: "blog",
     url: LINKS.BLOG,
-    external: true,
   },
 ];
 
 export const socialLinks: IconType[] = [
   {
-    component: <TwitterIcon />,
     className: "twitter",
+    component: <TwitterIcon />,
     url: LINKS.TWITTER,
   },
   {
-    component: <TelegramIcon />,
     className: "telegram",
+    component: <TelegramIcon />,
     url: LINKS.TELEGRAM,
   },
   {
-    component: <GithubIcon />,
     className: "github",
+    component: <GithubIcon />,
     url: LINKS.GITHUB,
   },
   {
-    component: <LinkedinIcon />,
     className: "linkedin",
+    component: <LinkedinIcon />,
     url: LINKS.LINKEDIN,
   },
 ];

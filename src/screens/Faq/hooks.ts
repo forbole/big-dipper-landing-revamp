@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import type { FAQType } from "./types";
 
 export const useFAQ = () => {
@@ -14,7 +15,7 @@ export const useFAQ = () => {
   };
 
   return {
-    state,
     handleSelected,
+    state,
   };
 };

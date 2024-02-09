@@ -1,5 +1,6 @@
 import classnames from "classnames";
-import { FC } from "react";
+import type { FC } from "react";
+
 import useStyles from "./useStyles";
 
 /**
@@ -15,6 +16,7 @@ const SectionBox: FC<JSX.IntrinsicElements["section"] & { main?: boolean }> = ({
   ...props
 }) => {
   const styles = useStyles();
+
   return (
     <section
       className={classnames(

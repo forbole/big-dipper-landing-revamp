@@ -3,23 +3,25 @@ const nextTranslate = require("next-translate-plugin");
 
 const nextConfig = nextTranslate({
   basePath: process.env.BASE_PATH ?? "",
-  poweredByHeader: false,
-  reactStrictMode: true,
   images: {
     deviceSizes: [375, 768, 1280, 1920],
   },
+  poweredByHeader: false,
+  reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push({
+      resourceQuery: /url/, // *.svg?url
       test: /\.svg$/i,
       type: "asset",
-      resourceQuery: /url/, // *.svg?url
     });
+
     config.module.rules.push({
-      test: /\.svg$/,
       issuer: /\.[jt]sx?$/,
       resourceQuery: { not: [/url/] }, // exclude react component if *.svg?url
+      test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
+
     return config;
   },
 });

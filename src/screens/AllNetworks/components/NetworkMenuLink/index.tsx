@@ -4,8 +4,9 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
-import { FC } from "react";
-import { NetworkMenuLinkProps } from "../NetworkBox/types";
+import type { FC } from "react";
+
+import type { NetworkMenuLinkProps } from "../NetworkBox/types";
 import useStyles from "./useStyles";
 
 /**
@@ -14,8 +15,9 @@ import useStyles from "./useStyles";
  * @returns A link to the network menu link
  */
 const NetworkMenuLink: FC<NetworkMenuLinkProps> = ({ link }) => {
-  const { name, chain_id: chainId, url } = link;
+  const { chain_id: chainId, name, url } = link;
   const styles = useStyles();
+
   return (
     <Link href={url} passHref>
       <ListItemButton css={styles.root}>

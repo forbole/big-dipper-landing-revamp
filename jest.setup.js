@@ -18,14 +18,14 @@ jest.mock("next/dynamic", () => ({
 jest.mock("next/router", () => ({
   useRouter() {
     return {
-      route: "/",
-      pathname: "/",
       asPath: "/",
-      query: "",
       events: {
         off: jest.fn(),
         on: jest.fn(),
       },
+      pathname: "/",
+      query: "",
+      route: "/",
     };
   },
 }));
@@ -35,9 +35,9 @@ global.matchMedia =
   global.matchMedia ||
   function () {
     return {
+      addListener () {},
       matches: false,
-      addListener: function () {},
-      removeListener: function () {},
+      removeListener () {},
     };
   };
 
@@ -48,7 +48,7 @@ const disconnect = jest.fn();
 // you can also pass the mock implementation
 // to jest.fn as an argument
 global.IntersectionObserver = jest.fn(() => ({
+  disconnect,
   observe,
   unobserve,
-  disconnect,
 }));

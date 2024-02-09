@@ -1,9 +1,11 @@
 import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
+
 import { SectionBox } from "@/src/components";
 import Layout from "@/src/components/Layout";
 import SectionLimit from "@/src/components/SectionLimit";
+
 import Content from "./components/Content";
 import MenuDesktop from "./components/MenuDesktop";
 import MenuMobile from "./components/MenuMobile";
@@ -14,7 +16,7 @@ import { getContent, getMenuItems } from "./utils";
 /* A React component that renders the FAQ page. */
 const FAQ = () => {
   const { t } = useTranslation("faq");
-  const { state, handleSelected } = useFAQ();
+  const { handleSelected, state } = useFAQ();
   const menuItems = getMenuItems(t);
   const content = getContent(state.selected, t);
   const styles = useStyles();
@@ -24,7 +26,7 @@ const FAQ = () => {
       <Head>
         <title>{t("faq")}</title>
       </Head>
-      <SectionBox main css={styles.root}>
+      <SectionBox css={styles.root} main>
         <SectionLimit>
           <div className="faq__header-wrapper">
             <Typography className="faq__title" variant="h2">
@@ -32,17 +34,17 @@ const FAQ = () => {
             </Typography>
             <MenuMobile
               className="faq_menu-mobile"
+              handleChange={handleSelected}
               items={menuItems}
               selected={state.selected}
-              handleChange={handleSelected}
             />
           </div>
           <div className="faq__content-wrapper">
             <MenuDesktop
               className="faq__menu-desktop"
+              handleChange={handleSelected}
               items={menuItems}
               selected={state.selected}
-              handleChange={handleSelected}
             />
             {/* eslint-disable-next-line */}
             <Content className="faq__content" content={content as any} />

@@ -1,6 +1,7 @@
+import { MockTheme } from "@/__mocks__";
 import { render, screen } from "@testing-library/react";
 import React from "react";
-import { MockTheme } from "@/__mocks__";
+
 import Component from ".";
 
 // ==================================
@@ -13,6 +14,7 @@ describe("MenuMobile", () => {
         <Component items={["gov"]} selected={0} />
       </MockTheme>,
     );
+
     expect(screen.getByText(/gov/i)).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

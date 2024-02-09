@@ -1,35 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Content matches snapshot 1`] = `
-.emotion-0 .faqcontent__wrapper:not(:last-child) {
-  margin-bottom: 96px;
-}
-
-@media (max-width:767.95px) {
-  .emotion-0 .faqcontent__wrapper:not(:last-child) {
-    margin-bottom: 72px;
-  }
-}
-
-.emotion-0 .faqcontent__question {
-  color: #F6504B;
-  margin-bottom: 16px;
-}
-
-@media (max-width:767.95px) {
-  .emotion-0 .faqcontent__question {
-    font-size: 1rem;
-  }
-}
-
 .emotion-0 .faqcontent__list {
   margin-top: 16px;
 }
 
+.emotion-0 .faqcontent__list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .emotion-0 .faqcontent__list-title {
   color: #F6504B;
-  margin-top: 40px;
   margin-bottom: 8px;
+  margin-top: 40px;
 }
 
 @media (max-width:767.95px) {
@@ -43,8 +26,25 @@ exports[`Content matches snapshot 1`] = `
   margin-right: 8px;
 }
 
-.emotion-0 .faqcontent__list-item:not(:last-child) {
-  margin-bottom: 24px;
+.emotion-0 .faqcontent__question {
+  color: #F6504B;
+  margin-bottom: 16px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .faqcontent__question {
+    font-size: 1rem;
+  }
+}
+
+.emotion-0 .faqcontent__wrapper:not(:last-child) {
+  margin-bottom: 96px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .faqcontent__wrapper:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 @media (max-width:767.95px) {

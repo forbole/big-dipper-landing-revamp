@@ -3,12 +3,15 @@ import Typography from "@mui/material/Typography";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/legacy/image";
-import { FC, useCallback, useState } from "react";
+import type { FC } from "react";
+import { useCallback, useState } from "react";
+
 import copyUrl from "@/src/assets/copy.svg?url";
 import { SectionLimit } from "@/src/components";
 import ContentBox from "@/src/components/ContentBox";
 import Layout from "@/src/components/Layout";
 import SectionBox from "@/src/components/SectionBox";
+
 import { useDonation } from "./hooks";
 import useStyles from "./useStyles";
 import { addresses } from "./utils";
@@ -17,19 +20,21 @@ const Content: FC<{ x: (typeof addresses)[number] }> = ({ x }) => {
   const { t } = useTranslation("donation");
   const { handleCopyToClipboard } = useDonation();
   const [copied, setCopied] = useState(false);
+
   const handleCopy = useCallback(() => {
     handleCopyToClipboard(x.address);
     setCopied(true);
   }, [handleCopyToClipboard, x.address]);
+
   return (
     <ContentBox key={x.address}>
       {!!x.imgSrc && (
         <Image
-          className="donation__address-logo"
-          src={x.imgSrc}
           alt={x.key}
-          width={60}
+          className="donation__address-logo"
           height={60}
+          src={x.imgSrc}
+          width={60}
         />
       )}
       <Typography className="donation__address-key" variant="h4">
@@ -37,16 +42,16 @@ const Content: FC<{ x: (typeof addresses)[number] }> = ({ x }) => {
       </Typography>
       <Typography className="donation__address-address">{x.address}</Typography>
       <Button
-        variant="contained"
         className="donation__address-button"
         onClick={handleCopy}
+        variant="contained"
       >
         <Image
-          width="15"
+          alt={t("copy")}
+          className="donation__address-button-copy"
           height="15"
           src={copyUrl}
-          className="donation__address-button-copy"
-          alt={t("copy")}
+          width="15"
         />
         {copied ? t("copied") : t("copy")}
       </Button>
@@ -64,7 +69,7 @@ const Donation = () => {
       <Head>
         <title>{t("donation")}</title>
       </Head>
-      <SectionBox main css={styles.root}>
+      <SectionBox css={styles.root} main>
         <SectionLimit>
           <Typography className="donation__title" variant="h2">
             {t("donation")}
@@ -77,7 +82,7 @@ const Donation = () => {
           </Typography>
           <div className="donation__address-container">
             {addresses.map((x) => (
-              <Content x={x} key={x.address} />
+              <Content key={x.address} x={x} />
             ))}
           </div>
         </SectionLimit>

@@ -1,20 +1,24 @@
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import ListItemButton, {
-  ListItemButtonProps,
-} from "@mui/material/ListItemButton";
+import type { BoxProps } from "@mui/material/Box";
+import Box from "@mui/material/Box";
+import type { ListItemButtonProps } from "@mui/material/ListItemButton";
+import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import type { MenuListProps } from "@mui/material/MenuList";
+import MenuList from "@mui/material/MenuList";
 import Paper from "@mui/material/Paper";
 import classnames from "classnames";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import { NextRouter, useRouter } from "next/router";
-import { FC, useCallback, useState } from "react";
-import useStyles from "./useStyles";
+import type { NextRouter } from "next/router";
+import { useRouter } from "next/router";
+import type { FC } from "react";
+import { useCallback, useState } from "react";
+
 import type { MenuItemLinkProps, MenuItemProps } from "./types";
+import useStyles from "./useStyles";
 import { getMenuItems } from "./utils";
-import MenuList, { MenuListProps } from "@mui/material/MenuList";
-import Box, { BoxProps } from "@mui/material/Box";
 
 /**
  * It returns true if the url is the current path or if the current path includes the url
@@ -24,9 +28,13 @@ import Box, { BoxProps } from "@mui/material/Box";
  */
 function isMenuItemActive(url: string, router: NextRouter) {
   url = url.replace(/#.*$/, "").replace(/\?.*$/, "");
+
   const routePath = router?.asPath.replace(/#.*$/, "").replace(/\?.*$/, "");
+
   if (url === routePath) return true;
+
   if (routePath?.includes(url) && url !== "/") return true;
+
   return false;
 }
 
@@ -36,14 +44,15 @@ function isMenuItemActive(url: string, router: NextRouter) {
  * @returns A styled list item button with a list item text primary.
  */
 const MenuItemLink: FC<MenuItemLinkProps & ListItemButtonProps> = ({
+  className,
   menuKey,
   url,
-  className,
   ...props
 }) => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const styles = useStyles();
+
   return (
     <Link href={url} key={menuKey} passHref>
       <ListItemButton
@@ -69,27 +78,30 @@ type SubmenuProps = Omit<MenuItemProps, "link"> & {
 
 /* It's a submenu component that renders a button that toggles the submenu. */
 const Submenu: FC<SubmenuProps> = ({
+  className,
   menuKey,
   submenus,
-  className,
   ...props
 }) => {
   const [activeSubmenuKey, setActiveSubmenuKey] = useState("");
+
   const handleToggleSubmenu = useCallback(() => {
     setActiveSubmenuKey(menuKey === activeSubmenuKey ? "" : menuKey);
   }, [menuKey, activeSubmenuKey]);
+
   const ArrowIcon =
     activeSubmenuKey === menuKey ? KeyboardArrowUpIcon : KeyboardArrowDownIcon;
+
   const { t } = useTranslation("common");
   const router = useRouter();
   const styles = useStyles();
+
   return (
     <Box
       className={classnames(className, "menuitemsmobile__submenu-container")}
       {...props}
     >
       <ListItemButton
-        onClick={handleToggleSubmenu}
         className={classnames(
           {
             menuitemsmobile__active: submenus.some((submenu) =>
@@ -99,6 +111,7 @@ const Submenu: FC<SubmenuProps> = ({
           "menuitemsmobile__list-item-btn",
         )}
         css={styles.listItemButton}
+        onClick={handleToggleSubmenu}
       >
         <ListItemText primary={t(menuKey)} />
         <ArrowIcon />
@@ -123,23 +136,19 @@ const Submenu: FC<SubmenuProps> = ({
  * @param  - `menuKey` - the key of the menu item.
  * @returns A React component.
  */
-const MenuItem: FC<MenuItemProps> = ({
-  menuKey,
-  url,
-  submenus,
-  ref: _, // deepscan-disable-line
-  ...props
-}) => {
+const MenuItem: FC<MenuItemProps> = ({ menuKey, submenus, url, ...props }) => {
   if (url) {
     return <MenuItemLink {...{ menuKey, url }} />;
   }
+
   if (
     !!submenus &&
-    ((_): _ is Omit<SubmenuProps, "menuKey" | "submenus" | "ref"> =>
+    ((_): _ is Omit<SubmenuProps, "menuKey" | "ref" | "submenus"> =>
       !!submenus)(props)
   ) {
     return <Submenu menuKey={menuKey} submenus={submenus} {...props} />;
   }
+
   return null;
 };
 
@@ -157,12 +166,12 @@ const MenuItems: FC<MenuListProps> = ({ className, ...props }) => {
       {...props}
       css={styles.root}
     >
-      {items.map(({ key, ...props }) => (
+      {items.map(({ key, ...props2 }) => (
         <MenuItem
+          className={classnames({ menuitemsmobile__active: false })}
           key={key}
           menuKey={key}
-          className={classnames({ menuitemsmobile__active: false })}
-          {...props}
+          {...props2}
         />
       ))}
     </MenuList>

@@ -6,9 +6,7 @@ import renderer from 'react-test-renderer';
  * @param ms
  */
 export const wait = async (ms = 50) => {
-  await renderer.act(() => {
-    return new Promise((resolve) => {
+  await renderer.act(() => new Promise((resolve) => {
       setTimeout(resolve, ms);
-    });
-  });
+    }));
 };

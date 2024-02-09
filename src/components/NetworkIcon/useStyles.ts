@@ -1,19 +1,17 @@
 import { css } from "@mui/material";
 
-const useStyles = () => {
-  return {
-    light: css({
-      ".mode-dark &": {
-        display: "none",
-      },
-    }),
-    dark: css({
+const useStyles = () => ({
+  dark: css({
+    ".mode-dark &": {
+      display: "initial",
+    },
+    "display": "none",
+  }),
+  light: css({
+    ".mode-dark &": {
       display: "none",
-      ".mode-dark &": {
-        display: "initial",
-      },
-    }),
-  };
-};
+    },
+  }),
+});
 
 export default useStyles;

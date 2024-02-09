@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "prettier:fix": "prettier --write 'src/**/*.{ts,tsx}'",
-    "test:e2e": "playwright test"
+    "prettier:fix": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -34,7 +33,6 @@
   },
   "devDependencies": {
     "@emotion/jest": "^11.11.0",
-    "@playwright/test": "^1.41.2",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",

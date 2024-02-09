@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-var-requires */
-const nextTranslate = require('next-translate');
+const nextTranslate = require("next-translate-plugin");
 
 const nextConfig = nextTranslate({
-  basePath: process.env.BASE_PATH ?? '',
+  basePath: process.env.BASE_PATH ?? "",
   poweredByHeader: false,
   reactStrictMode: true,
   images: {
@@ -11,14 +11,14 @@ const nextConfig = nextTranslate({
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/i,
-      type: 'asset',
+      type: "asset",
       resourceQuery: /url/, // *.svg?url
     });
     config.module.rules.push({
       test: /\.svg$/,
       issuer: /\.[jt]sx?$/,
       resourceQuery: { not: [/url/] }, // exclude react component if *.svg?url
-      use: ['@svgr/webpack'],
+      use: ["@svgr/webpack"],
     });
     return config;
   },

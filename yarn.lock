@@ -3792,6 +3792,7 @@ __metadata:
     lint-staged: "npm:^15.2.2"
     next: "npm:^14.1.0"
     next-translate: "npm:^2.6.2"
+    next-translate-plugin: "npm:^2.6.2"
     ramda: "npm:^0.29.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -7517,6 +7518,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-translate-plugin@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "next-translate-plugin@npm:2.6.2"
+  dependencies:
+    typescript: "npm:4.5.2"
+  peerDependencies:
+    next-translate: ">= 2.4.1"
+  checksum: 7b4e4d5fac1342d5150ec909a45a3f46fb4f36fc7b7a6a35bcda83d77f78c7c6260c382b2ac52badf63666db1dc354ee63adcc7e2a06d813f604f58e2b7b1016
+  languageName: node
+  linkType: hard
+
 "next-translate@npm:^2.6.2":
   version: 2.6.2
   resolution: "next-translate@npm:2.6.2"
@@ -9480,6 +9492,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:4.5.2":
+  version: 4.5.2
+  resolution: "typescript@npm:4.5.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 8fc40b886018889ad2099cb1b477c4f0373528c9fca83860ad33e898fe19ada22568477aca91741fbeabf0402e203f0e2d6d14ed6973ad826893cc13b2dfd459
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
@@ -9487,6 +9509,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: e33cef99d82573624fc0f854a2980322714986bc35b9cb4d1ce736ed182aeab78e2cb32b385efa493b2a976ef52c53e20d6c6918312353a91850e2b76f1ea44f
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A4.5.2#optional!builtin<compat/typescript>":
+  version: 4.5.2
+  resolution: "typescript@patch:typescript@npm%3A4.5.2#optional!builtin<compat/typescript>::version=4.5.2&hash=bcec9a"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 90eaf5227b6a755da1a77665b24b958a8bc79b12b435c4254255ceada6ac6eb7905678b37c23c4f63a298b7ed6bee8fc87df78b98d0b0e7f0e30e873334121fd
   languageName: node
   linkType: hard
 

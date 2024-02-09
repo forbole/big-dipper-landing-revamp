@@ -1,14 +1,13 @@
 /* eslint-disable max-len */
-import Typography from '@mui/material/Typography';
-import useTranslation from 'next-translate/useTranslation';
-import Head from 'next/head';
-import { Fragment } from 'react';
-import { SectionLimit } from '@/src/components';
-import ContentBox from '@/src/components/ContentBox';
-import Layout from '@/src/components/Layout';
-import LinkAnchor from '@/src/components/LinkAnchor';
-import SectionBox from '@/src/components/SectionBox';
-import useStyles from './useStyles';
+import Typography from "@mui/material/Typography";
+import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
+import { Fragment } from "react";
+import { SectionLimit } from "@/src/components";
+import ContentBox from "@/src/components/ContentBox";
+import Layout from "@/src/components/Layout";
+import SectionBox from "@/src/components/SectionBox";
+import useStyles from "./useStyles";
 import {
   analytics,
   cookies,
@@ -17,23 +16,24 @@ import {
   definitions,
   legalRequirements,
   trackingDefinitions,
-} from './utils';
+} from "./utils";
+import Link from "next/link";
 
 /* A React component that renders the Privacy Policy page. */
 const PrivacyPolicy = () => {
-  const { t } = useTranslation('privacy-policy');
+  const { t } = useTranslation("privacy-policy");
   const styles = useStyles();
   return (
     <Layout css={styles.root}>
       <Head>
-        <title>{t('privacyPolicy')}</title>
+        <title>{t("privacyPolicy")}</title>
       </Head>
       <SectionBox main>
         <SectionLimit>
           <Typography className="privacypolicy__title" variant="h2">
-            {t('privacyPolicy')}
+            {t("privacyPolicy")}
           </Typography>
-          <Typography className="privacypolicy__intro">{t('intro')}</Typography>
+          <Typography className="privacypolicy__intro">{t("intro")}</Typography>
           <Typography className="privacypolicy__intro">
             Last updated: April 02, 2021
           </Typography>
@@ -55,16 +55,16 @@ const PrivacyPolicy = () => {
                 {definitions.map((x) => {
                   return (
                     <Typography component="li" key={x.key}>
-                      <span className="privacypolicy__key">{x.key}</span>{' '}
+                      <span className="privacypolicy__key">{x.key}</span>{" "}
                       {x.details}
-                      {x.key === 'Website' && (
-                        <LinkAnchor
+                      {x.key === "Website" && (
+                        <Link
                           href="https://bigdipper.live"
                           target="_blank"
                           rel="noreferrer"
                         >
                           https://bigdipper.live
-                        </LinkAnchor>
+                        </Link>
                       )}
                     </Typography>
                   );
@@ -122,16 +122,16 @@ const PrivacyPolicy = () => {
                   {trackingDefinitions.map((x) => {
                     return (
                       <Typography component="li" key={x.key}>
-                        <span className="privacypolicy__key">{x.key}</span>{' '}
+                        <span className="privacypolicy__key">{x.key}</span>{" "}
                         {x.details}
-                        {x.key === 'Flash Cookies - ' && (
-                          <LinkAnchor
+                        {x.key === "Flash Cookies - " && (
+                          <Link
                             href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
                             target="_blank"
                             rel="noreferrer"
                           >
                             https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
-                          </LinkAnchor>
+                          </Link>
                         )}
                       </Typography>
                     );
@@ -155,17 +155,17 @@ const PrivacyPolicy = () => {
                       <Typography variant="h6">{x.key}</Typography>
                       <div className="privacypolicy__indent-2">
                         <Typography>
-                          <span className="privacypolicy__key">Type:</span>{' '}
+                          <span className="privacypolicy__key">Type:</span>{" "}
                           {x.type}
                         </Typography>
                         <Typography>
                           <span className="privacypolicy__key">
                             Administered By:
-                          </span>{' '}
+                          </span>{" "}
                           {x.administered}
                         </Typography>
                         <Typography>
-                          <span className="privacypolicy__key">Purpose:</span>{' '}
+                          <span className="privacypolicy__key">Purpose:</span>{" "}
                           {x.purpose}
                         </Typography>
                       </div>
@@ -186,7 +186,7 @@ const PrivacyPolicy = () => {
                 {dataUse.map((x) => {
                   return (
                     <Typography component="li" key={x.key}>
-                      <span className="privacypolicy__key">{x.key}</span>{' '}
+                      <span className="privacypolicy__key">{x.key}</span>{" "}
                       {x.details}
                     </Typography>
                   );
@@ -200,7 +200,7 @@ const PrivacyPolicy = () => {
                 {dataUseTwo.map((x) => {
                   return (
                     <Typography component="li" key={x.key}>
-                      <span className="privacypolicy__key">{x.key}</span>{' '}
+                      <span className="privacypolicy__key">{x.key}</span>{" "}
                       {x.details}
                     </Typography>
                   );
@@ -312,23 +312,23 @@ const PrivacyPolicy = () => {
                       <Typography variant="h5">{x.key}</Typography>
                       <Typography className="privacypolicy__description">
                         {x.details}
-                        {x.key === 'Google Analytics' && (
-                          <LinkAnchor
+                        {x.key === "Google Analytics" && (
+                          <Link
                             href="https://policies.google.com/privacy"
                             target="_blank"
                             rel="noreferrer"
                           >
                             https://policies.google.com/privacy
-                          </LinkAnchor>
+                          </Link>
                         )}
-                        {x.key === 'Matomo' && (
-                          <LinkAnchor
+                        {x.key === "Matomo" && (
+                          <Link
                             href="https://matomo.org/privacy-policy"
                             target="_blank"
                             rel="noreferrer"
                           >
                             https://matomo.org/privacy-policy
-                          </LinkAnchor>
+                          </Link>
                         )}
                       </Typography>
                     </Fragment>

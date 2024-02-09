@@ -171,38 +171,3 @@ async function handleMultiversX(network: Network) {
     );
   }
 }
-
-async function handleCryptoorg(network: Network) {
-  if (!isCryptoorg(network)) {
-    return undefined;
-  }
-
-  const promises = [
-    fetch(network.blocks).then((r) => r.json()),
-    fetch(network.price).then((r) => r.json()),
-  ];
-
-  const [blocks, price] = await Promise.all(promises);
-
-  const {
-    block: {
-      header: { chain_id, height },
-    },
-  } = blocks;
-
-  const {
-    "crypto-com-chain": { usd },
-  } = price;
-
-  return {
-    block: [{ height }],
-    genesis: [{ chain_id }],
-    token_price: [{ price: usd, unit_name: "CRO" }],
-  };
-
-  function isCryptoorg(u: unknown): u is CryptoorgNetwork {
-    const n = u as CryptoorgNetwork;
-
-    return n?.name === "Crypto.org Chain" && "blocks" in n && "price" in n;
-  }
-}

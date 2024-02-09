@@ -1,19 +1,24 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import ListItemButton, { ListItemButtonProps } from '@mui/material/ListItemButton';
-import Box, { BoxProps } from '@mui/material/Box';
-import ListItemText from '@mui/material/ListItemText';
-import MenuList, { MenuListProps } from '@mui/material/MenuList';
-import Popover from '@mui/material/Popover';
-import classnames from 'classnames';
-import useTranslation from 'next-translate/useTranslation';
-import Link from 'next/link';
-import { NextRouter, useRouter } from 'next/router';
-import { ComponentRef, FC, useCallback, useState } from 'react';
-import type { MenuItemLinkProps, MenuItemProps } from './types';
-import useStyles from './useStyles';
-import { getMenuItems } from './utils';
-import { useRef } from 'react';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import type { BoxProps } from "@mui/material/Box";
+import Box from "@mui/material/Box";
+import type { ListItemButtonProps } from "@mui/material/ListItemButton";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import type { MenuListProps } from "@mui/material/MenuList";
+import MenuList from "@mui/material/MenuList";
+import Popover from "@mui/material/Popover";
+import classnames from "classnames";
+import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
+import type { NextRouter } from "next/router";
+import { useRouter } from "next/router";
+import type { ComponentRef, FC } from "react";
+import { useCallback, useRef, useState } from "react";
+
+import type { MenuItemLinkProps, MenuItemProps } from "./types";
+import useStyles from "./useStyles";
+import { getMenuItems } from "./utils";
 
 /**
  * It returns true if the url is the current path or if the current path includes the url
@@ -22,10 +27,14 @@ import { useRef } from 'react';
  * @returns A boolean value.
  */
 function isMenuItemActive(url: string, router: NextRouter) {
-  url = url.replace(/#.*$/, '').replace(/\?.*$/, '');
-  const routePath = router?.asPath.replace(/#.*$/, '').replace(/\?.*$/, '');
+  url = url.replace(/#.*$/, "").replace(/\?.*$/, "");
+
+  const routePath = router?.asPath.replace(/#.*$/, "").replace(/\?.*$/, "");
+
   if (url === routePath) return true;
-  if (routePath?.includes(url) && url !== '/') return true;
+
+  if (routePath?.includes(url) && url !== "/") return true;
+
   return false;
 }
 
@@ -34,10 +43,16 @@ function isMenuItemActive(url: string, router: NextRouter) {
  * @param  - `menuKey` - the key of the menu item in the translation file
  * @returns A styled list item button with a list item text primary.
  */
-const MenuItemLink: FC<MenuItemLinkProps & ListItemButtonProps> = ({ menuKey, url, className, ...props }) => {
-  const { t } = useTranslation('common');
+const MenuItemLink: FC<MenuItemLinkProps & ListItemButtonProps> = ({
+  className,
+  menuKey,
+  url,
+  ...props
+}) => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const styles = useStyles();
+
   return (
     <Link href={url} key={menuKey} passHref>
       <ListItemButton
@@ -46,7 +61,7 @@ const MenuItemLink: FC<MenuItemLinkProps & ListItemButtonProps> = ({ menuKey, ur
           {
             menuitemsdesktop__active: isMenuItemActive(url, router),
           },
-          'menuitemsdesktop__list-item-btn'
+          "menuitemsdesktop__list-item-btn",
         )}
         css={styles.listItemButton}
         {...props}
@@ -57,57 +72,82 @@ const MenuItemLink: FC<MenuItemLinkProps & ListItemButtonProps> = ({ menuKey, ur
   );
 };
 
-type SubmenuProps = Omit<MenuItemProps, 'link'> & {
-  submenus: Required<MenuItemProps>['submenus'];
+type SubmenuProps = Omit<MenuItemProps, "link"> & {
+  submenus: Required<MenuItemProps>["submenus"];
 } & BoxProps;
 
 /* It's a submenu component that renders a button that toggles the submenu. */
-const Submenu: FC<SubmenuProps> = ({ menuKey, submenus, className, ...props }) => {
-  const [activeSubmenuKey, setActiveSubmenuKey] = useState('');
+const Submenu: FC<SubmenuProps> = ({
+  className,
+  menuKey,
+  submenus,
+  ...props
+}) => {
+  const [activeSubmenuKey, setActiveSubmenuKey] = useState("");
   const [open, setOpen] = useState(false);
+
   const handleToggleSubmenu = useCallback(() => {
-    setActiveSubmenuKey(menuKey === activeSubmenuKey ? '' : menuKey);
+    setActiveSubmenuKey(menuKey === activeSubmenuKey ? "" : menuKey);
     setOpen(true);
   }, [menuKey, activeSubmenuKey]);
+
   const handleCLose = useCallback(() => {
-    setActiveSubmenuKey(menuKey === activeSubmenuKey ? '' : menuKey);
+    setActiveSubmenuKey(menuKey === activeSubmenuKey ? "" : menuKey);
     setOpen(false);
   }, [menuKey, activeSubmenuKey]);
-  const ArrowIcon = activeSubmenuKey === menuKey ? KeyboardArrowUpIcon : KeyboardArrowDownIcon;
+
+  const ArrowIcon =
+    activeSubmenuKey === menuKey ? KeyboardArrowUpIcon : KeyboardArrowDownIcon;
+
   const buttonRef = useRef<ComponentRef<typeof ListItemButton>>(null);
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   const router = useRouter();
   const styles = useStyles();
+
   return (
-    <Box className={classnames(className, 'menuitemsdesktop__submenu-container')} {...props}>
+    <Box
+      className={classnames(className, "menuitemsdesktop__submenu-container")}
+      {...props}
+    >
       <ListItemButton
-        onClick={handleToggleSubmenu}
         className={classnames(
           {
-            menuitemsdesktop__active: submenus.some((submenu) => isMenuItemActive(submenu.url, router)),
+            menuitemsdesktop__active: submenus.some((submenu) =>
+              isMenuItemActive(submenu.url, router),
+            ),
           },
-          'menuitemsdesktop__list-item-btn'
+          "menuitemsdesktop__list-item-btn",
         )}
         css={styles.listItemButton}
+        onClick={handleToggleSubmenu}
         ref={buttonRef}
       >
         <ListItemText primary={t(menuKey)} />
         <ArrowIcon />
       </ListItemButton>
       <Popover
-        className="menuitemsdesktop__submenu-popover"
-        open={open}
+        PaperProps={{
+          className: "menuitemsdesktop__submenu-paper",
+          style: { width: buttonRef.current?.clientWidth },
+        }}
         anchorEl={buttonRef.current}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          horizontal: "left",
+          vertical: "bottom",
         }}
-        PaperProps={{ className: 'menuitemsdesktop__submenu-paper', style: { width: buttonRef.current?.clientWidth } }}
-        onClose={handleCLose}
+        className="menuitemsdesktop__submenu-popover"
         css={styles.popover}
+        onClose={handleCLose}
+        open={open}
       >
         {menuKey === activeSubmenuKey &&
-          submenus.map((submenu) => <MenuItemLink key={submenu.key} menuKey={submenu.key} url={submenu.url} />)}
+          submenus.map((submenu) => (
+            <MenuItemLink
+              key={submenu.key}
+              menuKey={submenu.key}
+              url={submenu.url}
+            />
+          ))}
       </Popover>
     </Box>
   );
@@ -119,19 +159,21 @@ const Submenu: FC<SubmenuProps> = ({ menuKey, submenus, className, ...props }) =
  * @param  - `menuKey` - the key of the menu item.
  * @returns A React component.
  */
-const MenuItem: FC<MenuItemProps & (ListItemButtonProps | SubmenuProps | undefined)> = ({
-  menuKey,
-  url,
-  submenus,
-  ref: _, // deepscan-disable-line
-  ...props
-}) => {
+const MenuItem: FC<
+  MenuItemProps & (ListItemButtonProps | SubmenuProps | undefined)
+> = ({ menuKey, submenus, url, ...props }) => {
   if (url) {
     return <MenuItemLink {...{ menuKey, url }} />;
   }
-  if (!!submenus && ((_): _ is Omit<SubmenuProps, 'menuKey' | 'submenus' | 'ref'> => !!submenus)(props)) {
+
+  if (
+    !!submenus &&
+    ((_): _ is Omit<SubmenuProps, "menuKey" | "ref" | "submenus"> =>
+      !!submenus)(props)
+  ) {
     return <Submenu menuKey={menuKey} submenus={submenus} {...props} />;
   }
+
   return null;
 };
 
@@ -144,9 +186,18 @@ const MenuItems: FC<MenuListProps> = ({ className, ...props }) => {
   const styles = useStyles();
 
   return (
-    <MenuList className={classnames(className, 'menuitemsdesktop__container')} {...props} css={styles.root}>
-      {items.map(({ key, ...props }) => (
-        <MenuItem key={key} menuKey={key} className={classnames({ menuitemsdesktop__active: false })} {...props} />
+    <MenuList
+      className={classnames(className, "menuitemsdesktop__container")}
+      {...props}
+      css={styles.root}
+    >
+      {items.map(({ key, ...props2 }) => (
+        <MenuItem
+          className={classnames({ menuitemsdesktop__active: false })}
+          key={key}
+          menuKey={key}
+          {...props2}
+        />
       ))}
     </MenuList>
   );

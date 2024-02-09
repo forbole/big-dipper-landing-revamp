@@ -1,14 +1,16 @@
 /* eslint-disable max-len */
-import Typography from '@mui/material/Typography';
-import useTranslation from 'next-translate/useTranslation';
-import Head from 'next/head';
-import { Fragment } from 'react';
-import { SectionLimit } from '@/src/components';
-import ContentBox from '@/src/components/ContentBox';
-import Layout from '@/src/components/Layout';
-import LinkAnchor from '@/src/components/LinkAnchor';
-import SectionBox from '@/src/components/SectionBox';
-import useStyles from './useStyles';
+import Typography from "@mui/material/Typography";
+import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
+import Link from "next/link";
+import { Fragment } from "react";
+
+import { SectionLimit } from "@/src/components";
+import ContentBox from "@/src/components/ContentBox";
+import Layout from "@/src/components/Layout";
+import SectionBox from "@/src/components/SectionBox";
+
+import useStyles from "./useStyles";
 import {
   analytics,
   cookies,
@@ -17,23 +19,24 @@ import {
   definitions,
   legalRequirements,
   trackingDefinitions,
-} from './utils';
+} from "./utils";
 
 /* A React component that renders the Privacy Policy page. */
 const PrivacyPolicy = () => {
-  const { t } = useTranslation('privacy-policy');
+  const { t } = useTranslation("privacy-policy");
   const styles = useStyles();
+
   return (
     <Layout css={styles.root}>
       <Head>
-        <title>{t('privacyPolicy')}</title>
+        <title>{t("privacyPolicy")}</title>
       </Head>
       <SectionBox main>
         <SectionLimit>
           <Typography className="privacypolicy__title" variant="h2">
-            {t('privacyPolicy')}
+            {t("privacyPolicy")}
           </Typography>
-          <Typography className="privacypolicy__intro">{t('intro')}</Typography>
+          <Typography className="privacypolicy__intro">{t("intro")}</Typography>
           <Typography className="privacypolicy__intro">
             Last updated: April 02, 2021
           </Typography>
@@ -52,23 +55,21 @@ const PrivacyPolicy = () => {
                 For the purposes of this Privacy Policy:
               </Typography>
               <ul>
-                {definitions.map((x) => {
-                  return (
-                    <Typography component="li" key={x.key}>
-                      <span className="privacypolicy__key">{x.key}</span>{' '}
-                      {x.details}
-                      {x.key === 'Website' && (
-                        <LinkAnchor
-                          href="https://bigdipper.live"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          https://bigdipper.live
-                        </LinkAnchor>
-                      )}
-                    </Typography>
-                  );
-                })}
+                {definitions.map((x) => (
+                  <Typography component="li" key={x.key}>
+                    <span className="privacypolicy__key">{x.key}</span>{" "}
+                    {x.details}
+                    {x.key === "Website" && (
+                      <Link
+                        href="https://bigdipper.live"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        https://bigdipper.live
+                      </Link>
+                    )}
+                  </Typography>
+                ))}
               </ul>
             </div>
             <Typography variant="h3">
@@ -119,23 +120,21 @@ const PrivacyPolicy = () => {
                   Service. The technologies We use may include:
                 </Typography>
                 <ul>
-                  {trackingDefinitions.map((x) => {
-                    return (
-                      <Typography component="li" key={x.key}>
-                        <span className="privacypolicy__key">{x.key}</span>{' '}
-                        {x.details}
-                        {x.key === 'Flash Cookies - ' && (
-                          <LinkAnchor
-                            href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
-                          </LinkAnchor>
-                        )}
-                      </Typography>
-                    );
-                  })}
+                  {trackingDefinitions.map((x) => (
+                    <Typography component="li" key={x.key}>
+                      <span className="privacypolicy__key">{x.key}</span>{" "}
+                      {x.details}
+                      {x.key === "Flash Cookies - " && (
+                        <Link
+                          href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
+                        </Link>
+                      )}
+                    </Typography>
+                  ))}
                 </ul>
                 <Typography className="privacypolicy__description">
                   Cookies can be &quot;Persistent&quot; or &quot;Session&quot;
@@ -149,29 +148,27 @@ const PrivacyPolicy = () => {
                   We use both Session and Persistent Cookies for the purposes
                   set out below:
                 </Typography>
-                {cookies.map((x) => {
-                  return (
-                    <div key={x.key} className="privacypolicy__cookie">
-                      <Typography variant="h6">{x.key}</Typography>
-                      <div className="privacypolicy__indent-2">
-                        <Typography>
-                          <span className="privacypolicy__key">Type:</span>{' '}
-                          {x.type}
-                        </Typography>
-                        <Typography>
-                          <span className="privacypolicy__key">
-                            Administered By:
-                          </span>{' '}
-                          {x.administered}
-                        </Typography>
-                        <Typography>
-                          <span className="privacypolicy__key">Purpose:</span>{' '}
-                          {x.purpose}
-                        </Typography>
-                      </div>
+                {cookies.map((x) => (
+                  <div className="privacypolicy__cookie" key={x.key}>
+                    <Typography variant="h6">{x.key}</Typography>
+                    <div className="privacypolicy__indent-2">
+                      <Typography>
+                        <span className="privacypolicy__key">Type:</span>{" "}
+                        {x.type}
+                      </Typography>
+                      <Typography>
+                        <span className="privacypolicy__key">
+                          Administered By:
+                        </span>{" "}
+                        {x.administered}
+                      </Typography>
+                      <Typography>
+                        <span className="privacypolicy__key">Purpose:</span>{" "}
+                        {x.purpose}
+                      </Typography>
                     </div>
-                  );
-                })}
+                  </div>
+                ))}
                 <Typography className="privacypolicy__description">
                   For more information about the cookies we use and your choices
                   regarding cookies, please visit our Cookies Policy or the
@@ -183,28 +180,24 @@ const PrivacyPolicy = () => {
                 The Company may use Personal Data for the following purposes:
               </Typography>
               <ul>
-                {dataUse.map((x) => {
-                  return (
-                    <Typography component="li" key={x.key}>
-                      <span className="privacypolicy__key">{x.key}</span>{' '}
-                      {x.details}
-                    </Typography>
-                  );
-                })}
+                {dataUse.map((x) => (
+                  <Typography component="li" key={x.key}>
+                    <span className="privacypolicy__key">{x.key}</span>{" "}
+                    {x.details}
+                  </Typography>
+                ))}
               </ul>
               <Typography className="privacypolicy__description">
                 We may share Your personal information in the following
                 situations:
               </Typography>
               <ul>
-                {dataUseTwo.map((x) => {
-                  return (
-                    <Typography component="li" key={x.key}>
-                      <span className="privacypolicy__key">{x.key}</span>{' '}
-                      {x.details}
-                    </Typography>
-                  );
-                })}
+                {dataUseTwo.map((x) => (
+                  <Typography component="li" key={x.key}>
+                    <span className="privacypolicy__key">{x.key}</span>{" "}
+                    {x.details}
+                  </Typography>
+                ))}
               </ul>
             </div>
             <Typography variant="h3">
@@ -271,13 +264,11 @@ const PrivacyPolicy = () => {
                 belief that such action is necessary to:
               </Typography>
               <ul>
-                {legalRequirements.map((x) => {
-                  return (
-                    <Typography component="li" key={x}>
-                      {x}
-                    </Typography>
-                  );
-                })}
+                {legalRequirements.map((x) => (
+                  <Typography component="li" key={x}>
+                    {x}
+                  </Typography>
+                ))}
               </ul>
               <Typography variant="h4">
                 Security of Your Personal Data
@@ -306,34 +297,32 @@ const PrivacyPolicy = () => {
                 the use of our Service.
               </Typography>
               <div className="privacypolicy__indent-2">
-                {analytics.map((x) => {
-                  return (
-                    <Fragment key={x.key}>
-                      <Typography variant="h5">{x.key}</Typography>
-                      <Typography className="privacypolicy__description">
-                        {x.details}
-                        {x.key === 'Google Analytics' && (
-                          <LinkAnchor
-                            href="https://policies.google.com/privacy"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            https://policies.google.com/privacy
-                          </LinkAnchor>
-                        )}
-                        {x.key === 'Matomo' && (
-                          <LinkAnchor
-                            href="https://matomo.org/privacy-policy"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            https://matomo.org/privacy-policy
-                          </LinkAnchor>
-                        )}
-                      </Typography>
-                    </Fragment>
-                  );
-                })}
+                {analytics.map((x) => (
+                  <Fragment key={x.key}>
+                    <Typography variant="h5">{x.key}</Typography>
+                    <Typography className="privacypolicy__description">
+                      {x.details}
+                      {x.key === "Google Analytics" && (
+                        <Link
+                          href="https://policies.google.com/privacy"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          https://policies.google.com/privacy
+                        </Link>
+                      )}
+                      {x.key === "Matomo" && (
+                        <Link
+                          href="https://matomo.org/privacy-policy"
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          https://matomo.org/privacy-policy
+                        </Link>
+                      )}
+                    </Typography>
+                  </Fragment>
+                ))}
               </div>
             </div>
             <Typography variant="h3">Children&apos;s Privacy</Typography>

@@ -3,78 +3,41 @@ import {
   LinkedinIcon,
   TelegramIcon,
   TwitterIcon,
-} from '@/src/components/icons';
-import * as LINKS from '@/src/utils/links';
-import type { IconType, LinkType } from './types';
+} from "@/src/components/icons";
+import * as LINKS from "@/src/utils/links";
 
-export const bdLinks: LinkType[] = [
-  {
-    key: 'about',
-    url: LINKS.ABOUT,
-  },
-  {
-    key: 'faq',
-    url: LINKS.FAQ,
-  },
-  {
-    key: 'donation',
-    url: LINKS.DONATION,
-  },
-  {
-    key: 'docs',
-    url: LINKS.DOCS,
-    external: true,
-  },
-];
-
-export const forboleLinks: LinkType[] = [
-  {
-    key: 'stakeNow',
-    url: LINKS.STAKE_NOW,
-    external: true,
-  },
-  {
-    key: 'networks',
-    url: LINKS.NETWORKS,
-    external: true,
-  },
-  {
-    key: 'blog',
-    url: LINKS.BLOG,
-    external: true,
-  },
-];
+import type { IconType, LinkType } from "./types";
 
 export const socialLinks: IconType[] = [
   {
+    className: "twitter",
     component: <TwitterIcon />,
-    className: 'twitter',
     url: LINKS.TWITTER,
   },
   {
+    className: "telegram",
     component: <TelegramIcon />,
-    className: 'telegram',
     url: LINKS.TELEGRAM,
   },
   {
+    className: "github",
     component: <GithubIcon />,
-    className: 'github',
     url: LINKS.GITHUB,
   },
   {
+    className: "linkedin",
     component: <LinkedinIcon />,
-    className: 'linkedin',
     url: LINKS.LINKEDIN,
   },
 ];
 
 export const termsLinks: LinkType[] = [
   {
-    key: 'termsAndConditions',
+    key: "termsAndConditions",
     url: LINKS.TERMS_AND_CONDITIONS,
   },
   {
-    key: 'privacyPolicy',
+    key: "privacyPolicy",
     url: LINKS.PRIVACY_POLICY,
   },
 ];

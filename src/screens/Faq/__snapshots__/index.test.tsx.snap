@@ -5,6 +5,76 @@ exports[`FAQ matches snapshot 1`] = `
   padding: 0;
 }
 
+.emotion-1 .faq__content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
+  color: #051D5B;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 32px;
+}
+
+@media (max-width:767.95px) {
+  .emotion-1 .faq__content {
+    font-size: 0.875rem;
+  }
+}
+
+.emotion-1 .faq__content-wrapper {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 .faq__header-wrapper {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.emotion-1 .faq__menu-desktop {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: 80px;
+  padding: 0;
+}
+
+.emotion-1 .faq__menu-desktop>.MuiButtonBase-root {
+  color: #fff;
+}
+
+@media (max-width:767.95px) {
+  .emotion-1 .faq__menu-desktop {
+    display: none;
+  }
+}
+
 .emotion-1 .faq__title {
   text-align: left;
 }
@@ -15,78 +85,8 @@ exports[`FAQ matches snapshot 1`] = `
   }
 }
 
-.emotion-1 .faq__content {
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 1px 8px rgba(16, 24, 40, 0.06),0px 1px 10px rgba(16, 24, 40, 0.05);
-  color: #051D5B;
-  border-radius: 12px;
-  padding: 32px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-@media (max-width:767.95px) {
-  .emotion-1 .faq__content {
-    font-size: 0.875rem;
-  }
-}
-
-.emotion-1 .faq__header-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
-.emotion-1 .faq__content-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
 @media (min-width:768px) {
   .emotion-1 .faq_menu-mobile {
-    display: none;
-  }
-}
-
-.emotion-1 .faq__menu-desktop {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  gap: 24px;
-  margin-right: 80px;
-}
-
-.emotion-1 .faq__menu-desktop>.MuiButtonBase-root {
-  color: #fff;
-}
-
-@media (max-width:767.95px) {
-  .emotion-1 .faq__menu-desktop {
     display: none;
   }
 }

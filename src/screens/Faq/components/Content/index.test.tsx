@@ -1,31 +1,34 @@
 /* eslint-disable react/display-name */
-import Box from '@mui/material/Box';
-import { render, screen } from '@testing-library/react';
-import { MockTheme } from '@/__mocks__';
-import Component from '.';
+import { MockTheme } from "@/__mocks__";
+import Box from "@mui/material/Box";
+import { render, screen } from "@testing-library/react";
 
-jest.mock('@/src/components/ContentBox', () => (props: object) => (
+import Component from ".";
+
+jest.mock("@/src/components/ContentBox", () => (props: object) => (
   <Box data-testid="ContentBox" {...props} />
 ));
+
 // ==================================
 // unit tests
 // ==================================
-describe('Content', () => {
-  it('matches snapshot', async () => {
+describe("Content", () => {
+  it("matches snapshot", async () => {
     const { container } = render(
       <MockTheme>
         <Component
           content={[
             {
-              question: 'How are you?',
-              answer: 'Fine.',
+              answer: "Fine.",
+              question: "How are you?",
             },
           ]}
         />
-      </MockTheme>
+      </MockTheme>,
     );
+
     expect(screen.getByText(/Fine./i)).toBeInTheDocument();
-    expect(screen.getByTestId('ContentBox')).toBeInTheDocument();
+    expect(screen.getByTestId("ContentBox")).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 

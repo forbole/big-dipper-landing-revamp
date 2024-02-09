@@ -2,12 +2,12 @@
 
 exports[`ContentBox matches snapshot 1`] = `
 .emotion-0 {
+  background-color: rgba(255, 255, 255, 0.5);
   border: solid #fff 2px;
+  border-radius: 0.75rem;
+  color: #000;
   overflow: auto;
   padding: 32px;
-  border-radius: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000;
 }
 
 @media (min-width:768px) {

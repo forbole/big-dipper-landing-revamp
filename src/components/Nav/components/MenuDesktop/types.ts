@@ -1,5 +1,6 @@
-import { ComponentProps } from 'react';
-import HorizontalMenubar from '../HorizontalMenubar';
+import type { ComponentProps } from "react";
+
+import type HorizontalMenubar from "../HorizontalMenubar";
 
 export interface MenuDesktopProps
   extends ComponentProps<typeof HorizontalMenubar> {

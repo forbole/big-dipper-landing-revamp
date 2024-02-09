@@ -1,37 +1,44 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Badge from '@mui/material/Badge';
-import Box from '@mui/material/Box';
-import MenuList from '@mui/material/MenuList';
-import Typography from '@mui/material/Typography';
-import classnames from 'classnames';
-import { motion } from 'framer-motion';
-import { FC, useCallback, useRef } from 'react';
-import NetworkIcon from '@/src/components/NetworkIcon';
-import getChainIdFromNetwork from '@/src/utils/getChainIdFromNetwork';
-import NetworkMenuLink from '../NetworkMenuLink';
-import type { NetworkBoxProps } from './types';
-import useStyles from './useStyles';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Badge from "@mui/material/Badge";
+import Box from "@mui/material/Box";
+import MenuList from "@mui/material/MenuList";
+import Typography from "@mui/material/Typography";
+import classnames from "classnames";
+import { motion } from "framer-motion";
+import type { FC } from "react";
+import { useCallback, useRef } from "react";
+
+import NetworkIcon from "@/src/components/NetworkIcon";
+import getChainIdFromNetwork from "@/src/utils/getChainIdFromNetwork";
+
+import NetworkMenuLink from "../NetworkMenuLink";
+import type { NetworkBoxProps } from "./types";
+import useStyles from "./useStyles";
 
 /* A React component that renders a network box. */
-const NetworkBox: FC<NetworkBoxProps> = ({ network, isOpened, onOpen }) => {
-  const handleClick = useCallback(() => onOpen(network.name), [network.name, onOpen]);
+const NetworkBox: FC<NetworkBoxProps> = ({ isOpened, network, onOpen }) => {
+  const handleClick = useCallback(
+    () => onOpen(network.name),
+    [network.name, onOpen],
+  );
+
   const chainId = getChainIdFromNetwork(network);
-  const { name, links } = network;
+  const { links, name } = network;
   const styles = useStyles();
   const ref = useRef(null);
 
   return (
     <motion.div
       className={classnames({ networkbox__active: isOpened })}
-      ref={ref}
       css={styles.root}
-      variants={{
-        initial: { opacity: 0, scale: 0.8 },
-        appear: { opacity: 1, scale: 1 },
-      }}
-      transition={{ duration: 0.3 }}
       initial="initial"
+      ref={ref}
+      transition={{ duration: 0.3 }}
+      variants={{
+        appear: { opacity: 1, scale: 1 },
+        initial: { opacity: 0, scale: 0.8 },
+      }}
       whileInView="appear"
     >
       {isOpened && (
@@ -43,17 +50,15 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, isOpened, onOpen }) => {
           </MenuList>
         </Box>
       )}
-      <Box onClick={handleClick} className="networkbox__dropdown-btn">
+      <Box className="networkbox__dropdown-btn" onClick={handleClick}>
         <Box className="image">
-          <Badge color="success" badgeContent={links?.length}/>
-          <NetworkIcon networkName={name} width="48" height="48" />
+          <Badge badgeContent={links?.length} color="success" />
+          <NetworkIcon height="48" networkName={name} width="48" />
         </Box>
         <Box>
           <Typography variant="h4">{name}</Typography>
           <Box className="networkbox__subtitlecontainer">
-            <Typography variant="body2">
-                {chainId}
-            </Typography>
+            <Typography variant="body2">{chainId}</Typography>
           </Box>
         </Box>
         {!!links?.[0] && (

@@ -1,16 +1,17 @@
-import { css, useTheme } from '@mui/material';
+import { css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
     root: css({
-      display: 'flex',
-      flexFlow: 'row nowrap',
-      justifyContent: 'center',
-      alignItems: 'center',
+      alignItems: "center",
+      display: "flex",
+      flexFlow: "row nowrap",
       height: theme.spacing(9.875),
-      [theme.breakpoints.up('md')]: {
-        justifyContent: 'space-between',
+      justifyContent: "center",
+      [theme.breakpoints.up("md")]: {
+        justifyContent: "space-between",
       },
     }),
   };

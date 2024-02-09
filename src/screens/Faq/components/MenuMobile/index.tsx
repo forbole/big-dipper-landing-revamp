@@ -1,47 +1,46 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Typography from '@mui/material/Typography';
-import classnames from 'classnames';
-import { FC } from 'react';
-import { useMenuMobile } from './hooks';
-import type { MenuType } from './types';
-import useStyles from './useStyles';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Typography from "@mui/material/Typography";
+import classnames from "classnames";
+import type { FC } from "react";
+
+import { useMenuMobile } from "./hooks";
+import type { MenuType } from "./types";
+import useStyles from "./useStyles";
 
 interface MenuItemMobileProps {
-  label: string;
-  index: number;
-  selected: number;
-  handleChange: MenuType['handleChange'];
+  handleChange: MenuType["handleChange"];
   handleClose: () => void;
+  index: number;
+  label: string;
+  selected: number;
 }
 
 const MenuItemMobile: FC<MenuItemMobileProps> = ({
-  label,
-  index,
-  selected,
   handleChange,
   handleClose,
-}) => {
-  return (
-    <MenuItem
-      onClick={() => {
-        handleChange?.(index);
-        handleClose();
-      }}
-      disableRipple
-      className={classnames({
-        menumobile__active: index === selected,
-      })}
-    >
-      <Typography variant="h5">{label}</Typography>
-    </MenuItem>
-  );
-};
+  index,
+  label,
+  selected,
+}) => (
+  <MenuItem
+    className={classnames({
+      menumobile__active: index === selected,
+    })}
+    disableRipple
+    onClick={() => {
+      handleChange?.(index);
+      handleClose();
+    }}
+  >
+    <Typography variant="h5">{label}</Typography>
+  </MenuItem>
+);
 
-const MenuMobile: FC<MenuType & JSX.IntrinsicElements['nav']> = ({
+const MenuMobile: FC<MenuType & JSX.IntrinsicElements["nav"]> = ({
   className,
   handleChange,
   items,
@@ -49,35 +48,36 @@ const MenuMobile: FC<MenuType & JSX.IntrinsicElements['nav']> = ({
 }) => {
   const { anchorEl, handleClick, handleClose } = useMenuMobile();
   const styles = useStyles();
+
   return (
     <nav className={className} css={styles.root}>
       <Button className="menumobile__selected" onClick={handleClick}>
         {items[selected]}
-        {anchorEl ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/>}
+        {anchorEl ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </Button>
       <Menu
-        elevation={0}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
         anchorEl={anchorEl}
-        open={!!anchorEl}
-        onClose={handleClose}
+        anchorOrigin={{
+          horizontal: "left",
+          vertical: "bottom",
+        }}
         css={styles.menu}
+        elevation={0}
+        onClose={handleClose}
+        open={!!anchorEl}
+        transformOrigin={{
+          horizontal: "left",
+          vertical: "top",
+        }}
       >
         {items.map((label, index) => (
           <MenuItemMobile
-            key={label}
-            label={label}
-            index={index}
-            selected={selected}
             handleChange={handleChange}
             handleClose={handleClose}
+            index={index}
+            key={label}
+            label={label}
+            selected={selected}
           />
         ))}
       </Menu>

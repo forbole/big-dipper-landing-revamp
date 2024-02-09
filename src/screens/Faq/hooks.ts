@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import type { FAQType } from './types';
+import { useState } from "react";
+
+import type { FAQType } from "./types";
 
 export const useFAQ = () => {
   const [state, setState] = useState<FAQType>({
@@ -14,7 +15,7 @@ export const useFAQ = () => {
   };
 
   return {
-    state,
     handleSelected,
+    state,
   };
 };

@@ -1,39 +1,40 @@
-import { alpha, css, useTheme } from '@mui/material';
+import { alpha, css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
+    dbLogoSvg: css({
+      "& img": {
+        [theme.breakpoints.down("md")]: {
+          height: "auto !important",
+          width: `${theme.spacing(21.875)} !important`,
+        },
+      },
+    }),
     root: css({
       /* Blur 02 */
       ...theme.mixins.blur02,
-      [theme.breakpoints.up('md')]: {
-        display: 'none',
+      "& .horizontalmenubar__container button": {
+        backgroundColor: alpha(theme.palette.common.white, 0.3),
+        borderRadius: "50%",
+        height: theme.spacing(5),
+        minHeight: theme.spacing(5),
+        minWidth: theme.spacing(5),
+        width: theme.spacing(5),
       },
-      '& .menumobile__paper': {
+      "& .menumobile__paper": {
         /* Secondary Color/Royal Blue Transparent 03 */
         backgroundColor: alpha(theme.palette.primary.main, 0.7),
         /* Blur 03 */
         ...theme.mixins.blur03,
-        padding: theme.spacing(2, 0),
         borderRadius: theme.spacing(2),
         margin: theme.spacing(0, 3),
+        padding: theme.spacing(2, 0),
       },
-      '& .horizontalmenubar__container button': {
-        backgroundColor: alpha(theme.palette.common.white, 0.3),
-        borderRadius: '50%',
-        minWidth: theme.spacing(5),
-        minHeight: theme.spacing(5),
-        width: theme.spacing(5),
-        height: theme.spacing(5),
+      [theme.breakpoints.up("md")]: {
+        display: "none",
       },
-    }),
-    dbLogoSvg: css({
-      '& img': {
-        [theme.breakpoints.down('md')]: {
-          width: `${theme.spacing(21.875)} !important`,
-          height: 'auto !important',
-        },
-      }
     }),
   };
 };

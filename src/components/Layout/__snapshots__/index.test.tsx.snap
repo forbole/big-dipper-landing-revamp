@@ -2,6 +2,14 @@
 
 exports[`Layout matches snapshot 1`] = `
 .emotion-0 {
+  background-color: #fff;
+  background-image: url(/images/background/back.webp);
+  background-origin: content-box;
+  -webkit-background-position: 50% 0%;
+  background-position: 50% 0%;
+  background-repeat: repeat;
+  -webkit-background-size: 1920px 3814px;
+  background-size: 1920px 3814px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,34 +19,31 @@ exports[`Layout matches snapshot 1`] = `
   flex-direction: column;
   min-height: 100vh;
   min-width: 320px;
-  background-color: #fff;
-  background-image: url(/images/background/back.webp);
-  background-repeat: repeat;
-  background-origin: content-box;
-  -webkit-background-size: 1920px 3814px;
-  background-size: 1920px 3814px;
-  -webkit-background-position: 50% 0%;
-  background-position: 50% 0%;
 }
 
-@media (max-width:899.95px) {
-  .emotion-0 {
-    background-image: url(/images/background/mobile.webp);
-    -webkit-background-size: 100% 3814px;
-    background-size: 100% 3814px;
-    -webkit-background-position: 50% -1190px;
-    background-position: 50% -1190px;
-  }
-}
-
-.emotion-0.layout__scrolled .nav__container {
+.emotion-0 .layout__scroll-fab {
   background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  border-radius: 50%;
+  bottom: 22px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  color: rgba(0, 0, 0, 0.87);
+  display: none;
+  max-height: 48px;
+  max-width: 48px;
+  opacity: 0.8;
+  padding: 0;
+  position: fixed;
+  right: 22px;
+  z-index: 2;
 }
 
-@media (min-width:900px) {
-  .emotion-0.layout__scrolled .nav__container {
-    background-color: rgba(25, 118, 210, 0.4);
-  }
+.emotion-0 .layout__scroll-fab .MuiSvgIcon-root {
+  font-size: 40px;
+}
+
+.emotion-0 .layout__scroll-fab:hover {
+  background-color: #1976d2;
 }
 
 .emotion-0 .layout__wrapper-content {
@@ -54,35 +59,30 @@ exports[`Layout matches snapshot 1`] = `
   display: block;
 }
 
+.emotion-0.layout__scrolled .nav__container {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width:900px) {
+  .emotion-0.layout__scrolled .nav__container {
+    background-color: rgba(25, 118, 210, 0.4);
+  }
+}
+
 @media (min-width:600px) {
   .emotion-0.layout__scrolled.layout__footerinview .layout__scroll-fab {
     display: none;
   }
 }
 
-.emotion-0 .layout__scroll-fab {
-  position: fixed;
-  bottom: 22px;
-  right: 22px;
-  z-index: 2;
-  padding: 0;
-  max-width: 48px;
-  max-height: 48px;
-  border: 1px solid rgba(0, 0, 0, 0.87);
-  color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  border-radius: 50%;
-  display: none;
-  opacity: 0.8;
-}
-
-.emotion-0 .layout__scroll-fab:hover {
-  background-color: #1976d2;
-}
-
-.emotion-0 .layout__scroll-fab .MuiSvgIcon-root {
-  font-size: 40px;
+@media (max-width:899.95px) {
+  .emotion-0 {
+    background-image: url(/images/background/mobile.webp);
+    -webkit-background-position: 50% -1190px;
+    background-position: 50% -1190px;
+    -webkit-background-size: 100% 3814px;
+    background-size: 100% 3814px;
+  }
 }
 
 .emotion-2 {
@@ -228,7 +228,7 @@ exports[`Layout matches snapshot 1`] = `
       data-testid="Footer"
     />
     <button
-      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-2"
+      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-2"
       tabindex="0"
       type="button"
     >

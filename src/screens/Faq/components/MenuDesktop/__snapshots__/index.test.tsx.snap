@@ -2,6 +2,10 @@
 
 exports[`MenuDesktop matches snapshot 1`] = `
 .emotion-0 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,19 +13,36 @@ exports[`MenuDesktop matches snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   padding: 16px 0px;
+}
+
+.emotion-0 .menudesktop__active {
+  background-color: #F6504B;
+  background-image: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
+  border-radius: 200px;
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+}
+
+.emotion-0 .menudesktop__active:hover {
+  background-color: #F6504B;
+  background-image: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
+  border-radius: 200px;
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+}
+
+.emotion-0 .menudesktop__active:hover:hover {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 .emotion-0 .menudesktop__button {
   margin: 8px 0px;
-  padding: 0.75rem 1rem;
-  border-radius: 200px;
   background-color: transparent;
+  border-radius: 200px;
   color: #FFFFFF;
+  padding: 0.75rem 1rem;
   box-shadow: none;
 }
 
@@ -29,27 +50,6 @@ exports[`MenuDesktop matches snapshot 1`] = `
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-filter: none;
   filter: none;
-}
-
-.emotion-0 .menudesktop__active {
-  padding: 0.75rem 1rem;
-  border-radius: 200px;
-  background-color: #F6504B;
-  background-image: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
-  color: #FFFFFF;
-}
-
-.emotion-0 .menudesktop__active:hover {
-  padding: 0.75rem 1rem;
-  border-radius: 200px;
-  background-color: #F6504B;
-  background-image: linear-gradient(103.18deg, #F6504B 20.77%, #DC001A 118.69%);
-  color: #FFFFFF;
-}
-
-.emotion-0 .menudesktop__active:hover:hover {
-  -webkit-filter: brightness(1.2);
-  filter: brightness(1.2);
 }
 
 .emotion-1 {
@@ -85,9 +85,9 @@ exports[`MenuDesktop matches snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.875rem;
   line-height: 1.214;
   font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ exports[`MenuDesktop matches snapshot 1`] = `
     class="emotion-0"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__active menudesktop__button emotion-1"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__active menudesktop__button emotion-1"
       tabindex="0"
       type="button"
     >
@@ -172,7 +172,7 @@ exports[`MenuDesktop matches snapshot 1`] = `
       />
     </button>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__button emotion-1"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium menudesktop__button emotion-1"
       tabindex="0"
       type="button"
     >

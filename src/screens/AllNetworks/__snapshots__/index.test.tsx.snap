@@ -5,13 +5,36 @@ exports[`All Networks matches snapshot 1`] = `
   padding: 64px 0px;
 }
 
-@media (max-width:767.95px) {
-  .emotion-0 {
-    padding: 24px 0px;
+.emotion-0 .allnetworks__empty {
+  background-color: #fff;
+  border-radius: 1rem;
+  color: #000;
+  padding: 2rem;
+}
+
+.emotion-0 .allnetworks__networks {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 24px 0px 160px 0px;
+}
+
+@media (min-width:768px) {
+  .emotion-0 .allnetworks__networks {
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, minmax(256px, 1fr));
+    padding: 0px 0px 160px 0px;
   }
 }
 
 .emotion-0 .allnetworks__search {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,16 +46,47 @@ exports[`All Networks matches snapshot 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding: 0px 0px 16px 0px;
 }
 
-@media (min-width:768px) {
-  .emotion-0 .allnetworks__search {
-    padding: 0px 0px 16px 0px;
+.emotion-0 .allnetworks__search .allnetworks__tabs {
+  margin-top: 24px;
+  padding: 0;
+}
+
+.emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab {
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+.emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab:hover {
+  color: #afafaf;
+}
+
+.emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab.allnetworks__active {
+  border-bottom: 2px solid #F6504B;
+  color: #F6504B;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab {
+    font-size: 0.875rem;
+    padding: 8px;
+  }
+}
+
+.emotion-0 .allnetworks__search .MuiTypography-body1 {
+  font-weight: 400;
+  padding: 0px 0px 16px 0px;
+  text-align: left;
+}
+
+@media (max-width:767.95px) {
+  .emotion-0 .allnetworks__search .MuiTypography-body1 {
+    font-size: 0.875rem;
+    text-align: center;
   }
 }
 
@@ -45,89 +99,35 @@ exports[`All Networks matches snapshot 1`] = `
 
 @media (min-width:768px) {
   .emotion-0 .allnetworks__search .MuiTypography-h2 {
-    width: auto;
     display: block;
+    width: auto;
   }
 }
 
 .emotion-0 .allnetworks__search>.allnetworks__header {
-  width: 100%;
   padding: 0px 0px 16px 0px;
+  width: 100%;
 }
 
 @media (min-width:768px) {
   .emotion-0 .allnetworks__search>.allnetworks__header {
-    width: auto;
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+    width: auto;
   }
-}
-
-.emotion-0 .allnetworks__search .MuiTypography-body1 {
-  padding: 0px 0px 16px 0px;
-  font-weight: 400;
-  text-align: left;
-}
-
-@media (max-width:767.95px) {
-  .emotion-0 .allnetworks__search .MuiTypography-body1 {
-    text-align: center;
-    font-size: 0.875rem;
-  }
-}
-
-.emotion-0 .allnetworks__search .allnetworks__tabs {
-  margin-top: 24px;
-  padding: 0;
-}
-
-.emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab {
-  display: inline-block;
-  color: #fff;
-  font-weight: 600;
-  padding: 8px 16px;
-}
-
-@media (max-width:767.95px) {
-  .emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab {
-    padding: 8px;
-    font-size: 0.875rem;
-  }
-}
-
-.emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab:hover {
-  color: #afafaf;
-}
-
-.emotion-0 .allnetworks__search .allnetworks__tabs .allnetworks__tab.allnetworks__active {
-  color: #F6504B;
-  border-bottom: 2px solid #F6504B;
-}
-
-.emotion-0 .allnetworks__networks {
-  padding: 24px 0px 160px 0px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  grid-gap: 16px;
 }
 
 @media (min-width:768px) {
-  .emotion-0 .allnetworks__networks {
-    padding: 0px 0px 160px 0px;
-    grid-gap: 40px;
-    grid-template-columns: repeat(3, minmax(256px, 1fr));
+  .emotion-0 .allnetworks__search {
+    padding: 0px 0px 16px 0px;
   }
 }
 
-.emotion-0 .allnetworks__empty {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  color: #000;
+@media (max-width:767.95px) {
+  .emotion-0 {
+    padding: 24px 0px;
+  }
 }
 
 .emotion-1 {
@@ -153,31 +153,52 @@ exports[`All Networks matches snapshot 1`] = `
   line-height: 1.5;
 }
 
-@media (max-width:767.95px) {
-  .emotion-7 {
-    width: 100%;
+.emotion-7 .MuiAutocomplete-inputRoot {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.emotion-7 .MuiAutocomplete-root {
+  width: 100%;
+}
+
+.emotion-7 .MuiAutocomplete-root .MuiInputBase-root {
+  border: 1px solid #FFFFFF!important;
+  border-radius: 16px;
+  padding: 4px 18px 4px 18px!important;
+}
+
+@media (min-width:768px) {
+  .emotion-7 .MuiAutocomplete-root {
+    height: 38px;
+    min-width: 291px;
+    width: 291px;
   }
+}
+
+.emotion-7.emotion-7 .searchbox__cancel-btn {
+  color: #FFFFFF;
+  display: none;
 }
 
 @media (max-width:767.95px) {
   .emotion-7.emotion-7.searchbox__focused {
-    position: fixed!important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 64px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(29, 30, 34, 0.32);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     gap: 16px;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    height: 64px;
+    left: 0;
     padding: 0px 16px 0px 32px;
-    background-color: rgba(29, 30, 34, 0.32);
+    position: fixed!important;
+    right: 0;
+    top: 0;
+    z-index: 10;
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
   }
@@ -190,31 +211,10 @@ exports[`All Networks matches snapshot 1`] = `
   }
 }
 
-.emotion-7 .MuiAutocomplete-inputRoot {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.emotion-7.emotion-7 .searchbox__cancel-btn {
-  color: #FFFFFF;
-  display: none;
-}
-
-.emotion-7 .MuiAutocomplete-root {
-  width: 100%;
-}
-
-@media (min-width:768px) {
-  .emotion-7 .MuiAutocomplete-root {
-    width: 291px;
-    min-width: 291px;
-    height: 38px;
+@media (max-width:767.95px) {
+  .emotion-7 {
+    width: 100%;
   }
-}
-
-.emotion-7 .MuiAutocomplete-root .MuiInputBase-root {
-  border: 1px solid #FFFFFF!important;
-  border-radius: 16px;
-  padding: 4px 18px 4px 18px!important;
 }
 
 .emotion-8.Mui-focused .MuiAutocomplete-clearIndicator {
@@ -279,7 +279,7 @@ exports[`All Networks matches snapshot 1`] = `
 }
 
 .emotion-8 .MuiOutlinedInput-root .MuiAutocomplete-input {
-  padding: 7.5px 4px 7.5px 6px;
+  padding: 7.5px 4px 7.5px 5px;
 }
 
 .emotion-8 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
@@ -287,11 +287,13 @@ exports[`All Networks matches snapshot 1`] = `
 }
 
 .emotion-8 .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
-  padding: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
 }
 
 .emotion-8 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
-  padding: 2.5px 4px 2.5px 6px;
+  padding: 2.5px 4px 2.5px 8px;
 }
 
 .emotion-8 .MuiFilledInput-root {
@@ -326,6 +328,21 @@ exports[`All Networks matches snapshot 1`] = `
 
 .emotion-8 .MuiInputBase-hiddenLabel {
   padding-top: 8px;
+}
+
+.emotion-8 .MuiFilledInput-root.MuiInputBase-hiddenLabel {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.emotion-8 .MuiFilledInput-root.MuiInputBase-hiddenLabel .MuiAutocomplete-input {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.emotion-8 .MuiFilledInput-root.MuiInputBase-hiddenLabel.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding-top: 8px;
+  padding-bottom: 9px;
 }
 
 .emotion-8 .MuiAutocomplete-input {
@@ -692,6 +709,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 
 .emotion-18 {
   float: unset;
+  width: auto;
   overflow: hidden;
   padding: 0;
   line-height: 11px;
@@ -732,9 +750,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.875rem;
   line-height: 1.214;
   font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,sans-serif;
   text-transform: uppercase;
@@ -780,35 +798,62 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 }
 
 .emotion-22 {
-  min-width: 240px;
-  min-height: 80px;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 2px solid #EFEFEF;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #EFEFEF;
+  border-radius: 12px;
   cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 80px;
+  min-width: 240px;
   position: relative;
+  text-align: center;
 }
 
-@media (min-width:768px) {
-  .emotion-22 {
-    min-width: 224px;
+.emotion-22 .image {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0 none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  max-height: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0;
+}
+
+.emotion-22 .MuiTypography-body2 {
+  white-space: nowrap;
+}
+
+@media (max-width:767.95px) {
+  .emotion-22 .MuiTypography-body2 {
+    font-size: 0.75rem;
   }
 }
 
@@ -822,37 +867,95 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   }
 }
 
-.emotion-22 .MuiTypography-body2 {
-  white-space: nowrap;
+.emotion-22 .networkbox__dropdown-btn {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0px 24px;
+  text-align: left;
 }
 
-@media (max-width:767.95px) {
-  .emotion-22 .MuiTypography-body2 {
-    font-size: 0.75rem;
-  }
+.emotion-22 .networkbox__dropdown-btn .MuiBadge-root {
+  color: #fff;
+  margin-left: 48px;
+  margin-top: 32px;
+  position: absolute;
 }
 
-.emotion-22.emotion-22:hover,
-.emotion-22.emotion-22.networkbox__active {
-  background-color: rgba(255, 255, 255, 0.8);
+.emotion-22 .networkbox__dropdown-btn .MuiBox-root:nth-of-type(2) {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 16px;
+  overflow: hidden;
+}
+
+.emotion-22 .networkbox__dropdown-btn .MuiSvgIcon-root {
+  color: #424242;
+}
+
+.emotion-22 .networkbox__dropdown-btn .MuiTypography-h4 {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.emotion-22 .networkbox__dropdown-btn .networkbox__subtitlecontainer {
+  height: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-22 .networkbox__dropdown-btn .networkbox__subtitlecontainer .MuiTypography-body2 {
+  color: #051D5B;
+  left: 0;
+  line-height: 1;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-overflow: ellipsis;
 }
 
 .emotion-22 .networkbox__popover {
-  position: absolute;
-  z-index: 2000;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 12px;
-  padding: 8px 0px;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  color: #000;
   -webkit-box-flex-flow: column nowrap;
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   gap: 8px;
+  margin-left: -2px;
+  padding: 8px 0px;
+  position: absolute;
   top: 110%;
   width: calc(100% + 2px);
-  margin-left: -2px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  z-index: 2000;
   -webkit-backdrop-filter: blur(24px);
   backdrop-filter: blur(24px);
 }
@@ -861,15 +964,27 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   padding: 8px 24px!important;
 }
 
-.emotion-22 .networkbox__popover .MuiListItemButton-root:hover {
-  background-color: rgba(9, 57, 176, 0.2);
-}
-
 .emotion-22 .networkbox__popover .MuiListItemButton-root .MuiListItemIcon-root {
   color: #000;
 }
 
+.emotion-22 .networkbox__popover .MuiListItemButton-root:hover {
+  background-color: rgba(9, 57, 176, 0.2);
+}
+
+.emotion-22 .networkbox__popover .MuiTypography-h5 {
+  color: #051D5B;
+}
+
+.emotion-22 .networkbox__popover .MuiTypography-h6 {
+  color: #051D5B;
+}
+
 .emotion-22 .networkbox__popover>.MuiBox-root:nth-of-type(1) {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -878,15 +993,11 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  font-weight: 700;
   gap: 8px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-weight: 700;
 }
 
 .emotion-22 .networkbox__popover>.MuiBox-root:nth-of-type(2) {
@@ -898,13 +1009,17 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  gap: 8px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  gap: 8px;
 }
 
 .emotion-22 .networkbox__popover>.MuiBox-root:nth-of-type(2)>.MuiBox-root {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -913,14 +1028,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  gap: 8px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  gap: 8px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .emotion-22 .networkbox__popover>.MuiBox-root:nth-of-type(2)>.MuiBox-root>.MuiBox-root {
@@ -938,108 +1049,15 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
   text-align: right;
 }
 
-.emotion-22 .networkbox__popover .MuiTypography-h5 {
-  color: #051D5B;
+.emotion-22.emotion-22:hover,
+.emotion-22.emotion-22.networkbox__active {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.emotion-22 .networkbox__popover .MuiTypography-h6 {
-  color: #051D5B;
-}
-
-.emotion-22 .image {
-  min-width: 48px;
-  min-height: 48px;
-  max-width: 48px;
-  max-height: 48px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 100%;
-  padding: 0;
-  border: 0 none;
-  margin: 0;
-}
-
-.emotion-22 .networkbox__dropdown-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: 100%;
-  min-height: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding: 0px 24px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.emotion-22 .networkbox__dropdown-btn .MuiSvgIcon-root {
-  color: #424242;
-}
-
-.emotion-22 .networkbox__dropdown-btn .MuiBox-root:nth-of-type(2) {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  overflow: hidden;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  margin-left: 16px;
-}
-
-.emotion-22 .networkbox__dropdown-btn .MuiTypography-h4 {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.emotion-22 .networkbox__dropdown-btn .networkbox__subtitlecontainer {
-  width: 100%;
-  position: relative;
-  height: 1rem;
-}
-
-.emotion-22 .networkbox__dropdown-btn .networkbox__subtitlecontainer .MuiTypography-body2 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  color: #051D5B;
-  line-height: 1;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-22 .networkbox__dropdown-btn .MuiBadge-root {
-  position: absolute;
-  color: #fff;
-  margin-left: 48px;
-  margin-top: 32px;
+@media (min-width:768px) {
+  .emotion-22 {
+    min-width: 224px;
+  }
 }
 
 .emotion-25 {
@@ -1232,7 +1250,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
                       />
                     </svg>
                   </div>
@@ -1283,7 +1301,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
               </div>
             </div>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-19"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-19"
               tabindex="0"
               type="button"
             >
@@ -1308,10 +1326,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                 class="image MuiBox-root emotion-2"
               >
                 <span
-                  class="MuiBadge-root BaseBadge-root emotion-25"
+                  class="MuiBadge-root emotion-25"
                 >
                   <span
-                    class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSuccess BaseBadge-badge emotion-26"
+                    class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSuccess emotion-26"
                   >
                     5
                   </span>
@@ -1349,7 +1367,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"
                 />
               </svg>
             </div>

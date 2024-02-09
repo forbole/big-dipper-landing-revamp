@@ -1,5 +1,5 @@
 export interface MenuType {
+  handleChange?: (selected: number) => void;
   items: string[];
   selected: number;
-  handleChange?: (selected: number) => void;
 }

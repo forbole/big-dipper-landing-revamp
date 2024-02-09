@@ -1,190 +1,191 @@
-import { alpha, css, useTheme } from '@mui/material';
+import { alpha, css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
     root: css({
-      minWidth: theme.spacing(15),
-      minHeight: theme.spacing(10),
-      borderRadius: theme.spacing(1.5),
-      backgroundColor: alpha(theme.palette.common.white, 0.6),
-      border: `2px solid ${theme.palette.text.primary}`,
-      display: 'inline-flex',
-      justifyContent: 'center',
-      flexFlow: 'row wrap',
-      alignItems: 'center',
-      textAlign: 'center',
-      '& .MuiLinearProgress-root': {
-        width: '100%',
-      },
-      '& .MuiTypography-h3, & .MuiTypography-h6, & .MuiTypography-body1': {
-        whiteSpace: 'nowrap',
-      },
-      '& .image': {
-        minWidth: theme.spacing(6),
-        minHeight: theme.spacing(6),
-        maxWidth: theme.spacing(6),
-        maxHeight: theme.spacing(6),
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: '100%',
-        padding: 0,
-        border: '0 none',
+      "& .image": {
+        alignItems: "center",
+        border: "0 none",
+        borderRadius: "100%",
+        display: "flex",
+        justifyContent: "center",
         margin: 0,
+        maxHeight: theme.spacing(6),
+        maxWidth: theme.spacing(6),
+        minHeight: theme.spacing(6),
+        minWidth: theme.spacing(6),
+        padding: 0,
       },
-      '& .networkbox__explore-btn': {
+      "& .MuiLinearProgress-root": {
+        width: "100%",
+      },
+      "& .MuiTypography-h3, & .MuiTypography-h6, & .MuiTypography-body1": {
+        whiteSpace: "nowrap",
+      },
+      "& .MuiTypography-h4": {
+        overflow: "hidden",
+        textOverflow: "clip",
+        [theme.breakpoints.down("sm")]: {
+          fontSize: theme.typography.h6.fontSize,
+        },
+        width: "100%",
+      },
+      "& .networkbox__close-btn": {
+        marginTop: `-${theme.spacing(1)}`,
+        position: "absolute",
+        right: theme.spacing(2),
+        [theme.breakpoints.up("md")]: {
+          display: "none",
+        },
+      },
+      "& .networkbox__desktop-anchor": {
+        "& .networkbox__explore-btn": {
+          display: "none",
+        },
+        "& .networkbox__popover": {
+          pointerEvents: "none",
+        },
+        "&:hover .networkbox__popover": {
+          [theme.breakpoints.up("md")]: {
+            display: "flex !important",
+          },
+        },
+        "cursor": "pointer",
+        "display": "none",
+        "position": "relative",
+        [theme.breakpoints.up("md")]: {
+          "&:hover .networkbox__popover": {
+            display: "flex !important",
+          },
+          "display": "flex",
+        },
+      },
+      "& .networkbox__desktop-anchor, & .networkbox__mobile-anchor": {
+        "&:hover": {
+          opacity: 1,
+        },
+        "alignItems": "center",
+        "borderRadius": theme.spacing(1.5),
+        /* Secondary Color/Royal Blue 01 */
+        "color": theme.palette.secondary.dark,
+        "flexFlow": "row wrap",
+        "fontSize": theme.typography.overline.fontSize,
+        "gap": theme.spacing(0.5),
+        "height": "100%",
+        "justifyContent": "center",
+        "padding": "20% 0",
+        "width": "100%",
+      },
+      "& .networkbox__explore-btn": {
         ...theme.mixins.button,
         fontSize: theme.typography.body1.fontSize,
       },
-      '& .networkbox__close-btn': {
-        position: 'absolute',
-        right: theme.spacing(2),
-        marginTop: `-${theme.spacing(1)}`,
-        [theme.breakpoints.up('md')]: {
-          display: 'none',
-        },
-      },
-      '& .networkbox__desktop-anchor, & .networkbox__mobile-anchor': {
-        /* Secondary Color/Royal Blue 01 */
-        color: theme.palette.secondary.dark,
-        fontSize: theme.typography.overline.fontSize,
-        borderRadius: theme.spacing(1.5),
-        width: '100%',
-        height: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexFlow: 'row wrap',
-        gap: theme.spacing(0.5),
-        padding: '20% 0',
-        '&:hover': {
-          opacity: 1,
-        },
-      },
-      '& .networkbox__desktop-anchor': {
-        display: 'none',
-        position: 'relative',
-        cursor: 'pointer',
-        [theme.breakpoints.up('md')]: {
-          display: 'flex',
-          '&:hover .networkbox__popover': {
-            display: 'flex !important',
-          },
-        },
-        '& .networkbox__popover': {
-          pointerEvents: 'none',
-        },
-        '&:hover .networkbox__popover': {
-          [theme.breakpoints.up('md')]: {
-            display: 'flex !important',
-          },
-        },
-        '& .networkbox__explore-btn': {
-          display: 'none',
-        },
-      },
-      '& .networkbox__mobile-anchor': {
-        display: 'flex',
-        position: 'static',
+      "& .networkbox__mobile-anchor": {
+        display: "flex",
         gap: theme.spacing(3),
-        [theme.breakpoints.up('md')]: {
-          display: 'none',
+        position: "static",
+        [theme.breakpoints.up("md")]: {
+          display: "none",
         },
       },
-      '& .networkbox__mobile-popover-contaier': {
-        display: 'block',
-        alignSelf: 'flex-start',
-        cursor: 'pointer',
-        [theme.breakpoints.up('md')]: {
-          display: 'none',
+      "& .networkbox__mobile-popover-contaier": {
+        "& .MuiTypography-h3": {
+          fontSize: theme.typography.h5.fontSize,
         },
-        '&.networkbox__active .networkbox__popover': {
-          display: 'flex !important',
+        "& .MuiTypography-h6, & .MuiTypography-body1": {
+          fontSize: theme.typography.body2.fontSize,
         },
-        '& .networkbox__popover': {
+        "& .networkbox__popover": {
           left: theme.spacing(3),
           right: theme.spacing(3),
         },
-        '& .MuiTypography-h3': {
-          fontSize: theme.typography.h5.fontSize,
+        "&.networkbox__active .networkbox__popover": {
+          display: "flex !important",
         },
-        '& .MuiTypography-h6, & .MuiTypography-body1': {
-          fontSize: theme.typography.body2.fontSize,
-        },
-      },
-      '& .MuiTypography-h4': {
-        textOverflow: 'clip',
-        width: '100%',
-        overflow: 'hidden',
-        [theme.breakpoints.down('sm')]: {
-          fontSize: theme.typography.h6.fontSize,
+        "alignSelf": "flex-start",
+        "cursor": "pointer",
+        "display": "block",
+        [theme.breakpoints.up("md")]: {
+          display: "none",
         },
       },
-      '& .networkbox__popover': {
-        position: 'absolute',
-        display: 'none',
-        zIndex: 3,
-        padding: theme.spacing(2),
-        [theme.breakpoints.down('md')]: {
+      "& .networkbox__popover": {
+        /* Secondary Color/Royal Blue Transparent 03 */
+        "backgroundColor": alpha(theme.palette.primary.main, 0.7),
+        "boxShadow": theme.shadows[1],
+        "display": "none",
+        "padding": theme.spacing(2),
+        "position": "absolute",
+        [theme.breakpoints.down("md")]: {
           marginTop: `-${theme.spacing(1)}`,
         },
-        [theme.breakpoints.up('md')]: {
-          minWidth: '125%',
-          minHeight: '125%',
-          maxWidth: theme.spacing(34),
+        [theme.breakpoints.up("md")]: {
           maxHeight: theme.spacing(27.25),
+          maxWidth: theme.spacing(34),
+          minHeight: "125%",
+          minWidth: "125%",
         },
-        boxShadow: theme.shadows[1],
-        /* Secondary Color/Royal Blue Transparent 03 */
-        backgroundColor: alpha(theme.palette.primary.main, 0.7),
+        "zIndex": 3,
         ...theme.mixins.blur03,
-        color: theme.palette.text.primary,
-        borderRadius: theme.spacing(1.5),
-        flexFlow: 'row wrap',
-        gap: theme.spacing(2),
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        '& .MuiTypography-h6': {
-          textAlign: 'left',
+        "& .MuiTypography-body1": {
+          textAlign: "right",
+          whiteSpace: "initial",
         },
-        '& .MuiTypography-body1': {
-          textAlign: 'right',
-          whiteSpace: 'initial',
+        "& .MuiTypography-h6": {
+          textAlign: "left",
         },
-        '& > .MuiBox-root:nth-of-type(1)': {
-          display: 'flex',
-          flexFlow: 'row nowrap',
-          gap: theme.spacing(1),
-          justifyContent: 'flex-start',
-          alignItems: 'center',
+        "& > .MuiBox-root:nth-of-type(1)": {
+          alignItems: "center",
+          display: "flex",
+          flexFlow: "row nowrap",
           fontWeight: theme.typography.fontWeightBold,
-          width: '100%',
-        },
-        '& > .MuiBox-root:nth-of-type(2)': {
-          display: 'flex',
-          flexFlow: 'column nowrap',
-          justifyContent: 'space-between',
           gap: theme.spacing(1),
-          width: '100%',
-          '& > .MuiBox-root': {
-            display: 'flex',
-            flexFlow: 'row nowrap',
-            justifyContent: 'space-between',
-            gap: theme.spacing(3),
-            alignItems: 'center',
-            '& > .MuiBox-root': {
-              flex: '1 0 auto',
-            },
-            '& > .MuiBox-root:nth-of-type(1)': {
-              fontWeight: theme.typography.fontWeightBold,
-              textAlign: 'left',
-            },
-            '& > .MuiBox-root:nth-of-type(2)': {
-              textAlign: 'right',
-            },
-          },
+          justifyContent: "flex-start",
+          width: "100%",
         },
+        "& > .MuiBox-root:nth-of-type(2)": {
+          "& > .MuiBox-root": {
+            "& > .MuiBox-root": {
+              flex: "1 0 auto",
+            },
+            "& > .MuiBox-root:nth-of-type(1)": {
+              fontWeight: theme.typography.fontWeightBold,
+              textAlign: "left",
+            },
+            "& > .MuiBox-root:nth-of-type(2)": {
+              textAlign: "right",
+            },
+            "alignItems": "center",
+            "display": "flex",
+            "flexFlow": "row nowrap",
+            "gap": theme.spacing(3),
+            "justifyContent": "space-between",
+          },
+          "display": "flex",
+          "flexFlow": "column nowrap",
+          "gap": theme.spacing(1),
+          "justifyContent": "space-between",
+          "width": "100%",
+        },
+        "alignItems": "flex-start",
+        "borderRadius": theme.spacing(1.5),
+        "color": theme.palette.text.primary,
+        "flexFlow": "row wrap",
+        "gap": theme.spacing(2),
+        "justifyContent": "center",
       },
+      "alignItems": "center",
+      "backgroundColor": alpha(theme.palette.common.white, 0.6),
+      "border": `2px solid ${theme.palette.text.primary}`,
+      "borderRadius": theme.spacing(1.5),
+      "display": "inline-flex",
+      "flexFlow": "row wrap",
+      "justifyContent": "center",
+      "minHeight": theme.spacing(10),
+      "minWidth": theme.spacing(15),
+      "textAlign": "center",
     }),
   };
 };

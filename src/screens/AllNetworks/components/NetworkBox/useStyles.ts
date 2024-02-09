@@ -1,166 +1,167 @@
-import { css, useTheme } from '@mui/material';
-import { alpha } from '@mui/system';
+import { css, useTheme } from "@mui/material";
+import { alpha } from "@mui/system";
 
 const useStyles = () => {
   const theme = useTheme();
+
   return {
     root: css({
-      minWidth: theme.spacing(30),
-      minHeight: theme.spacing(10),
-      borderRadius: theme.spacing(1.5),
-      backgroundColor: alpha(theme.palette.common.white, 0.6),
-      border: `2px solid ${theme.palette.text.primary}`,
-      display: 'inline-flex',
-      justifyContent: 'center',
-      flexFlow: 'row wrap',
-      alignItems: 'center',
-      textAlign: 'center',
-      cursor: 'pointer',
-      position: 'relative',
-      [theme.breakpoints.up('md')]: {
-        minWidth: theme.spacing(28),
+      "& .image": {
+        alignItems: "center",
+        border: "0 none",
+        borderRadius: "100%",
+        display: "flex",
+        justifyContent: "center",
+        margin: 0,
+        maxHeight: theme.spacing(6),
+        maxWidth: theme.spacing(6),
+        minHeight: theme.spacing(6),
+        minWidth: theme.spacing(6),
+        padding: 0,
       },
-      '& .MuiTypography-h4': {
-        whiteSpace: 'nowrap',
-        [theme.breakpoints.down('md')]: {
-          fontSize: theme.typography.h6.fontSize,
-        },
-      },
-      '& .MuiTypography-body2': {
-        whiteSpace: 'nowrap',
-        [theme.breakpoints.down('md')]: {
+      "& .MuiTypography-body2": {
+        [theme.breakpoints.down("md")]: {
           fontSize: theme.typography.caption.fontSize,
         },
+        whiteSpace: "nowrap",
       },
-      '&&:hover, &&.networkbox__active': {
-        backgroundColor: alpha(theme.palette.common.white, 0.8),
+      "& .MuiTypography-h4": {
+        [theme.breakpoints.down("md")]: {
+          fontSize: theme.typography.h6.fontSize,
+        },
+        whiteSpace: "nowrap",
       },
-
-      '& .networkbox__popover': {
-        position: 'absolute',
-        zIndex: 2000,
-        borderRadius: theme.spacing(1.5),
-        padding: theme.spacing(1, 0),
-        flexFlow: 'column nowrap',
-        gap: theme.spacing(1),
-        top: '110%',
-        width: 'calc(100% + 2px)',
-        marginLeft: '-2px',
-        backgroundColor: alpha(theme.palette.common.white, 0.8),
-        color: theme.palette.common.black,
-        boxShadow: theme.shadows[2],
-        ...theme.mixins.blur03,
-        '& .MuiListItemButton-root': {
-          padding: `${theme.spacing(1, 3)} !important`,
-          // eslint-disable-next-line max-len
-          '&:hover': {
-            backgroundColor: alpha(theme.palette.primary.main, 0.2),
-          },
-          '& .MuiListItemIcon-root': {
-            color: theme.palette.common.black,
-          },
-        },
-        '& > .MuiBox-root:nth-of-type(1)': {
-          display: 'flex',
-          flexFlow: 'row nowrap',
-          gap: theme.spacing(1),
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          fontWeight: theme.typography.fontWeightBold,
-        },
-        '& > .MuiBox-root:nth-of-type(2)': {
-          display: 'flex',
-          flexFlow: 'column nowrap',
-          justifyContent: 'space-between',
-          gap: theme.spacing(1),
-          '& > .MuiBox-root': {
-            display: 'flex',
-            flexFlow: 'row nowrap',
-            justifyContent: 'space-between',
-            gap: theme.spacing(1),
-            alignItems: 'center',
-            '& > .MuiBox-root': {
-              flex: '1 0 auto',
-            },
-            '& > .MuiBox-root:nth-of-type(1)': {
-              fontWeight: theme.typography.fontWeightBold,
-              textAlign: 'left',
-            },
-            '& > .MuiBox-root:nth-of-type(2)': {
-              textAlign: 'right',
-            },
-          },
-        },
-        '& .MuiTypography-h5': {
-          /* Secondary Color/Royal Blue 01 */
-          color: theme.palette.secondary.dark,
-        },
-        '& .MuiTypography-h6': {
-          /* Secondary Color/Royal Blue 01 */
-          color: theme.palette.secondary.dark,
-        },
-      },
-      '& .image': {
-        minWidth: theme.spacing(6),
-        minHeight: theme.spacing(6),
-        maxWidth: theme.spacing(6),
-        maxHeight: theme.spacing(6),
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: '100%',
-        padding: 0,
-        border: '0 none',
-        margin: 0,
-      },
-      '& .networkbox__dropdown-btn': {
-        display: 'flex',
-        minWidth: '100%',
-        minHeight: '100%',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        flexDirection: 'row',
-        flexWrap: 'nowrap',
-        padding: theme.spacing(0, 3),
-        textAlign: 'left',
-        cursor: 'pointer',
-        '& .MuiSvgIcon-root': {
-          /* Neutral Color/Dark Grey */
-          color: theme.palette.grey[800],
-        },
-        '& .MuiBox-root:nth-of-type(2)': {
-          flex: '1 1 auto',
-          overflow: 'hidden',
-          flexDirection: 'column',
-          alignItems: 'stretch',
-          marginLeft: theme.spacing(2),
-        },
-        '& .MuiTypography-h4': {
-          /* Primary Color/Forbole Blue 01 */
-          color: theme.palette.primary.contrastText,
-        },
-        '& .networkbox__subtitlecontainer': {
-          width: '100%',
-          position: 'relative',
-          height: '1rem',
-          '& .MuiTypography-body2': {
-            position: 'absolute',
-            left: 0,
-            right: 0,
-            /* Secondary Color/Royal Blue 01 */
-            color: theme.palette.secondary.dark,
-            lineHeight: 1,
-            textOverflow: 'ellipsis',
-            overflow: 'hidden',
-          },
-        },
-
-        '& .MuiBadge-root': {
-          position: 'absolute',
+      "& .networkbox__dropdown-btn": {
+        "& .MuiBadge-root": {
           color: theme.palette.common.white,
           marginLeft: theme.spacing(6),
           marginTop: theme.spacing(4),
+          position: "absolute",
         },
+        "& .MuiBox-root:nth-of-type(2)": {
+          alignItems: "stretch",
+          flex: "1 1 auto",
+          flexDirection: "column",
+          marginLeft: theme.spacing(2),
+          overflow: "hidden",
+        },
+        "& .MuiSvgIcon-root": {
+          /* Neutral Color/Dark Grey */
+          color: theme.palette.grey[800],
+        },
+        "& .MuiTypography-h4": {
+          /* Primary Color/Forbole Blue 01 */
+          color: theme.palette.primary.contrastText,
+        },
+        "& .networkbox__subtitlecontainer": {
+          "& .MuiTypography-body2": {
+            /* Secondary Color/Royal Blue 01 */
+            color: theme.palette.secondary.dark,
+            left: 0,
+            lineHeight: 1,
+            overflow: "hidden",
+            position: "absolute",
+            right: 0,
+            textOverflow: "ellipsis",
+          },
+          "height": "1rem",
+          "position": "relative",
+          "width": "100%",
+        },
+        "alignItems": "center",
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "justifyContent": "flex-start",
+        "minHeight": "100%",
+        "minWidth": "100%",
+        "padding": theme.spacing(0, 3),
+
+        "textAlign": "left",
+      },
+      "& .networkbox__popover": {
+        "backgroundColor": alpha(theme.palette.common.white, 0.8),
+        "borderRadius": theme.spacing(1.5),
+        "boxShadow": theme.shadows[2],
+        "color": theme.palette.common.black,
+        "flexFlow": "column nowrap",
+        "gap": theme.spacing(1),
+        "marginLeft": "-2px",
+        "padding": theme.spacing(1, 0),
+        "position": "absolute",
+        "top": "110%",
+        "width": "calc(100% + 2px)",
+        "zIndex": 2000,
+        ...theme.mixins.blur03,
+        "& .MuiListItemButton-root": {
+          "& .MuiListItemIcon-root": {
+            color: theme.palette.common.black,
+          },
+          // eslint-disable-next-line max-len
+          "&:hover": {
+            backgroundColor: alpha(theme.palette.primary.main, 0.2),
+          },
+          "padding": `${theme.spacing(1, 3)} !important`,
+        },
+        "& .MuiTypography-h5": {
+          /* Secondary Color/Royal Blue 01 */
+          color: theme.palette.secondary.dark,
+        },
+        "& .MuiTypography-h6": {
+          /* Secondary Color/Royal Blue 01 */
+          color: theme.palette.secondary.dark,
+        },
+        "& > .MuiBox-root:nth-of-type(1)": {
+          alignItems: "center",
+          display: "flex",
+          flexFlow: "row nowrap",
+          fontWeight: theme.typography.fontWeightBold,
+          gap: theme.spacing(1),
+          justifyContent: "space-between",
+        },
+        "& > .MuiBox-root:nth-of-type(2)": {
+          "& > .MuiBox-root": {
+            "& > .MuiBox-root": {
+              flex: "1 0 auto",
+            },
+            "& > .MuiBox-root:nth-of-type(1)": {
+              fontWeight: theme.typography.fontWeightBold,
+              textAlign: "left",
+            },
+            "& > .MuiBox-root:nth-of-type(2)": {
+              textAlign: "right",
+            },
+            "alignItems": "center",
+            "display": "flex",
+            "flexFlow": "row nowrap",
+            "gap": theme.spacing(1),
+            "justifyContent": "space-between",
+          },
+          "display": "flex",
+          "flexFlow": "column nowrap",
+          "gap": theme.spacing(1),
+          "justifyContent": "space-between",
+        },
+      },
+      "&&:hover, &&.networkbox__active": {
+        backgroundColor: alpha(theme.palette.common.white, 0.8),
+      },
+      "alignItems": "center",
+      "backgroundColor": alpha(theme.palette.common.white, 0.6),
+      "border": `2px solid ${theme.palette.text.primary}`,
+      "borderRadius": theme.spacing(1.5),
+      "cursor": "pointer",
+      "display": "inline-flex",
+      "flexFlow": "row wrap",
+      "justifyContent": "center",
+      "minHeight": theme.spacing(10),
+      "minWidth": theme.spacing(30),
+
+      "position": "relative",
+      "textAlign": "center",
+      [theme.breakpoints.up("md")]: {
+        minWidth: theme.spacing(28),
       },
     }),
   };

@@ -1,11 +1,11 @@
 export interface LinkType {
+  external?: boolean;
   key: string;
   url: string;
-  external?: boolean;
 }
 
 export interface IconType {
-  component: React.ReactNode;
   className: string;
+  component: React.ReactNode;
   url: string;
 }

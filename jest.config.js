@@ -9,23 +9,23 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
-    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
-  },
   moduleNameMapper: {
     '.+\\.svg\\?url$': 'jest-transform-stub',
     '^@/(.+)$': '<rootDir>/$1',
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: '<rootDir>/',
     }),
-    "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
     '\\.svg$': '<rootDir>/__mocks__/svg.js',
+    "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
   },
-  testEnvironment: 'jest-environment-jsdom',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   snapshotSerializers: ['@emotion/jest/serializer'],
+  testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/e2e/'],
+  transform: {
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
+    '^.+\\.tsx?$': 'ts-jest',
+  },
 };
 
 module.exports = createJestConfig(customJestConfig);

@@ -2,18 +2,18 @@
 
 exports[`Nav matches snapshot 1`] = `
 .emotion-0 {
-  overflow: visible;
-  padding: 0;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
   min-width: 272px;
+  overflow: visible;
+  padding: 0;
+  overflow: visible;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-  overflow: visible;
   z-index: 4;
 }
 

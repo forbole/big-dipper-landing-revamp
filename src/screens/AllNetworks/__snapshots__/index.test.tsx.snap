@@ -279,7 +279,7 @@ exports[`All Networks matches snapshot 1`] = `
 }
 
 .emotion-8 .MuiOutlinedInput-root .MuiAutocomplete-input {
-  padding: 7.5px 4px 7.5px 6px;
+  padding: 7.5px 4px 7.5px 5px;
 }
 
 .emotion-8 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
@@ -287,11 +287,13 @@ exports[`All Networks matches snapshot 1`] = `
 }
 
 .emotion-8 .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
-  padding: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
 }
 
 .emotion-8 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
-  padding: 2.5px 4px 2.5px 6px;
+  padding: 2.5px 4px 2.5px 8px;
 }
 
 .emotion-8 .MuiFilledInput-root {
@@ -326,6 +328,21 @@ exports[`All Networks matches snapshot 1`] = `
 
 .emotion-8 .MuiInputBase-hiddenLabel {
   padding-top: 8px;
+}
+
+.emotion-8 .MuiFilledInput-root.MuiInputBase-hiddenLabel {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.emotion-8 .MuiFilledInput-root.MuiInputBase-hiddenLabel .MuiAutocomplete-input {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.emotion-8 .MuiFilledInput-root.MuiInputBase-hiddenLabel.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding-top: 8px;
+  padding-bottom: 9px;
 }
 
 .emotion-8 .MuiAutocomplete-input {
@@ -692,6 +709,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
 
 .emotion-18 {
   float: unset;
+  width: auto;
   overflow: hidden;
   padding: 0;
   line-height: 11px;
@@ -1232,7 +1250,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
                       />
                     </svg>
                   </div>
@@ -1283,7 +1301,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
               </div>
             </div>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-19"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-19"
               tabindex="0"
               type="button"
             >
@@ -1308,10 +1326,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                 class="image MuiBox-root emotion-2"
               >
                 <span
-                  class="MuiBadge-root BaseBadge-root emotion-25"
+                  class="MuiBadge-root emotion-25"
                 >
                   <span
-                    class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSuccess BaseBadge-badge emotion-26"
+                    class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorSuccess emotion-26"
                   >
                     5
                   </span>
@@ -1349,7 +1367,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-13:focus::-ms-input-
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"
                 />
               </svg>
             </div>

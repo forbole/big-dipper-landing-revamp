@@ -112,7 +112,7 @@ const Footer = forwardRef<HTMLElement, JSX.IntrinsicElements["footer"]>(
         </SectionLimit>
       </footer>
     );
-  }
+  },
 );
 
 // eslint-disable-next-line react/display-name

@@ -1,20 +1,20 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Typography from '@mui/material/Typography';
-import classnames from 'classnames';
-import { FC } from 'react';
-import { useMenuMobile } from './hooks';
-import type { MenuType } from './types';
-import useStyles from './useStyles';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Typography from "@mui/material/Typography";
+import classnames from "classnames";
+import { FC } from "react";
+import { useMenuMobile } from "./hooks";
+import type { MenuType } from "./types";
+import useStyles from "./useStyles";
 
 interface MenuItemMobileProps {
   label: string;
   index: number;
   selected: number;
-  handleChange: MenuType['handleChange'];
+  handleChange: MenuType["handleChange"];
   handleClose: () => void;
 }
 
@@ -41,7 +41,7 @@ const MenuItemMobile: FC<MenuItemMobileProps> = ({
   );
 };
 
-const MenuMobile: FC<MenuType & JSX.IntrinsicElements['nav']> = ({
+const MenuMobile: FC<MenuType & JSX.IntrinsicElements["nav"]> = ({
   className,
   handleChange,
   items,
@@ -53,17 +53,17 @@ const MenuMobile: FC<MenuType & JSX.IntrinsicElements['nav']> = ({
     <nav className={className} css={styles.root}>
       <Button className="menumobile__selected" onClick={handleClick}>
         {items[selected]}
-        {anchorEl ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/>}
+        {anchorEl ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </Button>
       <Menu
         elevation={0}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          vertical: "bottom",
+          horizontal: "left",
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
+          vertical: "top",
+          horizontal: "left",
         }}
         anchorEl={anchorEl}
         open={!!anchorEl}

@@ -1,25 +1,25 @@
 /* eslint-disable react/display-name */
-import { render } from '@testing-library/react';
-import Box from '@mui/material/Box';
-import { MockTheme } from '@/__mocks__';
-import Component from '.';
+import { render } from "@testing-library/react";
+import Box from "@mui/material/Box";
+import { MockTheme } from "@/__mocks__";
+import Component from ".";
 
-jest.mock('./components/MenuDesktop', () => () => (
+jest.mock("./components/MenuDesktop", () => () => (
   <Box data-testid="MenuDesktop" />
 ));
-jest.mock('./components/MenuMobile', () => () => (
+jest.mock("./components/MenuMobile", () => () => (
   <Box data-testid="MenuMobile" />
 ));
 
 // ==================================
 // unit tests
 // ==================================
-describe('Nav', () => {
-  it('matches snapshot', async () => {
+describe("Nav", () => {
+  it("matches snapshot", async () => {
     const { container } = render(
       <MockTheme>
         <Component />
-      </MockTheme>
+      </MockTheme>,
     );
     // expect(screen.getByText(
     //   /Home/i,

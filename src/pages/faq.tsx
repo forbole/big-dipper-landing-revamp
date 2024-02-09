@@ -1,4 +1,4 @@
-import FAQPage from '../screens/Faq';
+import FAQPage from "../screens/Faq";
 
 const FAQ = () => <FAQPage />;
 

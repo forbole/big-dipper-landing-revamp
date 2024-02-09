@@ -1,25 +1,32 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import SearchIcon from '@mui/icons-material/Search';
-import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import InputAdornment from '@mui/material/InputAdornment';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Paper, { PaperProps } from '@mui/material/Paper';
-import Popper, { PopperProps } from '@mui/material/Popper';
-import TextField from '@mui/material/TextField';
-import classnames from 'classnames';
-import useTranslation from 'next-translate/useTranslation';
-import { ComponentProps, FC, FocusEventHandler, HTMLAttributes, useCallback, useState } from 'react';
-import NetworkIcon from '@/src/components/NetworkIcon';
-import getUrlFromNetwork from '@/src/utils/getUrlFromNetwork';
-import type { SearchBoxProps } from './types';
-import useStyles from './useStyles';
+import SearchIcon from "@mui/icons-material/Search";
+import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import InputAdornment from "@mui/material/InputAdornment";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Paper, { PaperProps } from "@mui/material/Paper";
+import Popper, { PopperProps } from "@mui/material/Popper";
+import TextField from "@mui/material/TextField";
+import classnames from "classnames";
+import useTranslation from "next-translate/useTranslation";
+import {
+  ComponentProps,
+  FC,
+  FocusEventHandler,
+  HTMLAttributes,
+  useCallback,
+  useState,
+} from "react";
+import NetworkIcon from "@/src/components/NetworkIcon";
+import getUrlFromNetwork from "@/src/utils/getUrlFromNetwork";
+import type { SearchBoxProps } from "./types";
+import useStyles from "./useStyles";
 
 const filterOptions = createFilterOptions({
-  matchFrom: 'start',
+  matchFrom: "start",
   stringify: (option) => (option as { network: Network }).network.name,
 });
 
@@ -30,7 +37,7 @@ const filterOptions = createFilterOptions({
  * object that contains a startAdornment property.
  * @returns An object with the properties of InputProps and startAdornment.
  */
-function addSearch(InputProps: ComponentProps<typeof TextField>['InputProps']) {
+function addSearch(InputProps: ComponentProps<typeof TextField>["InputProps"]) {
   const startAdornment = (
     <InputAdornment position="start">
       <SearchIcon fontSize="small" />
@@ -81,7 +88,7 @@ function handleChange(_event: unknown, value: unknown) {
     const { network } = value as { network: Network };
     const url = getUrlFromNetwork(network);
     if (url) {
-      window.open(url, '_top');
+      window.open(url, "_top");
     }
   }
 }
@@ -100,25 +107,25 @@ type StyledAutocompleteProps = ComponentProps<typeof Autocomplete>;
 
 /* A React component that uses the Material UI Autocomplete component. */
 const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   const options = networks.map((network) => ({ label: network.name, network }));
   const styles = useStyles();
-  const renderInput: StyledAutocompleteProps['renderInput'] = useCallback(
+  const renderInput: StyledAutocompleteProps["renderInput"] = useCallback(
     ({ InputProps, ...params }) => (
       <TextField
         {...params}
-        placeholder={t('searchNetwork')}
+        placeholder={t("searchNetwork")}
         InputProps={addSearch(InputProps)}
         css={styles.textField}
       />
     ),
-    []
+    [],
   );
   const [focused, setFocused] = useState(false);
   const handleFocus: FocusEventHandler = useCallback((event) => {
     setFocused(true);
     if (window.innerWidth < 768) {
-      window.addEventListener('scroll', scrollLock);
+      window.addEventListener("scroll", scrollLock);
       return;
     }
     const headerOffset = 100;
@@ -126,11 +133,11 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
     const top = elementPosition + window.pageYOffset - headerOffset;
     window.scrollTo({
       top,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }, []);
   const handleBlur = useCallback(() => {
-    window.removeEventListener('scroll', scrollLock);
+    window.removeEventListener("scroll", scrollLock);
     setFocused(false);
   }, []);
   return (
@@ -139,7 +146,7 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
         {
           searchbox__focused: focused,
         },
-        'searchbox__container'
+        "searchbox__container",
       )}
       css={styles.root}
     >
@@ -147,7 +154,7 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
         openOnFocus={true}
         inputMode="search"
         popupIcon={null}
-        noOptionsText={t('noResultsFound')}
+        noOptionsText={t("noResultsFound")}
         options={options}
         PaperComponent={PaperComponent}
         PopperComponent={PopperComponent}
@@ -158,13 +165,19 @@ const SearchBox: FC<SearchBoxProps> = ({ networks }) => {
         onBlurCapture={handleBlur}
         filterOptions={filterOptions}
       />
-      <Button variant="text" className="searchbox__cancel-btn" onClick={handleBlur}>
-        {t('cancel')}
+      <Button
+        variant="text"
+        className="searchbox__cancel-btn"
+        onClick={handleBlur}
+      >
+        {t("cancel")}
       </Button>
     </Box>
   );
 };
 
-function scrollLock() { window.scrollTo(0, 0); }
+function scrollLock() {
+  window.scrollTo(0, 0);
+}
 
 export default SearchBox;

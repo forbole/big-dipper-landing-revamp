@@ -1,24 +1,24 @@
-import { alpha, css, useTheme } from '@mui/material';
+import { alpha, css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
   return {
     root: css({
-      position: 'relative',
-      '& .menumobile__selected': {
+      position: "relative",
+      "& .menumobile__selected": {
         ...theme.mixins.button,
         padding: theme.spacing(1, 3),
       },
     }),
     menu: css({
-      [theme.breakpoints.up('md')]: {
-        display: 'none',
+      [theme.breakpoints.up("md")]: {
+        display: "none",
       },
 
-      '& .MuiList-padding': {
+      "& .MuiList-padding": {
         padding: 0,
       },
-      '& .MuiMenu-paper': {
+      "& .MuiMenu-paper": {
         /* Secondary Color/Royal Blue Transparent 03 */
         backgroundColor: alpha(theme.palette.primary.main, 0.7),
         /* Blur 03 */
@@ -29,18 +29,18 @@ const useStyles = () => {
         left: `${theme.spacing(3)} !important`,
         right: `${theme.spacing(3)} !important`,
       },
-      '& .MuiList-root': {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'stretch',
+      "& .MuiList-root": {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "stretch",
         padding: 0,
         gap: theme.spacing(2),
       },
-      '& .MuiMenuItem-root': {
+      "& .MuiMenuItem-root": {
         padding: theme.spacing(2),
-        justifyContent: 'center',
+        justifyContent: "center",
         color: theme.palette.common.white,
-        '&.menumobile__active': {
+        "&.menumobile__active": {
           ...theme.mixins.button,
           borderRadius: 0,
         },

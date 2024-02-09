@@ -451,7 +451,7 @@ exports[`Footer matches snapshot 1`] = `
         class="footer__scroll-top MuiBox-root emotion-2"
       >
         <button
-          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-3"
+          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-3"
           tabindex="0"
           type="button"
         >
@@ -577,11 +577,14 @@ exports[`Footer matches snapshot 1`] = `
               class="footer__terms-links"
             >
               <a
-                class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-7"
                 href="/terms-and-conditions"
                 target="_self"
               >
-                termsAndConditions
+                <span
+                  class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-7"
+                >
+                  termsAndConditions
+                </span>
               </a>
               <span
                 class="MuiTypography-root MuiTypography-caption footer__terms-dash emotion-7"
@@ -589,11 +592,14 @@ exports[`Footer matches snapshot 1`] = `
                 |
               </span>
               <a
-                class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-7"
                 href="/privacy-policy"
                 target="_self"
               >
-                privacyPolicy
+                <span
+                  class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-7"
+                >
+                  privacyPolicy
+                </span>
               </a>
             </div>
             <span

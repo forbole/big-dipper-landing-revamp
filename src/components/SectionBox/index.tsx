@@ -1,6 +1,6 @@
-import classnames from 'classnames';
-import { FC } from 'react';
-import useStyles from './useStyles';
+import classnames from "classnames";
+import { FC } from "react";
+import useStyles from "./useStyles";
 
 /**
  * Component for seo sectioning and breakpoints. Not to be confused with Box.
@@ -8,7 +8,7 @@ import useStyles from './useStyles';
  * @param  - FC<ComponentProps<typeof StyledSection>
  * @returns A styled component
  */
-const SectionBox: FC<JSX.IntrinsicElements['section'] & { main?: boolean }> = ({
+const SectionBox: FC<JSX.IntrinsicElements["section"] & { main?: boolean }> = ({
   children,
   className,
   main,
@@ -17,7 +17,11 @@ const SectionBox: FC<JSX.IntrinsicElements['section'] & { main?: boolean }> = ({
   const styles = useStyles();
   return (
     <section
-      className={classnames(className, { sectionbox__main: main }, 'sectionbox__container')}
+      className={classnames(
+        className,
+        { sectionbox__main: main },
+        "sectionbox__container",
+      )}
       {...props}
       css={styles.root}
     >

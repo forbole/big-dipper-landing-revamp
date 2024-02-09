@@ -132,7 +132,7 @@ exports[`MenuMobile matches snapshot 1`] = `
     class="emotion-0"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium menumobile__selected emotion-1"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium menumobile__selected emotion-1"
       tabindex="0"
       type="button"
     >
@@ -145,7 +145,7 @@ exports[`MenuMobile matches snapshot 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+          d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"
         />
       </svg>
       <span

@@ -1,26 +1,26 @@
-import { alpha, css, useTheme } from '@mui/material';
+import { alpha, css, useTheme } from "@mui/material";
 
 const useStyles = () => {
   const theme = useTheme();
   return {
     root: css({
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
       padding: theme.spacing(2, 0),
-      '& .menudesktop__button': {
+      "& .menudesktop__button": {
         margin: theme.spacing(1, 0),
         ...theme.mixins.buttonSecondary,
         /* Neutral Color/White Transparent 02 */
         boxShadow: theme.shadows[0],
-        '&:hover': {
+        "&:hover": {
           backgroundColor: alpha(theme.palette.common.white, 0.8),
-          filter: 'none',
+          filter: "none",
         },
       },
-      '& .menudesktop__active': {
+      "& .menudesktop__active": {
         ...theme.mixins.button,
-        '&:hover': {
+        "&:hover": {
           ...theme.mixins.button,
         },
       },

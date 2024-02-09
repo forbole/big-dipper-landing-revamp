@@ -1,8 +1,8 @@
 /* eslint-disable*/
-import { CSSInterpolation } from '@mui/material';
-import { Mixins, MixinsOptions } from '@mui/material/styles/createMixins';
+import { CSSInterpolation } from "@mui/material";
+import { Mixins, MixinsOptions } from "@mui/material/styles/createMixins";
 
-declare module '@mui/material/styles/createMixins' {
+declare module "@mui/material/styles/createMixins" {
   interface Mixins {
     headerGlow: CSSObject;
     button: CSSObject;

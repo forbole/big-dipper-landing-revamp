@@ -1,18 +1,18 @@
-import { css } from '@mui/material';
+import { css } from "@mui/material";
 
 const useStyles = () => {
   return {
     light: css({
-      '.mode-dark &': {
-        display: 'none',
-      }
+      ".mode-dark &": {
+        display: "none",
+      },
     }),
     dark: css({
-      display: 'none',
-      '.mode-dark &': {
-        display: 'initial',
-      }
-    })
+      display: "none",
+      ".mode-dark &": {
+        display: "initial",
+      },
+    }),
   };
 };
 

@@ -1,12 +1,12 @@
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Typography from '@mui/material/Typography';
-import Link from 'next/link';
-import { FC } from 'react';
-import { NetworkMenuLinkProps } from '../NetworkBox/types';
-import useStyles from './useStyles';
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import Link from "next/link";
+import { FC } from "react";
+import { NetworkMenuLinkProps } from "../NetworkBox/types";
+import useStyles from "./useStyles";
 
 /**
  * It renders a link to a network

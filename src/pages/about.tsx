@@ -1,4 +1,4 @@
-import AboutPage from '../screens/About';
+import AboutPage from "../screens/About";
 
 const About = () => <AboutPage />;
 

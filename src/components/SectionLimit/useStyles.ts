@@ -1,11 +1,11 @@
-import { css } from '@mui/material';
-import { LIMIT } from '@/src/styles/theme';
+import { css } from "@mui/material";
+import { LIMIT } from "@/src/styles/theme";
 
 const useStyles = () => {
   return {
     root: css({
-      marginLeft: 'auto',
-      marginRight: 'auto',
+      marginLeft: "auto",
+      marginRight: "auto",
       maxWidth: LIMIT,
     }),
   };

@@ -1,10 +1,10 @@
 /* eslint-disable no-underscore-dangle */
-import createEmotionServer from '@emotion/server/create-instance';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { defaultLocale } from '@/i18n';
-import { darkTheme as theme } from '@/src/styles/theme';
-import basePath from '@/src/utils/basePath';
-import createEmotionCache from '../utils/createEmotionCache';
+import createEmotionServer from "@emotion/server/create-instance";
+import Document, { Head, Html, Main, NextScript } from "next/document";
+import { defaultLocale } from "@/i18n";
+import { darkTheme as theme } from "@/src/styles/theme";
+import basePath from "@/src/utils/basePath";
+import createEmotionCache from "../utils/createEmotionCache";
 
 export default class MyDocument extends Document {
   render() {
@@ -19,14 +19,14 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href={basePath('/fonts/sfProText.woff2')}
+            href={basePath("/fonts/sfProText.woff2")}
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
 
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link rel="shortcut icon" href={basePath('/favicon.ico')} />
+          <link rel="shortcut icon" href={basePath("/favicon.ico")} />
           <meta name="emotion-insertion-point" content="" />
           {emotionStyleTags}
         </Head>
@@ -88,7 +88,7 @@ MyDocument.getInitialProps = async (ctx) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      data-emotion={`${style.key} ${style.ids.join(" ")}`}
       key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}

@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useMenuMobile = () => {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
 
   const handleClick: React.EventHandler<React.MouseEvent<HTMLElement>> = (
-    event
+    event,
   ) => {
     setAnchorEl(event.currentTarget);
   };

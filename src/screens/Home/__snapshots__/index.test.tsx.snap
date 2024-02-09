@@ -1659,7 +1659,7 @@ exports[`Dummy Test matches snapshot 1`] = `
 }
 
 .emotion-89 .MuiOutlinedInput-root .MuiAutocomplete-input {
-  padding: 7.5px 4px 7.5px 6px;
+  padding: 7.5px 4px 7.5px 5px;
 }
 
 .emotion-89 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
@@ -1667,11 +1667,13 @@ exports[`Dummy Test matches snapshot 1`] = `
 }
 
 .emotion-89 .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
-  padding: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
 }
 
 .emotion-89 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
-  padding: 2.5px 4px 2.5px 6px;
+  padding: 2.5px 4px 2.5px 8px;
 }
 
 .emotion-89 .MuiFilledInput-root {
@@ -1706,6 +1708,21 @@ exports[`Dummy Test matches snapshot 1`] = `
 
 .emotion-89 .MuiInputBase-hiddenLabel {
   padding-top: 8px;
+}
+
+.emotion-89 .MuiFilledInput-root.MuiInputBase-hiddenLabel {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.emotion-89 .MuiFilledInput-root.MuiInputBase-hiddenLabel .MuiAutocomplete-input {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.emotion-89 .MuiFilledInput-root.MuiInputBase-hiddenLabel.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+  padding-top: 8px;
+  padding-bottom: 9px;
 }
 
 .emotion-89 .MuiAutocomplete-input {
@@ -2060,6 +2077,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
 
 .emotion-99 {
   float: unset;
+  width: auto;
   overflow: hidden;
   padding: 0;
   line-height: 11px;
@@ -2966,13 +2984,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
             <span
               class="emotion-4"
             >
-              <svg
-                data-testid="next-image"
-              />
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27175.81%27%20height=%2736.11%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="bigDipper"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
             </span>
           </a>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium emotion-5"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium emotion-5"
             tabindex="0"
             type="button"
           >
@@ -3002,46 +3039,54 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
               tabindex="-1"
             >
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="/"
-                tabindex="0"
               >
                 <div
-                  class="MuiListItemText-root emotion-10"
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__active menuitemsdesktop__list-item-btn emotion-9"
+                  role="button"
+                  tabindex="0"
                 >
-                  <span
-                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                  <div
+                    class="MuiListItemText-root emotion-10"
                   >
-                    home
-                  </span>
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                    >
+                      home
+                    </span>
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root emotion-6"
+                  />
                 </div>
-                <span
-                  class="MuiTouchRipple-root emotion-6"
-                />
               </a>
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="/all-networks"
-                tabindex="0"
               >
                 <div
-                  class="MuiListItemText-root emotion-10"
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                  role="button"
+                  tabindex="0"
                 >
-                  <span
-                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                  <div
+                    class="MuiListItemText-root emotion-10"
                   >
-                    allNetworks
-                  </span>
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                    >
+                      allNetworks
+                    </span>
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root emotion-6"
+                  />
                 </div>
-                <span
-                  class="MuiTouchRipple-root emotion-6"
-                />
               </a>
               <div
                 class="menuitemsdesktop__submenu-container MuiBox-root emotion-7"
               >
                 <div
-                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-18"
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-18"
                   role="button"
                   tabindex="0"
                 >
@@ -3062,7 +3107,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                      d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"
                     />
                   </svg>
                   <span
@@ -3071,40 +3116,48 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                 </div>
               </div>
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="/about"
-                tabindex="0"
               >
                 <div
-                  class="MuiListItemText-root emotion-10"
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                  role="button"
+                  tabindex="0"
                 >
-                  <span
-                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                  <div
+                    class="MuiListItemText-root emotion-10"
                   >
-                    about
-                  </span>
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                    >
+                      about
+                    </span>
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root emotion-6"
+                  />
                 </div>
-                <span
-                  class="MuiTouchRipple-root emotion-6"
-                />
               </a>
               <a
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
                 href="https://docs.bigdipper.live/"
-                tabindex="0"
               >
                 <div
-                  class="MuiListItemText-root emotion-10"
+                  class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters menuitemsdesktop__list-item-btn emotion-9"
+                  role="button"
+                  tabindex="0"
                 >
-                  <span
-                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                  <div
+                    class="MuiListItemText-root emotion-10"
                   >
-                    docs
-                  </span>
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary emotion-11"
+                    >
+                      docs
+                    </span>
+                  </div>
+                  <span
+                    class="MuiTouchRipple-root emotion-6"
+                  />
                 </div>
-                <span
-                  class="MuiTouchRipple-root emotion-6"
-                />
               </a>
             </ul>
           </div>
@@ -3118,7 +3171,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
         class="home_slider-container emotion-31"
       >
         <button
-          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default home__slider-left emotion-32"
+          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default home__slider-left emotion-32"
           tabindex="0"
           type="button"
         >
@@ -3130,7 +3183,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
             viewBox="0 0 24 24"
           >
             <path
-              d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+              d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z"
             />
           </svg>
           <span
@@ -3138,7 +3191,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default home__slider-right emotion-32"
+          class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default home__slider-right emotion-32"
           tabindex="0"
           type="button"
         >
@@ -3150,7 +3203,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
             viewBox="0 0 24 24"
           >
             <path
-              d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+              d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
             />
           </svg>
           <span
@@ -3185,9 +3238,28 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                          >
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27242%27%20height=%27242%27/%3e"
+                              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Ease of Use"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3220,9 +3292,18 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                        >
+                          <img
+                            alt="Big Dipper"
+                            data-nimg="fill"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3382,9 +3463,28 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                          >
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27418%27%20height=%27237%27/%3e"
+                              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="User First"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3417,9 +3517,28 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                          >
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27242%27%20height=%27242%27/%3e"
+                              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Ease of Use"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3452,9 +3571,18 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                        >
+                          <img
+                            alt="Big Dipper"
+                            data-nimg="fill"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3614,9 +3742,28 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                          >
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27418%27%20height=%27237%27/%3e"
+                              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="User First"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3649,9 +3796,28 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       <div
                         class="image MuiBox-root emotion-7"
                       >
-                        <svg
-                          data-testid="next-image"
-                        />
+                        <span
+                          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                          >
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27242%27%20height=%27242%27/%3e"
+                              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Ease of Use"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                          />
+                          <noscript />
+                        </span>
                       </div>
                       <div
                         class="caption MuiBox-root emotion-7"
@@ -3757,7 +3923,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                             viewBox="0 0 24 24"
                           >
                             <path
-                              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
                             />
                           </svg>
                         </div>
@@ -3808,7 +3974,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                     </div>
                   </div>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-100"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium searchbox__cancel-btn emotion-100"
                     tabindex="0"
                     type="button"
                   >
@@ -3875,7 +4041,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       />
                     </span>
                     <button
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
                       tabindex="0"
                       type="button"
                     >
@@ -3949,7 +4115,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                       />
                     </span>
                     <button
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium networkbox__explore-btn emotion-113"
                       tabindex="0"
                       type="button"
                     >
@@ -3991,7 +4157,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   </h4>
                 </div>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium networkbox__mobile-anchor emotion-100"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium networkbox__mobile-anchor emotion-100"
                   tabindex="0"
                   type="button"
                 >
@@ -4030,7 +4196,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
           class="footer__scroll-top MuiBox-root emotion-7"
         >
           <button
-            class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-32"
+            class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default emotion-32"
             tabindex="0"
             type="button"
           >
@@ -4156,11 +4322,14 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                 class="footer__terms-links"
               >
                 <a
-                  class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-143"
                   href="/terms-and-conditions"
                   target="_self"
                 >
-                  termsAndConditions
+                  <span
+                    class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-143"
+                  >
+                    termsAndConditions
+                  </span>
                 </a>
                 <span
                   class="MuiTypography-root MuiTypography-caption footer__terms-dash emotion-143"
@@ -4168,11 +4337,14 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
                   |
                 </span>
                 <a
-                  class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-143"
                   href="/privacy-policy"
                   target="_self"
                 >
-                  privacyPolicy
+                  <span
+                    class="MuiTypography-root MuiTypography-caption footer__link-item footer__link-item-caption emotion-143"
+                  >
+                    privacyPolicy
+                  </span>
                 </a>
               </div>
               <span
@@ -4191,7 +4363,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-94:focus::-ms-input-
       </div>
     </footer>
     <button
-      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-32"
+      class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-default layout__scroll-fab emotion-32"
       tabindex="0"
       type="button"
     >

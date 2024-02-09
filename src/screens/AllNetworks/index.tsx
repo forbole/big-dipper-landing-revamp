@@ -46,25 +46,25 @@ function useHooks(networkList: Network[]) {
   }, [router.asPath, router.events]);
   const sortedNetworks = useMemo(
     () => networkList.sort((a, b) => a.name.localeCompare(b.name)),
-    [networkList]
+    [networkList],
   );
   const filteredNetworks = useMemo(() => {
     switch (tabIndex) {
       case allNetworksTab.Mainnet:
         return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^mainnet$/i.test(l.name))
+          n.links?.some((l) => /^mainnet$/i.test(l.name)),
         );
       case allNetworksTab.Testnet:
         return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^testnet$/i.test(l.name))
+          n.links?.some((l) => /^testnet$/i.test(l.name)),
         );
       case allNetworksTab.Devnet:
         return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^devnet$/i.test(l.name))
+          n.links?.some((l) => /^devnet$/i.test(l.name)),
         );
       case allNetworksTab.Retired:
         return sortedNetworks.filter((n) =>
-          n.links?.some((l) => /^retired$/i.test(l.name))
+          n.links?.some((l) => /^retired$/i.test(l.name)),
         );
       default:
         return sortedNetworks;
@@ -110,7 +110,7 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
                     {
                       allnetworks__active: tabIndex === allNetworksTab.All,
                     },
-                    "allnetworks__tab"
+                    "allnetworks__tab",
                   )}
                 >
                   All
@@ -122,7 +122,7 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Mainnet,
                     },
-                    "allnetworks__tab"
+                    "allnetworks__tab",
                   )}
                 >
                   Mainnet
@@ -134,7 +134,7 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Testnet,
                     },
-                    "allnetworks__tab"
+                    "allnetworks__tab",
                   )}
                 >
                   Testnet
@@ -146,7 +146,7 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Devnet,
                     },
-                    "allnetworks__tab"
+                    "allnetworks__tab",
                   )}
                 >
                   Devnet
@@ -158,7 +158,7 @@ const AllNetworks: FC<AllNetworksProps> = ({ networkList }) => {
                     {
                       allnetworks__active: tabIndex === allNetworksTab.Retired,
                     },
-                    "allnetworks__tab"
+                    "allnetworks__tab",
                   )}
                 >
                   Retired

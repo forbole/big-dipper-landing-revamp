@@ -3,25 +3,25 @@ import {
   LinkedinIcon,
   TelegramIcon,
   TwitterIcon,
-} from '@/src/components/icons';
-import * as LINKS from '@/src/utils/links';
-import type { IconType, LinkType } from './types';
+} from "@/src/components/icons";
+import * as LINKS from "@/src/utils/links";
+import type { IconType, LinkType } from "./types";
 
 export const bdLinks: LinkType[] = [
   {
-    key: 'about',
+    key: "about",
     url: LINKS.ABOUT,
   },
   {
-    key: 'faq',
+    key: "faq",
     url: LINKS.FAQ,
   },
   {
-    key: 'donation',
+    key: "donation",
     url: LINKS.DONATION,
   },
   {
-    key: 'docs',
+    key: "docs",
     url: LINKS.DOCS,
     external: true,
   },
@@ -29,17 +29,17 @@ export const bdLinks: LinkType[] = [
 
 export const forboleLinks: LinkType[] = [
   {
-    key: 'stakeNow',
+    key: "stakeNow",
     url: LINKS.STAKE_NOW,
     external: true,
   },
   {
-    key: 'networks',
+    key: "networks",
     url: LINKS.NETWORKS,
     external: true,
   },
   {
-    key: 'blog',
+    key: "blog",
     url: LINKS.BLOG,
     external: true,
   },
@@ -48,33 +48,33 @@ export const forboleLinks: LinkType[] = [
 export const socialLinks: IconType[] = [
   {
     component: <TwitterIcon />,
-    className: 'twitter',
+    className: "twitter",
     url: LINKS.TWITTER,
   },
   {
     component: <TelegramIcon />,
-    className: 'telegram',
+    className: "telegram",
     url: LINKS.TELEGRAM,
   },
   {
     component: <GithubIcon />,
-    className: 'github',
+    className: "github",
     url: LINKS.GITHUB,
   },
   {
     component: <LinkedinIcon />,
-    className: 'linkedin',
+    className: "linkedin",
     url: LINKS.LINKEDIN,
   },
 ];
 
 export const termsLinks: LinkType[] = [
   {
-    key: 'termsAndConditions',
+    key: "termsAndConditions",
     url: LINKS.TERMS_AND_CONDITIONS,
   },
   {
-    key: 'privacyPolicy',
+    key: "privacyPolicy",
     url: LINKS.PRIVACY_POLICY,
   },
 ];

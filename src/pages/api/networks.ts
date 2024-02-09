@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
-import type { NextApiRequest, NextApiResponse } from 'next';
-import loadNetworkSummaries from '@/src/utils/loadNetworkSummaries';
+import type { NextApiRequest, NextApiResponse } from "next";
+import loadNetworkSummaries from "@/src/utils/loadNetworkSummaries";
 
 export default async function handler(
   _req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
-  res.setHeader('Cache-Control', 's-maxage=10');
+  res.setHeader("Cache-Control", "s-maxage=10");
 
   /* Loading the network summary for each network. */
   const result = await loadNetworkSummaries();

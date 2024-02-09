@@ -1,19 +1,19 @@
-import { render, screen } from '@testing-library/react';
-import React from 'react';
-import { MockTheme } from '@/__mocks__';
-import Component from '.';
+import { render, screen } from "@testing-library/react";
+import React from "react";
+import { MockTheme } from "@/__mocks__";
+import Component from ".";
 
 // ==================================
 // unit tests
 // ==================================
-describe('SectionLimit', () => {
-  it('matches snapshot', async () => {
+describe("SectionLimit", () => {
+  it("matches snapshot", async () => {
     const { container } = render(
       <MockTheme>
         <Component>
           <div>HELLO WORLD</div>
         </Component>
-      </MockTheme>
+      </MockTheme>,
     );
     expect(screen.getByText(/HELLO WORLD/i)).toBeInTheDocument();
     expect(container).toMatchSnapshot();

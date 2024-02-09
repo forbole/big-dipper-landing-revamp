@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import * as React from 'react';
-import { SVGProps } from 'react';
+import * as React from "react";
+import { SVGProps } from "react";
 
 const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -13,7 +13,7 @@ const SVGComponent = (props: SVGProps<SVGSVGElement>) => (
   >
     <g
       style={{
-        mixBlendMode: 'color-dodge',
+        mixBlendMode: "color-dodge",
       }}
       clipPath="url(#a)"
     >

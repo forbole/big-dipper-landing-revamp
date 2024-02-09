@@ -1,51 +1,61 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import CloseIcon from '@mui/icons-material/Close';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import LinearProgress from '@mui/material/LinearProgress';
-import Typography from '@mui/material/Typography';
-import classnames from 'classnames';
-import { motion } from 'framer-motion';
-import useTranslation from 'next-translate/useTranslation';
-import { FC, MouseEventHandler, useCallback, useRef } from 'react';
-import NetworkIcon from '@/src/components/NetworkIcon';
-import getUrlFromNetwork from '@/src/utils/getUrlFromNetwork';
-import type { NetworkBoxProps } from './types';
-import useStyles from './useStyles';
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CloseIcon from "@mui/icons-material/Close";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import LinearProgress from "@mui/material/LinearProgress";
+import Typography from "@mui/material/Typography";
+import classnames from "classnames";
+import { motion } from "framer-motion";
+import useTranslation from "next-translate/useTranslation";
+import { FC, MouseEventHandler, useCallback, useRef } from "react";
+import NetworkIcon from "@/src/components/NetworkIcon";
+import getUrlFromNetwork from "@/src/utils/getUrlFromNetwork";
+import type { NetworkBoxProps } from "./types";
+import useStyles from "./useStyles";
 
 /* A React component that renders a network box. */
-const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePopover, setShowMobilePopover }) => {
+const NetworkBox: FC<NetworkBoxProps> = ({
+  network,
+  networkSummary,
+  showMobilePopover,
+  setShowMobilePopover,
+}) => {
   const url = getUrlFromNetwork(network);
   const { name } = network;
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
 
   /* Using framer-motion to animate the network box. */
   const ref = useRef(null);
 
-  const handleMobileAnchorClick: MouseEventHandler<HTMLButtonElement> = useCallback(
-    () => setShowMobilePopover(network.name),
-    [network.name, setShowMobilePopover]
-  );
+  const handleMobileAnchorClick: MouseEventHandler<HTMLButtonElement> =
+    useCallback(
+      () => setShowMobilePopover(network.name),
+      [network.name, setShowMobilePopover],
+    );
   const handleMobilPopoverClick: MouseEventHandler<Element> = useCallback(
     (event) => {
       event.stopPropagation();
-      setShowMobilePopover('');
+      setShowMobilePopover("");
     },
-    [setShowMobilePopover]
+    [setShowMobilePopover],
   );
   const handleExploreClick: MouseEventHandler<HTMLElement> = useCallback(
     (event) => {
       event.stopPropagation();
-      if (url) window.open(url, '_top');
+      if (url) window.open(url, "_top");
     },
-    [url]
+    [url],
   );
 
   /* A variable that is used to render the popover. */
   const popover = (
     <Box className="networkbox__popover">
-      <CloseIcon fontSize="small" className="networkbox__close-btn" onClickCapture={handleMobilPopoverClick} />
+      <CloseIcon
+        fontSize="small"
+        className="networkbox__close-btn"
+        onClickCapture={handleMobilPopoverClick}
+      />
       <Box onClickCapture={handleMobilPopoverClick}>
         <Box className="image">
           <NetworkIcon networkName={name} width="48" height="48" />
@@ -57,7 +67,9 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePo
         <Box onClickCapture={handleMobilPopoverClick}>
           {!!networkSummary.token_price?.[0] && (
             <Box>
-              <Typography variant="h6">{networkSummary.token_price[0].unit_name?.toUpperCase()}</Typography>
+              <Typography variant="h6">
+                {networkSummary.token_price[0].unit_name?.toUpperCase()}
+              </Typography>
               <Typography>{networkSummary.token_price[0].price}</Typography>
             </Box>
           )}
@@ -82,7 +94,7 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePo
         endIcon={<ChevronRightIcon />}
         onClickCapture={handleExploreClick}
       >
-        {t('explore')}
+        {t("explore")}
       </Button>
     </Box>
   );
@@ -106,7 +118,7 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePo
           {
             networkbox__active: showMobilePopover === network.name,
           },
-          'networkbox__mobile-popover-contaier'
+          "networkbox__mobile-popover-contaier",
         )}
       >
         {popover}
@@ -118,7 +130,11 @@ const NetworkBox: FC<NetworkBoxProps> = ({ network, networkSummary, showMobilePo
         </Box>
         <Typography variant="h4">{name}</Typography>
       </Box>
-      <Button variant="text" className="networkbox__mobile-anchor" onClick={handleMobileAnchorClick}>
+      <Button
+        variant="text"
+        className="networkbox__mobile-anchor"
+        onClick={handleMobileAnchorClick}
+      >
         <Box className="image">
           <NetworkIcon networkName={name} width="48" height="48" />
         </Box>

@@ -1,13 +1,13 @@
-import { useTheme  } from '@mui/material';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Fab from '@mui/material/Fab';
-import classnames from 'classnames';
-import { useInView, useScroll } from 'framer-motion';
-import { FC, useEffect, useRef, useState } from 'react';
-import handleScrollToTop from '@/src/utils/handleScrollToTop';
-import { Footer, Nav } from '..';
-import type { LayoutProps } from './types';
-import useStyles from './useStyles';
+import { useTheme } from "@mui/material";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Fab from "@mui/material/Fab";
+import classnames from "classnames";
+import { useInView, useScroll } from "framer-motion";
+import { FC, useEffect, useRef, useState } from "react";
+import handleScrollToTop from "@/src/utils/handleScrollToTop";
+import { Footer, Nav } from "..";
+import type { LayoutProps } from "./types";
+import useStyles from "./useStyles";
 
 /**
  * The `Layout` React component.
@@ -15,20 +15,27 @@ import useStyles from './useStyles';
  * @returns A styled main element with a box element inside of it. The box element has a nav, styled
  * div, and footer element inside of it.
  */
-const Layout: FC<LayoutProps & JSX.IntrinsicElements['main']> = ({ children, className, ...props }) => {
+const Layout: FC<LayoutProps & JSX.IntrinsicElements["main"]> = ({
+  children,
+  className,
+  ...props
+}) => {
   const navRef = useRef(null);
   const isFooterInView = useInView(navRef);
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => scrollY.onChange((latest) => setScrolled(latest > 0)), [])
+  useEffect(() => scrollY.onChange((latest) => setScrolled(latest > 0)), []);
   const styles = useStyles();
 
   /* Adding a class to the document element to indicate the dark mode. */
   const theme = useTheme();
   useEffect(() => {
-    if (typeof document !== 'undefined' && document?.documentElement) {
-      document.documentElement.classList.toggle('mode-dark', theme.palette.mode === 'dark');
+    if (typeof document !== "undefined" && document?.documentElement) {
+      document.documentElement.classList.toggle(
+        "mode-dark",
+        theme.palette.mode === "dark",
+      );
     }
   }, [theme.palette.mode]);
 
@@ -40,7 +47,7 @@ const Layout: FC<LayoutProps & JSX.IntrinsicElements['main']> = ({ children, cla
           layout__scrolled: scrolled,
           layout__footerinview: isFooterInView,
         },
-        'layout__container'
+        "layout__container",
       )}
       {...props}
       css={styles.root}

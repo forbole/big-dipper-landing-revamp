@@ -6,41 +6,41 @@ import {
   FAQ,
   FEEDBACK,
   HOME,
-} from '@/src/utils/links';
+} from "@/src/utils/links";
 
 export const getMenuItems = () => {
   return [
     {
-      key: 'home',
+      key: "home",
       url: HOME,
     },
     {
-      key: 'allNetworks',
+      key: "allNetworks",
       url: ALL_NETWORKS,
     },
     {
-      key: 'helpAndSupport',
+      key: "helpAndSupport",
       submenus: [
         {
-          key: 'faq',
+          key: "faq",
           url: FAQ,
         },
         {
-          key: 'donation',
+          key: "donation",
           url: DONATION,
         },
         {
-          key: 'feedback',
+          key: "feedback",
           url: FEEDBACK,
         },
       ],
     },
     {
-      key: 'about',
+      key: "about",
       url: ABOUT,
     },
     {
-      key: 'docs',
+      key: "docs",
       url: DOCS,
     },
   ];

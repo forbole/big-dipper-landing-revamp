@@ -5,29 +5,24 @@ jobs:
   Lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm install
-    - name: Run lint check
-      run: npm run lint
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn install --immutable
+      - name: Run lint check
+        run: yarn lint
   Unit-tests:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm ci
-    - name: Run tests
-      run: npm test -- --coverage
-    # - name: Upload coverage 📤
-    #   uses: codecov/codecov-action@v1
-    #   with:
-    #     file: coverage/lcov.info
-    #     fail_ci_if_error: true
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn ci
+      - name: Run tests
+        run: yarn test
   Build-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm ci
-    - name: Run build check
-      run: npm run build
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn install --immutable
+      - name: Run build check
+        run: yarn build

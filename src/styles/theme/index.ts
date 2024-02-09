@@ -5,7 +5,7 @@ import basePath from "@/src/utils/basePath";
 
 export const LIMIT = 1024;
 
-export const common: ThemeOptions = {
+const common: ThemeOptions = {
   breakpoints: {
     values: {
       lg: 1280, // default 1200

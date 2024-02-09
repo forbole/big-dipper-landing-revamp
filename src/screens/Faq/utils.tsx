@@ -12,7 +12,7 @@ export const getMenuItems = (t: Translate) => [
   t("governance.title"),
 ];
 
-export const getBlockChainFAQ = (t: Translate) => [
+const getBlockChainFAQ = (t: Translate) => [
   {
     answer: (
       <Trans
@@ -33,7 +33,7 @@ export const getBlockChainFAQ = (t: Translate) => [
   },
 ];
 
-export const getStakersFAQ = (t: Translate) => [
+const getStakersFAQ = (t: Translate) => [
   {
     answer: (
       <Trans
@@ -91,7 +91,7 @@ export const getStakersFAQ = (t: Translate) => [
   },
 ];
 
-export const getValidatorsFAQ = (t: Translate) => [
+const getValidatorsFAQ = (t: Translate) => [
   {
     answer: (
       <Trans
@@ -186,7 +186,7 @@ export const getValidatorsFAQ = (t: Translate) => [
   },
 ];
 
-export const getGovernanceFAQ = (t: Translate) => [
+const getGovernanceFAQ = (t: Translate) => [
   {
     answer: (
       <Trans

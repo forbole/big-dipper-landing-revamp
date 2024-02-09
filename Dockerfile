@@ -33,7 +33,7 @@ ENV NEXT_TELEMETRY_DISABLED 1
 RUN addgroup --system --gid 1001 nextjs && adduser --system --uid 1001 nextjs
 
 # You only need to copy next.config.js if you are NOT using the default configuration
-COPY --from=builder /app/next.config.js /app/package.json /app/i18n.js /app/.yarnrc.yml ./
+COPY --from=builder /app/next.config.js /app/package.json /app/i18n.js /app/.yarnrc.yml /app/yarn.lock ./
 COPY --from=builder /app/.yarn ./.yarn
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/src ./src

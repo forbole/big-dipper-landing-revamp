@@ -383,16 +383,6 @@
     ]
   },
   {
-    "name": "Celestia",
-    "links": [
-      {
-        "chain_id": "blockspacerace-0",
-        "name": "Testnet",
-        "url": "https://testnet.bigdipper.live/celestia"
-      }
-    ]
-  },
-  {
     "name": "Coreum",
     "endpoint": "https://gql.coreum.forbole.com/v1/graphql",
     "links": [
@@ -469,4 +459,3 @@
     ]
   }
 ]
-

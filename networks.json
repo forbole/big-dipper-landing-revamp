@@ -129,17 +129,6 @@
     ]
   },
   {
-    "name": "Bitsong",
-    "endpoint": "https://gql.bitsong.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "bitsong-2b",
-        "url": "https://bigdipper.live/bitsong"
-      }
-    ]
-  },
-  {
     "name": "Regen Network",
     "endpoint": "https://gql.regen.forbole.com/v1/graphql",
     "links": [

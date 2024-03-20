@@ -1,52 +1,5 @@
 [
   {
-    "name": "Cosmos Hub",
-    "endpoint": "https://gql.cosmos.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "cosmoshub-4",
-        "url": "https://bigdipper.live/cosmos"
-      },
-      {
-        "name": "Retired",
-        "chain_id": "cosmoshub-3",
-        "url": "https://cosmoshub-3.bigdipper.live"
-      },
-      {
-        "name": "Retired",
-        "chain_id": "cosmoshub-2",
-        "url": "https://cosmoshub-2.bigdipper.live"
-      },
-      {
-        "name": "Retired",
-        "chain_id": "cosmoshub-1",
-        "url": "https://cosmoshub-1.bigdipper.live"
-      }
-    ]
-  },
-  {
-    "name": "Akash",
-    "endpoint": "https://gql.akash.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "akashnet-2",
-        "url": "https://bigdipper.live/akash"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "testnet-02",
-        "url": "https://testnet.bigdipper.live/akash"
-      },
-      {
-        "name": "Retired",
-        "chain_id": "",
-        "url": "https://akashnet-1.bigdipper.live"
-      }
-    ]
-  },
-  {
     "name": "e-Money",
     "endpoint": "https://gql.emoney.forbole.com/v1/graphql",
     "links": [
@@ -54,22 +7,6 @@
         "name": "Mainnet",
         "chain_id": "emoney-3",
         "url": "https://bigdipper.live/emoney"
-      }
-    ]
-  },
-  {
-    "name": "Band Protocol",
-    "endpoint": "https://gql.band.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "laozi-mainnet",
-        "url": "https://bigdipper.live/band"
-      },
-      {
-        "name": "Retired",
-        "chain_id": "band-guanyu-mainnet",
-        "url": "https://band-guanyu.bigdipper.live/"
       }
     ]
   },
@@ -129,50 +66,6 @@
     ]
   },
   {
-    "name": "Bitsong",
-    "endpoint": "https://gql.bitsong.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "bitsong-2b",
-        "url": "https://bigdipper.live/bitsong"
-      }
-    ]
-  },
-  {
-    "name": "Regen Network",
-    "endpoint": "https://gql.regen.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "regen-1",
-        "url": "https://bigdipper.live/regen"
-      }
-    ]
-  },
-  {
-    "name": "Agoric",
-    "endpoint": "https://gql.agoric.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "agoric-3",
-        "url": "https://bigdipper.live/agoric"
-      }
-    ]
-  },
-  {
-    "name": "Rizon",
-    "endpoint": "https://gql.rizon.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "titan-1",
-        "url": "https://bigdipper.live/rizon"
-      }
-    ]
-  },
-  {
     "name": "MultiversX",
     "endpoint": "",
     "links": [
@@ -187,11 +80,6 @@
     "name": "Evmos",
     "endpoint": "https://gql.evmos.forbole.com/v1/graphql",
     "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "evmos_9001-2",
-        "url": "https://bigdipper.live/evmos"
-      },
       {
         "name": "Testnet",
         "chain_id": "evmos_9000-4",
@@ -216,17 +104,6 @@
     ]
   },
   {
-    "name": "Comdex",
-    "endpoint": "https://gql.comdex.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "comdex-1",
-        "url": "https://bigdipper.live/comdex"
-      }
-    ]
-  },
-  {
     "name": "Crescent",
     "endpoint": "https://gql.crescent.forbole.com/v1/graphql",
     "links": [
@@ -234,28 +111,6 @@
         "name": "Mainnet",
         "chain_id": "crescent-1",
         "url": "https://bigdipper.live/crescent"
-      }
-    ]
-  },
-  {
-    "name": "AssetMantle",
-    "endpoint": "https://gql.assetmantle.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "mantle-1",
-        "url": "https://bigdipper.live/assetmantle"
-      }
-    ]
-  },
-  {
-    "name": "Provenance",
-    "endpoint": "https://gql.provenance.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "pio-mainnet-1",
-        "url": "https://bigdipper.live/provenance"
       }
     ]
   },
@@ -283,28 +138,6 @@
         "name": "Testnet",
         "chain_id": "test-core-1",
         "url": "https://testnet.bigdipper.live/persistence"
-      }
-    ]
-  },
-  {
-    "name": "Stride",
-    "endpoint": "https://gql.stride.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "stride-1",
-        "url": "https://bigdipper.live/stride"
-      }
-    ]
-  },
-  {
-    "name": "NYM",
-    "endpoint": "https://gql.nym.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "nyx",
-        "url": "https://bigdipper.live/nym"
       }
     ]
   },
@@ -371,36 +204,9 @@
     "endpoint": "https://gql.humansai.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Mainnet",
-        "chain_id": "humans_1089-1",
-        "url": "https://bigdipper.live/humansai/"
-      },
-      {
         "name": "Testnet",
         "chain_id": "humans_3000-31",
         "url": "https://testnet.bigdipper.live/humansai"
-      }
-    ]
-  },
-  {
-    "name": "Coreum",
-    "endpoint": "https://gql.coreum.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "coreum-mainnet-1",
-        "url": "https://bigdipper.live/coreum"
-      }
-    ]
-  },
-  {
-    "name": "KYVE",
-    "endpoint": "https://gql.kyve.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "kyve-1",
-        "url": "https://bigdipper.live/kyve"
       }
     ]
   },
@@ -412,16 +218,6 @@
         "name": "Mainnet",
         "chain_id": "gitopia",
         "url": "https://bigdipper.live/gitopia"
-      }
-    ]
-  },
-  {
-    "name": "Lava",
-    "links": [
-      {
-        "name": "Testnet",
-        "chain_id": "lava-testnet-1",
-        "url": "https://bd.lavanet.xyz/?utm_source=bigdipper.live&utm_medium=big+dipper"
       }
     ]
   },
@@ -444,17 +240,6 @@
         "name": "Mainnet",
         "chain_id": "jackal-1",
         "url": "https://bigdipper.live/jackal"
-      }
-    ]
-  },
-  {
-    "name": "Archway",
-    "endpoint": "https://gql.archway.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "archway-1",
-        "url": "https://bigdipper.live/archway"
       }
     ]
   }

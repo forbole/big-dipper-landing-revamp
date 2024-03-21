@@ -1,32 +1,5 @@
 [
   {
-    "name": "e-Money",
-    "endpoint": "https://gql.emoney.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "emoney-3",
-        "url": "https://bigdipper.live/emoney"
-      }
-    ]
-  },
-  {
-    "name": "LikeCoin",
-    "endpoint": "https://gql.likecoin.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "likecoin-mainnet-2",
-        "url": "https://bigdipper.live/likecoin"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "likecoin-public-testnet-5",
-        "url": "https://testnet.bigdipper.live/likecoin"
-      }
-    ]
-  },
-  {
     "name": "Desmos",
     "endpoint": "https://gql.desmos.forbole.com/v1/graphql",
     "links": [
@@ -51,17 +24,6 @@
         "name": "Mainnet",
         "chain_id": "crypto-org-chain-mainnet-1",
         "url": "https://crypto-org.bigdipper.live/"
-      }
-    ]
-  },
-  {
-    "name": "Osmosis",
-    "endpoint": "https://gql.osmosis.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "osmosis-1",
-        "url": "https://bigdipper.live/osmosis"
       }
     ]
   },
@@ -104,17 +66,6 @@
     ]
   },
   {
-    "name": "Crescent",
-    "endpoint": "https://gql.crescent.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "crescent-1",
-        "url": "https://bigdipper.live/crescent"
-      }
-    ]
-  },
-  {
     "name": "Nomic",
     "endpoint": "https://gql.nomic.forbole.com/v1/graphql",
     "links": [
@@ -130,30 +81,9 @@
     "endpoint": "https://gql.persistence.forbole.com/v1/graphql",
     "links": [
       {
-        "name": "Mainnet",
-        "chain_id": "core-1",
-        "url": "https://bigdipper.live/persistence"
-      },
-      {
         "name": "Testnet",
         "chain_id": "test-core-1",
         "url": "https://testnet.bigdipper.live/persistence"
-      }
-    ]
-  },
-  {
-    "name": "Quicksilver",
-    "endpoint": "https://gql.quicksilver.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "quicksilver-2",
-        "url": "https://bigdipper.live/quicksilver"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "innuendo-3",
-        "url": "https://testnet.bigdipper.live/quicksilver"
       }
     ]
   },
@@ -175,27 +105,6 @@
         "name": "Mainnet-Explorer",
         "chain_id": "mars-1",
         "url": "https://explorer.marsprotocol.io/"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "ares-1",
-        "url": "https://testnet-explorer.marsprotocol.io/"
-      }
-    ]
-  },
-  {
-    "name": "Quasar",
-    "endpoint": "https://gql.quasar.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "quasar",
-        "url": "https://bigdipper.live/quasar"
-      },
-      {
-        "name": "Testnet",
-        "chain_id": "qsr-questnet-04",
-        "url": "https://testnet.bigdipper.live/quasar"
       }
     ]
   },
@@ -207,28 +116,6 @@
         "name": "Testnet",
         "chain_id": "humans_3000-31",
         "url": "https://testnet.bigdipper.live/humansai"
-      }
-    ]
-  },
-  {
-    "name": "Gitopia",
-    "endpoint": "https://gql.gitopia.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "gitopia",
-        "url": "https://bigdipper.live/gitopia"
-      }
-    ]
-  },
-  {
-    "name": "Neutron",
-    "endpoint": "https://gql.neutron.forbole.com/v1/graphql",
-    "links": [
-      {
-        "name": "Mainnet",
-        "chain_id": "neutron-1",
-        "url": "https://bigdipper.live/neutron"
       }
     ]
   },
